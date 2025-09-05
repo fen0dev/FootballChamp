@@ -1,0 +1,3831 @@
+date,home_team,away_team,home_xg,away_xg
+2015-08-08,Manchester United,Tottenham,0.627539,0.6746
+2015-08-08,Bournemouth,Aston Villa,0.876106,0.782253
+2015-08-08,Everton,Watford,0.604226,0.557892
+2015-08-08,Leicester,Sunderland,2.56803,1.45946
+2015-08-08,Norwich,Crystal Palace,1.13076,2.10975
+2015-08-08,Chelsea,Swansea,0.64396,2.59203
+2015-08-09,Newcastle United,Southampton,1.54613,1.2529
+2015-08-09,Arsenal,West Ham,1.33166,0.535961
+2015-08-09,Stoke,Liverpool,0.381274,0.329873
+2015-08-10,West Bromwich Albion,Manchester City,0.435238,1.9242
+2015-08-14,Aston Villa,Manchester United,0.219118,0.660404
+2015-08-15,West Ham,Leicester,0.513491,1.80939
+2015-08-15,Watford,West Bromwich Albion,0.760848,0.684036
+2015-08-15,Tottenham,Stoke,1.70614,2.80956
+2015-08-15,Swansea,Newcastle United,1.97424,0.113109
+2015-08-15,Sunderland,Norwich,0.329128,1.71686
+2015-08-15,Southampton,Everton,1.06214,1.39628
+2015-08-16,Crystal Palace,Arsenal,0.964134,2.05542
+2015-08-16,Manchester City,Chelsea,2.18579,0.482423
+2015-08-17,Liverpool,Bournemouth,2.15062,0.460805
+2015-08-22,Manchester United,Newcastle United,1.2491,0.4384
+2015-08-22,Norwich,Stoke,3.14888,0.698228
+2015-08-22,Sunderland,Swansea,0.569426,1.56064
+2015-08-22,Crystal Palace,Aston Villa,1.23807,0.765278
+2015-08-22,Leicester,Tottenham,0.829012,1.89437
+2015-08-22,West Ham,Bournemouth,1.50203,2.8554
+2015-08-23,Everton,Manchester City,0.579338,1.57983
+2015-08-23,Watford,Southampton,1.17588,0.68359
+2015-08-23,West Bromwich Albion,Chelsea,1.42622,2.02778
+2015-08-24,Arsenal,Liverpool,1.83755,1.29206
+2015-08-29,Newcastle United,Arsenal,0.0319694,2.33948
+2015-08-29,Stoke,West Bromwich Albion,1.21771,0.881194
+2015-08-29,Aston Villa,Sunderland,2.27406,0.368848
+2015-08-29,Bournemouth,Leicester,0.321432,0.919097
+2015-08-29,Chelsea,Crystal Palace,1.27906,2.19283
+2015-08-29,Liverpool,West Ham,0.561737,0.97217
+2015-08-29,Manchester City,Watford,1.52895,0.363603
+2015-08-29,Tottenham,Everton,1.99917,0.694692
+2015-08-30,Southampton,Norwich,2.85501,0.639434
+2015-08-30,Swansea,Manchester United,0.971183,1.28089
+2015-09-12,Crystal Palace,Manchester City,0.743193,3.08883
+2015-09-12,Manchester United,Liverpool,1.46206,1.02572
+2015-09-12,Norwich,Bournemouth,1.33151,0.389495
+2015-09-12,West Bromwich Albion,Southampton,0.409143,1.00731
+2015-09-12,Everton,Chelsea,1.18026,0.656048
+2015-09-12,Arsenal,Stoke,4.42684,0.191277
+2015-09-12,Watford,Swansea,1.57333,0.503008
+2015-09-13,Sunderland,Tottenham,1.0407,1.45615
+2015-09-13,Leicester,Aston Villa,1.34987,0.953181
+2015-09-14,West Ham,Newcastle United,1.71282,0.716599
+2015-09-19,Stoke,Leicester,1.14717,1.22582
+2015-09-19,Swansea,Everton,0.864868,1.77458
+2015-09-19,Bournemouth,Sunderland,0.644335,0.854867
+2015-09-19,Manchester City,West Ham,2.98465,0.995273
+2015-09-19,Newcastle United,Watford,1.15114,1.33961
+2015-09-19,Chelsea,Arsenal,2.0687,0.775312
+2015-09-19,Aston Villa,West Bromwich Albion,0.876719,0.632761
+2015-09-20,Liverpool,Norwich,1.90447,0.556271
+2015-09-20,Southampton,Manchester United,1.83663,1.65119
+2015-09-20,Tottenham,Crystal Palace,1.01573,0.538439
+2015-09-26,Tottenham,Manchester City,2.30799,1.57842
+2015-09-26,Southampton,Swansea,1.55418,1.41962
+2015-09-26,Stoke,Bournemouth,1.94483,0.871678
+2015-09-26,Leicester,Arsenal,1.38516,3.89623
+2015-09-26,Liverpool,Aston Villa,1.78331,0.892054
+2015-09-26,Manchester United,Sunderland,2.8971,0.832139
+2015-09-26,West Ham,Norwich,2.60407,1.38603
+2015-09-26,Newcastle United,Chelsea,0.702109,1.30593
+2015-09-27,Watford,Crystal Palace,0.685939,2.33566
+2015-09-28,West Bromwich Albion,Everton,1.27511,2.30159
+2015-10-03,Chelsea,Southampton,0.520175,1.58246
+2015-10-03,Sunderland,West Ham,1.08401,1.93656
+2015-10-03,Norwich,Leicester,1.18074,3.00282
+2015-10-03,Manchester City,Newcastle United,3.3346,0.980279
+2015-10-03,Bournemouth,Watford,1.50268,0.913291
+2015-10-03,Aston Villa,Stoke,0.839028,1.03499
+2015-10-03,Crystal Palace,West Bromwich Albion,1.99083,0.255528
+2015-10-04,Everton,Liverpool,1.20063,1.30844
+2015-10-04,Swansea,Tottenham,0.774806,1.18142
+2015-10-04,Arsenal,Manchester United,2.16952,1.03953
+2015-10-17,Tottenham,Liverpool,0.586228,0.715892
+2015-10-17,Southampton,Leicester,1.46668,2.78648
+2015-10-17,West Bromwich Albion,Sunderland,2.07781,0.658473
+2015-10-17,Chelsea,Aston Villa,1.22875,0.795846
+2015-10-17,Crystal Palace,West Ham,1.08391,2.76356
+2015-10-17,Everton,Manchester United,0.653457,1.47853
+2015-10-17,Manchester City,Bournemouth,4.71274,0.173025
+2015-10-17,Watford,Arsenal,0.254791,2.69046
+2015-10-18,Newcastle United,Norwich,2.24896,1.34395
+2015-10-19,Swansea,Stoke,0.485489,1.64894
+2015-10-24,Aston Villa,Swansea,1.09516,1.74353
+2015-10-24,Leicester,Crystal Palace,1.33502,0.240008
+2015-10-24,West Ham,Chelsea,0.77284,1.1356
+2015-10-24,Norwich,West Bromwich Albion,1.03228,1.45436
+2015-10-24,Stoke,Watford,0.848432,1.0403
+2015-10-24,Arsenal,Everton,2.55754,0.373025
+2015-10-25,Sunderland,Newcastle United,2.37969,1.41744
+2015-10-25,Bournemouth,Tottenham,0.490581,3.43313
+2015-10-25,Manchester United,Manchester City,0.391754,0.310718
+2015-10-25,Liverpool,Southampton,0.682823,1.56383
+2015-10-31,West Bromwich Albion,Leicester,1.50447,2.22545
+2015-10-31,Watford,West Ham,1.61544,0.605625
+2015-10-31,Swansea,Arsenal,0.264441,2.17657
+2015-10-31,Newcastle United,Stoke,1.26075,1.38017
+2015-10-31,Manchester City,Norwich,2.83557,1.17497
+2015-10-31,Crystal Palace,Manchester United,0.939118,0.394404
+2015-10-31,Chelsea,Liverpool,0.735762,0.839342
+2015-11-01,Everton,Sunderland,2.34852,1.21834
+2015-11-01,Southampton,Bournemouth,1.15966,0.712132
+2015-11-03,Tottenham,Aston Villa,1.14374,0.325711
+2015-11-07,Bournemouth,Newcastle United,1.00427,0.504409
+2015-11-07,Leicester,Watford,1.56389,1.00531
+2015-11-07,Manchester United,West Bromwich Albion,1.2779,0.594031
+2015-11-07,Norwich,Swansea,1.19517,0.402284
+2015-11-07,West Ham,Everton,0.589567,1.08814
+2015-11-07,Sunderland,Southampton,0.299104,1.79578
+2015-11-07,Stoke,Chelsea,0.825418,1.02642
+2015-11-08,Liverpool,Crystal Palace,2.15673,0.849281
+2015-11-08,Arsenal,Tottenham,2.01767,0.90585
+2015-11-08,Aston Villa,Manchester City,0.182741,1.53281
+2015-11-21,Watford,Manchester United,1.47077,1.30264
+2015-11-21,Swansea,Bournemouth,1.88526,1.58509
+2015-11-21,Southampton,Stoke,0.709485,1.19495
+2015-11-21,West Bromwich Albion,Arsenal,0.332888,2.08956
+2015-11-21,Newcastle United,Leicester,0.372387,3.27478
+2015-11-21,Everton,Aston Villa,2.83068,0.322061
+2015-11-21,Chelsea,Norwich,2.16487,0.202798
+2015-11-21,Manchester City,Liverpool,1.08612,2.61697
+2015-11-22,Tottenham,West Ham,3.22353,0.818937
+2015-11-24,Crystal Palace,Sunderland,0.696183,1.30739
+2015-11-28,Leicester,Manchester United,0.876256,1.05613
+2015-11-28,Manchester City,Southampton,2.12331,1.24478
+2015-11-28,Crystal Palace,Newcastle United,1.67836,0.791299
+2015-11-28,Sunderland,Stoke,0.863466,0.79464
+2015-11-28,Aston Villa,Watford,1.48969,1.45176
+2015-11-28,Bournemouth,Everton,1.69105,0.729005
+2015-11-29,Tottenham,Chelsea,0.333494,0.283375
+2015-11-29,West Ham,West Bromwich Albion,1.41404,0.866305
+2015-11-29,Liverpool,Swansea,1.19358,0.367517
+2015-11-29,Norwich,Arsenal,1.01025,1.65699
+2015-12-05,Manchester United,West Ham,1.76061,1.10206
+2015-12-05,Chelsea,Bournemouth,1.66952,1.25911
+2015-12-05,Arsenal,Sunderland,2.29559,1.5228
+2015-12-05,Southampton,Aston Villa,2.86051,1.058
+2015-12-05,Watford,Norwich,2.07199,0.310524
+2015-12-05,Swansea,Leicester,0.780602,2.20962
+2015-12-05,West Bromwich Albion,Tottenham,1.48695,1.12876
+2015-12-05,Stoke,Manchester City,2.01436,0.483752
+2015-12-06,Newcastle United,Liverpool,0.646346,0.999043
+2015-12-08,Everton,Crystal Palace,1.69774,1.1905
+2015-12-12,Norwich,Everton,1.49283,2.43558
+2015-12-12,Manchester City,Swansea,1.34338,0.962789
+2015-12-12,Sunderland,Watford,0.879474,2.0562
+2015-12-12,Crystal Palace,Southampton,1.31177,0.890411
+2015-12-12,West Ham,Stoke,1.13181,1.87239
+2015-12-12,Bournemouth,Manchester United,1.05032,1.96768
+2015-12-13,Liverpool,West Bromwich Albion,2.12583,0.835885
+2015-12-13,Tottenham,Newcastle United,1.03317,1.55252
+2015-12-13,Aston Villa,Arsenal,1.00876,1.68498
+2015-12-15,Leicester,Chelsea,0.708846,2.26887
+2015-12-19,West Bromwich Albion,Bournemouth,0.698255,1.89177
+2015-12-19,Southampton,Tottenham,0.83385,1.47453
+2015-12-19,Stoke,Crystal Palace,2.41499,1.95347
+2015-12-19,Chelsea,Sunderland,3.02023,1.23573
+2015-12-19,Everton,Leicester,1.48982,2.02911
+2015-12-19,Manchester United,Norwich,1.01394,0.556897
+2015-12-19,Newcastle United,Aston Villa,1.28189,0.404373
+2015-12-20,Watford,Liverpool,1.99336,0.376313
+2015-12-20,Swansea,West Ham,0.973378,0.401988
+2015-12-22,Arsenal,Manchester City,1.50109,0.769378
+2015-12-26,Liverpool,Leicester,1.37933,0.505167
+2015-12-26,Southampton,Arsenal,2.4303,0.83106
+2015-12-26,Newcastle United,Everton,1.35711,1.69923
+2015-12-26,Chelsea,Watford,2.09356,1.667
+2015-12-26,Manchester City,Sunderland,3.51848,1.08103
+2015-12-26,Aston Villa,West Ham,1.61235,0.836027
+2015-12-26,Stoke,Manchester United,1.18211,1.28961
+2015-12-26,Swansea,West Bromwich Albion,1.21243,0.554583
+2015-12-26,Bournemouth,Crystal Palace,0.871395,0.405181
+2015-12-26,Tottenham,Norwich,2.40666,0.452019
+2015-12-28,West Bromwich Albion,Newcastle United,2.1039,0.456189
+2015-12-28,Watford,Tottenham,1.13011,0.527248
+2015-12-28,Norwich,Aston Villa,1.10319,0.235874
+2015-12-28,Crystal Palace,Swansea,0.735185,0.169425
+2015-12-28,Everton,Stoke,2.2472,1.58159
+2015-12-28,Arsenal,Bournemouth,3.12958,0.343752
+2015-12-28,Manchester United,Chelsea,1.35213,0.900029
+2015-12-28,West Ham,Southampton,1.79562,1.3709
+2015-12-29,Leicester,Manchester City,0.810377,1.66777
+2015-12-30,Sunderland,Liverpool,0.481551,1.80743
+2016-01-02,West Ham,Liverpool,2.06737,1.86591
+2016-01-02,Arsenal,Newcastle United,1.93025,1.15339
+2016-01-02,Leicester,Bournemouth,2.28506,1.2593
+2016-01-02,Manchester United,Swansea,1.74266,0.542907
+2016-01-02,Norwich,Southampton,1.50509,0.932294
+2016-01-02,Sunderland,Aston Villa,0.761225,0.27956
+2016-01-02,Watford,Manchester City,0.985368,0.692054
+2016-01-02,West Bromwich Albion,Stoke,1.72318,0.917526
+2016-01-03,Crystal Palace,Chelsea,0.546499,2.3747
+2016-01-03,Everton,Tottenham,0.721603,0.75907
+2016-01-12,Newcastle United,Manchester United,1.81304,2.36216
+2016-01-12,Aston Villa,Crystal Palace,0.551973,0.547913
+2016-01-12,Bournemouth,West Ham,0.729546,1.18455
+2016-01-13,Manchester City,Everton,1.44957,0.369548
+2016-01-13,Chelsea,West Bromwich Albion,1.38532,0.704263
+2016-01-13,Swansea,Sunderland,1.06526,2.49057
+2016-01-13,Southampton,Watford,1.7224,0.11543
+2016-01-13,Stoke,Norwich,1.24456,0.193728
+2016-01-14,Liverpool,Arsenal,1.16222,2.22912
+2016-01-14,Tottenham,Leicester,1.2301,0.588708
+2016-01-16,Aston Villa,Leicester,0.665386,2.21525
+2016-01-16,Bournemouth,Norwich,2.53086,0.595472
+2016-01-16,Southampton,West Bromwich Albion,1.42623,0.410757
+2016-01-16,Chelsea,Everton,2.44864,1.5891
+2016-01-16,Manchester City,Crystal Palace,1.74025,0.613339
+2016-01-16,Tottenham,Sunderland,2.02579,0.617306
+2016-01-16,Newcastle United,West Ham,1.84261,1.08248
+2016-01-17,Liverpool,Manchester United,0.952974,0.715703
+2016-01-17,Stoke,Arsenal,0.546879,0.585841
+2016-01-19,Swansea,Watford,0.474035,0.525478
+2016-01-23,Sunderland,Bournemouth,0.612134,1.26851
+2016-01-23,Watford,Newcastle United,2.58707,1.29267
+2016-01-23,West Ham,Manchester City,1.01267,1.73182
+2016-01-23,West Bromwich Albion,Aston Villa,0.23184,0.562461
+2016-01-23,Crystal Palace,Tottenham,0.930792,1.74368
+2016-01-23,Manchester United,Southampton,0.187217,0.83591
+2016-01-23,Norwich,Liverpool,1.03432,1.44943
+2016-01-23,Leicester,Stoke,2.25906,0.340483
+2016-01-24,Everton,Swansea,1.94094,1.08055
+2016-01-24,Arsenal,Chelsea,1.10907,1.48778
+2016-02-02,Arsenal,Southampton,3.38487,0.93405
+2016-02-02,Leicester,Liverpool,1.34566,0.580791
+2016-02-02,Norwich,Tottenham,0.929319,2.75469
+2016-02-02,Sunderland,Manchester City,0.888437,0.638461
+2016-02-02,West Ham,Aston Villa,2.34619,0.107888
+2016-02-03,Watford,Chelsea,0.531415,1.13694
+2016-02-03,Everton,Newcastle United,2.48447,0.626239
+2016-02-03,Manchester United,Stoke,2.45272,0.350909
+2016-02-03,West Bromwich Albion,Swansea,2.30645,1.17928
+2016-02-03,Crystal Palace,Bournemouth,1.62395,1.17427
+2016-02-06,Manchester City,Leicester,1.70719,2.50168
+2016-02-06,Newcastle United,West Bromwich Albion,2.41057,0.472556
+2016-02-06,Stoke,Everton,0.693548,3.05913
+2016-02-06,Tottenham,Watford,2.00475,0.149839
+2016-02-06,Swansea,Crystal Palace,1.32136,1.01465
+2016-02-06,Aston Villa,Norwich,0.918291,1.1413
+2016-02-06,Liverpool,Sunderland,1.57712,0.491843
+2016-02-06,Southampton,West Ham,1.06493,0.970583
+2016-02-07,Bournemouth,Arsenal,0.584316,1.13957
+2016-02-07,Chelsea,Manchester United,1.61554,0.780475
+2016-02-13,Chelsea,Newcastle United,2.0858,0.430664
+2016-02-13,Bournemouth,Stoke,1.19427,0.927348
+2016-02-13,Crystal Palace,Watford,0.983946,1.99728
+2016-02-13,Norwich,West Ham,1.03362,0.741428
+2016-02-13,Swansea,Southampton,0.699012,1.19353
+2016-02-13,Sunderland,Manchester United,1.48186,0.908296
+2016-02-13,Everton,West Bromwich Albion,1.82912,1.1974
+2016-02-14,Arsenal,Leicester,2.36319,1.31246
+2016-02-14,Aston Villa,Liverpool,0.174868,2.00756
+2016-02-14,Manchester City,Tottenham,1.97876,1.23517
+2016-02-27,West Bromwich Albion,Crystal Palace,2.07488,1.21638
+2016-02-27,West Ham,Sunderland,0.52387,1.07887
+2016-02-27,Watford,Bournemouth,1.00481,0.955252
+2016-02-27,Leicester,Norwich,1.7645,0.814784
+2016-02-27,Southampton,Chelsea,1.01074,0.631036
+2016-02-27,Stoke,Aston Villa,2.04047,0.414343
+2016-02-28,Manchester United,Arsenal,1.09522,1.5435
+2016-02-28,Tottenham,Swansea,3.57325,1.24938
+2016-03-01,Aston Villa,Everton,0.60177,2.63668
+2016-03-01,Bournemouth,Southampton,1.41228,0.954161
+2016-03-01,Leicester,West Bromwich Albion,3.04626,1.29485
+2016-03-01,Sunderland,Crystal Palace,0.93375,0.887448
+2016-03-01,Norwich,Chelsea,1.24159,0.980988
+2016-03-02,West Ham,Tottenham,0.784319,1.22673
+2016-03-02,Arsenal,Swansea,1.4928,1.69788
+2016-03-02,Stoke,Newcastle United,0.298318,0.270782
+2016-03-03,Liverpool,Manchester City,1.16781,0.180318
+2016-03-03,Manchester United,Watford,0.786278,2.16484
+2016-03-05,Watford,Leicester,0.829318,1.47042
+2016-03-05,Newcastle United,Bournemouth,0.833931,1.26853
+2016-03-05,Manchester City,Aston Villa,2.83271,0.121136
+2016-03-05,Everton,West Ham,2.09025,2.72091
+2016-03-05,Chelsea,Stoke,1.0615,1.60285
+2016-03-05,Swansea,Norwich,0.545937,0.580126
+2016-03-05,Southampton,Sunderland,1.54587,1.31562
+2016-03-05,Tottenham,Arsenal,1.88378,0.543157
+2016-03-06,Crystal Palace,Liverpool,1.43901,2.27087
+2016-03-06,West Bromwich Albion,Manchester United,0.565787,0.417622
+2016-03-12,Norwich,Manchester City,0.139743,0.557373
+2016-03-12,Stoke,Southampton,1.06676,0.874966
+2016-03-12,Bournemouth,Swansea,0.70756,1.09562
+2016-03-13,Aston Villa,Tottenham,1.84022,2.00141
+2016-03-14,Leicester,Newcastle United,0.846771,0.518715
+2016-03-19,Swansea,Aston Villa,0.490469,0.730828
+2016-03-19,West Bromwich Albion,Norwich,0.332789,0.799255
+2016-03-19,Watford,Stoke,0.879462,1.58145
+2016-03-19,Crystal Palace,Leicester,0.784339,1.20315
+2016-03-19,Everton,Arsenal,0.58617,1.92384
+2016-03-19,Chelsea,West Ham,2.1406,0.862828
+2016-03-20,Southampton,Liverpool,1.56873,1.29046
+2016-03-20,Newcastle United,Sunderland,0.940593,0.785017
+2016-03-20,Manchester City,Manchester United,1.86249,0.900312
+2016-03-20,Tottenham,Bournemouth,2.02694,0.120366
+2016-04-02,Sunderland,West Bromwich Albion,1.54544,0.0635563
+2016-04-02,Aston Villa,Chelsea,0.72512,2.49358
+2016-04-02,Arsenal,Watford,3.00742,0.290619
+2016-04-02,Bournemouth,Manchester City,1.3239,0.868303
+2016-04-02,Norwich,Newcastle United,1.65216,1.46835
+2016-04-02,Stoke,Swansea,1.17598,0.4319
+2016-04-02,West Ham,Crystal Palace,1.71369,1.65593
+2016-04-02,Liverpool,Tottenham,1.37954,1.23579
+2016-04-03,Manchester United,Everton,0.998692,0.755625
+2016-04-03,Leicester,Southampton,1.38701,0.670068
+2016-04-09,West Ham,Arsenal,1.10973,1.46966
+2016-04-09,Watford,Everton,0.408379,1.59979
+2016-04-09,Southampton,Newcastle United,1.78477,0.165982
+2016-04-09,Swansea,Chelsea,1.9071,1.3003
+2016-04-09,Aston Villa,Bournemouth,0.220872,1.0038
+2016-04-09,Crystal Palace,Norwich,1.45029,0.675663
+2016-04-09,Manchester City,West Bromwich Albion,2.07325,1.09413
+2016-04-10,Tottenham,Manchester United,1.79647,0.341238
+2016-04-10,Liverpool,Stoke,2.21484,0.85508
+2016-04-10,Sunderland,Leicester,0.872232,2.60072
+2016-04-13,Crystal Palace,Everton,1.59025,0.759269
+2016-04-16,Chelsea,Manchester City,0.487715,2.62768
+2016-04-16,West Bromwich Albion,Watford,2.2915,0.364852
+2016-04-16,Newcastle United,Swansea,1.5024,0.787081
+2016-04-16,Norwich,Sunderland,1.09006,1.99748
+2016-04-16,Manchester United,Aston Villa,1.09127,0.262427
+2016-04-16,Everton,Southampton,0.318721,1.38323
+2016-04-17,Leicester,West Ham,1.95296,1.56819
+2016-04-17,Bournemouth,Liverpool,0.85914,1.81443
+2016-04-17,Arsenal,Crystal Palace,1.73461,0.275806
+2016-04-18,Stoke,Tottenham,0.458376,2.89775
+2016-04-19,Newcastle United,Manchester City,0.455246,0.522043
+2016-04-20,Manchester United,Crystal Palace,1.46607,0.137416
+2016-04-20,Liverpool,Everton,3.24472,0.0886329
+2016-04-20,West Ham,Watford,3.96294,1.22333
+2016-04-21,Arsenal,West Bromwich Albion,1.37348,0.839742
+2016-04-23,Manchester City,Stoke,2.22482,1.09174
+2016-04-23,Aston Villa,Southampton,1.47192,3.6648
+2016-04-23,Bournemouth,Chelsea,0.575087,2.07192
+2016-04-23,Liverpool,Newcastle United,0.712881,0.253033
+2016-04-24,Sunderland,Arsenal,0.617149,0.97303
+2016-04-24,Leicester,Swansea,3.31579,0.576457
+2016-04-25,Tottenham,West Bromwich Albion,1.26346,0.894413
+2016-04-30,Watford,Aston Villa,1.36255,0.491793
+2016-04-30,Everton,Bournemouth,0.95281,1.42599
+2016-04-30,West Bromwich Albion,West Ham,1.5346,1.27183
+2016-04-30,Stoke,Sunderland,0.68487,1.43105
+2016-04-30,Newcastle United,Crystal Palace,0.53407,1.05079
+2016-04-30,Arsenal,Norwich,0.781508,0.578781
+2016-05-01,Manchester United,Leicester,1.18462,1.16622
+2016-05-01,Swansea,Liverpool,2.31862,0.776186
+2016-05-01,Southampton,Manchester City,2.84362,1.12719
+2016-05-02,Chelsea,Tottenham,0.81661,1.90407
+2016-05-07,Norwich,Manchester United,1.36825,1.48344
+2016-05-07,Crystal Palace,Stoke,1.31448,1.27766
+2016-05-07,West Ham,Swansea,2.39454,2.47265
+2016-05-07,Aston Villa,Newcastle United,0.0312154,1.09626
+2016-05-07,Bournemouth,West Bromwich Albion,0.814964,1.34282
+2016-05-07,Sunderland,Chelsea,0.773876,1.77677
+2016-05-07,Leicester,Everton,4.50525,1.30184
+2016-05-08,Tottenham,Southampton,2.55547,1.30812
+2016-05-08,Liverpool,Watford,2.38919,0.930803
+2016-05-08,Manchester City,Arsenal,0.75375,1.08084
+2016-05-10,West Ham,Manchester United,2.13311,0.635987
+2016-05-11,Sunderland,Everton,2.44887,1.16563
+2016-05-11,Liverpool,Chelsea,1.83934,0.812268
+2016-05-11,Norwich,Watford,2.41871,1.7686
+2016-05-15,Arsenal,Aston Villa,3.40207,0.222731
+2016-05-15,Chelsea,Leicester,1.86065,1.23491
+2016-05-15,Everton,Norwich,2.40775,0.43016
+2016-05-15,Newcastle United,Tottenham,2.42808,0.869082
+2016-05-15,Southampton,Crystal Palace,2.32278,1.24857
+2016-05-15,Stoke,West Ham,0.288737,2.94489
+2016-05-15,Swansea,Manchester City,0.115604,2.04003
+2016-05-15,Watford,Sunderland,1.95277,0.908817
+2016-05-15,West Bromwich Albion,Liverpool,1.86869,0.419877
+2016-05-17,Manchester United,Bournemouth,1.72109,0.503471
+2016-08-13,Southampton,Watford,0.937328,0.180046
+2016-08-13,Manchester City,Sunderland,1.95479,1.09877
+2016-08-13,Burnley,Swansea,1.04903,1.72089
+2016-08-13,Middlesbrough,Stoke,1.80523,0.485626
+2016-08-13,Crystal Palace,West Bromwich Albion,0.990062,0.684593
+2016-08-13,Hull,Leicester,0.740018,2.45631
+2016-08-13,Everton,Tottenham,0.790063,1.12348
+2016-08-14,Bournemouth,Manchester United,0.522847,1.91105
+2016-08-14,Arsenal,Liverpool,1.18197,1.6591
+2016-08-15,Chelsea,West Ham,1.4603,0.445604
+2016-08-19,Manchester United,Southampton,1.36553,0.613233
+2016-08-20,Leicester,Arsenal,0.553693,0.521509
+2016-08-20,Stoke,Manchester City,1.31066,2.17198
+2016-08-20,Burnley,Liverpool,0.197536,0.939025
+2016-08-20,Swansea,Hull,1.14134,2.18655
+2016-08-20,Tottenham,Crystal Palace,2.25623,0.357943
+2016-08-20,Watford,Chelsea,0.804549,1.75595
+2016-08-20,West Bromwich Albion,Everton,2.01885,1.83897
+2016-08-21,West Ham,Bournemouth,1.69288,0.39341
+2016-08-21,Sunderland,Middlesbrough,1.4645,0.854908
+2016-08-27,Tottenham,Liverpool,0.590511,1.92569
+2016-08-27,Watford,Arsenal,1.07775,2.03271
+2016-08-27,Leicester,Swansea,2.47977,0.32818
+2016-08-27,Southampton,Sunderland,0.613743,1.39142
+2016-08-27,Chelsea,Burnley,2.65838,0.18449
+2016-08-27,Crystal Palace,Bournemouth,2.659,0.974014
+2016-08-27,Everton,Stoke,2.31835,0.187415
+2016-08-27,Hull,Manchester United,0.268815,2.47208
+2016-08-28,West Bromwich Albion,Middlesbrough,0.696845,0.396816
+2016-08-28,Manchester City,West Ham,3.21624,1.08385
+2016-09-10,West Ham,Watford,1.32216,1.85479
+2016-09-10,Burnley,Hull,0.453149,0.907116
+2016-09-10,Liverpool,Leicester,2.76916,1.22508
+2016-09-10,Bournemouth,West Bromwich Albion,0.986511,1.48347
+2016-09-10,Stoke,Tottenham,1.01771,2.77025
+2016-09-10,Middlesbrough,Crystal Palace,0.611959,1.12437
+2016-09-10,Manchester United,Manchester City,1.01013,1.88688
+2016-09-10,Arsenal,Southampton,1.89219,1.17522
+2016-09-11,Swansea,Chelsea,1.2304,2.19035
+2016-09-12,Sunderland,Everton,1.0404,2.84526
+2016-09-16,Chelsea,Liverpool,1.16415,1.41642
+2016-09-17,Hull,Arsenal,0.969693,3.63453
+2016-09-17,Leicester,Burnley,1.98503,0.464523
+2016-09-17,Manchester City,Bournemouth,3.38733,0.389672
+2016-09-17,West Bromwich Albion,West Ham,1.94229,2.37422
+2016-09-17,Everton,Middlesbrough,1.17467,0.178081
+2016-09-18,Tottenham,Sunderland,2.52591,0.960821
+2016-09-18,Southampton,Swansea,2.15218,0.490661
+2016-09-18,Crystal Palace,Stoke,1.31366,1.20308
+2016-09-18,Watford,Manchester United,1.74506,1.41359
+2016-09-24,Swansea,Manchester City,1.11096,2.57704
+2016-09-24,Manchester United,Leicester,2.45604,0.286966
+2016-09-24,Middlesbrough,Tottenham,0.361508,1.4158
+2016-09-24,Stoke,West Bromwich Albion,0.979673,0.270862
+2016-09-24,Sunderland,Crystal Palace,1.51457,1.7887
+2016-09-24,Liverpool,Hull,4.64913,0.157549
+2016-09-24,Bournemouth,Everton,0.693594,1.15724
+2016-09-24,Arsenal,Chelsea,1.66224,0.613553
+2016-09-25,West Ham,Southampton,0.693818,2.97877
+2016-09-26,Burnley,Watford,0.569734,0.776105
+2016-09-30,Everton,Crystal Palace,1.1542,0.47692
+2016-10-01,Sunderland,West Bromwich Albion,1.19268,0.88211
+2016-10-01,West Ham,Middlesbrough,0.883385,0.852603
+2016-10-01,Watford,Bournemouth,1.23419,1.35487
+2016-10-01,Swansea,Liverpool,2.65842,2.02239
+2016-10-01,Hull,Chelsea,0.27266,1.99155
+2016-10-02,Manchester United,Stoke,2.80988,1.20043
+2016-10-02,Leicester,Southampton,0.446309,0.920963
+2016-10-02,Tottenham,Manchester City,1.69975,0.909513
+2016-10-02,Burnley,Arsenal,0.608783,1.85433
+2016-10-15,Crystal Palace,West Ham,1.94599,0.874219
+2016-10-15,West Bromwich Albion,Tottenham,1.30365,1.32318
+2016-10-15,Stoke,Sunderland,2.29543,0.587572
+2016-10-15,Manchester City,Everton,2.69208,0.144498
+2016-10-15,Bournemouth,Hull,2.92532,0.388589
+2016-10-15,Arsenal,Swansea,3.50519,1.74979
+2016-10-15,Chelsea,Leicester,3.11573,0.182549
+2016-10-16,Middlesbrough,Watford,0.528576,0.0893749
+2016-10-16,Southampton,Burnley,4.21181,1.03126
+2016-10-17,Liverpool,Manchester United,0.270441,0.537762
+2016-10-22,Burnley,Everton,0.905579,0.752795
+2016-10-22,Hull,Stoke,0.701606,1.04273
+2016-10-22,Leicester,Crystal Palace,1.7041,1.656
+2016-10-22,Arsenal,Middlesbrough,0.711811,1.55581
+2016-10-22,West Ham,Sunderland,1.19585,0.808339
+2016-10-22,Bournemouth,Tottenham,0.523371,0.74529
+2016-10-22,Swansea,Watford,1.33215,0.478578
+2016-10-22,Liverpool,West Bromwich Albion,2.2952,0.685982
+2016-10-23,Manchester City,Southampton,1.15321,0.563752
+2016-10-23,Chelsea,Manchester United,2.25192,0.742805
+2016-10-29,Middlesbrough,Bournemouth,1.44317,1.54599
+2016-10-29,Manchester United,Burnley,2.72391,0.327957
+2016-10-29,West Bromwich Albion,Manchester City,0.596605,2.48018
+2016-10-29,Crystal Palace,Liverpool,0.496044,2.26056
+2016-10-29,Tottenham,Leicester,1.69833,0.740987
+2016-10-29,Sunderland,Arsenal,0.853434,2.48348
+2016-10-29,Watford,Hull,1.14991,0.251367
+2016-10-30,Everton,West Ham,2.0087,0.944816
+2016-10-30,Southampton,Chelsea,0.422364,1.14759
+2016-11-01,Stoke,Swansea,2.16407,1.10058
+2016-11-05,Bournemouth,Sunderland,2.6457,1.13672
+2016-11-05,Burnley,Crystal Palace,2.25738,2.05902
+2016-11-05,Manchester City,Middlesbrough,2.49606,0.208762
+2016-11-05,West Ham,Stoke,0.404528,0.81046
+2016-11-05,Chelsea,Everton,1.94078,0.0131321
+2016-11-06,Leicester,West Bromwich Albion,0.629678,0.78196
+2016-11-06,Swansea,Manchester United,0.51266,1.00006
+2016-11-06,Hull,Southampton,0.561215,2.03046
+2016-11-06,Liverpool,Watford,4.18366,0.771133
+2016-11-06,Arsenal,Tottenham,0.675745,1.19585
+2016-11-19,Manchester United,Arsenal,0.511462,0.575813
+2016-11-19,Southampton,Liverpool,0.0942055,1.68802
+2016-11-19,Stoke,Bournemouth,1.60429,1.24012
+2016-11-19,Sunderland,Hull,0.951511,1.25065
+2016-11-19,Watford,Leicester,0.7197,1.19686
+2016-11-19,Everton,Swansea,1.54877,1.07471
+2016-11-19,Crystal Palace,Manchester City,0.431559,1.39421
+2016-11-19,Tottenham,West Ham,2.53396,1.76706
+2016-11-20,Middlesbrough,Chelsea,0.55976,1.68738
+2016-11-22,West Bromwich Albion,Burnley,1.40512,0.571005
+2016-11-26,Chelsea,Tottenham,1.24948,0.422568
+2016-11-26,Leicester,Middlesbrough,2.0478,0.425252
+2016-11-26,Liverpool,Sunderland,2.02461,0.291073
+2016-11-26,Hull,West Bromwich Albion,0.424457,1.40213
+2016-11-26,Burnley,Manchester City,0.475642,2.25698
+2016-11-26,Swansea,Crystal Palace,3.3955,2.28156
+2016-11-27,Watford,Stoke,0.541915,0.704736
+2016-11-27,Arsenal,Bournemouth,2.8697,2.0491
+2016-11-27,Southampton,Everton,2.80562,0.615174
+2016-11-27,Manchester United,West Ham,1.44452,0.749388
+2016-12-03,West Ham,Arsenal,0.882486,2.96923
+2016-12-03,Sunderland,Leicester,1.4282,1.13791
+2016-12-03,Manchester City,Chelsea,2.24061,1.2848
+2016-12-03,Crystal Palace,Southampton,2.20073,0.764357
+2016-12-03,Stoke,Burnley,1.12929,0.773995
+2016-12-03,Tottenham,Swansea,3.9767,0.0342109
+2016-12-03,West Bromwich Albion,Watford,1.17737,1.476
+2016-12-04,Everton,Manchester United,1.64985,0.541299
+2016-12-04,Bournemouth,Liverpool,2.54396,1.26532
+2016-12-06,Middlesbrough,Hull,1.94961,0.221339
+2016-12-10,Watford,Everton,1.49271,1.09675
+2016-12-10,Hull,Crystal Palace,2.16649,1.50059
+2016-12-10,Swansea,Sunderland,2.18185,0.672058
+2016-12-10,Arsenal,Stoke,1.58027,1.29401
+2016-12-10,Burnley,Bournemouth,2.15178,1.00194
+2016-12-10,Leicester,Manchester City,2.60583,0.970372
+2016-12-11,Chelsea,West Bromwich Albion,0.551109,0.212574
+2016-12-11,Manchester United,Tottenham,1.04894,0.720341
+2016-12-11,Southampton,Middlesbrough,1.72919,0.493941
+2016-12-11,Liverpool,West Ham,1.79134,0.64998
+2016-12-13,Everton,Arsenal,1.46034,1.3508
+2016-12-13,Bournemouth,Leicester,0.64118,1.6751
+2016-12-14,West Ham,Burnley,1.67016,0.923353
+2016-12-14,Sunderland,Chelsea,0.473979,1.22459
+2016-12-14,Middlesbrough,Liverpool,0.161583,2.13526
+2016-12-15,Crystal Palace,Manchester United,0.710324,1.27306
+2016-12-15,West Bromwich Albion,Swansea,1.78268,1.07221
+2016-12-15,Manchester City,Watford,1.62359,0.497462
+2016-12-15,Stoke,Southampton,0.333754,0.723114
+2016-12-15,Tottenham,Hull,2.83077,0.570636
+2016-12-17,Crystal Palace,Chelsea,0.356331,0.81444
+2016-12-17,Middlesbrough,Swansea,1.71549,0.602249
+2016-12-17,West Ham,Hull,1.92151,1.13479
+2016-12-17,Stoke,Leicester,2.518,1.25572
+2016-12-17,Sunderland,Watford,1.13526,1.07552
+2016-12-17,West Bromwich Albion,Manchester United,0.600426,0.983306
+2016-12-18,Manchester City,Arsenal,1.5186,0.609893
+2016-12-18,Tottenham,Burnley,1.50755,1.17031
+2016-12-18,Bournemouth,Southampton,0.492912,1.69451
+2016-12-20,Everton,Liverpool,0.456788,1.87823
+2016-12-26,Leicester,Everton,0.377464,1.25512
+2016-12-26,Watford,Crystal Palace,0.959496,1.53834
+2016-12-26,Swansea,West Ham,0.954864,3.40585
+2016-12-26,Manchester United,Sunderland,2.32117,0.488541
+2016-12-26,Arsenal,West Bromwich Albion,1.97881,0.687502
+2016-12-26,Burnley,Middlesbrough,0.275704,0.698814
+2016-12-26,Chelsea,Bournemouth,1.71303,0.650942
+2016-12-26,Hull,Manchester City,0.350069,2.22237
+2016-12-27,Liverpool,Stoke,1.66669,0.389104
+2016-12-28,Southampton,Tottenham,0.403743,1.61035
+2016-12-31,Southampton,West Bromwich Albion,0.371668,0.6675
+2016-12-31,Liverpool,Manchester City,0.256825,0.352445
+2016-12-31,Swansea,Bournemouth,0.515218,2.43608
+2016-12-31,Chelsea,Stoke,1.94737,0.858417
+2016-12-31,Burnley,Sunderland,2.72471,0.465701
+2016-12-31,Manchester United,Middlesbrough,2.53996,0.64492
+2016-12-31,Leicester,West Ham,1.10842,1.58333
+2016-12-31,Hull,Everton,0.852585,1.27757
+2017-01-01,Watford,Tottenham,1.26331,3.06509
+2017-01-01,Arsenal,Crystal Palace,1.67138,0.221469
+2017-01-02,Everton,Southampton,2.34997,1.01083
+2017-01-02,Manchester City,Burnley,0.617412,0.642111
+2017-01-02,Middlesbrough,Leicester,0.697108,0.477078
+2017-01-02,West Bromwich Albion,Hull,0.883566,0.992341
+2017-01-02,Sunderland,Liverpool,1.91057,2.332
+2017-01-02,West Ham,Manchester United,0.799911,1.64905
+2017-01-03,Bournemouth,Arsenal,1.55859,1.12629
+2017-01-04,Stoke,Watford,1.85359,0.510395
+2017-01-04,Crystal Palace,Swansea,0.331276,1.18905
+2017-01-05,Tottenham,Chelsea,1.00945,0.912754
+2017-01-14,Tottenham,West Bromwich Albion,2.65474,0.165019
+2017-01-14,Watford,Middlesbrough,0.835827,0.325347
+2017-01-14,Sunderland,Stoke,1.1365,1.22897
+2017-01-14,Swansea,Arsenal,0.488485,2.31811
+2017-01-14,Hull,Bournemouth,1.18904,1.43455
+2017-01-14,Burnley,Southampton,0.464555,0.962065
+2017-01-14,West Ham,Crystal Palace,1.72338,1.06181
+2017-01-14,Leicester,Chelsea,0.179144,0.738826
+2017-01-15,Manchester United,Liverpool,1.03178,1.46058
+2017-01-15,Everton,Manchester City,0.572528,0.569286
+2017-01-21,West Bromwich Albion,Sunderland,1.3279,0.440887
+2017-01-21,Manchester City,Tottenham,2.52702,1.12391
+2017-01-21,Stoke,Manchester United,0.353777,1.74295
+2017-01-21,Crystal Palace,Everton,0.463733,0.949561
+2017-01-21,Bournemouth,Watford,1.14791,1.08731
+2017-01-21,Middlesbrough,West Ham,0.958825,2.6558
+2017-01-21,Liverpool,Swansea,1.24037,1.60482
+2017-01-22,Southampton,Leicester,2.49923,0.935866
+2017-01-22,Arsenal,Burnley,1.86443,1.29948
+2017-01-22,Chelsea,Hull,1.47165,0.314532
+2017-01-31,Arsenal,Watford,1.07765,0.918309
+2017-01-31,Bournemouth,Crystal Palace,0.32099,1.60667
+2017-01-31,Burnley,Leicester,1.82995,0.775645
+2017-01-31,Middlesbrough,West Bromwich Albion,1.18135,1.25288
+2017-01-31,Sunderland,Tottenham,0.228009,0.682758
+2017-01-31,Swansea,Southampton,0.760046,0.907103
+2017-01-31,Liverpool,Chelsea,1.20485,1.0666
+2017-02-01,Stoke,Everton,1.7362,0.870158
+2017-02-01,Manchester United,Hull,1.48151,0.395896
+2017-02-01,West Ham,Manchester City,0.49472,2.66472
+2017-02-04,Chelsea,Arsenal,1.95451,0.950035
+2017-02-04,Crystal Palace,Sunderland,2.45994,0.837361
+2017-02-04,Everton,Bournemouth,2.75981,2.1501
+2017-02-04,Hull,Liverpool,1.88587,1.12538
+2017-02-04,Watford,Burnley,1.66308,1.4777
+2017-02-04,West Bromwich Albion,Stoke,1.84983,1.10818
+2017-02-04,Southampton,West Ham,1.06276,0.91785
+2017-02-04,Tottenham,Middlesbrough,2.10053,0.50484
+2017-02-05,Manchester City,Swansea,2.87972,0.11445
+2017-02-05,Leicester,Manchester United,0.492009,1.98688
+2017-02-11,Liverpool,Tottenham,2.38009,0.622104
+2017-02-11,West Ham,West Bromwich Albion,1.17553,0.769974
+2017-02-11,Stoke,Crystal Palace,0.720883,0.202159
+2017-02-11,Sunderland,Southampton,0.197925,1.72717
+2017-02-11,Manchester United,Watford,2.627,0.641058
+2017-02-11,Arsenal,Hull,3.1235,0.466403
+2017-02-11,Middlesbrough,Everton,0.651056,0.831644
+2017-02-12,Burnley,Chelsea,0.906366,0.800222
+2017-02-12,Swansea,Leicester,0.693376,0.672883
+2017-02-13,Bournemouth,Manchester City,0.152385,2.953
+2017-02-25,Everton,Sunderland,1.70366,0.505952
+2017-02-25,Chelsea,Swansea,1.22573,0.280172
+2017-02-25,Crystal Palace,Middlesbrough,0.808522,0.82885
+2017-02-25,Hull,Burnley,1.59037,0.473058
+2017-02-25,West Bromwich Albion,Bournemouth,1.6124,1.22747
+2017-02-25,Watford,West Ham,1.21279,1.48144
+2017-02-26,Tottenham,Stoke,1.89002,0.743596
+2017-02-27,Leicester,Liverpool,1.54732,0.789939
+2017-03-04,Leicester,Hull,1.81255,1.1216
+2017-03-04,West Bromwich Albion,Crystal Palace,0.3746,1.39171
+2017-03-04,Liverpool,Arsenal,2.70435,0.729203
+2017-03-04,Watford,Southampton,1.40104,1.33681
+2017-03-04,Manchester United,Bournemouth,2.5377,0.816172
+2017-03-04,Stoke,Middlesbrough,2.97584,0.274611
+2017-03-04,Swansea,Burnley,1.44545,0.933851
+2017-03-05,Tottenham,Everton,1.70225,0.808013
+2017-03-05,Sunderland,Manchester City,0.737758,2.48022
+2017-03-06,West Ham,Chelsea,0.450583,2.01134
+2017-03-08,Manchester City,Stoke,1.3049,0.337194
+2017-03-11,Hull,Swansea,1.98818,1.44148
+2017-03-11,Bournemouth,West Ham,3.68186,1.25315
+2017-03-11,Everton,West Bromwich Albion,2.17521,0.127321
+2017-03-12,Liverpool,Burnley,0.966335,0.83474
+2017-03-18,Crystal Palace,Watford,0.376326,0.190648
+2017-03-18,Bournemouth,Swansea,1.00816,0.37687
+2017-03-18,Everton,Hull,2.63141,0.528692
+2017-03-18,West Bromwich Albion,Arsenal,2.11737,0.995221
+2017-03-18,Sunderland,Burnley,1.03287,1.18742
+2017-03-18,West Ham,Leicester,2.32174,2.17004
+2017-03-18,Stoke,Chelsea,0.952053,1.95538
+2017-03-19,Middlesbrough,Manchester United,1.09037,2.47484
+2017-03-19,Tottenham,Southampton,1.64328,0.839989
+2017-03-19,Manchester City,Liverpool,2.55464,1.94116
+2017-04-01,Liverpool,Everton,0.625343,1.44152
+2017-04-01,Burnley,Tottenham,0.44677,2.36346
+2017-04-01,Chelsea,Crystal Palace,3.16805,1.57423
+2017-04-01,Hull,West Ham,0.778704,1.24571
+2017-04-01,Leicester,Stoke,1.97444,1.36671
+2017-04-01,Manchester United,West Bromwich Albion,0.986683,0.200297
+2017-04-01,Watford,Sunderland,1.95828,0.349699
+2017-04-01,Southampton,Bournemouth,1.00252,2.06307
+2017-04-02,Arsenal,Manchester City,0.738497,1.40021
+2017-04-02,Swansea,Middlesbrough,0.64382,0.748206
+2017-04-04,Burnley,Stoke,0.348885,1.17275
+2017-04-04,Watford,West Bromwich Albion,0.691991,1.48109
+2017-04-04,Leicester,Sunderland,0.929134,0.7012
+2017-04-04,Manchester United,Everton,1.67424,0.589122
+2017-04-05,Arsenal,West Ham,2.16023,0.303905
+2017-04-05,Hull,Middlesbrough,2.23261,1.30673
+2017-04-05,Swansea,Tottenham,0.872579,2.2242
+2017-04-05,Southampton,Crystal Palace,3.34327,1.73055
+2017-04-05,Chelsea,Manchester City,1.36933,2.2614
+2017-04-05,Liverpool,Bournemouth,2.17263,1.31233
+2017-04-08,Manchester City,Hull,2.33731,0.358364
+2017-04-08,Bournemouth,Chelsea,0.384152,1.52126
+2017-04-08,Middlesbrough,Burnley,0.684683,0.809899
+2017-04-08,Stoke,Liverpool,2.13972,1.02225
+2017-04-08,West Bromwich Albion,Southampton,2.01721,0.910339
+2017-04-08,Tottenham,Watford,1.18779,0.369968
+2017-04-08,West Ham,Swansea,1.20573,0.307666
+2017-04-09,Sunderland,Manchester United,0.977316,1.6943
+2017-04-09,Everton,Leicester,2.64597,0.836095
+2017-04-10,Crystal Palace,Arsenal,2.15968,0.44226
+2017-04-15,Crystal Palace,Leicester,1.67894,0.467725
+2017-04-15,Everton,Burnley,1.67352,1.1469
+2017-04-15,Watford,Swansea,1.22039,0.641001
+2017-04-15,Southampton,Manchester City,0.616753,2.74188
+2017-04-15,Stoke,Hull,2.01829,1.17696
+2017-04-15,Tottenham,Bournemouth,3.28588,0.211502
+2017-04-15,Sunderland,West Ham,1.14121,1.42815
+2017-04-16,West Bromwich Albion,Liverpool,0.590375,1.30017
+2017-04-16,Manchester United,Chelsea,0.807128,0.132913
+2017-04-17,Middlesbrough,Arsenal,1.72075,1.0689
+2017-04-22,Bournemouth,Middlesbrough,3.27712,0.2072
+2017-04-22,Hull,Watford,1.42309,1.15869
+2017-04-22,Swansea,Stoke,0.475636,1.69454
+2017-04-22,West Ham,Everton,0.668323,0.104476
+2017-04-23,Burnley,Manchester United,0.342829,2.24747
+2017-04-23,Liverpool,Crystal Palace,0.89449,1.21741
+2017-04-25,Chelsea,Southampton,1.4438,1.32952
+2017-04-26,Middlesbrough,Sunderland,0.825839,0.445766
+2017-04-26,Arsenal,Leicester,0.410203,0.595173
+2017-04-26,Crystal Palace,Tottenham,0.321722,1.00589
+2017-04-27,Manchester City,Manchester United,1.41537,0.421251
+2017-04-29,Southampton,Hull,1.24844,0.472435
+2017-04-29,Stoke,West Ham,1.35509,0.65149
+2017-04-29,Sunderland,Bournemouth,1.6667,1.53094
+2017-04-29,West Bromwich Albion,Leicester,0.809101,0.570664
+2017-04-29,Crystal Palace,Burnley,0.633469,1.38569
+2017-04-30,Manchester United,Swansea,1.99224,0.775713
+2017-04-30,Everton,Chelsea,0.684516,1.81945
+2017-04-30,Middlesbrough,Manchester City,1.17715,3.10725
+2017-04-30,Tottenham,Arsenal,3.46042,0.589537
+2017-05-01,Watford,Liverpool,0.436648,0.55669
+2017-05-05,West Ham,Tottenham,2.21043,0.451017
+2017-05-06,Swansea,Everton,2.09244,0.270186
+2017-05-06,Leicester,Watford,1.00566,0.512433
+2017-05-06,Hull,Sunderland,1.21734,1.95502
+2017-05-06,Bournemouth,Stoke,1.30668,2.3019
+2017-05-06,Manchester City,Crystal Palace,2.69837,0.241571
+2017-05-06,Burnley,West Bromwich Albion,1.08649,0.82853
+2017-05-07,Liverpool,Southampton,1.35967,0.182082
+2017-05-07,Arsenal,Manchester United,1.03986,0.576173
+2017-05-08,Chelsea,Middlesbrough,2.28046,0.0718773
+2017-05-10,Southampton,Arsenal,1.25259,1.35954
+2017-05-12,Everton,Watford,1.12984,1.54861
+2017-05-12,West Bromwich Albion,Chelsea,0.529155,1.76954
+2017-05-13,Stoke,Arsenal,1.30239,2.63639
+2017-05-13,Manchester City,Leicester,1.98776,1.62503
+2017-05-13,Bournemouth,Burnley,1.5499,1.1511
+2017-05-13,Middlesbrough,Southampton,1.32885,1.52569
+2017-05-13,Sunderland,Swansea,1.03765,0.344096
+2017-05-14,Tottenham,Manchester United,2.10698,1.03696
+2017-05-14,West Ham,Liverpool,1.03963,3.28962
+2017-05-14,Crystal Palace,Hull,2.73274,0.518148
+2017-05-15,Chelsea,Watford,2.65315,0.883368
+2017-05-16,Arsenal,Sunderland,3.83905,0.271744
+2017-05-16,Manchester City,West Bromwich Albion,2.58035,0.387741
+2017-05-17,Southampton,Manchester United,1.66533,0.45805
+2017-05-18,Leicester,Tottenham,0.725721,2.64912
+2017-05-21,Watford,Manchester City,0.826124,3.26614
+2017-05-21,Southampton,Stoke,1.3554,0.983464
+2017-05-21,Manchester United,Crystal Palace,1.0386,0.3016
+2017-05-21,Liverpool,Middlesbrough,2.16957,0.899691
+2017-05-21,Swansea,West Bromwich Albion,1.74555,1.60674
+2017-05-21,Hull,Tottenham,0.812723,3.89027
+2017-05-21,Chelsea,Sunderland,2.73947,0.693994
+2017-05-21,Burnley,West Ham,1.70802,1.67299
+2017-05-21,Arsenal,Everton,3.35075,1.8831
+2017-05-21,Leicester,Bournemouth,2.45308,0.87072
+2017-08-11,Arsenal,Leicester,2.54329,1.46495
+2017-08-12,Brighton,Manchester City,0.276343,1.86751
+2017-08-12,Everton,Stoke,0.720574,0.27644
+2017-08-12,Crystal Palace,Huddersfield,0.988934,1.73657
+2017-08-12,Southampton,Swansea,2.21748,0.406196
+2017-08-12,West Bromwich Albion,Bournemouth,1.18399,0.378659
+2017-08-12,Watford,Liverpool,2.17647,2.61549
+2017-08-12,Chelsea,Burnley,1.35651,0.564237
+2017-08-13,Newcastle United,Tottenham,0.634633,2.34418
+2017-08-13,Manchester United,West Ham,2.63853,0.62654
+2017-08-19,Liverpool,Crystal Palace,2.84978,0.727364
+2017-08-19,Stoke,Arsenal,0.692644,1.40658
+2017-08-19,Leicester,Brighton,1.88355,0.123075
+2017-08-19,Burnley,West Bromwich Albion,1.37242,0.653058
+2017-08-19,Bournemouth,Watford,0.766694,2.17717
+2017-08-19,Southampton,West Ham,2.1424,1.53269
+2017-08-19,Swansea,Manchester United,0.304164,3.41021
+2017-08-20,Huddersfield,Newcastle United,0.267008,0.973322
+2017-08-20,Tottenham,Chelsea,0.72428,0.834423
+2017-08-21,Manchester City,Everton,1.14216,0.59971
+2017-08-26,Bournemouth,Manchester City,0.415402,1.76626
+2017-08-26,Crystal Palace,Swansea,0.818951,0.966783
+2017-08-26,Newcastle United,West Ham,2.76107,0.558484
+2017-08-26,Watford,Brighton,0.281459,0.952357
+2017-08-26,Huddersfield,Southampton,1.51605,0.795911
+2017-08-26,Manchester United,Leicester,2.73725,0.670573
+2017-08-27,Liverpool,Arsenal,3.45998,0.484816
+2017-08-27,Tottenham,Burnley,2.3497,0.670943
+2017-08-27,Chelsea,Everton,1.16991,0.326655
+2017-08-27,West Bromwich Albion,Stoke,0.875132,0.980905
+2017-09-09,Manchester City,Liverpool,3.14589,0.665186
+2017-09-09,Southampton,Watford,0.331259,0.57794
+2017-09-09,Leicester,Chelsea,1.34903,1.03943
+2017-09-09,Arsenal,Bournemouth,2.48732,0.577291
+2017-09-09,Brighton,West Bromwich Albion,0.396771,0.866679
+2017-09-09,Everton,Tottenham,1.15144,2.17535
+2017-09-09,Stoke,Manchester United,1.49928,1.96635
+2017-09-10,Burnley,Crystal Palace,0.429329,1.72996
+2017-09-10,Swansea,Newcastle United,1.48574,1.03177
+2017-09-11,West Ham,Huddersfield,1.94969,0.339338
+2017-09-15,Bournemouth,Brighton,1.39529,0.874276
+2017-09-16,West Bromwich Albion,West Ham,0.781891,0.266344
+2017-09-16,Tottenham,Swansea,1.17894,0.154074
+2017-09-16,Watford,Manchester City,0.803933,3.99349
+2017-09-16,Liverpool,Burnley,2.18727,0.334402
+2017-09-16,Huddersfield,Leicester,0.700349,1.24181
+2017-09-16,Crystal Palace,Southampton,2.03243,1.11428
+2017-09-16,Newcastle United,Stoke,2.6598,0.675783
+2017-09-17,Chelsea,Arsenal,0.762129,1.42208
+2017-09-17,Manchester United,Everton,3.28722,1.06298
+2017-09-23,Leicester,Liverpool,2.88766,1.92902
+2017-09-23,West Ham,Tottenham,0.67667,1.45327
+2017-09-23,Stoke,Chelsea,0.600959,1.59815
+2017-09-23,Swansea,Watford,1.50811,1.25817
+2017-09-23,Southampton,Manchester United,0.802062,1.07247
+2017-09-23,Manchester City,Crystal Palace,5.72543,0.611018
+2017-09-23,Burnley,Huddersfield,0.369454,0.312561
+2017-09-23,Everton,Bournemouth,2.21092,0.384728
+2017-09-24,Brighton,Newcastle United,0.507341,1.37001
+2017-09-25,Arsenal,West Bromwich Albion,2.39316,0.766652
+2017-09-30,Huddersfield,Tottenham,0.196648,1.56089
+2017-09-30,Manchester United,Crystal Palace,3.47508,0.244321
+2017-09-30,Stoke,Southampton,2.68136,1.42781
+2017-09-30,West Bromwich Albion,Watford,1.93896,1.62462
+2017-09-30,West Ham,Swansea,0.692185,0.178568
+2017-09-30,Bournemouth,Leicester,1.39901,0.594808
+2017-09-30,Chelsea,Manchester City,0.911532,1.23068
+2017-10-01,Arsenal,Brighton,2.47818,0.386343
+2017-10-01,Everton,Burnley,0.93376,0.383977
+2017-10-01,Newcastle United,Liverpool,0.280437,1.64475
+2017-10-14,Tottenham,Bournemouth,1.95684,0.17504
+2017-10-14,Watford,Arsenal,1.63418,0.988468
+2017-10-14,Swansea,Huddersfield,1.65446,0.596086
+2017-10-14,Manchester City,Stoke,4.45388,0.681236
+2017-10-14,Crystal Palace,Chelsea,1.51873,0.651919
+2017-10-14,Burnley,West Ham,0.70219,0.835192
+2017-10-14,Liverpool,Manchester United,1.92702,0.230358
+2017-10-15,Brighton,Everton,1.05884,1.45518
+2017-10-15,Southampton,Newcastle United,1.71445,0.950997
+2017-10-16,Leicester,West Bromwich Albion,0.964277,0.155254
+2017-10-20,West Ham,Brighton,0.569111,1.98345
+2017-10-21,Huddersfield,Manchester United,1.26744,0.807135
+2017-10-21,Manchester City,Burnley,3.71812,0.14859
+2017-10-21,Newcastle United,Crystal Palace,0.270313,0.566845
+2017-10-21,Stoke,Bournemouth,1.60117,1.11834
+2017-10-21,Swansea,Leicester,0.559618,1.80814
+2017-10-21,Southampton,West Bromwich Albion,2.02288,0.504128
+2017-10-21,Chelsea,Watford,1.78315,1.79693
+2017-10-22,Tottenham,Liverpool,2.62043,0.667771
+2017-10-22,Everton,Arsenal,0.810989,3.86029
+2017-10-28,Manchester United,Tottenham,0.943496,1.08708
+2017-10-28,Arsenal,Swansea,2.37777,0.8355
+2017-10-28,Crystal Palace,West Ham,2.91672,0.742845
+2017-10-28,West Bromwich Albion,Manchester City,1.11852,2.77085
+2017-10-28,Watford,Stoke,1.13448,0.778883
+2017-10-28,Liverpool,Huddersfield,2.14257,0.0554802
+2017-10-28,Bournemouth,Chelsea,0.455055,1.78362
+2017-10-29,Brighton,Southampton,1.50533,0.54364
+2017-10-29,Leicester,Everton,1.36768,0.575236
+2017-10-30,Burnley,Newcastle United,1.0271,0.516369
+2017-11-04,West Ham,Liverpool,1.13045,2.8773
+2017-11-04,Swansea,Brighton,1.24557,0.874927
+2017-11-04,Southampton,Burnley,0.789259,0.137743
+2017-11-04,Newcastle United,Bournemouth,0.676091,1.28703
+2017-11-04,Huddersfield,West Bromwich Albion,0.260436,0.382005
+2017-11-04,Stoke,Leicester,1.22988,1.39563
+2017-11-05,Tottenham,Crystal Palace,0.991813,1.10222
+2017-11-05,Manchester City,Arsenal,2.15028,0.340407
+2017-11-05,Chelsea,Manchester United,1.8417,0.773586
+2017-11-05,Everton,Watford,2.5796,2.05534
+2017-11-18,Bournemouth,Huddersfield,1.38782,1.1633
+2017-11-18,Leicester,Manchester City,0.0970457,2.40056
+2017-11-18,Crystal Palace,Everton,2.02983,1.68728
+2017-11-18,Manchester United,Newcastle United,2.57424,1.08708
+2017-11-18,Liverpool,Southampton,2.06277,0.563886
+2017-11-18,West Bromwich Albion,Chelsea,0.590655,1.71709
+2017-11-18,Arsenal,Tottenham,2.24246,0.591192
+2017-11-18,Burnley,Swansea,1.5427,0.431402
+2017-11-19,Watford,West Ham,1.24547,1.43369
+2017-11-20,Brighton,Stoke,0.490058,1.20507
+2017-11-24,West Ham,Leicester,0.775297,0.453851
+2017-11-25,Liverpool,Chelsea,1.50368,0.739983
+2017-11-25,Crystal Palace,Stoke,1.48339,0.628292
+2017-11-25,Manchester United,Brighton,1.50148,0.565072
+2017-11-25,Swansea,Bournemouth,0.879594,0.449075
+2017-11-25,Tottenham,West Bromwich Albion,1.91526,0.71711
+2017-11-25,Newcastle United,Watford,0.86002,2.05844
+2017-11-26,Huddersfield,Manchester City,0.537698,2.66178
+2017-11-26,Southampton,Everton,1.97034,0.147724
+2017-11-26,Burnley,Arsenal,0.402745,1.75184
+2017-11-28,Watford,Manchester United,1.29277,1.63491
+2017-11-28,West Bromwich Albion,Newcastle United,0.845327,1.1342
+2017-11-28,Leicester,Tottenham,0.924575,2.50552
+2017-11-28,Brighton,Crystal Palace,0.475162,0.584296
+2017-11-29,Bournemouth,Burnley,0.915088,1.08519
+2017-11-29,Arsenal,Huddersfield,4.47889,0.475716
+2017-11-29,Chelsea,Swansea,2.30012,0.0411427
+2017-11-29,Everton,West Ham,1.76497,1.03658
+2017-11-29,Manchester City,Southampton,1.64952,1.7066
+2017-11-29,Stoke,Liverpool,0.846748,2.58757
+2017-12-02,Arsenal,Manchester United,4.24057,2.06831
+2017-12-02,West Bromwich Albion,Crystal Palace,1.65178,0.80924
+2017-12-02,Watford,Tottenham,0.352672,0.788817
+2017-12-02,Brighton,Liverpool,1.65878,1.77566
+2017-12-02,Leicester,Burnley,1.61269,0.789388
+2017-12-02,Everton,Huddersfield,0.820024,0.223429
+2017-12-02,Chelsea,Newcastle United,3.07794,0.519549
+2017-12-02,Stoke,Swansea,1.24743,0.320601
+2017-12-03,Bournemouth,Southampton,1.11195,1.00264
+2017-12-03,Manchester City,West Ham,2.45603,0.474483
+2017-12-09,Newcastle United,Leicester,0.964657,0.444099
+2017-12-09,Huddersfield,Brighton,2.68125,0.273809
+2017-12-09,Crystal Palace,Bournemouth,4.61208,0.962374
+2017-12-09,Swansea,West Bromwich Albion,1.01101,0.25228
+2017-12-09,Tottenham,Stoke,4.01925,0.749296
+2017-12-09,West Ham,Chelsea,0.418127,1.18891
+2017-12-09,Burnley,Watford,0.485632,0.819233
+2017-12-10,Manchester United,Manchester City,1.43756,2.03041
+2017-12-10,Southampton,Arsenal,1.21942,0.608352
+2017-12-10,Liverpool,Everton,1.89569,0.823217
+2017-12-12,Huddersfield,Chelsea,0.476748,1.8707
+2017-12-12,Crystal Palace,Watford,1.10545,1.40441
+2017-12-12,Burnley,Stoke,0.360081,0.916344
+2017-12-13,Swansea,Manchester City,0.589496,3.56828
+2017-12-13,Newcastle United,Everton,0.570658,1.38719
+2017-12-13,Southampton,Leicester,1.11749,2.24579
+2017-12-13,Manchester United,Bournemouth,1.24043,0.815792
+2017-12-13,West Ham,Arsenal,0.405172,1.02186
+2017-12-13,Liverpool,West Bromwich Albion,2.13915,0.520382
+2017-12-13,Tottenham,Brighton,1.87344,0.315616
+2017-12-16,Stoke,West Ham,0.983293,3.08244
+2017-12-16,Leicester,Crystal Palace,0.758241,2.25889
+2017-12-16,Arsenal,Newcastle United,2.02472,0.286547
+2017-12-16,Brighton,Burnley,1.49029,1.32536
+2017-12-16,Chelsea,Southampton,1.29018,0.587081
+2017-12-16,Watford,Huddersfield,0.589103,3.49193
+2017-12-16,Manchester City,Tottenham,4.14588,0.182456
+2017-12-17,Bournemouth,Liverpool,0.539178,3.25041
+2017-12-17,West Bromwich Albion,Manchester United,1.076,0.898984
+2017-12-18,Everton,Swansea,2.01756,0.766224
+2017-12-22,Arsenal,Liverpool,1.13104,2.05947
+2017-12-23,Everton,Chelsea,0.342403,1.84971
+2017-12-23,Swansea,Crystal Palace,0.546613,1.25546
+2017-12-23,West Ham,Newcastle United,2.31898,1.90622
+2017-12-23,Brighton,Watford,1.40139,1.30044
+2017-12-23,Stoke,West Bromwich Albion,1.7986,2.0544
+2017-12-23,Southampton,Huddersfield,1.73805,1.09381
+2017-12-23,Manchester City,Bournemouth,1.55724,0.334896
+2017-12-23,Burnley,Tottenham,0.159735,3.30947
+2017-12-23,Leicester,Manchester United,1.56465,2.15281
+2017-12-26,Watford,Leicester,1.43009,1.54771
+2017-12-26,Liverpool,Swansea,3.06422,0.2719
+2017-12-26,Manchester United,Burnley,1.80763,0.786214
+2017-12-26,West Bromwich Albion,Everton,1.18168,0.405775
+2017-12-26,Chelsea,Brighton,2.16934,0.452601
+2017-12-26,Bournemouth,West Ham,2.84928,1.87596
+2017-12-26,Huddersfield,Stoke,1.8756,1.19984
+2017-12-26,Tottenham,Southampton,3.08413,0.591118
+2017-12-27,Newcastle United,Manchester City,0.174705,1.93187
+2017-12-28,Crystal Palace,Arsenal,1.14522,1.84104
+2017-12-30,Bournemouth,Everton,1.39955,0.599608
+2017-12-30,Chelsea,Stoke,3.09527,0.28218
+2017-12-30,Huddersfield,Burnley,0.049118,1.20923
+2017-12-30,Liverpool,Leicester,2.56607,0.789667
+2017-12-30,Newcastle United,Brighton,0.504379,0.630058
+2017-12-30,Watford,Swansea,1.17794,1.31479
+2017-12-30,Manchester United,Southampton,1.87247,0.85013
+2017-12-31,West Bromwich Albion,Arsenal,1.39429,0.917801
+2017-12-31,Crystal Palace,Manchester City,1.72153,1.09586
+2018-01-01,Brighton,Bournemouth,2.37332,1.28248
+2018-01-01,Burnley,Liverpool,0.900466,1.62514
+2018-01-01,Leicester,Huddersfield,1.45074,0.226625
+2018-01-01,Stoke,Newcastle United,1.50029,2.02028
+2018-01-01,Everton,Manchester United,1.23952,1.26247
+2018-01-02,West Ham,West Bromwich Albion,1.0594,0.63538
+2018-01-02,Southampton,Crystal Palace,0.445301,1.34294
+2018-01-02,Swansea,Tottenham,0.397789,1.61843
+2018-01-02,Manchester City,Watford,2.77398,0.965283
+2018-01-03,Arsenal,Chelsea,1.23205,3.0768
+2018-01-04,Tottenham,West Ham,1.64908,0.612933
+2018-01-13,West Bromwich Albion,Brighton,1.38478,0.530765
+2018-01-13,Tottenham,Everton,4.21366,0.290345
+2018-01-13,Watford,Southampton,1.67369,0.857637
+2018-01-13,Newcastle United,Swansea,1.8273,0.895774
+2018-01-13,Huddersfield,West Ham,0.681,0.986853
+2018-01-13,Crystal Palace,Burnley,1.80971,0.907849
+2018-01-13,Chelsea,Leicester,0.622946,1.36341
+2018-01-14,Bournemouth,Arsenal,0.822285,1.00956
+2018-01-14,Liverpool,Manchester City,1.01595,0.722959
+2018-01-15,Manchester United,Stoke,1.9485,1.47603
+2018-01-20,Brighton,Chelsea,0.881174,1.52008
+2018-01-20,Arsenal,Crystal Palace,3.56519,0.501202
+2018-01-20,Burnley,Manchester United,0.568215,0.860828
+2018-01-20,Everton,West Bromwich Albion,0.92355,1.34998
+2018-01-20,Leicester,Watford,1.51932,0.740795
+2018-01-20,Stoke,Huddersfield,0.987799,0.238458
+2018-01-20,West Ham,Bournemouth,0.980241,0.501886
+2018-01-20,Manchester City,Newcastle United,2.5505,0.992018
+2018-01-21,Southampton,Tottenham,1.15209,1.30653
+2018-01-22,Swansea,Liverpool,0.498742,2.19675
+2018-01-30,West Ham,Crystal Palace,1.11632,1.15809
+2018-01-30,Swansea,Arsenal,2.37911,1.15616
+2018-01-30,Huddersfield,Liverpool,0.288048,2.05148
+2018-01-31,Chelsea,Bournemouth,1.14795,1.42447
+2018-01-31,Southampton,Brighton,1.27393,1.07907
+2018-01-31,Newcastle United,Burnley,2.52275,1.22828
+2018-01-31,Everton,Leicester,1.53072,2.65018
+2018-01-31,Manchester City,West Bromwich Albion,2.68955,0.118043
+2018-01-31,Tottenham,Manchester United,2.0117,0.817997
+2018-01-31,Stoke,Watford,0.722172,0.740773
+2018-02-03,Arsenal,Everton,3.19622,1.49065
+2018-02-03,West Bromwich Albion,Southampton,0.876603,0.99695
+2018-02-03,Manchester United,Huddersfield,1.63389,0.13049
+2018-02-03,Brighton,West Ham,1.64227,0.443751
+2018-02-03,Bournemouth,Stoke,1.91091,0.721222
+2018-02-03,Burnley,Manchester City,0.795971,2.24914
+2018-02-03,Leicester,Swansea,1.48466,0.569943
+2018-02-04,Crystal Palace,Newcastle United,3.00238,1.14408
+2018-02-04,Liverpool,Tottenham,1.28962,2.54392
+2018-02-05,Watford,Chelsea,2.12696,0.573557
+2018-02-10,Tottenham,Arsenal,2.63564,0.487297
+2018-02-10,Everton,Crystal Palace,1.48792,1.65713
+2018-02-10,Stoke,Brighton,1.39547,0.897856
+2018-02-10,Swansea,Burnley,0.843332,0.430729
+2018-02-10,West Ham,Watford,1.83359,0.799928
+2018-02-10,Manchester City,Leicester,2.59121,0.109716
+2018-02-11,Southampton,Liverpool,0.854343,2.35575
+2018-02-11,Newcastle United,Manchester United,0.676656,1.71995
+2018-02-11,Huddersfield,Bournemouth,2.56699,0.433555
+2018-02-12,Chelsea,West Bromwich Albion,2.37995,0.628806
+2018-02-24,Leicester,Stoke,1.12487,0.166078
+2018-02-24,Bournemouth,Newcastle United,1.20646,4.23567
+2018-02-24,Brighton,Swansea,3.2913,0.443169
+2018-02-24,West Bromwich Albion,Huddersfield,1.50162,1.18101
+2018-02-24,Liverpool,West Ham,3.9205,0.33527
+2018-02-24,Burnley,Southampton,1.28178,0.65898
+2018-02-24,Watford,Everton,0.606929,0.665127
+2018-02-25,Crystal Palace,Tottenham,0.184958,1.65074
+2018-02-25,Manchester United,Chelsea,1.30036,1.68958
+2018-03-01,Arsenal,Manchester City,1.30172,1.92605
+2018-03-03,Watford,West Bromwich Albion,1.23526,1.09115
+2018-03-03,Southampton,Stoke,0.982895,0.385303
+2018-03-03,Liverpool,Newcastle United,1.56935,0.255322
+2018-03-03,Tottenham,Huddersfield,1.63794,0.138106
+2018-03-03,Burnley,Everton,2.33524,1.79993
+2018-03-03,Leicester,Bournemouth,2.97799,1.4035
+2018-03-03,Swansea,West Ham,2.30838,0.497211
+2018-03-04,Brighton,Arsenal,1.48498,0.801513
+2018-03-04,Manchester City,Chelsea,0.953312,0.118301
+2018-03-05,Crystal Palace,Manchester United,0.74138,1.25439
+2018-03-10,Chelsea,Crystal Palace,3.87829,1.13893
+2018-03-10,West Bromwich Albion,Leicester,0.360925,1.86524
+2018-03-10,Newcastle United,Southampton,1.35847,0.496723
+2018-03-10,West Ham,Burnley,0.72673,1.41929
+2018-03-10,Everton,Brighton,1.68868,0.321797
+2018-03-10,Manchester United,Liverpool,0.845051,0.777089
+2018-03-10,Huddersfield,Swansea,1.39381,0.0
+2018-03-11,Arsenal,Watford,2.38263,1.54676
+2018-03-11,Bournemouth,Tottenham,1.17387,2.53124
+2018-03-12,Stoke,Manchester City,0.157023,1.64562
+2018-03-17,Bournemouth,West Bromwich Albion,0.685329,1.74488
+2018-03-17,Huddersfield,Crystal Palace,0.220381,2.74705
+2018-03-17,Stoke,Everton,0.894266,2.97881
+2018-03-17,Liverpool,Watford,1.81208,0.35476
+2018-03-31,Newcastle United,Huddersfield,2.53617,0.280847
+2018-03-31,Watford,Bournemouth,0.76133,2.1146
+2018-03-31,Manchester United,Swansea,2.14368,0.138813
+2018-03-31,West Bromwich Albion,Burnley,0.394723,1.41534
+2018-03-31,Brighton,Leicester,1.60322,1.26582
+2018-03-31,Crystal Palace,Liverpool,1.90868,1.72037
+2018-03-31,West Ham,Southampton,1.44971,0.446641
+2018-03-31,Everton,Manchester City,0.859628,1.91312
+2018-04-01,Chelsea,Tottenham,1.209,1.3895
+2018-04-01,Arsenal,Stoke,3.56649,0.342516
+2018-04-07,Everton,Liverpool,0.723427,0.947321
+2018-04-07,Bournemouth,Crystal Palace,2.09227,1.14558
+2018-04-07,Brighton,Huddersfield,1.53244,1.48964
+2018-04-07,Leicester,Newcastle United,1.09224,0.285116
+2018-04-07,Stoke,Tottenham,1.40115,1.79894
+2018-04-07,Watford,Burnley,1.36685,1.38319
+2018-04-07,West Bromwich Albion,Swansea,1.22912,0.655729
+2018-04-07,Manchester City,Manchester United,3.42967,1.21683
+2018-04-08,Arsenal,Southampton,1.58895,2.16699
+2018-04-08,Chelsea,West Ham,2.12073,0.302554
+2018-04-14,Huddersfield,Watford,0.929512,0.306273
+2018-04-14,Tottenham,Manchester City,0.445014,3.61987
+2018-04-14,Liverpool,Bournemouth,2.6402,0.540593
+2018-04-14,Swansea,Everton,1.19751,1.61456
+2018-04-14,Crystal Palace,Brighton,2.49925,1.54485
+2018-04-14,Burnley,Leicester,1.05951,1.99812
+2018-04-14,Southampton,Chelsea,1.2922,0.663817
+2018-04-15,Newcastle United,Arsenal,0.888452,1.41538
+2018-04-15,Manchester United,West Bromwich Albion,0.639748,0.824508
+2018-04-16,West Ham,Stoke,0.807456,1.41085
+2018-04-17,Brighton,Tottenham,0.988099,1.36248
+2018-04-18,Bournemouth,Manchester United,1.18301,1.61597
+2018-04-19,Burnley,Chelsea,0.221642,1.7717
+2018-04-19,Leicester,Southampton,0.515248,0.651171
+2018-04-21,West Bromwich Albion,Liverpool,1.39669,1.6393
+2018-04-21,Watford,Crystal Palace,0.59455,0.182325
+2018-04-22,Stoke,Burnley,0.356095,1.61309
+2018-04-22,Arsenal,West Ham,2.07299,0.623161
+2018-04-22,Manchester City,Swansea,3.41675,0.297493
+2018-04-23,Everton,Newcastle United,0.948534,0.480957
+2018-04-28,Liverpool,Stoke,2.11658,0.777827
+2018-04-28,Burnley,Brighton,1.54596,0.378409
+2018-04-28,Crystal Palace,Leicester,2.7876,0.941395
+2018-04-28,Huddersfield,Everton,0.56538,0.943754
+2018-04-28,Newcastle United,West Bromwich Albion,1.58397,0.703096
+2018-04-28,Southampton,Bournemouth,1.72584,1.01741
+2018-04-28,Swansea,Chelsea,0.502964,1.45426
+2018-04-29,West Ham,Manchester City,0.228917,2.29076
+2018-04-29,Manchester United,Arsenal,1.54667,0.651541
+2018-04-30,Tottenham,Watford,1.76757,1.36928
+2018-05-04,Brighton,Manchester United,0.922771,0.652444
+2018-05-05,Everton,Southampton,0.420891,0.634996
+2018-05-05,Bournemouth,Swansea,1.69618,1.0138
+2018-05-05,West Bromwich Albion,Tottenham,1.21792,0.969481
+2018-05-05,Watford,Newcastle United,2.81246,0.613901
+2018-05-05,Leicester,West Ham,0.391738,1.43027
+2018-05-05,Stoke,Crystal Palace,0.750175,1.31471
+2018-05-06,Manchester City,Huddersfield,0.78641,0.54565
+2018-05-06,Chelsea,Liverpool,0.806168,0.427002
+2018-05-06,Arsenal,Burnley,2.92408,0.21671
+2018-05-08,Swansea,Southampton,0.389621,1.48865
+2018-05-09,Leicester,Arsenal,2.19801,1.54443
+2018-05-09,Chelsea,Huddersfield,2.25256,0.631021
+2018-05-09,Manchester City,Brighton,1.64765,1.00939
+2018-05-09,Tottenham,Newcastle United,0.835241,0.829699
+2018-05-10,West Ham,Manchester United,0.783043,0.596075
+2018-05-13,Manchester United,Watford,0.45805,0.654288
+2018-05-13,Burnley,Bournemouth,1.16179,1.38551
+2018-05-13,Southampton,Manchester City,0.506624,0.765614
+2018-05-13,Newcastle United,Chelsea,2.24197,0.843284
+2018-05-13,Liverpool,Brighton,3.50981,0.0408165
+2018-05-13,Tottenham,Leicester,1.83248,1.27359
+2018-05-13,Crystal Palace,West Bromwich Albion,2.36491,0.216004
+2018-05-13,West Ham,Everton,1.18299,1.67867
+2018-05-13,Huddersfield,Arsenal,1.31031,2.3322
+2018-05-13,Swansea,Stoke,1.70936,1.75436
+2018-08-10,Manchester United,Leicester,1.5137,1.73813
+2018-08-11,Newcastle United,Tottenham,0.974497,2.58097
+2018-08-11,Watford,Brighton,1.42372,0.45504
+2018-08-11,Huddersfield,Chelsea,0.396115,2.31427
+2018-08-11,Fulham,Crystal Palace,0.638076,1.07816
+2018-08-11,Bournemouth,Cardiff,2.60022,1.50693
+2018-08-11,Wolverhampton Wanderers,Everton,0.891038,0.715382
+2018-08-12,Arsenal,Manchester City,0.445187,2.0178
+2018-08-12,Liverpool,West Ham,4.34421,0.404253
+2018-08-12,Southampton,Burnley,1.01994,1.40827
+2018-08-18,West Ham,Bournemouth,1.10275,1.69077
+2018-08-18,Tottenham,Fulham,3.26713,1.44253
+2018-08-18,Leicester,Wolverhampton Wanderers,0.222843,1.09349
+2018-08-18,Everton,Southampton,2.02004,1.77471
+2018-08-18,Chelsea,Arsenal,1.71799,2.45798
+2018-08-18,Cardiff,Newcastle United,1.15521,1.55405
+2018-08-19,Manchester City,Huddersfield,4.60356,0.663731
+2018-08-19,Burnley,Watford,0.392642,1.9171
+2018-08-19,Brighton,Manchester United,1.63672,1.56579
+2018-08-20,Crystal Palace,Liverpool,0.368608,2.82183
+2018-08-25,Liverpool,Brighton,1.81412,0.535616
+2018-08-25,Arsenal,West Ham,1.7852,1.17924
+2018-08-25,Bournemouth,Everton,2.5887,0.543665
+2018-08-25,Southampton,Leicester,0.542494,0.517935
+2018-08-25,Wolverhampton Wanderers,Manchester City,1.26376,1.84293
+2018-08-25,Huddersfield,Cardiff,0.203453,1.06351
+2018-08-26,Watford,Crystal Palace,1.14596,1.21905
+2018-08-26,Fulham,Burnley,1.92459,1.56882
+2018-08-26,Newcastle United,Chelsea,0.209337,1.49669
+2018-08-27,Manchester United,Tottenham,1.40321,1.80811
+2018-09-01,Brighton,Fulham,2.68216,1.51555
+2018-09-01,Chelsea,Bournemouth,1.16408,0.950959
+2018-09-01,Crystal Palace,Southampton,2.35193,3.13612
+2018-09-01,Manchester City,Newcastle United,2.46904,0.554763
+2018-09-01,West Ham,Wolverhampton Wanderers,0.888887,1.22301
+2018-09-01,Leicester,Liverpool,0.981217,1.22722
+2018-09-01,Everton,Huddersfield,0.616013,0.660035
+2018-09-02,Cardiff,Arsenal,0.77426,1.41005
+2018-09-02,Burnley,Manchester United,1.09923,2.90359
+2018-09-02,Watford,Tottenham,0.454309,0.582521
+2018-09-15,Watford,Manchester United,1.17523,1.64902
+2018-09-15,Bournemouth,Leicester,2.22726,1.82502
+2018-09-15,Chelsea,Cardiff,2.67145,0.8276
+2018-09-15,Manchester City,Fulham,4.91621,0.342698
+2018-09-15,Newcastle United,Arsenal,0.412121,0.90461
+2018-09-15,Tottenham,Liverpool,0.788168,3.01015
+2018-09-15,Huddersfield,Crystal Palace,0.87744,0.746631
+2018-09-16,Wolverhampton Wanderers,Burnley,3.3916,0.208994
+2018-09-16,Everton,West Ham,1.26774,1.52437
+2018-09-17,Southampton,Brighton,2.19521,1.97094
+2018-09-22,Cardiff,Manchester City,0.0980726,3.08415
+2018-09-22,Brighton,Tottenham,0.817174,2.11655
+2018-09-22,Burnley,Bournemouth,2.29417,0.976413
+2018-09-22,Crystal Palace,Newcastle United,0.930793,0.229309
+2018-09-22,Liverpool,Southampton,1.77893,0.310467
+2018-09-22,Manchester United,Wolverhampton Wanderers,0.62283,1.1185
+2018-09-22,Leicester,Huddersfield,1.80404,0.688176
+2018-09-22,Fulham,Watford,1.77245,1.76133
+2018-09-23,West Ham,Chelsea,1.0177,1.88344
+2018-09-23,Arsenal,Everton,0.930544,1.06523
+2018-09-29,West Ham,Manchester United,1.3029,0.865739
+2018-09-29,Wolverhampton Wanderers,Southampton,1.42507,0.679627
+2018-09-29,Newcastle United,Leicester,0.397301,1.34341
+2018-09-29,Manchester City,Brighton,2.90697,0.23023
+2018-09-29,Huddersfield,Tottenham,0.339245,2.33733
+2018-09-29,Everton,Fulham,2.31538,0.536317
+2018-09-29,Arsenal,Watford,1.57061,2.62141
+2018-09-29,Chelsea,Liverpool,1.77638,1.74071
+2018-09-30,Cardiff,Burnley,1.56707,0.111527
+2018-10-01,Bournemouth,Crystal Palace,1.97143,0.385841
+2018-10-05,Brighton,West Ham,1.02566,1.43652
+2018-10-06,Watford,Bournemouth,1.06613,3.28471
+2018-10-06,Tottenham,Cardiff,2.6517,1.13843
+2018-10-06,Leicester,Everton,1.10472,1.14952
+2018-10-06,Crystal Palace,Wolverhampton Wanderers,1.03714,0.755654
+2018-10-06,Burnley,Huddersfield,0.353128,1.02549
+2018-10-06,Manchester United,Newcastle United,2.40631,1.55962
+2018-10-07,Fulham,Arsenal,1.31588,1.13706
+2018-10-07,Southampton,Chelsea,1.487,3.54699
+2018-10-07,Liverpool,Manchester City,0.433994,1.07481
+2018-10-20,Bournemouth,Southampton,0.840403,0.589633
+2018-10-20,Cardiff,Fulham,1.7562,0.947712
+2018-10-20,Manchester City,Burnley,4.48577,0.370236
+2018-10-20,Huddersfield,Liverpool,0.638341,0.663819
+2018-10-20,Newcastle United,Brighton,1.71169,0.675798
+2018-10-20,Wolverhampton Wanderers,Watford,0.47391,1.0684
+2018-10-20,Chelsea,Manchester United,2.21163,1.11454
+2018-10-20,West Ham,Tottenham,0.544268,1.11777
+2018-10-21,Everton,Crystal Palace,1.92794,1.50174
+2018-10-22,Arsenal,Leicester,2.91637,0.932491
+2018-10-27,Liverpool,Cardiff,2.30176,0.643117
+2018-10-27,Fulham,Bournemouth,0.383833,2.10555
+2018-10-27,Brighton,Wolverhampton Wanderers,1.01337,1.38027
+2018-10-27,Watford,Huddersfield,2.29622,0.479655
+2018-10-27,Southampton,Newcastle United,1.19216,0.297646
+2018-10-27,Leicester,West Ham,1.95344,1.56009
+2018-10-28,Burnley,Chelsea,0.269828,3.01621
+2018-10-28,Manchester United,Everton,2.51393,1.67348
+2018-10-28,Crystal Palace,Arsenal,2.38115,0.845197
+2018-10-29,Tottenham,Manchester City,0.442436,1.93588
+2018-11-03,Bournemouth,Manchester United,1.928,3.29249
+2018-11-03,West Ham,Burnley,2.55739,0.882514
+2018-11-03,Newcastle United,Watford,0.691575,2.5452
+2018-11-03,Everton,Brighton,2.59305,0.676348
+2018-11-03,Cardiff,Leicester,0.922262,2.18288
+2018-11-03,Arsenal,Liverpool,1.62321,1.19558
+2018-11-03,Wolverhampton Wanderers,Tottenham,2.40643,1.63123
+2018-11-04,Manchester City,Southampton,2.76272,1.81466
+2018-11-04,Chelsea,Crystal Palace,1.88741,0.454547
+2018-11-05,Huddersfield,Fulham,0.51433,0.354166
+2018-11-10,Crystal Palace,Tottenham,0.688016,1.55381
+2018-11-10,Leicester,Burnley,1.5091,0.368393
+2018-11-10,Huddersfield,West Ham,1.17524,1.44113
+2018-11-10,Southampton,Watford,1.20211,1.07573
+2018-11-10,Cardiff,Brighton,1.94297,0.767044
+2018-11-10,Newcastle United,Bournemouth,2.57545,1.91687
+2018-11-11,Liverpool,Fulham,2.22417,0.571301
+2018-11-11,Chelsea,Everton,1.16298,0.198027
+2018-11-11,Manchester City,Manchester United,2.02764,0.97089
+2018-11-11,Arsenal,Wolverhampton Wanderers,0.965843,1.86549
+2018-11-24,Brighton,Leicester,0.862315,1.12521
+2018-11-24,Everton,Cardiff,2.48066,0.879108
+2018-11-24,Fulham,Southampton,1.3875,1.67163
+2018-11-24,Tottenham,Chelsea,3.34649,0.962804
+2018-11-24,Watford,Liverpool,0.673382,1.45314
+2018-11-24,West Ham,Manchester City,0.829504,2.95852
+2018-11-24,Manchester United,Crystal Palace,1.34245,1.05292
+2018-11-25,Bournemouth,Arsenal,0.650884,1.71044
+2018-11-25,Wolverhampton Wanderers,Huddersfield,0.701036,0.627281
+2018-11-26,Burnley,Newcastle United,1.49487,1.67701
+2018-11-30,Cardiff,Wolverhampton Wanderers,1.09264,0.987623
+2018-12-01,Southampton,Manchester United,0.623954,0.904803
+2018-12-01,Crystal Palace,Burnley,2.03785,0.302477
+2018-12-01,Huddersfield,Brighton,0.558083,1.67998
+2018-12-01,Manchester City,Bournemouth,2.83557,0.715009
+2018-12-01,Newcastle United,West Ham,1.12583,2.62697
+2018-12-01,Leicester,Watford,1.41758,1.19923
+2018-12-02,Liverpool,Everton,3.07574,1.23014
+2018-12-02,Chelsea,Fulham,2.17105,0.285256
+2018-12-02,Arsenal,Tottenham,2.71421,1.0926
+2018-12-04,West Ham,Cardiff,1.57488,1.93448
+2018-12-04,Watford,Manchester City,1.672,2.51933
+2018-12-04,Brighton,Crystal Palace,1.2521,1.5329
+2018-12-04,Bournemouth,Huddersfield,1.07393,1.5631
+2018-12-05,Wolverhampton Wanderers,Chelsea,0.682893,1.10702
+2018-12-05,Fulham,Leicester,1.47593,1.21575
+2018-12-05,Burnley,Liverpool,1.05809,2.73897
+2018-12-05,Everton,Newcastle United,2.10943,1.52214
+2018-12-05,Manchester United,Arsenal,1.33679,1.73226
+2018-12-05,Tottenham,Southampton,1.73642,1.82434
+2018-12-08,Bournemouth,Liverpool,0.279142,1.80619
+2018-12-08,West Ham,Crystal Palace,1.53635,0.934613
+2018-12-08,Manchester United,Fulham,3.15444,1.23251
+2018-12-08,Cardiff,Southampton,1.55832,0.501128
+2018-12-08,Burnley,Brighton,1.81251,0.951507
+2018-12-08,Arsenal,Huddersfield,2.02156,0.308361
+2018-12-08,Chelsea,Manchester City,0.526329,0.740048
+2018-12-08,Leicester,Tottenham,0.357742,0.917968
+2018-12-09,Newcastle United,Wolverhampton Wanderers,0.4601,1.57799
+2018-12-10,Everton,Watford,1.72686,1.63043
+2018-12-15,Manchester City,Everton,1.79848,1.6235
+2018-12-15,Wolverhampton Wanderers,Bournemouth,2.02223,0.52685
+2018-12-15,Watford,Cardiff,1.64998,0.485768
+2018-12-15,Tottenham,Burnley,1.74625,0.451196
+2018-12-15,Huddersfield,Newcastle United,0.671382,0.931041
+2018-12-15,Crystal Palace,Leicester,0.39698,0.895305
+2018-12-15,Fulham,West Ham,1.03424,0.75325
+2018-12-16,Southampton,Arsenal,1.21163,1.85763
+2018-12-16,Brighton,Chelsea,0.26126,1.6111
+2018-12-16,Liverpool,Manchester United,2.60435,0.658049
+2018-12-21,Wolverhampton Wanderers,Liverpool,0.763821,2.16356
+2018-12-22,Bournemouth,Brighton,0.892502,0.825478
+2018-12-22,Chelsea,Leicester,2.40458,0.456492
+2018-12-22,Cardiff,Manchester United,1.27173,2.72523
+2018-12-22,Huddersfield,Southampton,1.0038,2.60172
+2018-12-22,Newcastle United,Fulham,0.289508,0.245408
+2018-12-22,West Ham,Watford,2.06507,2.32983
+2018-12-22,Manchester City,Crystal Palace,1.27118,1.14609
+2018-12-22,Arsenal,Burnley,1.4656,1.03237
+2018-12-23,Everton,Tottenham,1.00121,2.55514
+2018-12-26,Fulham,Wolverhampton Wanderers,1.2769,1.35896
+2018-12-26,Tottenham,Bournemouth,2.23457,1.21736
+2018-12-26,Manchester United,Huddersfield,1.79848,1.40594
+2018-12-26,Liverpool,Newcastle United,3.24988,0.456309
+2018-12-26,Leicester,Manchester City,1.55714,1.34781
+2018-12-26,Crystal Palace,Cardiff,2.43202,1.05926
+2018-12-26,Burnley,Everton,1.88646,1.8875
+2018-12-26,Brighton,Arsenal,1.38502,0.789138
+2018-12-26,Watford,Chelsea,1.24414,2.1956
+2018-12-27,Southampton,West Ham,1.28665,1.26973
+2018-12-29,Tottenham,Wolverhampton Wanderers,0.277704,1.20867
+2018-12-29,Liverpool,Arsenal,3.7053,1.08186
+2018-12-29,Brighton,Everton,1.60311,0.655851
+2018-12-29,Watford,Newcastle United,1.05566,0.661713
+2018-12-29,Leicester,Cardiff,1.51648,0.493212
+2018-12-29,Fulham,Huddersfield,1.72386,0.276791
+2018-12-30,Crystal Palace,Chelsea,0.199002,0.741471
+2018-12-30,Southampton,Manchester City,0.221381,2.96802
+2018-12-30,Burnley,West Ham,2.89884,0.656044
+2018-12-30,Manchester United,Bournemouth,3.41874,0.705549
+2019-01-01,Arsenal,Fulham,4.43325,1.71312
+2019-01-01,Everton,Leicester,0.871304,0.644144
+2019-01-01,Cardiff,Tottenham,1.0789,1.38282
+2019-01-02,West Ham,Brighton,0.639356,0.686806
+2019-01-02,Newcastle United,Manchester United,0.691878,2.6754
+2019-01-02,Bournemouth,Watford,2.84828,0.977046
+2019-01-02,Wolverhampton Wanderers,Crystal Palace,0.656255,1.94658
+2019-01-02,Huddersfield,Burnley,0.621818,2.66309
+2019-01-02,Chelsea,Southampton,0.850791,0.158168
+2019-01-03,Manchester City,Liverpool,1.00357,1.3801
+2019-01-12,West Ham,Arsenal,0.669394,0.685895
+2019-01-12,Leicester,Southampton,1.75983,1.41659
+2019-01-12,Crystal Palace,Watford,1.1617,1.56262
+2019-01-12,Cardiff,Huddersfield,0.124558,0.39468
+2019-01-12,Burnley,Fulham,0.809801,0.903255
+2019-01-12,Brighton,Liverpool,0.384198,2.2665
+2019-01-12,Chelsea,Newcastle United,1.32355,0.395148
+2019-01-13,Everton,Bournemouth,1.7814,1.52828
+2019-01-13,Tottenham,Manchester United,1.80359,0.957777
+2019-01-14,Manchester City,Wolverhampton Wanderers,3.11947,0.0985446
+2019-01-19,Wolverhampton Wanderers,Leicester,2.21719,1.33831
+2019-01-19,Watford,Burnley,1.06981,1.97256
+2019-01-19,Southampton,Everton,1.06009,1.31169
+2019-01-19,Newcastle United,Cardiff,2.518,0.255727
+2019-01-19,Manchester United,Brighton,2.64005,0.635111
+2019-01-19,Liverpool,Crystal Palace,2.8299,0.695213
+2019-01-19,Bournemouth,West Ham,1.24835,0.971813
+2019-01-19,Arsenal,Chelsea,2.09412,0.755304
+2019-01-20,Huddersfield,Manchester City,0.764264,2.01376
+2019-01-20,Fulham,Tottenham,0.937902,1.93316
+2019-01-29,Manchester United,Burnley,3.23417,0.934603
+2019-01-29,Newcastle United,Manchester City,0.992326,1.33896
+2019-01-29,Arsenal,Cardiff,2.69339,0.597893
+2019-01-29,Huddersfield,Everton,0.73078,1.05995
+2019-01-29,Wolverhampton Wanderers,West Ham,2.0363,0.130179
+2019-01-29,Fulham,Brighton,3.46113,2.36867
+2019-01-30,Bournemouth,Chelsea,2.15094,0.718873
+2019-01-30,Southampton,Crystal Palace,1.33257,1.53294
+2019-01-30,Tottenham,Watford,1.36248,0.479838
+2019-01-30,Liverpool,Leicester,0.576336,1.1272
+2019-02-02,Brighton,Watford,1.83528,0.279297
+2019-02-02,Burnley,Southampton,2.00175,0.787747
+2019-02-02,Chelsea,Huddersfield,2.94236,0.260391
+2019-02-02,Cardiff,Bournemouth,2.53093,0.35199
+2019-02-02,Everton,Wolverhampton Wanderers,1.36252,1.85729
+2019-02-02,Tottenham,Newcastle United,3.10409,0.400152
+2019-02-02,Crystal Palace,Fulham,2.19582,0.560836
+2019-02-03,Leicester,Manchester United,1.40067,1.49717
+2019-02-03,Manchester City,Arsenal,3.03102,0.703542
+2019-02-04,West Ham,Liverpool,0.791319,1.12475
+2019-02-06,Everton,Manchester City,0.111559,2.60922
+2019-02-09,Brighton,Burnley,1.31614,1.83041
+2019-02-09,Huddersfield,Arsenal,1.96816,1.46751
+2019-02-09,Liverpool,Bournemouth,2.53003,0.390995
+2019-02-09,Crystal Palace,West Ham,2.68412,1.74711
+2019-02-09,Watford,Everton,1.53311,0.641094
+2019-02-09,Fulham,Manchester United,2.18741,2.13209
+2019-02-09,Southampton,Cardiff,1.70666,0.980673
+2019-02-10,Manchester City,Chelsea,4.04218,0.901867
+2019-02-10,Tottenham,Leicester,1.21144,3.02164
+2019-02-11,Wolverhampton Wanderers,Newcastle United,2.30998,0.435263
+2019-02-22,Cardiff,Watford,1.90045,2.75798
+2019-02-22,West Ham,Fulham,2.72871,1.23555
+2019-02-23,Burnley,Tottenham,1.08514,0.845211
+2019-02-23,Newcastle United,Huddersfield,3.03313,0.133934
+2019-02-23,Bournemouth,Wolverhampton Wanderers,2.13291,1.20286
+2019-02-23,Leicester,Crystal Palace,0.946697,1.57739
+2019-02-24,Manchester United,Liverpool,0.474869,0.380519
+2019-02-24,Arsenal,Southampton,2.35088,0.613167
+2019-02-26,Leicester,Brighton,1.92171,1.20566
+2019-02-26,Huddersfield,Wolverhampton Wanderers,1.46224,0.573166
+2019-02-26,Cardiff,Everton,0.219359,1.14212
+2019-02-26,Newcastle United,Burnley,1.70312,1.74201
+2019-02-27,Chelsea,Tottenham,0.625978,0.722229
+2019-02-27,Liverpool,Watford,2.74266,0.630423
+2019-02-27,Manchester City,West Ham,3.67741,0.400125
+2019-02-27,Crystal Palace,Manchester United,1.69334,1.54089
+2019-02-27,Southampton,Fulham,1.15823,0.798715
+2019-02-27,Arsenal,Bournemouth,3.18716,0.88618
+2019-03-02,Tottenham,Arsenal,1.76818,3.45713
+2019-03-02,Wolverhampton Wanderers,Cardiff,3.2075,0.702261
+2019-03-02,Manchester United,Southampton,2.54216,0.578485
+2019-03-02,Burnley,Crystal Palace,1.90872,0.706284
+2019-03-02,Brighton,Huddersfield,1.39896,0.2014
+2019-03-02,Bournemouth,Manchester City,0.0,1.59515
+2019-03-02,West Ham,Newcastle United,1.88895,1.18549
+2019-03-03,Watford,Leicester,1.36515,0.794683
+2019-03-03,Fulham,Chelsea,0.898469,1.53632
+2019-03-03,Everton,Liverpool,0.241879,0.811272
+2019-03-09,Manchester City,Watford,3.75714,0.407168
+2019-03-09,Cardiff,West Ham,3.49275,0.295869
+2019-03-09,Leicester,Fulham,2.13494,0.15103
+2019-03-09,Huddersfield,Bournemouth,0.339087,2.16389
+2019-03-09,Southampton,Tottenham,2.07772,1.26876
+2019-03-09,Newcastle United,Everton,2.37896,1.15114
+2019-03-09,Crystal Palace,Brighton,1.44291,0.129312
+2019-03-10,Liverpool,Burnley,4.12341,0.471571
+2019-03-10,Chelsea,Wolverhampton Wanderers,1.0471,0.609079
+2019-03-10,Arsenal,Manchester United,1.52723,2.3703
+2019-03-16,West Ham,Huddersfield,1.88114,1.66909
+2019-03-16,Burnley,Leicester,1.17008,0.608954
+2019-03-16,Bournemouth,Newcastle United,1.61666,1.02847
+2019-03-17,Fulham,Liverpool,0.915765,2.73437
+2019-03-17,Everton,Chelsea,2.24031,1.24394
+2019-03-30,West Ham,Everton,0.0891639,2.65983
+2019-03-30,Brighton,Southampton,0.560521,0.857436
+2019-03-30,Crystal Palace,Huddersfield,2.84701,0.926991
+2019-03-30,Burnley,Wolverhampton Wanderers,0.572695,0.397928
+2019-03-30,Manchester United,Watford,1.98052,1.35208
+2019-03-30,Fulham,Manchester City,0.661491,2.31513
+2019-03-30,Leicester,Bournemouth,1.8935,0.790333
+2019-03-31,Cardiff,Chelsea,0.446122,2.07834
+2019-03-31,Liverpool,Tottenham,1.0931,1.04822
+2019-04-01,Arsenal,Newcastle United,1.04458,0.0441445
+2019-04-02,Wolverhampton Wanderers,Manchester United,1.65044,2.03847
+2019-04-02,Watford,Fulham,1.59338,1.90917
+2019-04-03,Chelsea,Brighton,3.12416,0.440898
+2019-04-03,Tottenham,Crystal Palace,2.57376,0.564317
+2019-04-03,Manchester City,Cardiff,3.53913,0.135788
+2019-04-05,Southampton,Liverpool,0.718394,2.00654
+2019-04-06,Huddersfield,Leicester,1.62301,3.61876
+2019-04-06,Newcastle United,Crystal Palace,0.943175,0.907988
+2019-04-06,Bournemouth,Burnley,1.20888,1.38919
+2019-04-07,Everton,Arsenal,2.69396,0.201885
+2019-04-08,Chelsea,West Ham,2.23287,0.471195
+2019-04-12,Leicester,Newcastle United,0.877377,0.945804
+2019-04-13,Tottenham,Huddersfield,2.78596,0.983527
+2019-04-13,Southampton,Wolverhampton Wanderers,3.80842,0.642825
+2019-04-13,Fulham,Everton,1.66303,1.29107
+2019-04-13,Burnley,Cardiff,2.84358,0.872224
+2019-04-13,Brighton,Bournemouth,0.206731,2.76885
+2019-04-13,Manchester United,West Ham,2.65125,1.42817
+2019-04-14,Crystal Palace,Manchester City,0.318169,2.86236
+2019-04-14,Liverpool,Chelsea,1.30839,0.873177
+2019-04-15,Watford,Arsenal,1.12595,2.2668
+2019-04-16,Brighton,Cardiff,0.588539,0.819472
+2019-04-20,Newcastle United,Southampton,1.23033,1.27102
+2019-04-20,Bournemouth,Fulham,2.83739,2.61689
+2019-04-20,Huddersfield,Watford,1.09072,1.08462
+2019-04-20,West Ham,Leicester,1.36558,0.8065
+2019-04-20,Wolverhampton Wanderers,Brighton,2.60447,0.115051
+2019-04-20,Manchester City,Tottenham,2.06185,1.19894
+2019-04-21,Everton,Manchester United,1.5204,0.305982
+2019-04-21,Cardiff,Liverpool,1.1187,2.42404
+2019-04-21,Arsenal,Crystal Palace,1.54245,2.56216
+2019-04-22,Chelsea,Burnley,1.28197,0.788788
+2019-04-23,Watford,Southampton,1.27253,2.11999
+2019-04-23,Tottenham,Brighton,1.0032,0.143138
+2019-04-24,Wolverhampton Wanderers,Arsenal,0.982018,0.939754
+2019-04-24,Manchester United,Manchester City,0.514509,0.530481
+2019-04-26,Liverpool,Huddersfield,3.58922,0.1624
+2019-04-27,Brighton,Newcastle United,1.20482,0.43797
+2019-04-27,Crystal Palace,Everton,0.261344,1.15217
+2019-04-27,Fulham,Cardiff,0.519072,1.11322
+2019-04-27,Southampton,Bournemouth,2.73537,2.62214
+2019-04-27,Watford,Wolverhampton Wanderers,0.896093,2.44357
+2019-04-27,Tottenham,West Ham,1.35378,0.991558
+2019-04-28,Leicester,Arsenal,3.6797,0.600697
+2019-04-28,Burnley,Manchester City,0.0899809,2.34878
+2019-04-28,Manchester United,Chelsea,1.12483,1.6298
+2019-05-03,Everton,Burnley,1.76461,0.473292
+2019-05-04,Bournemouth,Tottenham,2.22622,0.713362
+2019-05-04,Wolverhampton Wanderers,Fulham,2.09397,0.512477
+2019-05-04,West Ham,Southampton,1.99866,0.443686
+2019-05-04,Cardiff,Crystal Palace,1.4996,1.80991
+2019-05-04,Newcastle United,Liverpool,1.29707,1.48081
+2019-05-05,Chelsea,Watford,2.96478,1.2712
+2019-05-05,Arsenal,Brighton,2.36178,1.90585
+2019-05-05,Huddersfield,Manchester United,0.73663,1.88049
+2019-05-06,Manchester City,Leicester,1.08617,0.537307
+2019-05-12,Watford,West Ham,2.06986,3.20094
+2019-05-12,Tottenham,Everton,0.882608,2.06851
+2019-05-12,Southampton,Huddersfield,0.941018,0.857152
+2019-05-12,Manchester United,Cardiff,1.89555,1.71095
+2019-05-12,Liverpool,Wolverhampton Wanderers,1.70197,0.883861
+2019-05-12,Leicester,Chelsea,0.345306,1.26735
+2019-05-12,Fulham,Newcastle United,0.569845,1.95921
+2019-05-12,Crystal Palace,Bournemouth,2.85899,1.8981
+2019-05-12,Burnley,Arsenal,1.72939,2.87276
+2019-05-12,Brighton,Manchester City,0.595313,2.22234
+2019-08-09,Liverpool,Norwich,2.23456,0.842407
+2019-08-10,Watford,Brighton,0.670022,0.855516
+2019-08-10,Tottenham,Aston Villa,2.57262,0.639599
+2019-08-10,Burnley,Southampton,0.909241,1.08752
+2019-08-10,Bournemouth,Sheffield United,1.34099,1.59864
+2019-08-10,West Ham,Manchester City,1.2003,3.18377
+2019-08-10,Crystal Palace,Everton,0.87159,1.2246
+2019-08-11,Newcastle United,Arsenal,0.380551,1.13309
+2019-08-11,Leicester,Wolverhampton Wanderers,0.543759,0.812949
+2019-08-11,Manchester United,Chelsea,2.37442,1.09534
+2019-08-17,Manchester City,Tottenham,3.20076,0.074542
+2019-08-17,Arsenal,Burnley,1.1644,1.39172
+2019-08-17,Aston Villa,Bournemouth,1.65069,1.62777
+2019-08-17,Brighton,West Ham,2.40461,1.00856
+2019-08-17,Everton,Watford,0.832913,1.17279
+2019-08-17,Norwich,Newcastle United,2.09572,0.920429
+2019-08-17,Southampton,Liverpool,2.14047,1.52022
+2019-08-18,Chelsea,Leicester,1.22629,0.947941
+2019-08-18,Sheffield United,Crystal Palace,1.84778,0.241912
+2019-08-19,Wolverhampton Wanderers,Manchester United,0.307356,1.14332
+2019-08-23,Aston Villa,Everton,0.855926,1.25668
+2019-08-24,Norwich,Chelsea,1.07904,1.89428
+2019-08-24,Sheffield United,Leicester,0.654318,0.704879
+2019-08-24,Brighton,Southampton,0.997711,2.07795
+2019-08-24,Watford,West Ham,2.29348,3.45768
+2019-08-24,Manchester United,Crystal Palace,2.23561,0.676993
+2019-08-24,Liverpool,Arsenal,2.78821,0.985542
+2019-08-25,Wolverhampton Wanderers,Burnley,1.32793,1.22762
+2019-08-25,Tottenham,Newcastle United,1.25927,0.51428
+2019-08-25,Bournemouth,Manchester City,1.89345,3.12856
+2019-08-31,Newcastle United,Watford,1.04131,1.1068
+2019-08-31,Manchester City,Brighton,2.30818,0.861035
+2019-08-31,Burnley,Liverpool,0.61739,1.20057
+2019-08-31,Crystal Palace,Aston Villa,1.41394,0.30354
+2019-08-31,Chelsea,Sheffield United,2.30579,1.04649
+2019-08-31,Leicester,Bournemouth,2.23766,0.554726
+2019-08-31,West Ham,Norwich,2.20657,1.1674
+2019-08-31,Southampton,Manchester United,0.769616,1.90356
+2019-09-01,Everton,Wolverhampton Wanderers,1.48842,2.00172
+2019-09-01,Arsenal,Tottenham,1.92509,1.95514
+2019-09-14,Liverpool,Newcastle United,2.93281,0.291073
+2019-09-14,Manchester United,Leicester,1.10019,0.459141
+2019-09-14,Brighton,Burnley,1.68545,0.341654
+2019-09-14,Sheffield United,Southampton,1.88034,1.57659
+2019-09-14,Tottenham,Crystal Palace,1.04944,0.577323
+2019-09-14,Wolverhampton Wanderers,Chelsea,1.49359,3.06799
+2019-09-14,Norwich,Manchester City,1.7413,2.34436
+2019-09-15,Watford,Arsenal,2.83209,1.00616
+2019-09-15,Bournemouth,Everton,1.41542,1.50641
+2019-09-16,Aston Villa,West Ham,1.40502,0.535279
+2019-09-20,Southampton,Bournemouth,2.18021,1.29773
+2019-09-21,Leicester,Tottenham,1.28752,1.33735
+2019-09-21,Manchester City,Watford,6.63049,0.344718
+2019-09-21,Burnley,Norwich,2.39312,0.801428
+2019-09-21,Everton,Sheffield United,1.26041,0.508011
+2019-09-21,Newcastle United,Brighton,1.09807,1.21592
+2019-09-22,Crystal Palace,Wolverhampton Wanderers,0.984777,1.75572
+2019-09-22,West Ham,Manchester United,0.51376,1.27826
+2019-09-22,Chelsea,Liverpool,1.23321,1.03003
+2019-09-22,Arsenal,Aston Villa,2.53209,1.71546
+2019-09-28,Crystal Palace,Norwich,1.80497,0.712129
+2019-09-28,Everton,Manchester City,2.35854,3.1082
+2019-09-28,Chelsea,Brighton,4.26443,0.616263
+2019-09-28,Bournemouth,West Ham,2.31957,1.29546
+2019-09-28,Wolverhampton Wanderers,Watford,1.16363,1.06615
+2019-09-28,Tottenham,Southampton,1.19008,1.16256
+2019-09-28,Sheffield United,Liverpool,1.17022,1.97079
+2019-09-28,Aston Villa,Burnley,0.914266,1.66919
+2019-09-29,Leicester,Newcastle United,1.82438,0.054134
+2019-09-30,Manchester United,Arsenal,1.1335,1.70399
+2019-10-05,Brighton,Tottenham,2.60017,0.478504
+2019-10-05,Burnley,Everton,0.558912,1.30723
+2019-10-05,Liverpool,Leicester,3.74867,0.0982107
+2019-10-05,Norwich,Aston Villa,1.84838,3.67827
+2019-10-05,Watford,Sheffield United,1.44318,0.353724
+2019-10-05,West Ham,Crystal Palace,1.23577,2.0682
+2019-10-06,Arsenal,Bournemouth,1.24109,0.683967
+2019-10-06,Newcastle United,Manchester United,0.650296,0.969204
+2019-10-06,Southampton,Chelsea,1.27044,2.15201
+2019-10-06,Manchester City,Wolverhampton Wanderers,1.61884,1.18825
+2019-10-19,Everton,West Ham,2.23324,0.459112
+2019-10-19,Aston Villa,Brighton,2.96692,1.32184
+2019-10-19,Bournemouth,Norwich,0.675554,0.402873
+2019-10-19,Chelsea,Newcastle United,2.30068,0.197082
+2019-10-19,Leicester,Burnley,0.8291,1.79569
+2019-10-19,Tottenham,Watford,0.891617,0.846851
+2019-10-19,Wolverhampton Wanderers,Southampton,0.887495,1.37695
+2019-10-19,Crystal Palace,Manchester City,0.616864,4.02104
+2019-10-20,Manchester United,Liverpool,0.791862,1.03212
+2019-10-21,Sheffield United,Arsenal,0.895722,0.949735
+2019-10-25,Southampton,Leicester,0.457334,4.38046
+2019-10-26,West Ham,Sheffield United,2.33891,1.16171
+2019-10-26,Burnley,Chelsea,2.23494,0.988321
+2019-10-26,Watford,Bournemouth,0.674903,0.899526
+2019-10-26,Brighton,Everton,1.15279,1.04723
+2019-10-26,Manchester City,Aston Villa,3.19004,0.980145
+2019-10-27,Newcastle United,Wolverhampton Wanderers,0.603104,1.93255
+2019-10-27,Arsenal,Crystal Palace,1.54014,1.77892
+2019-10-27,Liverpool,Tottenham,2.18851,1.35143
+2019-10-27,Norwich,Manchester United,0.8924,4.51232
+2019-11-02,Bournemouth,Manchester United,1.86862,0.641129
+2019-11-02,Arsenal,Wolverhampton Wanderers,1.02552,1.5103
+2019-11-02,Aston Villa,Liverpool,0.741615,2.38824
+2019-11-02,Brighton,Norwich,2.65496,0.455082
+2019-11-02,Manchester City,Southampton,3.36132,0.893889
+2019-11-02,Sheffield United,Burnley,2.58392,0.716613
+2019-11-02,West Ham,Newcastle United,1.53597,1.93192
+2019-11-02,Watford,Chelsea,1.4744,2.18313
+2019-11-03,Everton,Tottenham,1.15532,0.243393
+2019-11-03,Crystal Palace,Leicester,0.44291,0.981167
+2019-11-08,Norwich,Watford,0.62104,1.36017
+2019-11-09,Chelsea,Crystal Palace,3.28903,0.479488
+2019-11-09,Burnley,West Ham,2.4158,0.474281
+2019-11-09,Newcastle United,Bournemouth,2.3306,1.9213
+2019-11-09,Southampton,Everton,0.742281,2.08883
+2019-11-09,Tottenham,Sheffield United,1.5104,0.923443
+2019-11-09,Leicester,Arsenal,1.37055,0.961339
+2019-11-10,Wolverhampton Wanderers,Aston Villa,2.09891,0.473225
+2019-11-10,Manchester United,Brighton,3.65299,1.1342
+2019-11-10,Liverpool,Manchester City,1.3319,1.48104
+2019-11-23,Everton,Norwich,0.812693,1.80849
+2019-11-23,Manchester City,Chelsea,1.23596,0.820474
+2019-11-23,Watford,Burnley,0.902384,2.66281
+2019-11-23,Crystal Palace,Liverpool,1.02306,1.64291
+2019-11-23,Bournemouth,Wolverhampton Wanderers,0.849789,1.2765
+2019-11-23,Arsenal,Southampton,1.60823,2.60312
+2019-11-23,West Ham,Tottenham,0.661449,2.20681
+2019-11-23,Brighton,Leicester,0.784706,3.50917
+2019-11-24,Sheffield United,Manchester United,1.56025,1.33065
+2019-11-25,Aston Villa,Newcastle United,2.6985,0.69784
+2019-11-30,Newcastle United,Manchester City,0.208252,2.44389
+2019-11-30,Burnley,Crystal Palace,1.8509,0.936732
+2019-11-30,Chelsea,West Ham,2.73185,1.12034
+2019-11-30,Liverpool,Brighton,1.36832,0.867601
+2019-11-30,Tottenham,Bournemouth,2.93189,1.02949
+2019-11-30,Southampton,Watford,1.9671,0.504005
+2019-12-01,Norwich,Arsenal,0.810596,1.96157
+2019-12-01,Manchester United,Aston Villa,1.84804,1.29701
+2019-12-01,Wolverhampton Wanderers,Sheffield United,1.27422,1.47296
+2019-12-01,Leicester,Everton,2.24348,1.24986
+2019-12-03,Crystal Palace,Bournemouth,0.383763,0.342799
+2019-12-03,Burnley,Manchester City,0.486548,2.56057
+2019-12-04,Southampton,Norwich,2.00232,0.896647
+2019-12-04,Leicester,Watford,2.28735,0.199733
+2019-12-04,Wolverhampton Wanderers,West Ham,1.82237,0.501977
+2019-12-04,Manchester United,Tottenham,1.47683,0.542315
+2019-12-04,Chelsea,Aston Villa,1.9774,0.86086
+2019-12-04,Liverpool,Everton,2.41397,1.76453
+2019-12-05,Sheffield United,Newcastle United,1.09175,0.533775
+2019-12-05,Arsenal,Brighton,0.965377,1.53446
+2019-12-07,Watford,Crystal Palace,1.57132,0.210746
+2019-12-07,Manchester City,Manchester United,2.07108,1.63385
+2019-12-07,Tottenham,Burnley,2.39684,1.08645
+2019-12-07,Everton,Chelsea,2.03892,1.25734
+2019-12-07,Bournemouth,Liverpool,0.154608,3.04446
+2019-12-08,Aston Villa,Leicester,1.24141,4.03286
+2019-12-08,Newcastle United,Southampton,1.10449,1.89255
+2019-12-08,Norwich,Sheffield United,0.585805,0.712899
+2019-12-08,Brighton,Wolverhampton Wanderers,0.951621,1.87208
+2019-12-09,West Ham,Arsenal,0.521847,1.79181
+2019-12-14,Liverpool,Watford,1.56674,1.01166
+2019-12-14,Burnley,Newcastle United,1.43602,1.08726
+2019-12-14,Chelsea,Bournemouth,2.02119,1.20777
+2019-12-14,Leicester,Norwich,1.06421,1.16408
+2019-12-14,Sheffield United,Aston Villa,1.888,0.97258
+2019-12-14,Southampton,West Ham,0.805884,0.90324
+2019-12-15,Wolverhampton Wanderers,Tottenham,0.718669,0.989205
+2019-12-15,Arsenal,Manchester City,0.28161,1.69553
+2019-12-15,Manchester United,Everton,1.48327,0.276759
+2019-12-16,Crystal Palace,Brighton,0.484859,2.48355
+2019-12-21,Everton,Arsenal,0.486523,0.881818
+2019-12-21,Aston Villa,Southampton,0.921054,2.63444
+2019-12-21,Bournemouth,Burnley,0.138532,0.144318
+2019-12-21,Brighton,Sheffield United,0.428371,1.65933
+2019-12-21,Newcastle United,Crystal Palace,0.714368,0.985368
+2019-12-21,Norwich,Wolverhampton Wanderers,1.26536,1.65224
+2019-12-21,Manchester City,Leicester,3.59139,1.01388
+2019-12-22,Watford,Manchester United,1.59291,1.5309
+2019-12-22,Tottenham,Chelsea,0.276667,1.49374
+2019-12-26,Sheffield United,Watford,2.04481,0.596611
+2019-12-26,Leicester,Liverpool,0.120994,3.76973
+2019-12-26,Manchester United,Newcastle United,1.99638,1.05018
+2019-12-26,Everton,Burnley,1.47521,0.565252
+2019-12-26,Crystal Palace,West Ham,2.14195,0.796338
+2019-12-26,Chelsea,Southampton,0.859973,0.981321
+2019-12-26,Bournemouth,Arsenal,1.55463,1.42464
+2019-12-26,Aston Villa,Norwich,0.654194,1.45005
+2019-12-26,Tottenham,Brighton,1.02645,1.09007
+2019-12-27,Wolverhampton Wanderers,Manchester City,2.39405,1.52044
+2019-12-28,Brighton,Bournemouth,1.05876,0.500726
+2019-12-28,Newcastle United,Everton,1.63211,2.82576
+2019-12-28,Southampton,Crystal Palace,1.47937,0.137837
+2019-12-28,Watford,Aston Villa,3.25314,0.610997
+2019-12-28,Norwich,Tottenham,0.268052,1.82189
+2019-12-28,West Ham,Leicester,0.782104,2.62349
+2019-12-28,Burnley,Manchester United,0.386662,2.10542
+2019-12-29,Liverpool,Wolverhampton Wanderers,1.49124,0.363764
+2019-12-29,Manchester City,Sheffield United,1.08628,1.23346
+2019-12-29,Arsenal,Chelsea,0.785214,1.49666
+2020-01-01,Brighton,Chelsea,1.56978,1.57497
+2020-01-01,Burnley,Aston Villa,2.34418,1.74824
+2020-01-01,Newcastle United,Leicester,0.780118,2.43642
+2020-01-01,Southampton,Tottenham,1.51192,1.078
+2020-01-01,Watford,Wolverhampton Wanderers,1.07053,1.23252
+2020-01-01,West Ham,Bournemouth,2.32825,0.720709
+2020-01-01,Manchester City,Everton,1.79757,0.848942
+2020-01-01,Norwich,Crystal Palace,1.66454,1.29896
+2020-01-01,Arsenal,Manchester United,1.90747,0.715563
+2020-01-02,Liverpool,Sheffield United,3.0465,0.634607
+2020-01-10,Sheffield United,West Ham,2.02768,0.90477
+2020-01-11,Manchester United,Norwich,3.13456,0.275987
+2020-01-11,Tottenham,Liverpool,1.10584,1.74564
+2020-01-11,Leicester,Southampton,0.780114,2.40601
+2020-01-11,Everton,Brighton,2.02533,1.53324
+2020-01-11,Chelsea,Burnley,2.87633,0.717407
+2020-01-11,Wolverhampton Wanderers,Newcastle United,2.04805,0.184495
+2020-01-11,Crystal Palace,Arsenal,0.317862,1.43924
+2020-01-12,Bournemouth,Watford,0.320447,2.29827
+2020-01-12,Aston Villa,Manchester City,1.12565,3.75131
+2020-01-18,Watford,Tottenham,2.39174,1.76697
+2020-01-18,Arsenal,Sheffield United,1.22882,1.18444
+2020-01-18,Manchester City,Crystal Palace,2.47314,0.586716
+2020-01-18,Brighton,Aston Villa,1.30028,1.02045
+2020-01-18,Norwich,Bournemouth,1.76046,0.558298
+2020-01-18,Southampton,Wolverhampton Wanderers,0.786974,2.1772
+2020-01-18,West Ham,Everton,1.68436,1.95473
+2020-01-18,Newcastle United,Chelsea,0.892988,2.05436
+2020-01-19,Liverpool,Manchester United,2.00655,1.4185
+2020-01-19,Burnley,Leicester,1.50886,2.33415
+2020-01-21,Aston Villa,Watford,1.06739,1.81101
+2020-01-21,Sheffield United,Manchester City,0.774943,2.873
+2020-01-21,Everton,Newcastle United,2.05254,0.570931
+2020-01-21,Bournemouth,Brighton,1.92315,1.97227
+2020-01-21,Crystal Palace,Southampton,0.674589,1.1306
+2020-01-21,Chelsea,Arsenal,3.38612,0.568077
+2020-01-22,Leicester,West Ham,2.91302,1.16254
+2020-01-22,Tottenham,Norwich,2.22282,1.42472
+2020-01-22,Manchester United,Burnley,1.416,0.717284
+2020-01-23,Wolverhampton Wanderers,Liverpool,1.85442,1.59024
+2020-01-29,West Ham,Liverpool,0.878341,2.59926
+2020-02-01,Watford,Everton,0.919248,2.70178
+2020-02-01,Manchester United,Wolverhampton Wanderers,1.18608,1.54211
+2020-02-01,West Ham,Brighton,1.30774,2.03179
+2020-02-01,Newcastle United,Norwich,0.937293,2.39985
+2020-02-01,Liverpool,Southampton,3.7195,0.716298
+2020-02-01,Crystal Palace,Sheffield United,0.970063,0.860755
+2020-02-01,Bournemouth,Aston Villa,2.72236,1.40955
+2020-02-01,Leicester,Chelsea,1.65956,0.806995
+2020-02-02,Burnley,Arsenal,2.24562,1.48025
+2020-02-02,Tottenham,Manchester City,0.420293,3.25139
+2020-02-08,Everton,Crystal Palace,2.79103,0.865323
+2020-02-08,Brighton,Watford,0.76201,0.280048
+2020-02-09,Sheffield United,Bournemouth,2.04467,1.07183
+2020-02-14,Wolverhampton Wanderers,Leicester,1.14491,0.527366
+2020-02-15,Southampton,Burnley,0.694025,0.892699
+2020-02-15,Norwich,Liverpool,0.383495,2.07331
+2020-02-16,Aston Villa,Tottenham,1.71313,3.86024
+2020-02-16,Arsenal,Newcastle United,3.02257,1.16662
+2020-02-17,Chelsea,Manchester United,0.940204,0.681814
+2020-02-19,Manchester City,West Ham,2.13777,0.0895892
+2020-02-22,Chelsea,Tottenham,1.78193,0.265879
+2020-02-22,Crystal Palace,Newcastle United,1.75552,0.164495
+2020-02-22,Burnley,Bournemouth,3.09935,1.75718
+2020-02-22,Southampton,Aston Villa,3.02926,0.47235
+2020-02-22,Sheffield United,Brighton,1.6597,1.06035
+2020-02-22,Leicester,Manchester City,0.723269,2.42749
+2020-02-23,Manchester United,Watford,2.5042,0.294956
+2020-02-23,Wolverhampton Wanderers,Norwich,3.25033,0.360646
+2020-02-23,Arsenal,Everton,1.33567,2.65691
+2020-02-24,Liverpool,West Ham,2.48209,0.638236
+2020-02-28,Norwich,Leicester,0.591716,1.42581
+2020-02-29,Watford,Liverpool,2.71351,0.206031
+2020-02-29,West Ham,Southampton,2.78682,0.868573
+2020-02-29,Bournemouth,Chelsea,1.58495,1.98271
+2020-02-29,Brighton,Crystal Palace,1.78712,2.17159
+2020-02-29,Newcastle United,Burnley,1.11713,0.617612
+2020-03-01,Everton,Manchester United,2.41259,1.12561
+2020-03-01,Tottenham,Wolverhampton Wanderers,1.63079,2.62251
+2020-03-07,Liverpool,Bournemouth,1.89453,1.29544
+2020-03-07,Arsenal,West Ham,1.55974,1.61615
+2020-03-07,Crystal Palace,Watford,0.856107,0.449161
+2020-03-07,Sheffield United,Norwich,1.17263,2.55449
+2020-03-07,Southampton,Newcastle United,0.348871,3.06384
+2020-03-07,Wolverhampton Wanderers,Brighton,0.898221,0.308874
+2020-03-07,Burnley,Tottenham,3.33302,1.13669
+2020-03-08,Chelsea,Everton,2.02883,0.445922
+2020-03-08,Manchester United,Manchester City,1.7389,0.585469
+2020-03-09,Leicester,Aston Villa,2.41239,0.672448
+2020-06-17,Manchester City,Arsenal,2.73725,0.496759
+2020-06-17,Aston Villa,Sheffield United,1.00877,0.235909
+2020-06-19,Norwich,Southampton,0.654932,1.87099
+2020-06-19,Tottenham,Manchester United,0.534852,1.77307
+2020-06-20,Watford,Leicester,1.00765,1.05245
+2020-06-20,Brighton,Arsenal,0.670973,0.69627
+2020-06-20,West Ham,Wolverhampton Wanderers,0.44207,1.06433
+2020-06-20,Bournemouth,Crystal Palace,0.363637,0.788453
+2020-06-21,Newcastle United,Sheffield United,2.15148,0.57107
+2020-06-21,Aston Villa,Chelsea,1.57223,1.14011
+2020-06-21,Everton,Liverpool,0.621456,0.659123
+2020-06-22,Manchester City,Burnley,2.71096,0.0303408
+2020-06-23,Leicester,Brighton,0.505486,1.10227
+2020-06-23,Tottenham,West Ham,2.24125,0.83104
+2020-06-24,Liverpool,Crystal Palace,2.56729,0.0645285
+2020-06-24,Manchester United,Sheffield United,2.8416,0.108082
+2020-06-24,Newcastle United,Aston Villa,0.661808,1.22985
+2020-06-24,Wolverhampton Wanderers,Bournemouth,0.715002,0.0619009
+2020-06-24,Norwich,Everton,0.382813,0.654912
+2020-06-25,Burnley,Watford,0.964774,0.495542
+2020-06-25,Southampton,Arsenal,0.738305,2.18595
+2020-06-25,Chelsea,Manchester City,4.206,0.690594
+2020-06-27,Aston Villa,Wolverhampton Wanderers,0.403418,0.703549
+2020-06-28,Watford,Southampton,0.365347,1.3364
+2020-06-29,Crystal Palace,Burnley,1.06533,0.359906
+2020-06-30,Brighton,Manchester United,0.31013,1.20903
+2020-07-01,Arsenal,Norwich,1.76496,0.153871
+2020-07-01,Bournemouth,Newcastle United,1.27503,2.23457
+2020-07-01,Everton,Leicester,1.17592,1.80384
+2020-07-01,West Ham,Chelsea,2.10497,1.57609
+2020-07-02,Manchester City,Liverpool,2.65433,0.819606
+2020-07-02,Sheffield United,Tottenham,1.59994,1.01524
+2020-07-04,Norwich,Brighton,0.545069,0.903046
+2020-07-04,Leicester,Crystal Palace,2.20683,0.507537
+2020-07-04,Manchester United,Bournemouth,2.63259,1.52161
+2020-07-04,Wolverhampton Wanderers,Arsenal,0.985166,1.28273
+2020-07-04,Chelsea,Watford,2.78877,0.608971
+2020-07-05,Burnley,Sheffield United,1.31966,1.63343
+2020-07-05,Newcastle United,West Ham,1.49121,2.03065
+2020-07-05,Liverpool,Aston Villa,1.0837,0.689775
+2020-07-05,Southampton,Manchester City,0.628765,3.39575
+2020-07-06,Tottenham,Everton,0.511828,0.403762
+2020-07-07,Crystal Palace,Chelsea,1.2882,2.65753
+2020-07-07,Watford,Norwich,0.725199,1.13378
+2020-07-07,Arsenal,Leicester,1.29023,1.00238
+2020-07-08,Brighton,Liverpool,2.3646,2.61624
+2020-07-08,West Ham,Burnley,1.99821,1.05291
+2020-07-08,Manchester City,Newcastle United,3.28662,0.21643
+2020-07-08,Sheffield United,Wolverhampton Wanderers,0.470483,0.326909
+2020-07-09,Bournemouth,Tottenham,0.960349,0.479274
+2020-07-09,Everton,Southampton,0.671442,2.29684
+2020-07-09,Aston Villa,Manchester United,0.598873,2.86531
+2020-07-11,Norwich,West Ham,0.613251,3.81088
+2020-07-11,Watford,Newcastle United,3.12855,1.49134
+2020-07-11,Liverpool,Burnley,2.17649,0.452331
+2020-07-11,Sheffield United,Chelsea,2.00632,1.17509
+2020-07-11,Brighton,Manchester City,0.149588,5.51767
+2020-07-12,Wolverhampton Wanderers,Everton,2.86724,0.286561
+2020-07-12,Aston Villa,Crystal Palace,1.6977,0.974181
+2020-07-12,Tottenham,Arsenal,1.81846,0.68991
+2020-07-12,Bournemouth,Leicester,2.54311,1.66084
+2020-07-13,Manchester United,Southampton,1.5033,1.8051
+2020-07-14,Chelsea,Norwich,3.05119,0.0631109
+2020-07-15,Burnley,Wolverhampton Wanderers,1.53435,1.2857
+2020-07-15,Manchester City,Bournemouth,0.82755,1.66635
+2020-07-15,Newcastle United,Tottenham,1.05748,1.7498
+2020-07-15,Arsenal,Liverpool,1.31516,2.2233
+2020-07-16,Everton,Aston Villa,0.944434,1.52021
+2020-07-16,Leicester,Sheffield United,3.05752,0.660214
+2020-07-16,Crystal Palace,Manchester United,0.572141,1.90448
+2020-07-16,Southampton,Brighton,2.33745,0.67264
+2020-07-17,West Ham,Watford,0.833995,1.03402
+2020-07-18,Norwich,Burnley,0.576602,1.8233
+2020-07-19,Bournemouth,Southampton,0.583117,2.24527
+2020-07-19,Tottenham,Leicester,0.766922,1.20085
+2020-07-20,Wolverhampton Wanderers,Crystal Palace,1.48696,0.440119
+2020-07-20,Sheffield United,Everton,0.468461,0.624814
+2020-07-20,Brighton,Newcastle United,0.855896,0.929091
+2020-07-21,Watford,Manchester City,0.131868,3.73814
+2020-07-21,Aston Villa,Arsenal,0.57408,0.737137
+2020-07-22,Manchester United,West Ham,0.984161,1.29009
+2020-07-22,Liverpool,Chelsea,1.45179,2.38205
+2020-07-26,Everton,Bournemouth,1.74699,1.46461
+2020-07-26,Burnley,Brighton,1.44244,1.3696
+2020-07-26,Chelsea,Wolverhampton Wanderers,1.15938,0.164561
+2020-07-26,Crystal Palace,Tottenham,0.988534,0.310302
+2020-07-26,Leicester,Manchester United,0.754668,1.41019
+2020-07-26,Newcastle United,Liverpool,0.339294,0.56818
+2020-07-26,Southampton,Sheffield United,1.64306,1.41051
+2020-07-26,Arsenal,Watford,1.95282,3.9197
+2020-07-26,West Ham,Aston Villa,0.781465,0.983594
+2020-07-26,Manchester City,Norwich,3.56749,0.786563
+2020-09-12,Fulham,Arsenal,0.126327,2.16287
+2020-09-12,Crystal Palace,Southampton,1.39569,1.26267
+2020-09-12,Liverpool,Leeds,3.15412,0.269813
+2020-09-12,West Ham,Newcastle United,0.861445,1.65911
+2020-09-13,West Bromwich Albion,Leicester,0.352997,2.95581
+2020-09-13,Tottenham,Everton,0.822944,1.26793
+2020-09-14,Brighton,Chelsea,1.44281,1.27062
+2020-09-14,Sheffield United,Wolverhampton Wanderers,0.949316,1.61307
+2020-09-19,Manchester United,Crystal Palace,1.09737,1.91456
+2020-09-19,Arsenal,West Ham,1.32902,2.06377
+2020-09-19,Everton,West Bromwich Albion,4.16254,0.315347
+2020-09-19,Leeds,Fulham,1.45254,1.55503
+2020-09-20,Leicester,Burnley,0.987365,1.52404
+2020-09-20,Chelsea,Liverpool,0.904183,2.25211
+2020-09-20,Newcastle United,Brighton,0.520678,1.8766
+2020-09-20,Southampton,Tottenham,2.27708,2.28004
+2020-09-21,Aston Villa,Sheffield United,0.80527,0.849709
+2020-09-21,Wolverhampton Wanderers,Manchester City,0.727677,2.07651
+2020-09-26,Brighton,Manchester United,2.97659,1.57583
+2020-09-26,Crystal Palace,Everton,0.443115,2.27189
+2020-09-26,West Bromwich Albion,Chelsea,0.911185,2.36046
+2020-09-26,Burnley,Southampton,0.347136,0.706632
+2020-09-27,Sheffield United,Leeds,1.53278,1.46641
+2020-09-27,Tottenham,Newcastle United,3.18765,0.942726
+2020-09-27,Manchester City,Leicester,1.44633,2.86721
+2020-09-27,West Ham,Wolverhampton Wanderers,3.05703,0.385152
+2020-09-28,Fulham,Aston Villa,0.534675,2.03222
+2020-09-28,Liverpool,Arsenal,2.73834,1.17817
+2020-10-03,Newcastle United,Burnley,1.95629,0.438849
+2020-10-03,Leeds,Manchester City,2.56662,1.41533
+2020-10-03,Chelsea,Crystal Palace,2.51433,0.103249
+2020-10-03,Everton,Brighton,2.34034,1.16568
+2020-10-04,Leicester,West Ham,0.456022,2.03227
+2020-10-04,Southampton,West Bromwich Albion,0.949079,0.161283
+2020-10-04,Arsenal,Sheffield United,0.667131,0.144994
+2020-10-04,Wolverhampton Wanderers,Fulham,0.89359,0.969393
+2020-10-04,Manchester United,Tottenham,0.873435,3.3017
+2020-10-04,Aston Villa,Liverpool,3.07626,1.65705
+2020-10-17,Everton,Liverpool,1.35998,2.49492
+2020-10-17,Chelsea,Southampton,1.98708,1.42348
+2020-10-17,Manchester City,Arsenal,1.43023,0.838322
+2020-10-17,Newcastle United,Manchester United,0.867496,2.21729
+2020-10-18,Leicester,Aston Villa,0.671595,0.873776
+2020-10-18,Tottenham,West Ham,1.77602,1.49992
+2020-10-18,Sheffield United,Fulham,1.66363,1.35611
+2020-10-18,Crystal Palace,Brighton,0.761169,1.0935
+2020-10-19,West Bromwich Albion,Burnley,0.731692,1.08532
+2020-10-19,Leeds,Wolverhampton Wanderers,1.08332,0.618191
+2020-10-23,Aston Villa,Leeds,1.50125,2.37695
+2020-10-24,West Ham,Manchester City,0.263739,0.892456
+2020-10-24,Fulham,Crystal Palace,1.05258,2.81049
+2020-10-24,Manchester United,Chelsea,0.648427,0.219906
+2020-10-24,Liverpool,Sheffield United,2.40286,1.39788
+2020-10-25,Southampton,Everton,0.74151,0.287054
+2020-10-25,Wolverhampton Wanderers,Newcastle United,0.758626,0.253685
+2020-10-25,Arsenal,Leicester,0.73944,0.736172
+2020-10-26,Burnley,Tottenham,0.95045,0.797344
+2020-10-26,Brighton,West Bromwich Albion,0.546807,0.295654
+2020-10-30,Wolverhampton Wanderers,Crystal Palace,1.34895,0.802767
+2020-10-31,Sheffield United,Manchester City,0.687544,1.89643
+2020-10-31,Burnley,Chelsea,0.407341,1.23077
+2020-10-31,Liverpool,West Ham,1.56302,0.269048
+2020-11-01,Aston Villa,Southampton,2.44855,1.00333
+2020-11-01,Newcastle United,Everton,2.6311,1.21805
+2020-11-01,Manchester United,Arsenal,0.394113,0.998072
+2020-11-01,Tottenham,Brighton,1.97236,0.324457
+2020-11-02,Fulham,West Bromwich Albion,1.62247,0.482685
+2020-11-02,Leeds,Leicester,1.74822,3.07657
+2020-11-06,Southampton,Newcastle United,0.985828,0.175633
+2020-11-06,Brighton,Burnley,1.59022,0.326933
+2020-11-07,West Ham,Fulham,1.42614,1.84922
+2020-11-07,Chelsea,Sheffield United,2.87622,0.743967
+2020-11-07,Everton,Manchester United,0.376464,1.59642
+2020-11-07,Crystal Palace,Leeds,1.30169,0.847913
+2020-11-08,West Bromwich Albion,Tottenham,0.799352,1.87063
+2020-11-08,Leicester,Wolverhampton Wanderers,2.0545,0.57936
+2020-11-08,Manchester City,Liverpool,1.58487,1.18789
+2020-11-08,Arsenal,Aston Villa,1.39037,1.98553
+2020-11-21,Newcastle United,Chelsea,0.368286,1.81923
+2020-11-21,Aston Villa,Brighton,1.76514,1.50038
+2020-11-21,Tottenham,Manchester City,0.761142,1.66325
+2020-11-21,Manchester United,West Bromwich Albion,2.42994,0.438646
+2020-11-22,Liverpool,Leicester,3.77245,1.98397
+2020-11-22,Leeds,Arsenal,1.9617,0.710778
+2020-11-22,Fulham,Everton,1.87028,2.2508
+2020-11-22,Sheffield United,West Ham,0.692374,2.1142
+2020-11-23,Burnley,Crystal Palace,1.75343,1.28331
+2020-11-23,Wolverhampton Wanderers,Southampton,1.57479,1.0785
+2020-11-27,Crystal Palace,Newcastle United,0.534893,1.27929
+2020-11-28,Brighton,Liverpool,2.30722,0.28109
+2020-11-28,Manchester City,Burnley,2.26129,0.419877
+2020-11-28,Everton,Leeds,1.29229,3.11324
+2020-11-28,West Bromwich Albion,Sheffield United,1.71644,3.36544
+2020-11-29,Southampton,Manchester United,0.498783,2.47547
+2020-11-29,Chelsea,Tottenham,0.974755,0.22689
+2020-11-29,Arsenal,Wolverhampton Wanderers,1.1185,2.0069
+2020-11-30,Leicester,Fulham,1.27814,2.03719
+2020-11-30,West Ham,Aston Villa,0.571633,2.39051
+2020-12-05,Chelsea,Leeds,4.89472,1.0277
+2020-12-05,West Ham,Manchester United,2.53006,1.78708
+2020-12-05,Manchester City,Fulham,3.26328,0.287444
+2020-12-05,Burnley,Everton,0.730434,2.28139
+2020-12-06,West Bromwich Albion,Crystal Palace,0.567234,1.68656
+2020-12-06,Sheffield United,Leicester,0.290743,1.3904
+2020-12-06,Tottenham,Arsenal,0.390629,0.595216
+2020-12-06,Liverpool,Wolverhampton Wanderers,1.59454,0.357753
+2020-12-07,Brighton,Southampton,2.03376,1.34801
+2020-12-11,Leeds,West Ham,1.56644,1.7851
+2020-12-12,Wolverhampton Wanderers,Aston Villa,1.1356,1.26872
+2020-12-12,Newcastle United,West Bromwich Albion,0.904163,0.57319
+2020-12-12,Manchester United,Manchester City,0.591617,1.28434
+2020-12-12,Everton,Chelsea,1.2216,1.00627
+2020-12-13,Arsenal,Burnley,1.85362,0.815375
+2020-12-13,Leicester,Brighton,1.64351,0.791673
+2020-12-13,Fulham,Liverpool,1.72509,1.82445
+2020-12-13,Crystal Palace,Tottenham,1.84443,1.40792
+2020-12-13,Southampton,Sheffield United,2.27973,0.219115
+2020-12-15,Wolverhampton Wanderers,Chelsea,0.683783,1.56772
+2020-12-15,Manchester City,West Bromwich Albion,2.58593,0.210243
+2020-12-16,Arsenal,Southampton,0.661135,1.11296
+2020-12-16,Leeds,Newcastle United,2.95137,1.44437
+2020-12-16,Leicester,Everton,0.83883,1.51486
+2020-12-16,Fulham,Brighton,1.00448,0.462456
+2020-12-16,West Ham,Crystal Palace,0.449469,1.09108
+2020-12-16,Liverpool,Tottenham,1.21783,1.5161
+2020-12-17,Aston Villa,Burnley,1.81142,0.316737
+2020-12-17,Sheffield United,Manchester United,1.23525,1.78667
+2020-12-19,Everton,Arsenal,0.661744,1.25206
+2020-12-19,Newcastle United,Fulham,1.26725,1.10645
+2020-12-19,Crystal Palace,Liverpool,0.489318,2.86902
+2020-12-19,Southampton,Manchester City,0.586972,1.15599
+2020-12-20,West Bromwich Albion,Aston Villa,0.0388442,2.61964
+2020-12-20,Manchester United,Leeds,4.77743,1.63467
+2020-12-20,Tottenham,Leicester,0.945932,1.74772
+2020-12-20,Brighton,Sheffield United,2.90097,1.03713
+2020-12-21,Burnley,Wolverhampton Wanderers,1.20465,1.45722
+2020-12-21,Chelsea,West Ham,2.41157,0.277737
+2020-12-26,Leicester,Manchester United,1.0396,2.08423
+2020-12-26,Aston Villa,Crystal Palace,4.58214,0.849086
+2020-12-26,Fulham,Southampton,0.781855,0.119709
+2020-12-26,Arsenal,Chelsea,1.94485,2.25414
+2020-12-26,Manchester City,Newcastle United,3.19575,0.200953
+2020-12-26,Sheffield United,Everton,1.25106,0.568803
+2020-12-27,Leeds,Burnley,2.13271,1.54591
+2020-12-27,West Ham,Brighton,1.38877,1.50551
+2020-12-27,Liverpool,West Bromwich Albion,1.45485,0.739845
+2020-12-27,Wolverhampton Wanderers,Tottenham,0.742598,0.408109
+2020-12-28,Chelsea,Aston Villa,1.53701,0.730859
+2020-12-28,Crystal Palace,Leicester,0.321348,1.72132
+2020-12-29,Brighton,Arsenal,0.799368,1.31394
+2020-12-29,Burnley,Sheffield United,0.973831,0.492578
+2020-12-29,Southampton,West Ham,0.670996,1.07246
+2020-12-29,West Bromwich Albion,Leeds,0.43551,1.54225
+2020-12-29,Manchester United,Wolverhampton Wanderers,1.48207,0.411046
+2020-12-30,Newcastle United,Liverpool,0.817935,1.32047
+2021-01-01,Everton,West Ham,0.371045,1.19713
+2021-01-01,Manchester United,Aston Villa,2.46473,1.56434
+2021-01-02,Tottenham,Leeds,2.5286,1.15626
+2021-01-02,Crystal Palace,Sheffield United,0.598888,0.323158
+2021-01-02,Brighton,Wolverhampton Wanderers,2.4228,1.81856
+2021-01-02,West Bromwich Albion,Arsenal,0.869874,4.03429
+2021-01-03,Chelsea,Manchester City,0.691013,3.18063
+2021-01-03,Newcastle United,Leicester,0.264584,0.702081
+2021-01-04,Southampton,Liverpool,0.500436,1.37204
+2021-01-12,Sheffield United,Newcastle United,2.01315,1.04745
+2021-01-12,Wolverhampton Wanderers,Everton,0.852495,0.323445
+2021-01-12,Burnley,Manchester United,0.648582,1.23996
+2021-01-13,Manchester City,Brighton,2.90855,0.177084
+2021-01-13,Tottenham,Fulham,3.14372,1.05329
+2021-01-14,Arsenal,Crystal Palace,0.368554,0.709634
+2021-01-16,Wolverhampton Wanderers,West Bromwich Albion,1.94358,2.46332
+2021-01-16,Leeds,Brighton,0.245193,1.14424
+2021-01-16,West Ham,Burnley,1.73397,0.395668
+2021-01-16,Fulham,Chelsea,0.46126,1.37939
+2021-01-16,Leicester,Southampton,2.12019,0.378147
+2021-01-17,Manchester City,Crystal Palace,0.961088,0.0515836
+2021-01-17,Sheffield United,Tottenham,0.978133,1.28385
+2021-01-17,Liverpool,Manchester United,1.20205,1.18929
+2021-01-18,Arsenal,Newcastle United,2.30744,0.168796
+2021-01-19,West Ham,West Bromwich Albion,2.17512,0.464091
+2021-01-19,Leicester,Chelsea,1.1449,0.615727
+2021-01-20,Manchester City,Aston Villa,3.34385,0.601768
+2021-01-20,Fulham,Manchester United,0.753669,1.68401
+2021-01-21,Liverpool,Burnley,1.64907,1.08059
+2021-01-23,Aston Villa,Newcastle United,2.6026,0.400364
+2021-01-26,West Bromwich Albion,Manchester City,0.568258,2.24838
+2021-01-26,Newcastle United,Leeds,1.1364,0.785914
+2021-01-26,Crystal Palace,West Ham,0.629033,3.30321
+2021-01-26,Southampton,Arsenal,0.99504,2.4339
+2021-01-27,Manchester United,Sheffield United,0.9931,0.689548
+2021-01-27,Brighton,Fulham,2.29129,0.513226
+2021-01-27,Everton,Leicester,0.474981,0.792045
+2021-01-27,Chelsea,Wolverhampton Wanderers,0.663324,0.63192
+2021-01-27,Burnley,Aston Villa,0.717681,2.70718
+2021-01-28,Tottenham,Liverpool,0.104586,2.58798
+2021-01-30,Everton,Newcastle United,0.966012,2.08832
+2021-01-30,Crystal Palace,Wolverhampton Wanderers,1.36877,0.450907
+2021-01-30,West Bromwich Albion,Fulham,0.994664,1.52044
+2021-01-30,Manchester City,Sheffield United,1.53116,0.154537
+2021-01-30,Arsenal,Manchester United,0.747166,1.51332
+2021-01-30,Southampton,Aston Villa,2.22557,0.795508
+2021-01-31,Chelsea,Burnley,1.4405,0.390714
+2021-01-31,Leicester,Leeds,1.73432,1.8141
+2021-01-31,West Ham,Liverpool,0.883061,2.05809
+2021-01-31,Brighton,Tottenham,1.77386,0.372524
+2021-02-02,Newcastle United,Crystal Palace,1.90755,0.809312
+2021-02-02,Manchester United,Southampton,5.0325,0.507893
+2021-02-02,Wolverhampton Wanderers,Arsenal,1.56162,0.716265
+2021-02-02,Sheffield United,West Bromwich Albion,1.35804,1.61871
+2021-02-03,Burnley,Manchester City,0.0489155,2.12153
+2021-02-03,Fulham,Leicester,0.731288,1.71299
+2021-02-03,Leeds,Everton,1.14303,1.91539
+2021-02-03,Aston Villa,West Ham,0.741154,1.79064
+2021-02-03,Liverpool,Brighton,1.09518,1.18977
+2021-02-04,Tottenham,Chelsea,0.569446,2.393
+2021-02-06,Aston Villa,Arsenal,1.19792,0.679649
+2021-02-06,Burnley,Brighton,1.88934,0.612682
+2021-02-06,Newcastle United,Southampton,0.910553,1.43445
+2021-02-06,Fulham,West Ham,1.60884,0.943539
+2021-02-06,Manchester United,Everton,1.71769,1.5571
+2021-02-07,Sheffield United,Chelsea,0.623045,1.64144
+2021-02-07,Wolverhampton Wanderers,Leicester,1.35506,0.632232
+2021-02-07,Tottenham,West Bromwich Albion,1.92997,0.698686
+2021-02-07,Liverpool,Manchester City,1.17728,3.55196
+2021-02-08,Leeds,Crystal Palace,2.64769,0.370278
+2021-02-13,Leicester,Liverpool,2.07383,1.68325
+2021-02-13,Crystal Palace,Burnley,0.645616,1.95502
+2021-02-13,Manchester City,Tottenham,2.46219,0.4235
+2021-02-13,Brighton,Aston Villa,2.33232,0.144036
+2021-02-14,Southampton,Wolverhampton Wanderers,0.8536,1.09361
+2021-02-14,West Bromwich Albion,Manchester United,0.945964,0.423885
+2021-02-14,Arsenal,Leeds,2.50614,0.77074
+2021-02-14,Everton,Fulham,0.314075,2.55085
+2021-02-15,Chelsea,Newcastle United,2.5428,0.432603
+2021-02-15,West Ham,Sheffield United,2.32735,0.926652
+2021-02-17,Everton,Manchester City,1.04664,1.23218
+2021-02-17,Burnley,Fulham,1.20642,0.594471
+2021-02-19,Wolverhampton Wanderers,Leeds,0.592049,2.4793
+2021-02-20,Southampton,Chelsea,0.496603,1.44849
+2021-02-20,Burnley,West Bromwich Albion,0.535153,1.71922
+2021-02-20,Liverpool,Everton,1.54046,2.01468
+2021-02-20,Fulham,Sheffield United,1.21006,0.977747
+2021-02-21,West Ham,Tottenham,1.09246,0.770706
+2021-02-21,Aston Villa,Leicester,1.7084,1.23852
+2021-02-21,Arsenal,Manchester City,0.331188,2.08868
+2021-02-21,Manchester United,Newcastle United,1.7256,0.341778
+2021-02-22,Brighton,Crystal Palace,2.59204,0.179886
+2021-02-23,Leeds,Southampton,1.84753,1.47981
+2021-02-27,West Bromwich Albion,Brighton,0.687091,3.12111
+2021-02-27,Leeds,Aston Villa,1.00106,0.876255
+2021-02-27,Manchester City,West Ham,0.760574,1.92892
+2021-02-27,Newcastle United,Wolverhampton Wanderers,1.9519,1.27827
+2021-02-28,Sheffield United,Liverpool,0.777149,2.80551
+2021-02-28,Chelsea,Manchester United,1.17294,0.35954
+2021-02-28,Leicester,Arsenal,0.533575,2.1065
+2021-02-28,Tottenham,Burnley,2.35788,0.603212
+2021-02-28,Crystal Palace,Fulham,0.0880148,0.813134
+2021-03-01,Everton,Southampton,1.42054,0.665743
+2021-03-02,Manchester City,Wolverhampton Wanderers,3.26196,0.318824
+2021-03-03,Burnley,Leicester,1.26793,1.24109
+2021-03-03,Sheffield United,Aston Villa,0.716254,1.44176
+2021-03-03,Crystal Palace,Manchester United,0.742397,0.584016
+2021-03-04,West Bromwich Albion,Everton,1.02038,1.40789
+2021-03-04,Fulham,Tottenham,1.1715,1.5519
+2021-03-04,Liverpool,Chelsea,0.247034,1.22635
+2021-03-06,Aston Villa,Wolverhampton Wanderers,0.956392,2.15087
+2021-03-06,Brighton,Leicester,0.75471,1.03801
+2021-03-06,Burnley,Arsenal,1.10374,2.53692
+2021-03-06,Sheffield United,Southampton,0.908155,2.37386
+2021-03-07,West Bromwich Albion,Newcastle United,1.46503,0.454577
+2021-03-07,Liverpool,Fulham,0.701764,1.37047
+2021-03-07,Manchester City,Manchester United,1.27561,2.11411
+2021-03-07,Tottenham,Crystal Palace,2.24159,0.559383
+2021-03-08,Chelsea,Everton,2.57224,0.270757
+2021-03-08,West Ham,Leeds,2.37556,1.34971
+2021-03-10,Manchester City,Southampton,3.10503,1.60561
+2021-03-12,Newcastle United,Aston Villa,0.873171,0.748665
+2021-03-13,Fulham,Manchester City,0.449499,2.72578
+2021-03-13,Leeds,Chelsea,0.382957,0.971054
+2021-03-13,Crystal Palace,West Bromwich Albion,1.30694,0.513439
+2021-03-13,Everton,Burnley,1.69849,0.74852
+2021-03-14,Manchester United,West Ham,1.70128,0.463737
+2021-03-14,Arsenal,Tottenham,1.56529,0.705566
+2021-03-14,Southampton,Brighton,1.03495,0.895967
+2021-03-14,Leicester,Sheffield United,4.54571,0.0934777
+2021-03-15,Wolverhampton Wanderers,Liverpool,1.29175,1.0552
+2021-03-19,Fulham,Leeds,1.47498,1.40706
+2021-03-20,Brighton,Newcastle United,0.951921,0.100945
+2021-03-21,West Ham,Arsenal,2.50629,1.35217
+2021-03-21,Aston Villa,Tottenham,0.439681,1.72011
+2021-04-03,Chelsea,West Bromwich Albion,2.55917,1.38315
+2021-04-03,Leeds,Sheffield United,2.50597,0.867652
+2021-04-03,Leicester,Manchester City,0.284781,1.98438
+2021-04-03,Arsenal,Liverpool,0.161161,2.43732
+2021-04-04,Manchester United,Brighton,1.73474,1.41071
+2021-04-04,Aston Villa,Fulham,1.52229,1.52172
+2021-04-04,Southampton,Burnley,2.40272,1.50285
+2021-04-04,Newcastle United,Tottenham,3.30098,2.43683
+2021-04-05,Everton,Crystal Palace,2.53386,0.603749
+2021-04-05,Wolverhampton Wanderers,West Ham,1.95649,1.59694
+2021-04-09,Fulham,Wolverhampton Wanderers,0.733154,0.428134
+2021-04-10,Manchester City,Leeds,1.98825,0.17525
+2021-04-10,Liverpool,Aston Villa,2.14592,0.760621
+2021-04-10,Crystal Palace,Chelsea,0.602167,3.85472
+2021-04-11,Burnley,Newcastle United,1.84262,1.34279
+2021-04-11,West Ham,Leicester,1.02408,1.17188
+2021-04-11,Tottenham,Manchester United,0.921801,2.09737
+2021-04-11,Sheffield United,Arsenal,0.315121,1.93838
+2021-04-12,Brighton,Everton,1.16465,0.306287
+2021-04-12,West Bromwich Albion,Southampton,2.77089,1.5002
+2021-04-16,Everton,Tottenham,2.26022,1.4815
+2021-04-17,Newcastle United,West Ham,2.4314,2.06741
+2021-04-17,Wolverhampton Wanderers,Sheffield United,1.22604,0.295925
+2021-04-18,Manchester United,Burnley,2.87455,0.959804
+2021-04-18,Arsenal,Fulham,2.85573,0.839128
+2021-04-19,Leeds,Liverpool,2.59719,1.60043
+2021-04-20,Chelsea,Brighton,0.807348,0.459568
+2021-04-21,Tottenham,Southampton,1.28824,1.06134
+2021-04-21,Aston Villa,Manchester City,0.801733,1.5634
+2021-04-22,Leicester,West Bromwich Albion,2.6712,0.277126
+2021-04-23,Arsenal,Everton,0.735767,0.529676
+2021-04-24,Liverpool,Newcastle United,2.84708,0.860694
+2021-04-24,West Ham,Chelsea,0.267123,2.52059
+2021-04-24,Sheffield United,Brighton,0.786324,2.06038
+2021-04-25,Wolverhampton Wanderers,Burnley,0.351673,2.24049
+2021-04-25,Leeds,Manchester United,0.216834,1.11635
+2021-04-25,Aston Villa,West Bromwich Albion,2.65394,1.56764
+2021-04-26,Leicester,Crystal Palace,1.23419,0.723112
+2021-04-30,Southampton,Leicester,0.954057,2.51518
+2021-05-01,Crystal Palace,Manchester City,0.361866,2.04443
+2021-05-01,Brighton,Leeds,2.52542,0.510874
+2021-05-01,Chelsea,Fulham,1.8433,0.290042
+2021-05-01,Everton,Aston Villa,1.223,1.58811
+2021-05-02,Newcastle United,Arsenal,0.172988,1.78751
+2021-05-02,Tottenham,Sheffield United,2.26016,0.469026
+2021-05-03,West Bromwich Albion,Wolverhampton Wanderers,1.07133,0.844138
+2021-05-03,Burnley,West Ham,1.68312,2.42477
+2021-05-07,Leicester,Newcastle United,2.315,2.87261
+2021-05-08,Leeds,Tottenham,2.55216,1.03384
+2021-05-08,Sheffield United,Crystal Palace,0.639325,2.25382
+2021-05-08,Manchester City,Chelsea,1.79168,0.619724
+2021-05-08,Liverpool,Southampton,2.26367,1.2289
+2021-05-09,Arsenal,West Bromwich Albion,1.07042,1.83076
+2021-05-09,West Ham,Everton,1.09704,1.56222
+2021-05-09,Wolverhampton Wanderers,Brighton,1.1199,0.27571
+2021-05-09,Aston Villa,Manchester United,0.565472,1.88793
+2021-05-10,Fulham,Burnley,0.778074,1.65831
+2021-05-11,Manchester United,Leicester,0.212874,0.991522
+2021-05-11,Southampton,Crystal Palace,1.58872,1.32586
+2021-05-12,Chelsea,Arsenal,1.56786,0.692043
+2021-05-13,Manchester United,Liverpool,1.71328,2.938
+2021-05-13,Aston Villa,Everton,0.558976,0.975408
+2021-05-14,Newcastle United,Manchester City,2.18312,1.477
+2021-05-15,Brighton,West Ham,0.922587,1.92378
+2021-05-15,Burnley,Leeds,1.41338,1.85654
+2021-05-15,Southampton,Fulham,2.29146,0.875957
+2021-05-16,Everton,Sheffield United,1.24609,1.391
+2021-05-16,West Bromwich Albion,Liverpool,1.14202,2.07854
+2021-05-16,Tottenham,Wolverhampton Wanderers,3.13947,1.09206
+2021-05-16,Crystal Palace,Aston Villa,1.95285,1.2303
+2021-05-18,Manchester United,Fulham,0.92243,0.872643
+2021-05-18,Southampton,Leeds,1.3084,1.58132
+2021-05-18,Brighton,Manchester City,1.22824,1.07139
+2021-05-18,Chelsea,Leicester,2.86149,0.832596
+2021-05-19,Burnley,Liverpool,0.837048,2.73316
+2021-05-19,Crystal Palace,Arsenal,0.998377,1.7945
+2021-05-19,West Bromwich Albion,West Ham,1.10741,3.56991
+2021-05-19,Newcastle United,Sheffield United,1.82508,0.882242
+2021-05-19,Everton,Wolverhampton Wanderers,0.670997,0.265526
+2021-05-19,Tottenham,Aston Villa,0.89279,1.63669
+2021-05-23,Sheffield United,Burnley,0.420006,0.558508
+2021-05-23,Manchester City,Everton,2.88355,1.07258
+2021-05-23,Wolverhampton Wanderers,Manchester United,0.701256,2.05229
+2021-05-23,West Ham,Southampton,1.98344,1.35179
+2021-05-23,Leicester,Tottenham,1.82554,1.85229
+2021-05-23,Fulham,Newcastle United,0.98902,1.60157
+2021-05-23,Leeds,West Bromwich Albion,2.49009,1.02209
+2021-05-23,Arsenal,Brighton,0.772904,0.193968
+2021-05-23,Liverpool,Crystal Palace,2.20348,0.772317
+2021-05-23,Aston Villa,Chelsea,0.980413,3.43414
+2021-08-13,Brentford,Arsenal,1.88818,1.02385
+2021-08-14,Manchester United,Leeds,1.64248,0.568342
+2021-08-14,Burnley,Brighton,1.79548,1.6853
+2021-08-14,Chelsea,Crystal Palace,1.18709,0.321701
+2021-08-14,Everton,Southampton,2.38863,0.580601
+2021-08-14,Leicester,Wolverhampton Wanderers,0.668082,1.32714
+2021-08-14,Watford,Aston Villa,1.35036,1.13718
+2021-08-14,Norwich,Liverpool,1.3333,1.78728
+2021-08-15,Tottenham,Manchester City,1.06014,2.10585
+2021-08-15,Newcastle United,West Ham,1.67926,3.00939
+2021-08-21,Brighton,Watford,1.77896,0.407224
+2021-08-21,Leeds,Everton,0.966093,1.85713
+2021-08-21,Crystal Palace,Brentford,0.606313,0.712439
+2021-08-21,Liverpool,Burnley,2.63945,0.690464
+2021-08-21,Manchester City,Norwich,2.43928,0.0250088
+2021-08-21,Aston Villa,Newcastle United,1.18426,0.63163
+2021-08-22,Arsenal,Chelsea,0.630099,3.64132
+2021-08-22,Southampton,Manchester United,0.587526,2.26173
+2021-08-22,Wolverhampton Wanderers,Tottenham,1.51127,1.72636
+2021-08-23,West Ham,Leicester,2.28613,0.62676
+2021-08-28,West Ham,Crystal Palace,1.44748,1.67658
+2021-08-28,Liverpool,Chelsea,2.08462,0.573638
+2021-08-28,Aston Villa,Brentford,0.431464,1.13312
+2021-08-28,Brighton,Everton,0.701622,1.54868
+2021-08-28,Newcastle United,Southampton,1.19077,3.46036
+2021-08-28,Manchester City,Arsenal,4.47273,0.116805
+2021-08-28,Norwich,Leicester,1.44084,1.27371
+2021-08-29,Burnley,Leeds,1.71102,1.52078
+2021-08-29,Tottenham,Watford,0.920963,0.596016
+2021-08-29,Wolverhampton Wanderers,Manchester United,1.79575,0.944083
+2021-09-11,Watford,Wolverhampton Wanderers,0.185407,2.55922
+2021-09-11,Crystal Palace,Tottenham,2.89372,0.0775646
+2021-09-11,Arsenal,Norwich,2.68515,0.577292
+2021-09-11,Brentford,Brighton,0.729786,0.287902
+2021-09-11,Leicester,Manchester City,0.8001,2.75058
+2021-09-11,Manchester United,Newcastle United,2.77326,0.622042
+2021-09-11,Southampton,West Ham,0.692135,0.725407
+2021-09-11,Chelsea,Aston Villa,1.22153,1.17349
+2021-09-12,Leeds,Liverpool,0.652514,4.4016
+2021-09-13,Everton,Burnley,1.80386,1.82061
+2021-09-17,Newcastle United,Leeds,1.17668,1.42995
+2021-09-18,Wolverhampton Wanderers,Brentford,1.02316,2.32741
+2021-09-18,Norwich,Watford,0.782665,2.42487
+2021-09-18,Burnley,Arsenal,0.775574,1.09928
+2021-09-18,Liverpool,Crystal Palace,2.76793,0.644168
+2021-09-18,Manchester City,Southampton,1.22451,0.490923
+2021-09-18,Aston Villa,Everton,0.777716,0.755035
+2021-09-19,Brighton,Leicester,1.47438,1.25373
+2021-09-19,West Ham,Manchester United,1.6671,1.8954
+2021-09-19,Tottenham,Chelsea,0.70567,2.5869
+2021-09-25,Leeds,West Ham,1.1967,1.98962
+2021-09-25,Leicester,Burnley,2.16233,0.428866
+2021-09-25,Brentford,Liverpool,2.94058,2.25736
+2021-09-25,Everton,Norwich,2.26681,0.800903
+2021-09-25,Manchester United,Aston Villa,1.9251,1.57249
+2021-09-25,Chelsea,Manchester City,0.194202,1.69244
+2021-09-25,Watford,Newcastle United,0.904061,2.52338
+2021-09-26,Southampton,Wolverhampton Wanderers,0.909342,0.909833
+2021-09-26,Arsenal,Tottenham,1.44499,0.980166
+2021-09-27,Crystal Palace,Brighton,1.36836,0.649566
+2021-10-02,Manchester United,Everton,1.0496,1.32211
+2021-10-02,Burnley,Norwich,0.584725,0.673617
+2021-10-02,Chelsea,Southampton,3.79243,1.52634
+2021-10-02,Leeds,Watford,1.57388,0.192794
+2021-10-02,Wolverhampton Wanderers,Newcastle United,1.15849,0.865217
+2021-10-02,Brighton,Arsenal,1.11551,0.36431
+2021-10-03,Liverpool,Manchester City,0.949368,1.04319
+2021-10-03,West Ham,Brentford,1.37258,1.30098
+2021-10-03,Crystal Palace,Leicester,1.1703,1.04322
+2021-10-03,Tottenham,Aston Villa,1.78187,1.07395
+2021-10-16,Watford,Liverpool,0.302302,3.65553
+2021-10-16,Aston Villa,Wolverhampton Wanderers,1.21276,2.19633
+2021-10-16,Leicester,Manchester United,2.96611,1.02494
+2021-10-16,Manchester City,Burnley,2.15712,1.07719
+2021-10-16,Norwich,Brighton,1.16088,1.17572
+2021-10-16,Southampton,Leeds,1.83082,0.446173
+2021-10-16,Brentford,Chelsea,1.62169,0.248256
+2021-10-17,Everton,West Ham,0.854165,2.03034
+2021-10-17,Newcastle United,Tottenham,0.645658,1.55008
+2021-10-18,Arsenal,Crystal Palace,1.7436,0.492239
+2021-10-22,Arsenal,Aston Villa,3.4984,1.41088
+2021-10-23,Brighton,Manchester City,1.1695,3.57376
+2021-10-23,Southampton,Burnley,1.42567,0.673195
+2021-10-23,Leeds,Wolverhampton Wanderers,1.71313,0.858644
+2021-10-23,Crystal Palace,Newcastle United,2.25588,0.721813
+2021-10-23,Chelsea,Norwich,3.10509,0.267429
+2021-10-23,Everton,Watford,1.84089,3.10344
+2021-10-24,Brentford,Leicester,1.16789,1.00254
+2021-10-24,West Ham,Tottenham,1.73468,0.672198
+2021-10-24,Manchester United,Liverpool,1.35584,4.04765
+2021-10-30,Leicester,Arsenal,1.98801,1.10288
+2021-10-30,Burnley,Brentford,2.72901,0.834312
+2021-10-30,Liverpool,Brighton,1.39778,1.51032
+2021-10-30,Manchester City,Crystal Palace,0.65739,1.05029
+2021-10-30,Newcastle United,Chelsea,0.157616,2.16608
+2021-10-30,Watford,Southampton,0.852556,1.90757
+2021-10-30,Tottenham,Manchester United,1.15787,1.38612
+2021-10-31,Aston Villa,West Ham,0.687551,2.66391
+2021-10-31,Norwich,Leeds,0.661887,1.16855
+2021-11-01,Wolverhampton Wanderers,Everton,1.69344,1.69767
+2021-11-05,Southampton,Aston Villa,0.89818,0.536077
+2021-11-06,Manchester United,Manchester City,0.759561,2.04202
+2021-11-06,Brentford,Norwich,2.79229,1.15797
+2021-11-06,Chelsea,Burnley,3.00585,0.674072
+2021-11-06,Crystal Palace,Wolverhampton Wanderers,2.65161,0.25416
+2021-11-06,Brighton,Newcastle United,1.43123,0.227321
+2021-11-07,Arsenal,Watford,1.49208,0.491659
+2021-11-07,Everton,Tottenham,0.597906,0.801798
+2021-11-07,Leeds,Leicester,1.96551,0.795292
+2021-11-07,West Ham,Liverpool,1.25298,1.45641
+2021-11-20,Wolverhampton Wanderers,West Ham,1.31903,0.436331
+2021-11-20,Watford,Manchester United,2.73393,1.66794
+2021-11-20,Liverpool,Arsenal,3.97374,0.268025
+2021-11-20,Newcastle United,Brentford,2.18388,1.23275
+2021-11-20,Aston Villa,Brighton,1.06946,0.582787
+2021-11-20,Burnley,Crystal Palace,1.04224,1.74839
+2021-11-20,Norwich,Southampton,0.43778,1.13118
+2021-11-20,Leicester,Chelsea,0.499504,2.57178
+2021-11-21,Manchester City,Everton,2.61302,0.266894
+2021-11-21,Tottenham,Leeds,2.31744,1.46689
+2021-11-27,Arsenal,Newcastle United,2.84493,0.185383
+2021-11-27,Crystal Palace,Aston Villa,0.962129,0.454305
+2021-11-27,Liverpool,Southampton,3.07278,0.966132
+2021-11-27,Norwich,Wolverhampton Wanderers,1.4047,0.297157
+2021-11-27,Brighton,Leeds,1.90498,0.864829
+2021-11-28,Chelsea,Manchester United,2.34525,0.563367
+2021-11-28,Manchester City,West Ham,2.72187,0.171763
+2021-11-28,Brentford,Everton,1.19813,0.968075
+2021-11-28,Leicester,Watford,2.16027,2.38383
+2021-11-30,Newcastle United,Norwich,1.15636,1.51084
+2021-11-30,Leeds,Crystal Palace,1.9818,0.707328
+2021-12-01,Watford,Chelsea,0.990877,0.908574
+2021-12-01,West Ham,Brighton,1.14679,1.2607
+2021-12-01,Wolverhampton Wanderers,Burnley,0.711691,0.195537
+2021-12-01,Southampton,Leicester,1.91169,1.4401
+2021-12-01,Aston Villa,Manchester City,0.772083,1.01897
+2021-12-01,Everton,Liverpool,0.512263,2.86067
+2021-12-02,Tottenham,Brentford,2.07248,0.225492
+2021-12-02,Manchester United,Arsenal,1.85597,1.16638
+2021-12-04,Watford,Manchester City,0.675105,4.03223
+2021-12-04,Southampton,Brighton,1.34236,1.4872
+2021-12-04,Wolverhampton Wanderers,Liverpool,0.095167,2.42332
+2021-12-04,West Ham,Chelsea,2.0174,1.37049
+2021-12-04,Newcastle United,Burnley,1.70609,0.604599
+2021-12-05,Leeds,Brentford,1.41896,1.19959
+2021-12-05,Manchester United,Crystal Palace,0.870376,0.520593
+2021-12-05,Tottenham,Norwich,2.00668,1.06562
+2021-12-05,Aston Villa,Leicester,1.84818,0.982614
+2021-12-06,Everton,Arsenal,1.06108,1.05723
+2021-12-10,Brentford,Watford,1.82799,0.561554
+2021-12-11,Manchester City,Wolverhampton Wanderers,2.99915,0.0762839
+2021-12-11,Arsenal,Southampton,2.08429,0.502215
+2021-12-11,Chelsea,Leeds,2.74844,1.72934
+2021-12-11,Liverpool,Aston Villa,2.71181,0.140573
+2021-12-11,Norwich,Manchester United,0.986107,2.09817
+2021-12-12,Leicester,Newcastle United,2.05771,0.511934
+2021-12-12,Crystal Palace,Everton,2.09864,1.27556
+2021-12-12,Burnley,West Ham,0.54801,0.998813
+2021-12-14,Norwich,Aston Villa,0.502647,1.96261
+2021-12-14,Manchester City,Leeds,3.31349,0.227498
+2021-12-15,Brighton,Wolverhampton Wanderers,1.20118,1.11736
+2021-12-15,Crystal Palace,Southampton,1.49244,0.625183
+2021-12-15,Arsenal,West Ham,2.81482,0.338855
+2021-12-16,Chelsea,Everton,3.20239,0.627528
+2021-12-16,Liverpool,Newcastle United,2.93912,0.2064
+2021-12-18,Leeds,Arsenal,1.31408,3.69008
+2021-12-19,Wolverhampton Wanderers,Chelsea,0.321371,0.793952
+2021-12-19,Newcastle United,Manchester City,0.174208,3.64686
+2021-12-19,Tottenham,Liverpool,2.79777,1.54944
+2021-12-26,Brighton,Brentford,0.943363,1.10342
+2021-12-26,West Ham,Southampton,1.53745,1.35643
+2021-12-26,Aston Villa,Chelsea,0.474029,2.8285
+2021-12-26,Norwich,Arsenal,0.154212,2.87539
+2021-12-26,Manchester City,Leicester,3.82869,2.43425
+2021-12-26,Tottenham,Crystal Palace,2.82148,0.178324
+2021-12-27,Newcastle United,Manchester United,1.26586,1.75587
+2021-12-28,Watford,West Ham,1.0143,2.84084
+2021-12-28,Crystal Palace,Norwich,2.38978,0.594134
+2021-12-28,Southampton,Tottenham,0.353043,2.80917
+2021-12-28,Leicester,Liverpool,0.615892,2.72682
+2021-12-29,Chelsea,Brighton,0.763458,0.78663
+2021-12-29,Brentford,Manchester City,0.238829,1.01763
+2021-12-30,Manchester United,Burnley,1.80776,0.871738
+2022-01-01,Arsenal,Manchester City,0.836949,1.94623
+2022-01-01,Watford,Tottenham,0.303514,1.93752
+2022-01-01,Crystal Palace,West Ham,2.69204,2.23146
+2022-01-02,Chelsea,Liverpool,1.389,1.78897
+2022-01-02,Leeds,Burnley,2.04186,0.960493
+2022-01-02,Brentford,Aston Villa,0.501329,1.13821
+2022-01-02,Everton,Brighton,1.82698,1.48397
+2022-01-03,Manchester United,Wolverhampton Wanderers,0.768752,0.840925
+2022-01-11,Southampton,Brentford,1.59306,0.621466
+2022-01-12,West Ham,Norwich,2.89217,0.343347
+2022-01-14,Brighton,Crystal Palace,2.18053,0.509681
+2022-01-15,Manchester City,Chelsea,0.901703,0.613757
+2022-01-15,Newcastle United,Watford,1.03855,1.49623
+2022-01-15,Norwich,Everton,1.00153,0.541027
+2022-01-15,Wolverhampton Wanderers,Southampton,2.29917,0.91728
+2022-01-15,Aston Villa,Manchester United,1.82784,1.35378
+2022-01-16,Liverpool,Brentford,3.49099,0.376656
+2022-01-16,West Ham,Leeds,2.3549,2.26884
+2022-01-18,Brighton,Chelsea,0.747557,0.572994
+2022-01-19,Brentford,Manchester United,2.081,2.05969
+2022-01-19,Leicester,Tottenham,1.95031,4.24711
+2022-01-21,Watford,Norwich,1.30606,0.925212
+2022-01-22,Everton,Aston Villa,1.2384,0.860245
+2022-01-22,Brentford,Wolverhampton Wanderers,0.742573,0.218211
+2022-01-22,Leeds,Newcastle United,1.12992,1.15904
+2022-01-22,Manchester United,West Ham,1.75857,0.238027
+2022-01-22,Southampton,Manchester City,1.00222,1.62907
+2022-01-23,Arsenal,Burnley,1.35507,0.388963
+2022-01-23,Crystal Palace,Liverpool,1.62615,1.49697
+2022-01-23,Leicester,Brighton,1.70979,1.19738
+2022-01-23,Chelsea,Tottenham,1.04212,0.328818
+2022-02-05,Burnley,Watford,0.765905,0.933965
+2022-02-08,West Ham,Watford,0.905143,0.335474
+2022-02-08,Newcastle United,Everton,2.68732,0.823607
+2022-02-08,Burnley,Manchester United,0.772721,1.83387
+2022-02-09,Aston Villa,Leeds,1.5013,2.52914
+2022-02-09,Manchester City,Brentford,1.98246,0.461305
+2022-02-09,Norwich,Crystal Palace,0.296411,1.22883
+2022-02-09,Tottenham,Southampton,1.74286,1.73293
+2022-02-10,Wolverhampton Wanderers,Arsenal,0.641359,1.45247
+2022-02-10,Liverpool,Leicester,2.72997,0.544954
+2022-02-12,Manchester United,Southampton,2.99207,0.677386
+2022-02-12,Brentford,Crystal Palace,1.97576,0.49802
+2022-02-12,Everton,Leeds,2.58561,0.242668
+2022-02-12,Watford,Brighton,0.532979,1.80456
+2022-02-12,Norwich,Manchester City,0.356755,4.44653
+2022-02-13,Tottenham,Wolverhampton Wanderers,0.838197,1.87026
+2022-02-13,Burnley,Liverpool,1.16081,1.95722
+2022-02-13,Newcastle United,Aston Villa,0.527571,0.455206
+2022-02-13,Leicester,West Ham,1.40693,0.745068
+2022-02-15,Manchester United,Brighton,2.74936,1.26179
+2022-02-19,West Ham,Newcastle United,0.847948,0.932574
+2022-02-19,Arsenal,Brentford,1.52247,0.640726
+2022-02-19,Aston Villa,Watford,1.0267,1.82051
+2022-02-19,Brighton,Burnley,0.44587,0.821228
+2022-02-19,Crystal Palace,Chelsea,0.624023,1.12339
+2022-02-19,Liverpool,Norwich,3.15449,0.66975
+2022-02-19,Southampton,Everton,2.72851,0.19991
+2022-02-19,Manchester City,Tottenham,2.31773,2.00235
+2022-02-20,Leeds,Manchester United,1.74476,2.60999
+2022-02-20,Wolverhampton Wanderers,Leicester,0.472777,1.55048
+2022-02-23,Watford,Crystal Palace,1.71917,0.818403
+2022-02-23,Liverpool,Leeds,5.3303,0.141547
+2022-02-23,Burnley,Tottenham,1.55576,0.691655
+2022-02-24,Arsenal,Wolverhampton Wanderers,2.50961,1.10934
+2022-02-25,Southampton,Norwich,3.08863,0.424877
+2022-02-26,Leeds,Tottenham,1.89569,2.47025
+2022-02-26,Brentford,Newcastle United,0.494232,2.25373
+2022-02-26,Crystal Palace,Burnley,1.03765,0.255988
+2022-02-26,Manchester United,Watford,2.41457,0.437185
+2022-02-26,Brighton,Aston Villa,0.627107,1.3027
+2022-02-26,Everton,Manchester City,0.770819,1.93422
+2022-02-27,West Ham,Wolverhampton Wanderers,1.62241,0.892018
+2022-03-01,Burnley,Leicester,1.04214,1.79558
+2022-03-05,Norwich,Brentford,0.77334,2.22064
+2022-03-05,Liverpool,West Ham,2.18865,1.33829
+2022-03-05,Newcastle United,Brighton,1.58028,1.64995
+2022-03-05,Wolverhampton Wanderers,Crystal Palace,0.710865,2.53759
+2022-03-05,Aston Villa,Southampton,2.85379,1.32947
+2022-03-05,Leicester,Leeds,0.359129,2.14389
+2022-03-05,Burnley,Chelsea,0.849232,2.2868
+2022-03-06,Watford,Arsenal,1.29603,1.00457
+2022-03-06,Manchester City,Manchester United,2.74434,0.361782
+2022-03-07,Tottenham,Everton,3.24279,0.208263
+2022-03-10,Wolverhampton Wanderers,Watford,1.55037,0.498696
+2022-03-10,Southampton,Newcastle United,1.79835,0.812233
+2022-03-10,Norwich,Chelsea,0.965723,2.1308
+2022-03-10,Leeds,Aston Villa,0.194028,1.2729
+2022-03-12,Brighton,Liverpool,0.629316,2.48312
+2022-03-12,Brentford,Burnley,1.82002,0.825311
+2022-03-12,Manchester United,Tottenham,1.0181,1.62374
+2022-03-13,Arsenal,Leicester,2.93665,0.54911
+2022-03-13,West Ham,Aston Villa,1.58468,1.05391
+2022-03-13,Southampton,Watford,1.25696,1.29385
+2022-03-13,Everton,Wolverhampton Wanderers,0.397268,0.712135
+2022-03-13,Chelsea,Newcastle United,1.07072,0.246037
+2022-03-13,Leeds,Norwich,3.11755,1.40148
+2022-03-14,Crystal Palace,Manchester City,0.474002,2.04021
+2022-03-16,Brighton,Tottenham,1.04171,2.05196
+2022-03-16,Arsenal,Liverpool,0.534265,1.27681
+2022-03-17,Everton,Newcastle United,0.708809,0.75803
+2022-03-18,Wolverhampton Wanderers,Leeds,1.24075,2.82103
+2022-03-19,Aston Villa,Arsenal,0.309375,1.14522
+2022-03-20,Leicester,Brentford,1.27865,1.72466
+2022-03-20,Tottenham,West Ham,2.54795,0.644964
+2022-04-02,Brighton,Norwich,2.38297,0.494112
+2022-04-02,Manchester United,Leicester,0.902127,1.07638
+2022-04-02,Chelsea,Brentford,1.29014,2.43422
+2022-04-02,Burnley,Manchester City,0.0591223,1.62008
+2022-04-02,Wolverhampton Wanderers,Aston Villa,1.62151,1.91256
+2022-04-02,Liverpool,Watford,2.23651,0.753307
+2022-04-02,Leeds,Southampton,1.50715,2.06387
+2022-04-03,West Ham,Everton,1.49657,0.657846
+2022-04-03,Tottenham,Newcastle United,3.6081,0.538152
+2022-04-04,Crystal Palace,Arsenal,1.39707,1.05199
+2022-04-06,Burnley,Everton,2.24439,2.31574
+2022-04-08,Newcastle United,Wolverhampton Wanderers,1.43878,0.306867
+2022-04-09,Everton,Manchester United,0.357295,0.762357
+2022-04-09,Watford,Leeds,1.07422,0.895612
+2022-04-09,Southampton,Chelsea,0.564726,4.39683
+2022-04-09,Arsenal,Brighton,2.35153,0.596106
+2022-04-09,Aston Villa,Tottenham,1.48712,0.983601
+2022-04-10,Brentford,West Ham,1.85534,0.244824
+2022-04-10,Manchester City,Liverpool,1.34647,1.29983
+2022-04-10,Norwich,Burnley,1.6723,1.44652
+2022-04-10,Leicester,Crystal Palace,0.879235,1.52767
+2022-04-16,Tottenham,Brighton,0.58624,0.711155
+2022-04-16,Watford,Brentford,1.50381,2.12457
+2022-04-16,Southampton,Arsenal,1.04007,1.35002
+2022-04-16,Manchester United,Norwich,1.66737,1.79754
+2022-04-17,West Ham,Burnley,2.79175,1.88137
+2022-04-17,Newcastle United,Leicester,2.54294,0.541084
+2022-04-19,Liverpool,Manchester United,2.25967,0.110227
+2022-04-20,Newcastle United,Crystal Palace,0.767855,0.432788
+2022-04-20,Everton,Leicester,1.68819,0.786333
+2022-04-20,Chelsea,Arsenal,0.593801,1.87331
+2022-04-20,Manchester City,Brighton,1.52844,0.117354
+2022-04-21,Burnley,Southampton,2.14743,1.31837
+2022-04-23,Brentford,Tottenham,1.3153,0.517755
+2022-04-23,Leicester,Aston Villa,0.235635,0.593202
+2022-04-23,Arsenal,Manchester United,2.54173,2.04244
+2022-04-23,Norwich,Newcastle United,0.657661,1.87558
+2022-04-23,Manchester City,Watford,3.68,0.42632
+2022-04-24,Chelsea,West Ham,2.34959,0.388975
+2022-04-24,Burnley,Wolverhampton Wanderers,1.27298,0.592902
+2022-04-24,Brighton,Southampton,1.87343,0.926764
+2022-04-24,Liverpool,Everton,1.70397,0.424961
+2022-04-25,Crystal Palace,Leeds,1.61656,0.374044
+2022-04-28,Manchester United,Chelsea,0.618456,2.46868
+2022-04-30,Leeds,Manchester City,1.03608,3.01431
+2022-04-30,Southampton,Crystal Palace,0.650256,0.756217
+2022-04-30,Aston Villa,Norwich,2.31192,0.352212
+2022-04-30,Wolverhampton Wanderers,Brighton,0.525912,2.90679
+2022-04-30,Newcastle United,Liverpool,0.115353,2.73435
+2022-04-30,Watford,Burnley,0.785742,1.37022
+2022-05-01,Tottenham,Leicester,1.65338,0.274133
+2022-05-01,Everton,Chelsea,1.11712,1.21141
+2022-05-01,West Ham,Arsenal,0.451976,0.964564
+2022-05-02,Manchester United,Brentford,1.84111,0.681425
+2022-05-07,Liverpool,Tottenham,1.0481,0.982635
+2022-05-07,Crystal Palace,Watford,2.49142,0.255373
+2022-05-07,Chelsea,Wolverhampton Wanderers,1.82098,1.6842
+2022-05-07,Burnley,Aston Villa,1.31028,1.81256
+2022-05-07,Brentford,Southampton,3.68223,0.988574
+2022-05-07,Brighton,Manchester United,2.82636,0.930715
+2022-05-08,Leicester,Everton,1.47479,1.55635
+2022-05-08,Arsenal,Leeds,2.7227,0.696785
+2022-05-08,Norwich,West Ham,0.77895,3.25894
+2022-05-08,Manchester City,Newcastle United,4.05613,0.995099
+2022-05-10,Aston Villa,Liverpool,1.44726,1.75417
+2022-05-11,Leeds,Chelsea,0.499789,1.46853
+2022-05-11,Leicester,Norwich,2.57058,1.21966
+2022-05-11,Watford,Everton,0.232236,0.812193
+2022-05-11,Wolverhampton Wanderers,Manchester City,0.411857,3.39304
+2022-05-12,Tottenham,Arsenal,3.42522,0.387446
+2022-05-15,Tottenham,Burnley,2.39449,0.629888
+2022-05-15,Wolverhampton Wanderers,Norwich,0.999066,1.53212
+2022-05-15,West Ham,Manchester City,1.0088,2.14723
+2022-05-15,Watford,Leicester,2.58968,2.27297
+2022-05-15,Leeds,Brighton,2.22282,2.25898
+2022-05-15,Aston Villa,Crystal Palace,0.799443,1.39009
+2022-05-15,Everton,Brentford,2.69589,1.81626
+2022-05-16,Newcastle United,Arsenal,1.68299,0.492454
+2022-05-17,Southampton,Liverpool,0.121506,1.19178
+2022-05-19,Chelsea,Leicester,1.61996,0.0417972
+2022-05-19,Aston Villa,Burnley,0.996403,1.63117
+2022-05-19,Everton,Crystal Palace,0.813157,1.6023
+2022-05-22,Arsenal,Everton,4.35597,1.08601
+2022-05-22,Brentford,Leeds,0.844985,1.47786
+2022-05-22,Brighton,West Ham,1.67774,0.268845
+2022-05-22,Burnley,Newcastle United,1.49164,1.74291
+2022-05-22,Chelsea,Watford,2.59231,0.575755
+2022-05-22,Crystal Palace,Manchester United,0.354618,0.782005
+2022-05-22,Leicester,Southampton,3.42058,1.05141
+2022-05-22,Liverpool,Wolverhampton Wanderers,3.19385,1.11708
+2022-05-22,Manchester City,Aston Villa,3.3209,0.247841
+2022-05-22,Norwich,Tottenham,0.310789,3.815
+2022-08-05,Crystal Palace,Arsenal,1.20637,1.43601
+2022-08-06,Everton,Chelsea,0.541983,1.92315
+2022-08-06,Tottenham,Southampton,1.6172,0.386546
+2022-08-06,Newcastle United,Nottingham Forest,1.8591,0.235825
+2022-08-06,Bournemouth,Aston Villa,0.588341,0.488895
+2022-08-06,Fulham,Liverpool,1.26822,2.34111
+2022-08-06,Leeds,Wolverhampton Wanderers,0.88917,1.10119
+2022-08-07,Manchester United,Brighton,1.42103,1.7289
+2022-08-07,Leicester,Brentford,0.455695,0.931067
+2022-08-07,West Ham,Manchester City,0.246188,2.58739
+2022-08-13,Aston Villa,Everton,2.66696,1.37507
+2022-08-13,Brighton,Newcastle United,1.60835,0.183952
+2022-08-13,Manchester City,Bournemouth,1.69064,0.123946
+2022-08-13,Southampton,Leeds,1.40906,1.99694
+2022-08-13,Wolverhampton Wanderers,Fulham,0.975375,1.08813
+2022-08-13,Arsenal,Leicester,3.0107,0.690679
+2022-08-13,Brentford,Manchester United,1.38785,0.896038
+2022-08-14,Chelsea,Tottenham,1.83945,1.58708
+2022-08-14,Nottingham Forest,West Ham,1.9717,2.08634
+2022-08-15,Liverpool,Crystal Palace,2.23596,1.64468
+2022-08-20,Tottenham,Wolverhampton Wanderers,1.46608,0.686123
+2022-08-20,Crystal Palace,Aston Villa,2.91137,0.803828
+2022-08-20,Everton,Nottingham Forest,1.43408,0.918315
+2022-08-20,Fulham,Brentford,2.89934,1.59352
+2022-08-20,Leicester,Southampton,0.242948,1.24155
+2022-08-20,Bournemouth,Arsenal,0.211335,1.71081
+2022-08-21,Leeds,Chelsea,2.20971,0.692492
+2022-08-21,West Ham,Brighton,0.768634,1.82645
+2022-08-21,Newcastle United,Manchester City,2.2127,3.67382
+2022-08-22,Manchester United,Liverpool,2.01764,1.52301
+2022-08-27,Manchester City,Crystal Palace,2.3853,0.091976
+2022-08-27,Arsenal,Fulham,2.47427,0.926007
+2022-08-27,Liverpool,Bournemouth,4.86035,0.180991
+2022-08-27,Southampton,Manchester United,1.35887,1.34359
+2022-08-27,Brighton,Leeds,1.60986,1.14874
+2022-08-27,Brentford,Everton,2.28391,1.65465
+2022-08-27,Chelsea,Leicester,1.74916,1.96023
+2022-08-28,Aston Villa,West Ham,0.304555,0.334589
+2022-08-28,Wolverhampton Wanderers,Newcastle United,1.13248,1.93362
+2022-08-28,Nottingham Forest,Tottenham,0.801369,2.44473
+2022-08-30,Fulham,Brighton,1.07093,1.75359
+2022-08-30,Crystal Palace,Brentford,0.777363,1.61808
+2022-08-30,Southampton,Chelsea,1.44086,1.5047
+2022-08-30,Leeds,Everton,1.04551,1.17189
+2022-08-31,Liverpool,Newcastle United,1.76119,0.643546
+2022-08-31,West Ham,Tottenham,1.52267,0.723285
+2022-08-31,Bournemouth,Wolverhampton Wanderers,0.362035,1.53246
+2022-08-31,Arsenal,Aston Villa,2.79971,0.297168
+2022-08-31,Manchester City,Nottingham Forest,3.83759,0.729752
+2022-09-01,Leicester,Manchester United,0.615266,1.09969
+2022-09-03,Everton,Liverpool,1.39169,1.38617
+2022-09-03,Newcastle United,Crystal Palace,2.90672,0.920595
+2022-09-03,Nottingham Forest,Bournemouth,1.32895,0.905041
+2022-09-03,Tottenham,Fulham,2.67823,0.381556
+2022-09-03,Wolverhampton Wanderers,Southampton,1.10039,1.20838
+2022-09-03,Brentford,Leeds,2.7485,1.796
+2022-09-03,Chelsea,West Ham,0.707333,1.4196
+2022-09-03,Aston Villa,Manchester City,0.279392,1.92143
+2022-09-04,Brighton,Leicester,2.73166,1.06549
+2022-09-04,Manchester United,Arsenal,2.02904,1.42238
+2022-09-16,Nottingham Forest,Fulham,1.41541,1.3496
+2022-09-16,Aston Villa,Southampton,1.34365,0.218302
+2022-09-17,Wolverhampton Wanderers,Manchester City,0.310995,1.4242
+2022-09-17,Newcastle United,Bournemouth,1.54758,0.976948
+2022-09-17,Tottenham,Leicester,1.98619,1.59449
+2022-09-18,Brentford,Arsenal,0.54011,1.32021
+2022-09-18,Everton,West Ham,0.39773,0.655351
+2022-10-01,West Ham,Wolverhampton Wanderers,1.03934,0.575988
+2022-10-01,Arsenal,Tottenham,2.48403,1.5027
+2022-10-01,Bournemouth,Brentford,0.758128,1.046
+2022-10-01,Crystal Palace,Chelsea,0.70987,1.25506
+2022-10-01,Fulham,Newcastle United,0.683701,4.67198
+2022-10-01,Liverpool,Brighton,2.1515,2.36567
+2022-10-01,Southampton,Everton,1.95961,1.99979
+2022-10-02,Leeds,Aston Villa,0.298626,1.89645
+2022-10-02,Manchester City,Manchester United,3.01103,1.71335
+2022-10-03,Leicester,Nottingham Forest,1.2497,1.22169
+2022-10-08,Bournemouth,Leicester,1.14891,1.18125
+2022-10-08,Chelsea,Wolverhampton Wanderers,2.43092,0.748449
+2022-10-08,Manchester City,Southampton,2.73536,0.101148
+2022-10-08,Newcastle United,Brentford,2.44631,1.13466
+2022-10-08,Brighton,Tottenham,0.899735,0.771641
+2022-10-09,Crystal Palace,Leeds,1.65194,1.06564
+2022-10-09,West Ham,Fulham,3.43676,0.549848
+2022-10-09,Arsenal,Liverpool,2.81968,0.765151
+2022-10-09,Everton,Manchester United,0.365844,1.82612
+2022-10-10,Nottingham Forest,Aston Villa,0.221346,0.657187
+2022-10-14,Brentford,Brighton,1.90636,2.15668
+2022-10-15,Wolverhampton Wanderers,Nottingham Forest,1.22368,1.24761
+2022-10-15,Tottenham,Everton,2.49409,0.560039
+2022-10-15,Leicester,Crystal Palace,0.973426,0.346808
+2022-10-15,Fulham,Bournemouth,1.61738,1.62829
+2022-10-16,Aston Villa,Chelsea,2.44542,1.23643
+2022-10-16,Leeds,Arsenal,2.02232,0.821757
+2022-10-16,Manchester United,Newcastle United,1.41606,0.78815
+2022-10-16,Southampton,West Ham,0.524479,1.70727
+2022-10-16,Liverpool,Manchester City,1.9992,0.911493
+2022-10-18,Brighton,Nottingham Forest,2.10188,0.195003
+2022-10-18,Crystal Palace,Wolverhampton Wanderers,1.25617,0.857837
+2022-10-19,Bournemouth,Southampton,0.810452,1.23878
+2022-10-19,Brentford,Chelsea,1.45228,0.557405
+2022-10-19,Newcastle United,Everton,1.13393,0.0609567
+2022-10-19,Liverpool,West Ham,2.24066,2.48649
+2022-10-19,Manchester United,Tottenham,1.70973,0.658526
+2022-10-20,Leicester,Leeds,0.655249,1.19464
+2022-10-20,Fulham,Aston Villa,2.892,0.711487
+2022-10-22,Nottingham Forest,Liverpool,2.50163,2.19752
+2022-10-22,Everton,Crystal Palace,1.93396,0.597167
+2022-10-22,Manchester City,Brighton,1.86239,0.52863
+2022-10-22,Chelsea,Manchester United,1.20238,0.730935
+2022-10-23,Aston Villa,Brentford,3.45617,1.00462
+2022-10-23,Leeds,Fulham,1.96384,2.47512
+2022-10-23,Southampton,Arsenal,0.622653,1.57897
+2022-10-23,Wolverhampton Wanderers,Leicester,1.61785,0.989075
+2022-10-23,Tottenham,Newcastle United,1.56513,1.1294
+2022-10-24,West Ham,Bournemouth,1.97715,0.730443
+2022-10-29,Fulham,Everton,1.76438,1.19166
+2022-10-29,Liverpool,Leeds,1.90889,1.61271
+2022-10-29,Newcastle United,Aston Villa,4.18808,0.270814
+2022-10-29,Crystal Palace,Southampton,1.00384,1.35803
+2022-10-29,Brighton,Chelsea,2.881,1.07554
+2022-10-29,Brentford,Wolverhampton Wanderers,1.29257,0.557605
+2022-10-29,Bournemouth,Tottenham,0.887533,2.1946
+2022-10-29,Leicester,Manchester City,0.693597,0.703827
+2022-10-30,Arsenal,Nottingham Forest,3.00699,0.206127
+2022-10-30,Manchester United,West Ham,1.7514,1.00033
+2022-11-05,Leeds,Bournemouth,2.22532,1.55594
+2022-11-05,Manchester City,Fulham,2.39332,0.843884
+2022-11-05,Nottingham Forest,Brentford,1.29696,1.2204
+2022-11-05,Wolverhampton Wanderers,Brighton,1.29252,1.87375
+2022-11-05,Everton,Leicester,1.3729,2.2679
+2022-11-06,Tottenham,Liverpool,1.81736,1.46548
+2022-11-06,Southampton,Newcastle United,1.65228,1.42101
+2022-11-06,West Ham,Crystal Palace,0.192579,1.03344
+2022-11-06,Chelsea,Arsenal,0.278815,2.37846
+2022-11-06,Aston Villa,Manchester United,0.578563,0.517189
+2022-11-12,Manchester City,Brentford,1.605,3.29012
+2022-11-12,Bournemouth,Everton,2.45642,0.768756
+2022-11-12,Liverpool,Southampton,2.74418,1.43427
+2022-11-12,Nottingham Forest,Crystal Palace,1.23752,1.14552
+2022-11-12,Tottenham,Leeds,2.58046,1.71731
+2022-11-12,West Ham,Leicester,0.720721,1.60566
+2022-11-12,Newcastle United,Chelsea,1.3601,0.359105
+2022-11-12,Wolverhampton Wanderers,Arsenal,0.512339,2.27996
+2022-11-13,Brighton,Aston Villa,0.829107,1.15437
+2022-11-13,Fulham,Manchester United,1.70218,3.37664
+2022-12-26,Southampton,Brighton,1.70709,1.00714
+2022-12-26,Aston Villa,Liverpool,1.69155,3.50694
+2022-12-26,Arsenal,West Ham,1.88828,1.02652
+2022-12-26,Leicester,Newcastle United,0.31099,1.76382
+2022-12-26,Crystal Palace,Fulham,0.421754,2.69927
+2022-12-26,Brentford,Tottenham,2.25263,0.883787
+2022-12-26,Everton,Wolverhampton Wanderers,1.22653,1.22076
+2022-12-27,Chelsea,Bournemouth,1.91378,0.44307
+2022-12-27,Manchester United,Nottingham Forest,2.13668,0.477076
+2022-12-28,Leeds,Manchester City,0.603751,4.16249
+2022-12-30,West Ham,Brentford,1.13979,1.51436
+2022-12-30,Liverpool,Leicester,2.02463,0.863312
+2022-12-31,Wolverhampton Wanderers,Manchester United,0.587672,2.44728
+2022-12-31,Bournemouth,Crystal Palace,0.895819,1.75264
+2022-12-31,Fulham,Southampton,1.49305,0.698711
+2022-12-31,Manchester City,Everton,2.36333,0.0760019
+2022-12-31,Newcastle United,Leeds,2.78846,0.517099
+2022-12-31,Brighton,Arsenal,1.15663,3.22106
+2023-01-01,Nottingham Forest,Chelsea,0.985219,1.37305
+2023-01-01,Tottenham,Aston Villa,0.569383,1.21733
+2023-01-02,Brentford,Liverpool,2.0991,2.10461
+2023-01-03,Arsenal,Newcastle United,0.970637,0.959523
+2023-01-03,Everton,Brighton,1.16896,2.50731
+2023-01-03,Leicester,Fulham,1.45221,1.33493
+2023-01-03,Manchester United,Bournemouth,2.97383,0.679022
+2023-01-04,Southampton,Nottingham Forest,0.62937,1.22324
+2023-01-04,Leeds,West Ham,1.2577,1.29245
+2023-01-04,Aston Villa,Wolverhampton Wanderers,1.03226,0.832522
+2023-01-04,Crystal Palace,Tottenham,0.787525,1.66514
+2023-01-05,Chelsea,Manchester City,0.493576,1.71972
+2023-01-12,Fulham,Chelsea,0.711266,2.39911
+2023-01-13,Aston Villa,Leeds,1.64599,2.46295
+2023-01-14,Brentford,Bournemouth,1.29815,0.269283
+2023-01-14,Wolverhampton Wanderers,West Ham,0.806232,0.735105
+2023-01-14,Nottingham Forest,Leicester,1.75313,0.803421
+2023-01-14,Brighton,Liverpool,2.40062,1.28853
+2023-01-14,Manchester United,Manchester City,1.98228,0.73695
+2023-01-14,Everton,Southampton,1.18191,1.08412
+2023-01-15,Chelsea,Crystal Palace,2.12987,0.837366
+2023-01-15,Newcastle United,Fulham,1.96256,0.989872
+2023-01-15,Tottenham,Arsenal,1.71032,2.04232
+2023-01-18,Crystal Palace,Manchester United,0.413339,1.39437
+2023-01-19,Manchester City,Tottenham,2.34166,1.16499
+2023-01-21,Liverpool,Chelsea,1.30125,1.84467
+2023-01-21,Bournemouth,Nottingham Forest,1.80549,1.57544
+2023-01-21,Leicester,Brighton,1.35941,1.94491
+2023-01-21,Southampton,Aston Villa,0.672444,1.16432
+2023-01-21,West Ham,Everton,2.46879,0.286826
+2023-01-21,Crystal Palace,Newcastle United,0.333154,1.44384
+2023-01-22,Arsenal,Manchester United,2.90273,0.272246
+2023-01-22,Leeds,Brentford,0.374736,0.17114
+2023-01-22,Manchester City,Wolverhampton Wanderers,3.32757,0.469277
+2023-01-23,Fulham,Tottenham,1.09339,0.993805
+2023-02-03,Chelsea,Fulham,1.41471,0.493341
+2023-02-04,Everton,Arsenal,2.09191,0.690102
+2023-02-04,Aston Villa,Leicester,1.4989,2.49784
+2023-02-04,Brentford,Southampton,2.36747,0.644385
+2023-02-04,Brighton,Bournemouth,2.55696,0.908298
+2023-02-04,Manchester United,Crystal Palace,2.07035,1.3798
+2023-02-04,Wolverhampton Wanderers,Liverpool,2.63328,1.30193
+2023-02-04,Newcastle United,West Ham,1.22883,1.27831
+2023-02-05,Tottenham,Manchester City,1.42168,0.773747
+2023-02-05,Nottingham Forest,Leeds,0.3325,1.12331
+2023-02-08,Manchester United,Leeds,2.00007,0.554798
+2023-02-11,Arsenal,Brentford,1.36738,2.17538
+2023-02-11,Southampton,Wolverhampton Wanderers,1.30203,0.615651
+2023-02-11,Bournemouth,Newcastle United,1.54458,1.54853
+2023-02-11,Leicester,Tottenham,1.41208,1.11709
+2023-02-11,West Ham,Chelsea,1.07615,0.900465
+2023-02-11,Crystal Palace,Brighton,0.928279,2.64981
+2023-02-11,Fulham,Nottingham Forest,1.69704,0.686824
+2023-02-12,Leeds,Manchester United,1.89163,1.30375
+2023-02-12,Manchester City,Aston Villa,3.60987,0.275348
+2023-02-13,Liverpool,Everton,2.23291,0.402331
+2023-02-15,Arsenal,Manchester City,1.70139,2.00841
+2023-02-18,Aston Villa,Arsenal,0.335752,2.85981
+2023-02-18,Brentford,Crystal Palace,0.610105,1.12202
+2023-02-18,Brighton,Fulham,2.71375,0.224214
+2023-02-18,Chelsea,Southampton,1.61723,0.619532
+2023-02-18,Everton,Leeds,1.53811,0.597403
+2023-02-18,Nottingham Forest,Manchester City,1.12735,2.80966
+2023-02-18,Wolverhampton Wanderers,Bournemouth,0.911415,1.15274
+2023-02-18,Newcastle United,Liverpool,1.74852,2.16549
+2023-02-19,Tottenham,West Ham,1.43042,0.365173
+2023-02-19,Manchester United,Leicester,4.24663,1.39678
+2023-02-24,Fulham,Wolverhampton Wanderers,0.913133,0.997097
+2023-02-25,Everton,Aston Villa,1.54109,2.06037
+2023-02-25,Leeds,Southampton,0.720048,0.391128
+2023-02-25,Leicester,Arsenal,0.0203463,0.722059
+2023-02-25,West Ham,Nottingham Forest,3.05032,0.350849
+2023-02-25,Bournemouth,Manchester City,1.08527,2.98206
+2023-02-25,Crystal Palace,Liverpool,0.989086,1.35123
+2023-02-26,Tottenham,Chelsea,0.926313,0.262281
+2023-03-01,Liverpool,Wolverhampton Wanderers,2.70191,0.78681
+2023-03-01,Arsenal,Everton,3.06919,1.604
+2023-03-04,Wolverhampton Wanderers,Tottenham,0.562477,1.25588
+2023-03-04,Southampton,Leicester,1.34332,1.67051
+2023-03-04,Chelsea,Leeds,1.8678,0.633995
+2023-03-04,Brighton,West Ham,3.49993,0.250045
+2023-03-04,Aston Villa,Crystal Palace,0.890605,0.152761
+2023-03-04,Arsenal,Bournemouth,2.46279,1.74267
+2023-03-04,Manchester City,Newcastle United,1.34144,0.359809
+2023-03-05,Nottingham Forest,Everton,0.799733,1.70877
+2023-03-05,Liverpool,Manchester United,3.44269,0.837542
+2023-03-06,Brentford,Fulham,2.44358,1.67531
+2023-03-11,Bournemouth,Liverpool,1.10128,2.13465
+2023-03-11,Everton,Brentford,1.71599,1.95088
+2023-03-11,Leeds,Brighton,0.596738,1.51388
+2023-03-11,Leicester,Chelsea,2.36139,1.49478
+2023-03-11,Tottenham,Nottingham Forest,1.73482,1.62805
+2023-03-11,Crystal Palace,Manchester City,0.185498,2.1884
+2023-03-12,Newcastle United,Wolverhampton Wanderers,2.45527,0.709895
+2023-03-12,West Ham,Aston Villa,2.14634,1.99139
+2023-03-12,Manchester United,Southampton,0.910911,1.18053
+2023-03-12,Fulham,Arsenal,0.61832,2.64355
+2023-03-15,Southampton,Brentford,0.358977,1.66591
+2023-03-15,Brighton,Crystal Palace,0.588727,1.21452
+2023-03-17,Nottingham Forest,Newcastle United,0.531985,2.50027
+2023-03-18,Aston Villa,Bournemouth,3.45474,0.50014
+2023-03-18,Brentford,Leicester,0.476467,1.42133
+2023-03-18,Southampton,Tottenham,2.52077,1.88473
+2023-03-18,Wolverhampton Wanderers,Leeds,2.76358,1.6549
+2023-03-18,Chelsea,Everton,1.90027,1.64675
+2023-03-19,Arsenal,Crystal Palace,1.53568,1.19194
+2023-04-01,Chelsea,Aston Villa,2.38024,0.765794
+2023-04-01,Crystal Palace,Leicester,1.93471,0.198959
+2023-04-01,Brighton,Brentford,3.8195,1.2788
+2023-04-01,Nottingham Forest,Wolverhampton Wanderers,1.11441,0.383739
+2023-04-01,Arsenal,Leeds,3.29548,0.497609
+2023-04-01,Bournemouth,Fulham,3.14054,0.601049
+2023-04-01,Manchester City,Liverpool,3.01243,0.318171
+2023-04-02,West Ham,Southampton,1.40363,0.318261
+2023-04-02,Newcastle United,Manchester United,3.33162,0.334127
+2023-04-03,Everton,Tottenham,0.823365,1.39177
+2023-04-04,Leicester,Aston Villa,0.671597,1.00159
+2023-04-04,Bournemouth,Brighton,1.15322,2.63392
+2023-04-04,Leeds,Nottingham Forest,2.43248,0.613917
+2023-04-04,Chelsea,Liverpool,2.18903,0.202217
+2023-04-05,West Ham,Newcastle United,0.83342,2.84091
+2023-04-05,Manchester United,Brentford,1.1445,0.64499
+2023-04-08,Southampton,Manchester City,0.492801,3.05999
+2023-04-08,Wolverhampton Wanderers,Chelsea,0.601153,0.815308
+2023-04-08,Tottenham,Brighton,0.594139,1.47549
+2023-04-08,Leicester,Bournemouth,0.731965,1.92396
+2023-04-08,Brentford,Newcastle United,2.06521,1.02337
+2023-04-08,Aston Villa,Nottingham Forest,1.42718,0.232452
+2023-04-08,Manchester United,Everton,4.38578,0.949183
+2023-04-08,Fulham,West Ham,0.456524,1.23261
+2023-04-09,Leeds,Crystal Palace,1.02075,3.22687
+2023-04-09,Liverpool,Arsenal,4.64012,1.53631
+2023-04-15,Wolverhampton Wanderers,Brentford,0.93912,1.5133
+2023-04-15,Aston Villa,Newcastle United,1.91802,0.425086
+2023-04-15,Chelsea,Brighton,0.46331,2.52107
+2023-04-15,Everton,Fulham,2.24262,1.92209
+2023-04-15,Southampton,Crystal Palace,0.678449,0.86306
+2023-04-15,Tottenham,Bournemouth,2.30604,1.20598
+2023-04-15,Manchester City,Leicester,1.60702,1.92692
+2023-04-16,Nottingham Forest,Manchester United,1.05289,3.33747
+2023-04-16,West Ham,Arsenal,1.96095,2.71782
+2023-04-17,Leeds,Liverpool,1.16748,2.65476
+2023-04-21,Arsenal,Southampton,2.39609,1.43063
+2023-04-22,Fulham,Leeds,1.43763,1.07482
+2023-04-22,Brentford,Aston Villa,2.03162,1.66602
+2023-04-22,Crystal Palace,Everton,0.368137,0.433712
+2023-04-22,Leicester,Wolverhampton Wanderers,2.66929,0.59626
+2023-04-22,Liverpool,Nottingham Forest,3.32745,0.724666
+2023-04-23,Bournemouth,West Ham,0.974687,2.52322
+2023-04-23,Newcastle United,Tottenham,3.98532,0.883001
+2023-04-25,Wolverhampton Wanderers,Crystal Palace,1.12829,0.580294
+2023-04-25,Aston Villa,Fulham,0.839159,0.079864
+2023-04-25,Leeds,Leicester,2.09645,2.08594
+2023-04-26,Chelsea,Brentford,1.21124,0.695344
+2023-04-26,Manchester City,Arsenal,2.01168,0.398372
+2023-04-26,West Ham,Liverpool,0.939348,1.7045
+2023-04-26,Nottingham Forest,Brighton,2.43846,2.33064
+2023-04-27,Everton,Newcastle United,0.777008,2.86368
+2023-04-27,Southampton,Bournemouth,0.477034,0.988554
+2023-04-27,Tottenham,Manchester United,2.37239,1.96508
+2023-04-29,Crystal Palace,West Ham,2.31888,1.98262
+2023-04-29,Brentford,Nottingham Forest,1.32059,0.939693
+2023-04-29,Brighton,Wolverhampton Wanderers,3.60471,0.603985
+2023-04-30,Bournemouth,Leeds,2.51723,1.33691
+2023-04-30,Fulham,Manchester City,0.431813,2.32338
+2023-04-30,Manchester United,Aston Villa,1.3056,0.434738
+2023-04-30,Newcastle United,Southampton,3.91457,0.897175
+2023-04-30,Liverpool,Tottenham,2.42911,1.44927
+2023-05-01,Leicester,Everton,3.32486,3.28648
+2023-05-02,Arsenal,Chelsea,2.7832,0.785202
+2023-05-03,Manchester City,West Ham,2.99908,0.492075
+2023-05-03,Liverpool,Fulham,1.67372,0.740125
+2023-05-04,Brighton,Manchester United,2.09953,1.32105
+2023-05-06,Bournemouth,Chelsea,1.21755,1.76852
+2023-05-06,Manchester City,Leeds,2.83472,0.140924
+2023-05-06,Tottenham,Crystal Palace,1.15665,0.306669
+2023-05-06,Wolverhampton Wanderers,Aston Villa,0.80605,1.50158
+2023-05-06,Liverpool,Brentford,1.992,0.183892
+2023-05-07,Newcastle United,Arsenal,1.37224,1.29061
+2023-05-07,West Ham,Manchester United,1.76618,1.1942
+2023-05-08,Fulham,Leicester,1.75276,2.92566
+2023-05-08,Brighton,Everton,3.23717,2.94223
+2023-05-08,Nottingham Forest,Southampton,1.91326,3.31096
+2023-05-13,Southampton,Fulham,0.149649,1.27085
+2023-05-13,Manchester United,Wolverhampton Wanderers,3.10118,0.268789
+2023-05-13,Crystal Palace,Bournemouth,1.40237,0.262022
+2023-05-13,Aston Villa,Tottenham,1.79987,1.18505
+2023-05-13,Leeds,Newcastle United,2.01567,2.35118
+2023-05-13,Chelsea,Nottingham Forest,0.999181,1.96797
+2023-05-14,Brentford,West Ham,4.42571,0.203312
+2023-05-14,Everton,Manchester City,1.18597,1.04338
+2023-05-14,Arsenal,Brighton,0.958651,2.21276
+2023-05-15,Leicester,Liverpool,0.527496,1.77085
+2023-05-18,Newcastle United,Brighton,4.11359,0.593493
+2023-05-20,Nottingham Forest,Arsenal,1.1397,0.4902
+2023-05-20,Tottenham,Brentford,1.61667,1.15344
+2023-05-20,Bournemouth,Manchester United,0.815723,1.71783
+2023-05-20,Fulham,Crystal Palace,1.95519,1.70785
+2023-05-20,Liverpool,Aston Villa,0.918508,1.46948
+2023-05-20,Wolverhampton Wanderers,Everton,1.28976,2.46976
+2023-05-21,Manchester City,Chelsea,1.20557,1.15648
+2023-05-21,West Ham,Leeds,2.48001,0.645828
+2023-05-21,Brighton,Southampton,2.41418,0.863659
+2023-05-22,Newcastle United,Leicester,2.05089,0.0839072
+2023-05-24,Brighton,Manchester City,2.11486,1.92973
+2023-05-25,Manchester United,Chelsea,4.92231,1.68364
+2023-05-28,Southampton,Liverpool,1.33964,4.00345
+2023-05-28,Leicester,West Ham,2.03013,0.970352
+2023-05-28,Leeds,Tottenham,1.19151,2.03315
+2023-05-28,Everton,Bournemouth,1.12933,0.432084
+2023-05-28,Manchester United,Fulham,2.74766,1.88167
+2023-05-28,Chelsea,Newcastle United,2.01924,1.51899
+2023-05-28,Brentford,Manchester City,1.43893,1.18649
+2023-05-28,Aston Villa,Brighton,2.55845,1.23117
+2023-05-28,Arsenal,Wolverhampton Wanderers,3.02466,0.38772
+2023-05-28,Crystal Palace,Nottingham Forest,1.00786,0.436439
+2023-08-11,Burnley,Manchester City,0.311032,2.40074
+2023-08-12,Arsenal,Nottingham Forest,0.84262,0.966305
+2023-08-12,Bournemouth,West Ham,1.51025,1.4834
+2023-08-12,Brighton,Luton,4.36748,1.88594
+2023-08-12,Everton,Fulham,2.59001,1.58144
+2023-08-12,Sheffield United,Crystal Palace,0.422704,2.27616
+2023-08-12,Newcastle United,Aston Villa,4.32208,1.486
+2023-08-13,Brentford,Tottenham,1.90756,1.45316
+2023-08-13,Chelsea,Liverpool,1.93258,1.29994
+2023-08-14,Manchester United,Wolverhampton Wanderers,1.97087,1.72228
+2023-08-18,Nottingham Forest,Sheffield United,1.37181,0.551038
+2023-08-19,Manchester City,Newcastle United,1.22528,0.257154
+2023-08-19,Tottenham,Manchester United,2.53904,2.44604
+2023-08-19,Liverpool,Bournemouth,3.25448,1.3867
+2023-08-19,Fulham,Brentford,0.399899,3.46888
+2023-08-19,Wolverhampton Wanderers,Brighton,2.68821,3.15562
+2023-08-20,Aston Villa,Everton,3.24336,0.721465
+2023-08-20,West Ham,Chelsea,1.71234,1.60916
+2023-08-21,Crystal Palace,Arsenal,1.06916,2.20593
+2023-08-25,Chelsea,Luton,3.41419,0.465741
+2023-08-26,Bournemouth,Tottenham,0.483582,2.26115
+2023-08-26,Arsenal,Fulham,3.23088,0.849817
+2023-08-26,Brentford,Crystal Palace,0.948011,1.06061
+2023-08-26,Everton,Wolverhampton Wanderers,1.89792,1.40228
+2023-08-26,Manchester United,Nottingham Forest,3.02803,0.960354
+2023-08-26,Brighton,West Ham,1.3743,2.9527
+2023-08-27,Newcastle United,Liverpool,1.62037,0.856121
+2023-08-27,Sheffield United,Manchester City,0.762232,3.84804
+2023-08-27,Burnley,Aston Villa,0.630605,2.83691
+2023-09-01,Luton,West Ham,2.02244,1.22528
+2023-09-02,Sheffield United,Everton,1.575,2.73871
+2023-09-02,Manchester City,Fulham,2.00152,1.46427
+2023-09-02,Brentford,Bournemouth,3.07185,2.11013
+2023-09-02,Burnley,Tottenham,1.66604,2.39785
+2023-09-02,Chelsea,Nottingham Forest,2.28442,1.1505
+2023-09-02,Brighton,Newcastle United,1.32258,0.90476
+2023-09-03,Crystal Palace,Wolverhampton Wanderers,2.32935,1.13911
+2023-09-03,Liverpool,Aston Villa,2.73138,0.615503
+2023-09-03,Arsenal,Manchester United,1.90973,0.966109
+2023-09-16,Newcastle United,Brentford,1.50126,0.633678
+2023-09-16,Manchester United,Brighton,0.719951,1.93908
+2023-09-16,Fulham,Luton,1.75704,1.45705
+2023-09-16,Aston Villa,Crystal Palace,2.31518,1.11696
+2023-09-16,West Ham,Manchester City,0.895632,4.15046
+2023-09-16,Tottenham,Sheffield United,2.15909,0.790655
+2023-09-16,Wolverhampton Wanderers,Liverpool,0.538833,2.82701
+2023-09-17,Bournemouth,Chelsea,1.32515,1.39677
+2023-09-17,Everton,Arsenal,0.28317,0.802605
+2023-09-18,Nottingham Forest,Burnley,0.705795,0.807651
+2023-09-23,Luton,Wolverhampton Wanderers,2.24101,0.762984
+2023-09-23,Manchester City,Nottingham Forest,1.33984,0.729109
+2023-09-23,Crystal Palace,Fulham,0.37236,0.542678
+2023-09-23,Brentford,Everton,1.57402,2.51497
+2023-09-23,Burnley,Manchester United,0.935444,0.840273
+2023-09-24,Sheffield United,Newcastle United,0.579392,5.1082
+2023-09-24,Arsenal,Tottenham,2.3429,2.21166
+2023-09-24,Liverpool,West Ham,4.14262,1.53878
+2023-09-24,Chelsea,Aston Villa,1.19716,1.13479
+2023-09-24,Brighton,Bournemouth,2.14533,1.58984
+2023-09-30,Aston Villa,Brighton,1.90746,1.72819
+2023-09-30,Everton,Luton,3.65377,1.5102
+2023-09-30,Manchester United,Crystal Palace,1.55408,1.19015
+2023-09-30,Newcastle United,Burnley,3.08516,0.801849
+2023-09-30,Bournemouth,Arsenal,0.644443,4.0742
+2023-09-30,West Ham,Sheffield United,3.19753,0.911997
+2023-09-30,Wolverhampton Wanderers,Manchester City,0.673985,0.98075
+2023-09-30,Tottenham,Liverpool,2.18823,1.12299
+2023-10-01,Nottingham Forest,Brentford,0.800317,1.75862
+2023-10-02,Fulham,Chelsea,0.889383,1.98461
+2023-10-03,Luton,Burnley,1.53058,0.920206
+2023-10-07,Crystal Palace,Nottingham Forest,0.982452,1.22105
+2023-10-07,Manchester United,Brentford,1.29356,1.02509
+2023-10-07,Fulham,Sheffield United,2.26612,0.251809
+2023-10-07,Everton,Bournemouth,3.16482,0.981732
+2023-10-07,Burnley,Chelsea,0.956642,1.97566
+2023-10-07,Luton,Tottenham,0.848118,2.37947
+2023-10-08,Brighton,Liverpool,2.23187,2.51029
+2023-10-08,West Ham,Newcastle United,0.931345,1.97865
+2023-10-08,Wolverhampton Wanderers,Aston Villa,1.76232,1.81618
+2023-10-08,Arsenal,Manchester City,0.386558,0.858071
+2023-10-21,Chelsea,Arsenal,1.71838,1.05791
+2023-10-21,Nottingham Forest,Luton,3.27549,1.49555
+2023-10-21,Newcastle United,Crystal Palace,3.73336,1.08795
+2023-10-21,Sheffield United,Manchester United,1.41074,1.46187
+2023-10-21,Brentford,Burnley,3.15685,0.693129
+2023-10-21,Bournemouth,Wolverhampton Wanderers,1.01839,2.30454
+2023-10-21,Liverpool,Everton,2.28568,0.0937725
+2023-10-21,Manchester City,Brighton,0.962509,0.963733
+2023-10-22,Aston Villa,West Ham,2.34143,0.659622
+2023-10-23,Tottenham,Fulham,1.63523,0.745838
+2023-10-27,Crystal Palace,Tottenham,0.561834,0.989103
+2023-10-28,Wolverhampton Wanderers,Newcastle United,0.863393,2.31987
+2023-10-28,Arsenal,Sheffield United,3.03496,0.0281554
+2023-10-28,Chelsea,Brentford,1.71801,2.48137
+2023-10-28,Bournemouth,Burnley,1.10052,0.90255
+2023-10-29,West Ham,Everton,0.618578,0.733813
+2023-10-29,Aston Villa,Luton,3.07654,0.453117
+2023-10-29,Brighton,Fulham,1.31996,0.552523
+2023-10-29,Liverpool,Nottingham Forest,2.70428,0.642014
+2023-10-29,Manchester United,Manchester City,0.714628,4.54595
+2023-11-04,Sheffield United,Wolverhampton Wanderers,1.10165,1.14803
+2023-11-04,Newcastle United,Arsenal,1.12355,0.535473
+2023-11-04,Manchester City,Bournemouth,2.39949,0.643127
+2023-11-04,Burnley,Crystal Palace,1.4998,1.43653
+2023-11-04,Brentford,West Ham,1.82944,1.75505
+2023-11-04,Fulham,Manchester United,1.18241,0.697095
+2023-11-04,Everton,Brighton,0.617607,0.442489
+2023-11-05,Nottingham Forest,Aston Villa,0.592447,1.33116
+2023-11-05,Luton,Liverpool,1.3411,3.03925
+2023-11-06,Tottenham,Chelsea,0.959108,4.05865
+2023-11-11,Wolverhampton Wanderers,Tottenham,1.90884,0.432315
+2023-11-11,Arsenal,Burnley,2.63194,0.327706
+2023-11-11,Crystal Palace,Everton,1.89194,1.7904
+2023-11-11,Manchester United,Luton,2.74105,0.408265
+2023-11-11,Bournemouth,Newcastle United,2.78424,0.306141
+2023-11-12,Liverpool,Brentford,1.56004,1.44954
+2023-11-12,Chelsea,Manchester City,3.47238,3.19324
+2023-11-12,West Ham,Nottingham Forest,2.06402,1.42128
+2023-11-12,Brighton,Sheffield United,1.08601,0.84434
+2023-11-12,Aston Villa,Fulham,2.86039,0.648745
+2023-11-25,Manchester City,Liverpool,1.79622,0.766278
+2023-11-25,Burnley,West Ham,1.44228,1.36963
+2023-11-25,Luton,Crystal Palace,0.996153,1.83546
+2023-11-25,Newcastle United,Chelsea,2.15227,0.968061
+2023-11-25,Nottingham Forest,Brighton,2.22655,1.21792
+2023-11-25,Sheffield United,Bournemouth,0.816227,3.13975
+2023-11-25,Brentford,Arsenal,1.66315,1.82699
+2023-11-26,Tottenham,Aston Villa,2.22542,2.39755
+2023-11-26,Everton,Manchester United,2.49764,2.07334
+2023-11-27,Fulham,Wolverhampton Wanderers,2.49057,1.57875
+2023-12-02,Newcastle United,Manchester United,2.90191,0.422674
+2023-12-02,Nottingham Forest,Everton,0.673085,0.623789
+2023-12-02,Brentford,Luton,3.25952,0.227176
+2023-12-02,Arsenal,Wolverhampton Wanderers,3.30368,1.07886
+2023-12-02,Burnley,Sheffield United,2.60469,0.618131
+2023-12-03,Bournemouth,Aston Villa,2.54937,0.89511
+2023-12-03,Chelsea,Brighton,1.66304,0.855058
+2023-12-03,Liverpool,Fulham,2.72831,1.51005
+2023-12-03,West Ham,Crystal Palace,1.1466,0.987682
+2023-12-03,Manchester City,Tottenham,2.90729,0.433077
+2023-12-05,Wolverhampton Wanderers,Burnley,1.11886,0.781542
+2023-12-05,Luton,Arsenal,0.526254,2.58815
+2023-12-06,Manchester United,Chelsea,4.03949,2.3512
+2023-12-06,Crystal Palace,Bournemouth,1.26441,1.79997
+2023-12-06,Aston Villa,Manchester City,2.1922,1.00198
+2023-12-06,Fulham,Nottingham Forest,3.09427,0.218659
+2023-12-06,Brighton,Brentford,1.54099,1.22007
+2023-12-06,Sheffield United,Liverpool,0.834172,1.80116
+2023-12-07,Everton,Newcastle United,2.95393,1.29564
+2023-12-07,Tottenham,West Ham,1.61268,1.7409
+2023-12-09,Crystal Palace,Liverpool,1.79152,1.3708
+2023-12-09,Brighton,Burnley,2.96247,1.05162
+2023-12-09,Manchester United,Bournemouth,1.11296,1.9742
+2023-12-09,Sheffield United,Brentford,0.841976,0.644638
+2023-12-09,Wolverhampton Wanderers,Nottingham Forest,1.02199,1.21801
+2023-12-09,Aston Villa,Arsenal,0.628499,1.71667
+2023-12-10,Luton,Manchester City,0.689037,2.23353
+2023-12-10,Everton,Chelsea,1.11437,0.885512
+2023-12-10,Fulham,West Ham,2.1884,0.983
+2023-12-10,Tottenham,Newcastle United,4.40118,1.61368
+2023-12-15,Nottingham Forest,Tottenham,1.70569,1.60738
+2023-12-16,Burnley,Everton,0.811435,2.22305
+2023-12-16,Newcastle United,Fulham,4.27933,0.471042
+2023-12-16,Chelsea,Sheffield United,3.27322,0.44014
+2023-12-16,Manchester City,Crystal Palace,2.41646,1.64977
+2023-12-17,Arsenal,Brighton,2.76976,0.663054
+2023-12-17,Brentford,Aston Villa,0.796812,1.4664
+2023-12-17,West Ham,Wolverhampton Wanderers,1.03828,0.556206
+2023-12-17,Liverpool,Manchester United,1.97111,0.632715
+2023-12-21,Crystal Palace,Brighton,1.65409,1.33653
+2023-12-22,Aston Villa,Sheffield United,1.21861,0.646159
+2023-12-23,Tottenham,Everton,1.57527,1.98385
+2023-12-23,Liverpool,Arsenal,0.982901,0.851681
+2023-12-23,Nottingham Forest,Bournemouth,0.791806,1.89067
+2023-12-23,Fulham,Burnley,1.38096,0.41714
+2023-12-23,West Ham,Manchester United,1.51468,0.730496
+2023-12-23,Luton,Newcastle United,1.81844,1.41488
+2023-12-24,Wolverhampton Wanderers,Chelsea,1.74626,1.75447
+2023-12-26,Newcastle United,Nottingham Forest,2.79106,3.1074
+2023-12-26,Bournemouth,Fulham,2.07911,0.324365
+2023-12-26,Sheffield United,Luton,3.61788,0.715575
+2023-12-26,Burnley,Liverpool,0.972389,1.68451
+2023-12-26,Manchester United,Aston Villa,1.20104,1.83637
+2023-12-27,Chelsea,Crystal Palace,2.73005,0.958077
+2023-12-27,Brentford,Wolverhampton Wanderers,2.59347,1.89483
+2023-12-27,Everton,Manchester City,1.23529,2.28321
+2023-12-28,Brighton,Tottenham,3.84702,2.06955
+2023-12-28,Arsenal,West Ham,2.7884,1.59711
+2023-12-30,Nottingham Forest,Manchester United,0.744348,0.651905
+2023-12-30,Wolverhampton Wanderers,Everton,2.64477,0.519641
+2023-12-30,Manchester City,Sheffield United,2.24229,0.263211
+2023-12-30,Crystal Palace,Brentford,1.61057,1.28731
+2023-12-30,Aston Villa,Burnley,2.92587,1.11923
+2023-12-30,Luton,Chelsea,2.64093,1.57463
+2023-12-31,Fulham,Arsenal,1.52829,1.6591
+2023-12-31,Tottenham,Bournemouth,2.15027,1.58229
+2024-01-01,Liverpool,Newcastle United,6.67151,0.910974
+2024-01-02,West Ham,Brighton,0.9831,2.1552
+2024-01-12,Burnley,Luton,1.52023,0.965167
+2024-01-13,Chelsea,Fulham,2.0456,0.697847
+2024-01-13,Newcastle United,Manchester City,1.23638,2.55452
+2024-01-14,Everton,Aston Villa,1.03664,1.3435
+2024-01-14,Manchester United,Tottenham,0.923233,1.31224
+2024-01-20,Arsenal,Crystal Palace,3.52167,0.288083
+2024-01-20,Brentford,Nottingham Forest,1.94219,1.22251
+2024-01-21,Bournemouth,Liverpool,0.834585,1.53344
+2024-01-21,Sheffield United,West Ham,2.61362,2.4241
+2024-01-22,Brighton,Wolverhampton Wanderers,1.3701,1.14116
+2024-01-30,Nottingham Forest,Arsenal,0.631618,1.39143
+2024-01-30,Fulham,Everton,2.37499,2.83317
+2024-01-30,Luton,Brighton,3.63312,1.01366
+2024-01-30,Crystal Palace,Sheffield United,1.1601,0.768467
+2024-01-30,Aston Villa,Newcastle United,1.44485,3.3224
+2024-01-31,Tottenham,Brentford,3.36194,1.59637
+2024-01-31,Manchester City,Burnley,1.84756,1.49114
+2024-01-31,Liverpool,Chelsea,3.6627,0.477972
+2024-02-01,West Ham,Bournemouth,1.3128,1.13487
+2024-02-01,Wolverhampton Wanderers,Manchester United,2.27609,3.22698
+2024-02-03,Sheffield United,Aston Villa,1.52784,2.99015
+2024-02-03,Newcastle United,Luton,2.37353,2.67463
+2024-02-03,Brighton,Crystal Palace,1.92591,0.241137
+2024-02-03,Everton,Tottenham,3.25881,0.922371
+2024-02-03,Burnley,Fulham,1.00428,1.28806
+2024-02-04,Bournemouth,Nottingham Forest,1.1895,0.456548
+2024-02-04,Chelsea,Wolverhampton Wanderers,2.35967,2.48996
+2024-02-04,Manchester United,West Ham,0.96721,1.1807
+2024-02-04,Arsenal,Liverpool,2.8526,0.542052
+2024-02-05,Brentford,Manchester City,0.865741,2.10785
+2024-02-10,Nottingham Forest,Newcastle United,0.968075,0.511375
+2024-02-10,Wolverhampton Wanderers,Brentford,1.05781,1.84908
+2024-02-10,Luton,Sheffield United,1.76215,1.98283
+2024-02-10,Tottenham,Brighton,2.10928,1.49285
+2024-02-10,Fulham,Bournemouth,1.7456,2.60612
+2024-02-10,Manchester City,Everton,1.58971,0.192072
+2024-02-10,Liverpool,Burnley,3.14734,1.11123
+2024-02-11,West Ham,Arsenal,0.191065,3.99893
+2024-02-11,Aston Villa,Manchester United,2.64675,2.44591
+2024-02-12,Crystal Palace,Chelsea,0.719516,1.26948
+2024-02-17,Tottenham,Wolverhampton Wanderers,1.59768,1.77591
+2024-02-17,Brentford,Liverpool,1.69518,3.08952
+2024-02-17,Burnley,Arsenal,0.335143,2.20575
+2024-02-17,Fulham,Aston Villa,1.41796,1.57297
+2024-02-17,Newcastle United,Bournemouth,2.38425,2.08098
+2024-02-17,Nottingham Forest,West Ham,2.66942,0.520016
+2024-02-17,Manchester City,Chelsea,2.77713,1.82903
+2024-02-18,Luton,Manchester United,1.57234,3.58973
+2024-02-18,Sheffield United,Brighton,0.586214,3.35549
+2024-02-19,Everton,Crystal Palace,2.44588,0.734685
+2024-02-20,Manchester City,Brentford,2.53766,0.503799
+2024-02-21,Liverpool,Luton,3.70302,0.956512
+2024-02-24,Bournemouth,Manchester City,0.925889,1.79636
+2024-02-24,Arsenal,Newcastle United,2.59336,0.217373
+2024-02-24,Manchester United,Fulham,1.96036,1.1385
+2024-02-24,Aston Villa,Nottingham Forest,3.48861,2.25569
+2024-02-24,Brighton,Everton,1.6538,0.286655
+2024-02-24,Crystal Palace,Burnley,2.41612,0.0760216
+2024-02-25,Wolverhampton Wanderers,Sheffield United,1.21618,0.654342
+2024-02-26,West Ham,Brentford,2.06873,1.33683
+2024-03-02,Brentford,Chelsea,2.4732,2.1523
+2024-03-02,Everton,West Ham,3.12075,2.17948
+2024-03-02,Fulham,Brighton,1.37604,1.15198
+2024-03-02,Newcastle United,Wolverhampton Wanderers,3.33495,0.507769
+2024-03-02,Nottingham Forest,Liverpool,0.971466,1.32259
+2024-03-02,Tottenham,Crystal Palace,2.6625,0.277887
+2024-03-02,Luton,Aston Villa,2.43312,2.08586
+2024-03-03,Manchester City,Manchester United,2.64173,0.153764
+2024-03-03,Burnley,Bournemouth,1.60461,1.43616
+2024-03-04,Sheffield United,Arsenal,0.201374,2.47294
+2024-03-09,Manchester United,Everton,2.9016,1.8214
+2024-03-09,Bournemouth,Sheffield United,3.92657,1.91752
+2024-03-09,Crystal Palace,Luton,3.25103,1.08531
+2024-03-09,Wolverhampton Wanderers,Fulham,1.29589,2.94155
+2024-03-09,Arsenal,Brentford,1.59369,0.733239
+2024-03-10,Aston Villa,Tottenham,1.23267,2.25381
+2024-03-10,Brighton,Nottingham Forest,0.534518,0.687034
+2024-03-10,West Ham,Burnley,1.87414,0.88131
+2024-03-10,Liverpool,Manchester City,2.25492,1.37289
+2024-03-11,Chelsea,Newcastle United,1.78315,0.568435
+2024-03-13,Bournemouth,Luton,2.84403,2.79419
+2024-03-16,Fulham,Tottenham,2.47234,2.14564
+2024-03-16,Burnley,Brentford,2.69776,1.25123
+2024-03-16,Luton,Nottingham Forest,0.853782,1.95268
+2024-03-17,West Ham,Aston Villa,1.32829,0.911274
+2024-03-30,Newcastle United,West Ham,3.80922,0.994584
+2024-03-30,Bournemouth,Everton,1.39268,0.93378
+2024-03-30,Chelsea,Burnley,4.46643,2.10422
+2024-03-30,Nottingham Forest,Crystal Palace,0.784652,0.900972
+2024-03-30,Sheffield United,Fulham,1.78824,1.10254
+2024-03-30,Tottenham,Luton,2.46523,0.402402
+2024-03-30,Aston Villa,Wolverhampton Wanderers,1.28271,1.66232
+2024-03-30,Brentford,Manchester United,3.16487,0.989565
+2024-03-31,Liverpool,Brighton,3.21149,0.43922
+2024-03-31,Manchester City,Arsenal,1.22009,0.511402
+2024-04-02,West Ham,Tottenham,1.47017,1.39423
+2024-04-02,Burnley,Wolverhampton Wanderers,1.12581,1.01021
+2024-04-02,Nottingham Forest,Fulham,1.94619,1.04304
+2024-04-02,Newcastle United,Everton,2.65009,1.69834
+2024-04-02,Bournemouth,Crystal Palace,1.30969,0.174389
+2024-04-03,Arsenal,Luton,1.14384,0.292082
+2024-04-03,Brentford,Brighton,0.423299,1.22404
+2024-04-03,Manchester City,Aston Villa,3.87704,1.18643
+2024-04-04,Liverpool,Sheffield United,2.51772,0.720948
+2024-04-04,Chelsea,Manchester United,3.48048,1.56686
+2024-04-06,Luton,Bournemouth,1.30478,0.616108
+2024-04-06,Wolverhampton Wanderers,West Ham,1.78341,1.14133
+2024-04-06,Fulham,Newcastle United,0.834564,1.18012
+2024-04-06,Brighton,Arsenal,0.428514,4.16518
+2024-04-06,Aston Villa,Brentford,1.16333,1.42064
+2024-04-06,Crystal Palace,Manchester City,1.49472,2.26381
+2024-04-06,Everton,Burnley,0.659844,0.34699
+2024-04-07,Tottenham,Nottingham Forest,1.61978,2.00122
+2024-04-07,Manchester United,Liverpool,0.814509,4.43457
+2024-04-07,Sheffield United,Chelsea,1.74265,0.521789
+2024-04-13,Newcastle United,Tottenham,3.1483,0.737596
+2024-04-13,Brentford,Sheffield United,1.09071,0.834498
+2024-04-13,Burnley,Brighton,1.8522,0.889445
+2024-04-13,Manchester City,Luton,4.64245,0.809775
+2024-04-13,Nottingham Forest,Wolverhampton Wanderers,1.76244,1.45688
+2024-04-13,Bournemouth,Manchester United,2.38519,1.52274
+2024-04-14,Liverpool,Crystal Palace,3.04497,2.12879
+2024-04-14,West Ham,Fulham,1.45307,3.61413
+2024-04-14,Arsenal,Aston Villa,1.89003,0.929049
+2024-04-15,Chelsea,Everton,3.37093,1.21791
+2024-04-20,Luton,Brentford,0.497799,3.7809
+2024-04-20,Sheffield United,Burnley,1.97816,2.42338
+2024-04-20,Wolverhampton Wanderers,Arsenal,0.164516,1.66179
+2024-04-21,Fulham,Liverpool,0.83885,1.02445
+2024-04-21,Crystal Palace,West Ham,3.7185,1.34536
+2024-04-21,Aston Villa,Bournemouth,2.62687,2.05211
+2024-04-21,Everton,Nottingham Forest,0.473233,1.18916
+2024-04-23,Arsenal,Chelsea,3.45858,1.60343
+2024-04-24,Wolverhampton Wanderers,Bournemouth,0.484454,2.40311
+2024-04-24,Crystal Palace,Newcastle United,1.43661,0.55129
+2024-04-24,Everton,Liverpool,1.89111,1.87155
+2024-04-24,Manchester United,Sheffield United,3.51311,1.20517
+2024-04-25,Brighton,Manchester City,0.572021,1.90507
+2024-04-27,West Ham,Liverpool,0.794025,2.29298
+2024-04-27,Fulham,Crystal Palace,1.39418,1.05387
+2024-04-27,Manchester United,Burnley,3.06197,1.89591
+2024-04-27,Newcastle United,Sheffield United,2.93477,1.82408
+2024-04-27,Wolverhampton Wanderers,Luton,1.49011,0.90435
+2024-04-27,Everton,Brentford,1.21399,0.956356
+2024-04-27,Aston Villa,Chelsea,0.612257,1.56401
+2024-04-28,Nottingham Forest,Manchester City,2.17312,0.932063
+2024-04-28,Bournemouth,Brighton,2.48132,1.35682
+2024-04-28,Tottenham,Arsenal,2.60458,1.51469
+2024-05-02,Chelsea,Tottenham,2.22432,1.27064
+2024-05-03,Luton,Everton,0.950391,1.22959
+2024-05-04,Arsenal,Bournemouth,3.91372,0.4687
+2024-05-04,Brentford,Fulham,0.809379,1.45579
+2024-05-04,Burnley,Newcastle United,1.28632,4.25643
+2024-05-04,Sheffield United,Nottingham Forest,2.48986,1.93818
+2024-05-04,Manchester City,Wolverhampton Wanderers,4.52542,0.396887
+2024-05-05,Brighton,Aston Villa,2.63566,0.0644055
+2024-05-05,Chelsea,West Ham,4.21838,0.893899
+2024-05-05,Liverpool,Tottenham,3.26222,1.17205
+2024-05-06,Crystal Palace,Manchester United,2.0656,0.341417
+2024-05-11,Everton,Sheffield United,1.82411,0.465523
+2024-05-11,Nottingham Forest,Chelsea,2.44569,2.41068
+2024-05-11,Wolverhampton Wanderers,Crystal Palace,1.1561,2.51452
+2024-05-11,West Ham,Luton,3.71009,0.640456
+2024-05-11,Fulham,Manchester City,0.0886245,3.15218
+2024-05-11,Newcastle United,Brighton,2.45163,1.91556
+2024-05-11,Bournemouth,Brentford,1.07237,1.92722
+2024-05-11,Tottenham,Burnley,3.00238,0.950331
+2024-05-12,Manchester United,Arsenal,0.551669,1.73104
+2024-05-13,Aston Villa,Liverpool,2.71655,1.89968
+2024-05-14,Tottenham,Manchester City,1.84285,2.70331
+2024-05-15,Manchester United,Newcastle United,1.49706,2.27657
+2024-05-15,Brighton,Chelsea,1.32423,1.544
+2024-05-19,Luton,Fulham,2.06743,1.11598
+2024-05-19,Liverpool,Wolverhampton Wanderers,5.65937,0.731254
+2024-05-19,Sheffield United,Tottenham,0.697312,3.19675
+2024-05-19,Manchester City,West Ham,2.31504,0.240159
+2024-05-19,Crystal Palace,Aston Villa,2.23189,0.598846
+2024-05-19,Brighton,Manchester United,1.9717,1.00404
+2024-05-19,Burnley,Nottingham Forest,1.08222,1.57962
+2024-05-19,Chelsea,Bournemouth,1.59771,2.002
+2024-05-19,Brentford,Newcastle United,1.70157,3.65044
+2024-05-19,Arsenal,Everton,3.2117,0.664904
+2024-08-16,Manchester United,Fulham,2.04268,0.418711
+2024-08-17,Ipswich,Liverpool,0.342601,3.92906
+2024-08-17,Arsenal,Wolverhampton Wanderers,1.6283,0.575835
+2024-08-17,Everton,Brighton,0.405325,1.79083
+2024-08-17,Newcastle United,Southampton,0.433489,1.95483
+2024-08-17,Nottingham Forest,Bournemouth,1.24405,1.90915
+2024-08-17,West Ham,Aston Villa,2.8047,2.6703
+2024-08-18,Brentford,Crystal Palace,1.38064,1.14757
+2024-08-18,Chelsea,Manchester City,1.06123,1.18038
+2024-08-19,Leicester,Tottenham,1.02614,1.40775
+2024-08-24,Brighton,Manchester United,2.14153,1.28556
+2024-08-24,Crystal Palace,West Ham,1.3761,1.53421
+2024-08-24,Fulham,Leicester,1.96218,0.857005
+2024-08-24,Manchester City,Ipswich,3.07818,0.479999
+2024-08-24,Southampton,Nottingham Forest,0.214952,2.86475
+2024-08-24,Tottenham,Everton,2.61143,0.648869
+2024-08-24,Aston Villa,Arsenal,1.31664,1.41399
+2024-08-25,Wolverhampton Wanderers,Chelsea,2.4181,2.02935
+2024-08-25,Bournemouth,Newcastle United,2.53513,1.89287
+2024-08-25,Liverpool,Brentford,2.71877,0.457239
+2024-08-31,Nottingham Forest,Wolverhampton Wanderers,1.41069,0.937632
+2024-08-31,West Ham,Manchester City,0.947201,3.19297
+2024-08-31,Ipswich,Fulham,0.707048,1.18883
+2024-08-31,Leicester,Aston Villa,0.774741,2.16385
+2024-08-31,Brentford,Southampton,3.86281,1.64713
+2024-08-31,Arsenal,Brighton,2.41798,1.81748
+2024-08-31,Everton,Bournemouth,2.55629,2.95688
+2024-09-01,Newcastle United,Tottenham,1.58694,1.63304
+2024-09-01,Chelsea,Crystal Palace,2.97743,0.459708
+2024-09-01,Manchester United,Liverpool,1.50087,2.10397
+2024-09-14,Southampton,Manchester United,1.35593,3.02693
+2024-09-14,Brighton,Ipswich,1.75696,0.721323
+2024-09-14,Fulham,West Ham,2.88601,0.682719
+2024-09-14,Liverpool,Nottingham Forest,1.17044,0.589532
+2024-09-14,Crystal Palace,Leicester,2.88716,1.65187
+2024-09-14,Manchester City,Brentford,1.55279,1.05094
+2024-09-14,Aston Villa,Everton,3.15876,0.852158
+2024-09-14,Bournemouth,Chelsea,1.53731,0.932726
+2024-09-15,Wolverhampton Wanderers,Newcastle United,1.46969,1.48343
+2024-09-15,Tottenham,Arsenal,0.792595,1.1209
+2024-09-21,West Ham,Chelsea,0.758267,2.39727
+2024-09-21,Southampton,Ipswich,2.89813,1.645
+2024-09-21,Leicester,Everton,1.33793,1.82377
+2024-09-21,Liverpool,Bournemouth,2.43731,1.46979
+2024-09-21,Fulham,Newcastle United,3.21141,1.09768
+2024-09-21,Aston Villa,Wolverhampton Wanderers,2.37351,0.520117
+2024-09-21,Tottenham,Brentford,3.89481,0.893565
+2024-09-21,Crystal Palace,Manchester United,1.66928,2.35056
+2024-09-22,Manchester City,Arsenal,2.75588,1.28411
+2024-09-22,Brighton,Nottingham Forest,1.56836,1.36923
+2024-09-28,Wolverhampton Wanderers,Liverpool,0.748925,2.11724
+2024-09-28,Chelsea,Brighton,3.65839,1.20712
+2024-09-28,Brentford,West Ham,0.370222,0.878617
+2024-09-28,Everton,Crystal Palace,1.10959,1.12358
+2024-09-28,Nottingham Forest,Fulham,0.614351,1.43592
+2024-09-28,Newcastle United,Manchester City,1.34344,1.26516
+2024-09-28,Arsenal,Leicester,6.05305,0.337909
+2024-09-29,Ipswich,Aston Villa,1.84608,1.14494
+2024-09-29,Manchester United,Tottenham,0.600721,5.4072
+2024-09-30,Bournemouth,Southampton,1.44215,0.696068
+2024-10-05,Brentford,Wolverhampton Wanderers,4.13513,0.696254
+2024-10-05,Arsenal,Southampton,3.25165,1.27313
+2024-10-05,West Ham,Ipswich,4.39402,1.18463
+2024-10-05,Everton,Newcastle United,0.692214,1.79048
+2024-10-05,Leicester,Bournemouth,0.912063,1.94963
+2024-10-05,Crystal Palace,Liverpool,0.609481,2.07332
+2024-10-05,Manchester City,Fulham,1.36684,2.75846
+2024-10-06,Chelsea,Nottingham Forest,2.27752,1.66654
+2024-10-06,Aston Villa,Manchester United,0.532809,0.448537
+2024-10-06,Brighton,Tottenham,1.97217,1.09279
+2024-10-19,Tottenham,West Ham,1.44052,0.858803
+2024-10-19,Fulham,Aston Villa,2.63074,1.43595
+2024-10-19,Ipswich,Everton,1.174,1.60804
+2024-10-19,Manchester United,Brentford,1.76555,0.892843
+2024-10-19,Newcastle United,Brighton,1.93657,1.6779
+2024-10-19,Southampton,Leicester,2.42776,2.83826
+2024-10-19,Bournemouth,Arsenal,2.18419,0.740758
+2024-10-20,Liverpool,Chelsea,2.22517,1.33904
+2024-10-20,Wolverhampton Wanderers,Manchester City,0.761217,1.36569
+2024-10-21,Nottingham Forest,Crystal Palace,1.88573,0.835001
+2024-10-25,Leicester,Nottingham Forest,0.832415,2.54488
+2024-10-26,Manchester City,Southampton,3.16286,0.369989
+2024-10-26,Aston Villa,Bournemouth,1.974,0.328651
+2024-10-26,Brentford,Ipswich,4.09663,1.65698
+2024-10-26,Brighton,Wolverhampton Wanderers,1.51347,1.11074
+2024-10-26,Everton,Fulham,0.884845,1.49531
+2024-10-27,Chelsea,Newcastle United,1.61794,1.74225
+2024-10-27,Crystal Palace,Tottenham,0.978611,1.0192
+2024-10-27,West Ham,Manchester United,2.99312,2.62598
+2024-10-27,Arsenal,Liverpool,1.0883,1.35346
+2024-11-02,Wolverhampton Wanderers,Crystal Palace,1.65018,2.64849
+2024-11-02,Southampton,Everton,0.540345,1.78581
+2024-11-02,Nottingham Forest,West Ham,2.35011,0.132317
+2024-11-02,Liverpool,Brighton,1.81037,1.01568
+2024-11-02,Ipswich,Leicester,1.33617,2.33858
+2024-11-02,Bournemouth,Manchester City,2.4493,2.3527
+2024-11-02,Newcastle United,Arsenal,0.859715,0.911305
+2024-11-03,Tottenham,Aston Villa,2.09751,2.48749
+2024-11-03,Manchester United,Chelsea,2.1605,1.21071
+2024-11-04,Fulham,Brentford,1.43017,0.739231
+2024-11-09,Brentford,Bournemouth,1.56474,2.49234
+2024-11-09,Crystal Palace,Fulham,1.96037,2.25331
+2024-11-09,West Ham,Everton,1.1237,0.865983
+2024-11-09,Wolverhampton Wanderers,Southampton,0.912781,0.792655
+2024-11-09,Brighton,Manchester City,2.87116,2.60334
+2024-11-09,Liverpool,Aston Villa,2.68196,1.66337
+2024-11-10,Tottenham,Ipswich,1.75088,2.18392
+2024-11-10,Chelsea,Arsenal,1.24067,1.9605
+2024-11-10,Nottingham Forest,Newcastle United,1.17852,1.86904
+2024-11-10,Manchester United,Leicester,1.2369,0.417295
+2024-11-23,Leicester,Chelsea,0.967987,2.81658
+2024-11-23,Bournemouth,Brighton,1.91157,1.23059
+2024-11-23,Arsenal,Nottingham Forest,1.66016,0.403136
+2024-11-23,Everton,Brentford,1.5951,1.34314
+2024-11-23,Aston Villa,Crystal Palace,3.04455,1.61437
+2024-11-23,Fulham,Wolverhampton Wanderers,0.717158,1.33903
+2024-11-23,Manchester City,Tottenham,2.15899,3.30449
+2024-11-24,Southampton,Liverpool,1.53985,3.18835
+2024-11-24,Ipswich,Manchester United,1.98714,1.26912
+2024-11-25,Newcastle United,West Ham,1.49781,0.942824
+2024-11-29,Brighton,Southampton,1.86986,0.934969
+2024-11-30,Brentford,Leicester,2.21885,0.907555
+2024-11-30,Crystal Palace,Newcastle United,2.29595,0.020989
+2024-11-30,Nottingham Forest,Ipswich,1.76587,0.462771
+2024-11-30,Wolverhampton Wanderers,Bournemouth,0.866034,3.07901
+2024-11-30,West Ham,Arsenal,1.23539,3.99935
+2024-12-01,Chelsea,Aston Villa,1.94939,0.875443
+2024-12-01,Manchester United,Everton,1.76161,0.766749
+2024-12-01,Tottenham,Fulham,1.01086,1.57274
+2024-12-01,Liverpool,Manchester City,3.70054,0.745015
+2024-12-03,Ipswich,Crystal Palace,0.471708,1.65422
+2024-12-03,Leicester,West Ham,2.78061,2.87716
+2024-12-04,Aston Villa,Brentford,3.21673,1.13266
+2024-12-04,Southampton,Chelsea,1.91014,5.8331
+2024-12-04,Arsenal,Manchester United,2.96684,0.256083
+2024-12-04,Manchester City,Nottingham Forest,3.20169,0.802155
+2024-12-04,Everton,Wolverhampton Wanderers,1.49904,0.847724
+2024-12-04,Newcastle United,Liverpool,1.52057,2.22766
+2024-12-05,Fulham,Brighton,0.666644,1.09939
+2024-12-05,Bournemouth,Tottenham,3.27716,0.623934
+2024-12-07,Aston Villa,Southampton,2.51338,0.385832
+2024-12-07,Brentford,Newcastle United,1.746,1.95645
+2024-12-07,Crystal Palace,Manchester City,1.21476,1.5846
+2024-12-07,Manchester United,Nottingham Forest,1.4697,0.651217
+2024-12-08,Fulham,Arsenal,0.150988,2.4333
+2024-12-08,Ipswich,Bournemouth,1.5668,3.49127
+2024-12-08,Leicester,Brighton,1.42438,1.12184
+2024-12-08,Tottenham,Chelsea,3.25488,2.57326
+2024-12-09,West Ham,Wolverhampton Wanderers,1.19808,1.47567
+2024-12-14,Nottingham Forest,Aston Villa,2.2861,0.389423
+2024-12-14,Newcastle United,Leicester,3.95461,0.186759
+2024-12-14,Arsenal,Everton,1.30865,0.132166
+2024-12-14,Liverpool,Fulham,2.09698,1.2862
+2024-12-14,Wolverhampton Wanderers,Ipswich,1.23748,1.73349
+2024-12-15,Brighton,Crystal Palace,1.32323,3.00618
+2024-12-15,Manchester City,Manchester United,0.638103,2.04662
+2024-12-15,Chelsea,Brentford,2.59146,1.65861
+2024-12-15,Southampton,Tottenham,1.27356,3.89322
+2024-12-16,Bournemouth,West Ham,2.04842,1.81827
+2024-12-21,Aston Villa,Manchester City,2.05988,1.09627
+2024-12-21,Brentford,Nottingham Forest,0.769004,0.964897
+2024-12-21,West Ham,Brighton,1.22937,1.34379
+2024-12-21,Ipswich,Newcastle United,1.06427,3.23386
+2024-12-21,Crystal Palace,Arsenal,1.6052,3.05434
+2024-12-22,Tottenham,Liverpool,1.20245,5.20214
+2024-12-22,Leicester,Wolverhampton Wanderers,0.78868,1.13531
+2024-12-22,Manchester United,Bournemouth,2.28533,1.82831
+2024-12-22,Everton,Chelsea,1.07081,1.51591
+2024-12-22,Fulham,Southampton,1.25255,0.280031
+2024-12-26,Southampton,West Ham,2.19833,1.90111
+2024-12-26,Wolverhampton Wanderers,Manchester United,0.826489,0.358876
+2024-12-26,Liverpool,Leicester,1.89935,0.22097
+2024-12-26,Nottingham Forest,Tottenham,1.30018,1.05758
+2024-12-26,Manchester City,Everton,2.51965,0.653289
+2024-12-26,Chelsea,Fulham,1.55626,1.77929
+2024-12-26,Newcastle United,Aston Villa,2.82867,0.225522
+2024-12-26,Bournemouth,Crystal Palace,1.20189,0.500066
+2024-12-27,Brighton,Brentford,1.33538,0.961233
+2024-12-27,Arsenal,Ipswich,2.16462,0.0783327
+2024-12-29,Leicester,Manchester City,1.84208,1.58002
+2024-12-29,Crystal Palace,Southampton,3.05417,1.21853
+2024-12-29,Everton,Nottingham Forest,0.615191,2.02753
+2024-12-29,Fulham,Bournemouth,0.961566,1.70692
+2024-12-29,Tottenham,Wolverhampton Wanderers,2.28433,0.640697
+2024-12-29,West Ham,Liverpool,0.518279,3.29868
+2024-12-30,Aston Villa,Brighton,1.87997,0.938042
+2024-12-30,Ipswich,Chelsea,1.50093,1.60622
+2024-12-30,Manchester United,Newcastle United,1.00073,2.2424
+2025-01-01,Brentford,Arsenal,0.272604,1.99848
+2025-01-04,Brighton,Arsenal,1.76513,1.81142
+2025-01-04,Southampton,Brentford,0.249614,5.54874
+2025-01-04,Manchester City,West Ham,1.97986,1.53286
+2025-01-04,Bournemouth,Everton,2.61852,0.561015
+2025-01-04,Aston Villa,Leicester,2.3456,0.81548
+2025-01-04,Tottenham,Newcastle United,1.00333,2.42963
+2025-01-04,Crystal Palace,Chelsea,1.2766,1.51541
+2025-01-05,Fulham,Ipswich,2.65469,1.4434
+2025-01-05,Liverpool,Manchester United,2.862,1.67469
+2025-01-06,Wolverhampton Wanderers,Nottingham Forest,1.90463,2.57227
+2025-01-14,Brentford,Manchester City,2.39088,2.65315
+2025-01-14,West Ham,Fulham,0.937322,2.83581
+2025-01-14,Chelsea,Bournemouth,2.53808,1.14845
+2025-01-14,Nottingham Forest,Liverpool,0.5292,2.72291
+2025-01-15,Arsenal,Tottenham,2.25501,0.777071
+2025-01-15,Newcastle United,Wolverhampton Wanderers,2.13327,1.47433
+2025-01-15,Everton,Aston Villa,1.23126,1.28522
+2025-01-15,Leicester,Crystal Palace,2.09904,2.2647
+2025-01-16,Ipswich,Brighton,0.268127,1.06343
+2025-01-16,Manchester United,Southampton,3.10847,1.36705
+2025-01-18,Newcastle United,Bournemouth,0.837801,2.70174
+2025-01-18,Brentford,Liverpool,1.20021,4.16249
+2025-01-18,Leicester,Fulham,0.676934,2.36823
+2025-01-18,West Ham,Crystal Palace,0.221062,1.62561
+2025-01-18,Arsenal,Aston Villa,1.64458,1.20602
+2025-01-19,Ipswich,Manchester City,0.795637,3.20228
+2025-01-19,Everton,Tottenham,2.56089,1.35719
+2025-01-19,Manchester United,Brighton,1.31823,2.17172
+2025-01-19,Nottingham Forest,Southampton,2.36419,1.25922
+2025-01-20,Chelsea,Wolverhampton Wanderers,3.14882,1.06726
+2025-01-25,Bournemouth,Nottingham Forest,2.8254,0.996166
+2025-01-25,Brighton,Everton,0.64378,0.870883
+2025-01-25,Liverpool,Ipswich,2.16809,0.804707
+2025-01-25,Southampton,Newcastle United,0.825621,3.08319
+2025-01-25,Wolverhampton Wanderers,Arsenal,0.514724,0.887358
+2025-01-25,Manchester City,Chelsea,2.23213,1.49843
+2025-01-26,Crystal Palace,Brentford,1.23177,1.92037
+2025-01-26,Tottenham,Leicester,1.27483,1.40469
+2025-01-26,Aston Villa,West Ham,0.907851,1.67886
+2025-01-26,Fulham,Manchester United,0.560571,0.201988
+2025-02-01,Newcastle United,Fulham,1.22716,1.60881
+2025-02-01,Wolverhampton Wanderers,Aston Villa,2.00146,0.742809
+2025-02-01,Everton,Leicester,3.11261,0.447136
+2025-02-01,Bournemouth,Liverpool,1.65273,2.7219
+2025-02-01,Ipswich,Southampton,1.94845,1.17566
+2025-02-01,Nottingham Forest,Brighton,4.0677,0.756296
+2025-02-02,Brentford,Tottenham,1.66475,0.945355
+2025-02-02,Manchester United,Crystal Palace,1.50706,2.44633
+2025-02-02,Arsenal,Manchester City,1.53202,0.743191
+2025-02-03,Chelsea,West Ham,1.39066,1.1868
+2025-02-12,Everton,Liverpool,0.910523,0.929103
+2025-02-14,Brighton,Chelsea,2.06892,0.649788
+2025-02-15,Crystal Palace,Everton,2.30646,1.01565
+2025-02-15,Southampton,Bournemouth,0.974418,2.08722
+2025-02-15,Manchester City,Newcastle United,2.12004,0.157211
+2025-02-15,West Ham,Brentford,0.673466,1.96499
+2025-02-15,Aston Villa,Ipswich,2.89841,0.332864
+2025-02-15,Leicester,Arsenal,0.233209,1.75
+2025-02-15,Fulham,Nottingham Forest,2.20993,0.331301
+2025-02-16,Liverpool,Wolverhampton Wanderers,1.86758,1.05329
+2025-02-16,Tottenham,Manchester United,1.97109,1.42652
+2025-02-19,Aston Villa,Liverpool,1.02269,2.04279
+2025-02-21,Leicester,Brentford,0.727901,2.03465
+2025-02-22,Aston Villa,Chelsea,2.69413,2.17418
+2025-02-22,Everton,Manchester United,2.10444,0.645685
+2025-02-22,Bournemouth,Wolverhampton Wanderers,0.629691,2.10124
+2025-02-22,Arsenal,West Ham,1.37264,1.02684
+2025-02-22,Fulham,Crystal Palace,0.23426,1.46203
+2025-02-22,Ipswich,Tottenham,1.15389,1.58741
+2025-02-22,Southampton,Brighton,0.154147,5.12018
+2025-02-23,Manchester City,Liverpool,0.58248,0.807058
+2025-02-23,Newcastle United,Nottingham Forest,3.45858,2.38603
+2025-02-25,Brighton,Bournemouth,2.57927,1.70169
+2025-02-25,Wolverhampton Wanderers,Fulham,0.928973,1.43473
+2025-02-25,Crystal Palace,Aston Villa,4.02522,0.667217
+2025-02-25,Chelsea,Southampton,2.98234,0.845039
+2025-02-26,Brentford,Everton,1.34009,1.44955
+2025-02-26,Nottingham Forest,Arsenal,0.508611,1.31766
+2025-02-26,Tottenham,Manchester City,1.28426,2.38641
+2025-02-26,Manchester United,Ipswich,1.40202,1.04498
+2025-02-26,Liverpool,Newcastle United,1.40027,0.45882
+2025-02-27,West Ham,Leicester,1.70437,0.289578
+2025-03-08,Wolverhampton Wanderers,Everton,0.812432,1.3672
+2025-03-08,Brentford,Aston Villa,0.637743,1.29638
+2025-03-08,Liverpool,Southampton,4.98996,0.511566
+2025-03-08,Nottingham Forest,Manchester City,0.501476,0.721234
+2025-03-08,Brighton,Fulham,1.94417,0.708227
+2025-03-08,Crystal Palace,Ipswich,3.13879,1.63282
+2025-03-09,Chelsea,Leicester,1.76844,0.108487
+2025-03-09,Tottenham,Bournemouth,1.35053,2.22536
+2025-03-09,Manchester United,Arsenal,1.31107,1.82996
+2025-03-10,West Ham,Newcastle United,0.823986,1.62976
+2025-03-15,Southampton,Wolverhampton Wanderers,1.2821,0.540718
+2025-03-15,Manchester City,Brighton,2.02642,2.11119
+2025-03-15,Bournemouth,Brentford,2.02714,1.60321
+2025-03-15,Everton,West Ham,1.189,0.516029
+2025-03-15,Ipswich,Nottingham Forest,0.520839,1.30722
+2025-03-16,Leicester,Manchester United,1.30455,1.13892
+2025-03-16,Fulham,Tottenham,1.03966,1.40865
+2025-03-16,Arsenal,Chelsea,0.695725,0.286036
+2025-04-01,Arsenal,Fulham,2.30189,1.44206
+2025-04-01,Wolverhampton Wanderers,West Ham,1.10359,1.73057
+2025-04-01,Nottingham Forest,Manchester United,0.512063,1.86688
+2025-04-02,Brighton,Aston Villa,0.558009,1.20715
+2025-04-02,Bournemouth,Ipswich,1.99637,1.41263
+2025-04-02,Manchester City,Leicester,2.07165,0.104741
+2025-04-02,Newcastle United,Brentford,2.26584,1.53201
+2025-04-02,Southampton,Crystal Palace,0.687304,0.93776
+2025-04-02,Liverpool,Everton,1.29718,0.823136
+2025-04-03,Chelsea,Tottenham,1.30443,1.40274
+2025-04-05,Aston Villa,Nottingham Forest,2.63349,0.96769
+2025-04-05,West Ham,Bournemouth,0.907832,1.94869
+2025-04-05,Ipswich,Wolverhampton Wanderers,0.872356,2.8096
+2025-04-05,Crystal Palace,Brighton,0.443965,1.27226
+2025-04-05,Everton,Arsenal,1.22875,1.4031
+2025-04-06,Brentford,Chelsea,1.36123,1.47829
+2025-04-06,Fulham,Liverpool,1.72764,1.40638
+2025-04-06,Tottenham,Southampton,2.648,0.780439
+2025-04-06,Manchester United,Manchester City,1.23317,0.687894
+2025-04-07,Leicester,Newcastle United,0.354575,3.44111
+2025-04-12,Manchester City,Crystal Palace,4.59724,1.33808
+2025-04-12,Brighton,Leicester,3.6978,1.98444
+2025-04-12,Nottingham Forest,Everton,0.423949,1.26036
+2025-04-12,Southampton,Aston Villa,0.412256,2.99927
+2025-04-12,Arsenal,Brentford,0.767369,0.588583
+2025-04-13,Newcastle United,Manchester United,2.6383,0.786568
+2025-04-13,Wolverhampton Wanderers,Tottenham,2.22977,1.62887
+2025-04-13,Chelsea,Ipswich,2.90758,1.60301
+2025-04-13,Liverpool,West Ham,1.42902,1.46598
+2025-04-14,Bournemouth,Fulham,1.8577,1.07203
+2025-04-16,Newcastle United,Crystal Palace,2.32947,2.37548
+2025-04-19,Brentford,Brighton,2.95516,1.24107
+2025-04-19,Crystal Palace,Bournemouth,0.337818,0.664093
+2025-04-19,Everton,Manchester City,0.81683,1.87989
+2025-04-19,West Ham,Southampton,0.98423,0.922877
+2025-04-19,Aston Villa,Newcastle United,3.05371,1.27176
+2025-04-20,Leicester,Liverpool,0.232205,4.52706
+2025-04-20,Fulham,Chelsea,0.306122,0.75172
+2025-04-20,Ipswich,Arsenal,0.192879,2.81362
+2025-04-20,Manchester United,Wolverhampton Wanderers,1.13966,0.187814
+2025-04-21,Tottenham,Nottingham Forest,2.4024,0.557682
+2025-04-22,Manchester City,Aston Villa,1.36232,1.85906
+2025-04-23,Arsenal,Crystal Palace,1.92149,2.50515
+2025-04-26,Chelsea,Everton,0.768313,0.916838
+2025-04-26,Brighton,West Ham,1.29433,1.24134
+2025-04-26,Newcastle United,Ipswich,4.11539,0.127203
+2025-04-26,Southampton,Fulham,0.935581,1.9956
+2025-04-26,Wolverhampton Wanderers,Leicester,2.57666,1.04978
+2025-04-27,Bournemouth,Manchester United,0.60995,1.91039
+2025-04-27,Liverpool,Tottenham,2.51104,0.512812
+2025-05-01,Nottingham Forest,Brentford,0.670607,1.52054
+2025-05-02,Manchester City,Wolverhampton Wanderers,0.859463,0.622455
+2025-05-03,Arsenal,Bournemouth,2.05484,1.41783
+2025-05-03,Leicester,Southampton,1.60739,0.550774
+2025-05-03,Aston Villa,Fulham,1.29013,0.702787
+2025-05-03,Everton,Ipswich,0.808481,1.14351
+2025-05-04,West Ham,Tottenham,1.15166,0.847022
+2025-05-04,Brighton,Newcastle United,0.687863,1.63777
+2025-05-04,Brentford,Manchester United,3.58737,1.13404
+2025-05-04,Chelsea,Liverpool,3.51944,1.4267
+2025-05-05,Crystal Palace,Nottingham Forest,2.34037,0.63684
+2025-05-10,Fulham,Everton,1.20869,1.32604
+2025-05-10,Ipswich,Brentford,0.717433,1.32077
+2025-05-10,Southampton,Manchester City,0.136995,1.58463
+2025-05-10,Wolverhampton Wanderers,Brighton,0.73395,1.41254
+2025-05-10,Bournemouth,Aston Villa,1.02272,1.12376
+2025-05-11,Tottenham,Crystal Palace,0.806792,3.98546
+2025-05-11,Liverpool,Arsenal,2.74682,2.18795
+2025-05-11,Newcastle United,Chelsea,1.6703,0.646426
+2025-05-11,Manchester United,West Ham,2.31287,2.15985
+2025-05-11,Nottingham Forest,Leicester,1.76909,1.22949
+2025-05-16,Aston Villa,Tottenham,1.69061,0.523016
+2025-05-16,Chelsea,Manchester United,1.29571,0.337632
+2025-05-18,Arsenal,Newcastle United,1.15958,2.24634
+2025-05-18,Everton,Southampton,2.67793,1.05025
+2025-05-18,West Ham,Nottingham Forest,0.850457,2.14756
+2025-05-18,Brentford,Fulham,2.43045,1.61741
+2025-05-18,Leicester,Ipswich,0.788544,1.36957
+2025-05-19,Brighton,Liverpool,2.17789,3.065
+2025-05-20,Manchester City,Bournemouth,1.59779,0.962014
+2025-05-20,Crystal Palace,Wolverhampton Wanderers,1.68451,1.42886
+2025-05-25,Fulham,Manchester City,2.21797,2.45923
+2025-05-25,Ipswich,West Ham,0.893095,0.967379
+2025-05-25,Wolverhampton Wanderers,Brentford,1.10889,1.97196
+2025-05-25,Bournemouth,Leicester,2.72449,0.156702
+2025-05-25,Southampton,Arsenal,0.598144,2.40711
+2025-05-25,Newcastle United,Everton,1.1591,1.07279
+2025-05-25,Liverpool,Crystal Palace,1.92122,1.4144
+2025-05-25,Manchester United,Aston Villa,2.96259,0.335222
+2025-05-25,Nottingham Forest,Chelsea,1.58014,1.30874
+2025-05-25,Tottenham,Brighton,1.85265,3.11624
+2025-08-15,Liverpool,Bournemouth,2.33007,1.57303
+2025-08-16,Aston Villa,Newcastle United,0.318601,1.40098
+2025-08-16,Brighton,Fulham,1.44008,0.902883
+2025-08-16,Sunderland,West Ham,0.724368,0.558948
+2025-08-16,Tottenham,Burnley,1.97858,0.734138
+2025-08-16,Wolverhampton Wanderers,Manchester City,0.519436,2.29903
+2025-08-17,Manchester United,Arsenal,1.37653,1.3304
+2025-08-17,Chelsea,Crystal Palace,1.36793,1.03414
+2025-08-17,Nottingham Forest,Brentford,1.7555,1.32516
+2025-08-18,Leeds,Everton,2.3812,0.674338
+2025-08-22,West Ham,Chelsea,0.978572,3.94997
+2025-08-23,Arsenal,Leeds,2.73761,0.156761
+2025-08-23,Manchester City,Tottenham,1.2475,1.28015
+2025-08-23,Brentford,Aston Villa,1.12964,0.976852
+2025-08-23,Burnley,Sunderland,1.00381,1.12127
+2025-08-23,Bournemouth,Wolverhampton Wanderers,1.78462,0.373367
+2025-08-24,Everton,Brighton,1.80116,2.08487
+2025-08-24,Fulham,Manchester United,1.65333,1.54603
+2025-08-24,Crystal Palace,Nottingham Forest,1.10188,1.32987
+2025-08-25,Newcastle United,Liverpool,1.96342,0.646559
+2025-08-30,Manchester United,Burnley,4.02237,1.32618
+2025-08-30,Sunderland,Brentford,1.57127,1.44604
+2025-08-30,Leeds,Newcastle United,0.6773,0.303635
+2025-08-30,Tottenham,Bournemouth,0.17067,2.1201
+2025-08-30,Chelsea,Fulham,2.4324,0.736228
+2025-08-30,Wolverhampton Wanderers,Everton,0.943257,2.03791
+2025-08-31,Brighton,Manchester City,2.20864,2.13418
+2025-08-31,Liverpool,Arsenal,0.481404,0.485679
+2025-08-31,Nottingham Forest,West Ham,0.716018,2.236
+2025-08-31,Aston Villa,Crystal Palace,1.20586,2.59713

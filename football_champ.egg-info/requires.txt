@@ -1,0 +1,13 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+scipy>=1.10
+pydantic>=2.4
+typer[all]>=0.9
+joblib>=1.3
+PyYAML>=6.0
+rich>=13.7
+optuna>=3.5
+fastapi>=0.110
+uvicorn[standard]>=0.23
+jinja2>=3.1

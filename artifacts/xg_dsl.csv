@@ -1,0 +1,325 @@
+date,home_team,away_team,home_xg,away_xg
+2024-08-23,Borussia M.Gladbach,Bayer Leverkusen,1.51665,3.23588
+2024-08-24,RasenBallsport Leipzig,Bochum,0.937134,1.31541
+2024-08-24,Hoffenheim,Holstein Kiel,3.73706,1.97238
+2024-08-24,Freiburg,VfB Stuttgart,3.0149,0.374185
+2024-08-24,Augsburg,Werder Bremen,1.31571,1.54312
+2024-08-24,Mainz 05,Union Berlin,1.77023,0.731569
+2024-08-24,Borussia Dortmund,Eintracht Frankfurt,1.9263,1.15188
+2024-08-25,Wolfsburg,Bayern Munich,2.08125,2.17538
+2024-08-25,St. Pauli,FC Heidenheim,1.1609,1.16833
+2024-08-30,Union Berlin,St. Pauli,1.0488,0.644857
+2024-08-31,Bayer Leverkusen,RasenBallsport Leipzig,3.42266,1.50532
+2024-08-31,Eintracht Frankfurt,Hoffenheim,2.68507,0.832386
+2024-08-31,VfB Stuttgart,Mainz 05,4.2134,1.95179
+2024-08-31,Bochum,Borussia M.Gladbach,0.918629,2.66887
+2024-08-31,Werder Bremen,Borussia Dortmund,0.278533,0.918302
+2024-08-31,Holstein Kiel,Wolfsburg,0.89489,1.4619
+2024-09-01,FC Heidenheim,Augsburg,3.09376,0.641534
+2024-09-01,Bayern Munich,Freiburg,1.62797,0.970892
+2024-09-13,Borussia Dortmund,FC Heidenheim,2.84066,1.61406
+2024-09-14,Borussia M.Gladbach,VfB Stuttgart,2.05136,2.7214
+2024-09-14,Holstein Kiel,Bayern Munich,0.299776,4.13442
+2024-09-14,Wolfsburg,Eintracht Frankfurt,1.23249,2.86858
+2024-09-14,Hoffenheim,Bayer Leverkusen,1.06356,3.41829
+2024-09-14,Freiburg,Bochum,3.95617,1.10732
+2024-09-14,RasenBallsport Leipzig,Union Berlin,1.29462,0.859112
+2024-09-15,Augsburg,St. Pauli,2.61475,0.49314
+2024-09-15,Mainz 05,Werder Bremen,1.67115,1.8089
+2024-09-20,Augsburg,Mainz 05,2.79562,1.25788
+2024-09-21,Eintracht Frankfurt,Borussia M.Gladbach,2.93252,1.19669
+2024-09-21,FC Heidenheim,Freiburg,0.379656,1.23884
+2024-09-21,Werder Bremen,Bayern Munich,0.0,3.34451
+2024-09-21,Union Berlin,Hoffenheim,1.21587,0.378776
+2024-09-21,Bochum,Holstein Kiel,1.32383,2.26878
+2024-09-22,Bayer Leverkusen,Wolfsburg,1.71874,0.836406
+2024-09-22,VfB Stuttgart,Borussia Dortmund,3.56218,0.60692
+2024-09-22,St. Pauli,RasenBallsport Leipzig,1.67285,0.841324
+2024-09-27,Borussia Dortmund,Bochum,4.1712,1.02915
+2024-09-28,RasenBallsport Leipzig,Augsburg,2.81593,1.07415
+2024-09-28,Bayern Munich,Bayer Leverkusen,1.19457,0.0870163
+2024-09-28,Borussia M.Gladbach,Union Berlin,1.38305,0.731164
+2024-09-28,Mainz 05,FC Heidenheim,0.371434,1.09304
+2024-09-28,Wolfsburg,VfB Stuttgart,1.0386,2.58036
+2024-09-28,Freiburg,St. Pauli,1.10172,1.40925
+2024-09-29,Holstein Kiel,Eintracht Frankfurt,1.02971,2.43436
+2024-09-29,Hoffenheim,Werder Bremen,1.78654,4.06917
+2024-10-04,Augsburg,Borussia M.Gladbach,1.75524,0.807021
+2024-10-05,Werder Bremen,Freiburg,0.879674,1.58065
+2024-10-05,Union Berlin,Borussia Dortmund,1.52691,0.748758
+2024-10-05,Bochum,Wolfsburg,2.28586,2.37344
+2024-10-05,Bayer Leverkusen,Holstein Kiel,2.5839,1.98438
+2024-10-05,St. Pauli,Mainz 05,0.805413,1.29606
+2024-10-06,FC Heidenheim,RasenBallsport Leipzig,1.08159,1.81585
+2024-10-06,Eintracht Frankfurt,Bayern Munich,1.49515,2.83119
+2024-10-06,VfB Stuttgart,Hoffenheim,1.72567,0.893468
+2024-10-18,Borussia Dortmund,St. Pauli,3.97161,1.07012
+2024-10-19,Borussia M.Gladbach,FC Heidenheim,4.14976,1.89766
+2024-10-19,Mainz 05,RasenBallsport Leipzig,0.611288,2.16084
+2024-10-19,Bayern Munich,VfB Stuttgart,3.61889,0.286656
+2024-10-19,Hoffenheim,Bochum,2.46268,2.3454
+2024-10-19,Bayer Leverkusen,Eintracht Frankfurt,4.07146,1.55158
+2024-10-19,Freiburg,Augsburg,1.07588,0.868723
+2024-10-20,Holstein Kiel,Union Berlin,0.901058,1.2809
+2024-10-20,Wolfsburg,Werder Bremen,2.17351,2.14788
+2024-10-25,Mainz 05,Borussia M.Gladbach,1.45557,0.934033
+2024-10-26,St. Pauli,Wolfsburg,0.730167,0.940969
+2024-10-26,Augsburg,Borussia Dortmund,0.560509,0.776944
+2024-10-26,Werder Bremen,Bayer Leverkusen,1.78808,1.30852
+2024-10-26,VfB Stuttgart,Holstein Kiel,1.90999,0.680092
+2024-10-26,RasenBallsport Leipzig,Freiburg,2.69047,1.75887
+2024-10-27,Bochum,Bayern Munich,0.205046,3.1499
+2024-10-27,Union Berlin,Eintracht Frankfurt,1.86305,1.54058
+2024-10-27,FC Heidenheim,Hoffenheim,1.57817,0.692793
+2024-11-01,Bayer Leverkusen,VfB Stuttgart,2.78287,0.223778
+2024-11-02,Borussia Dortmund,RasenBallsport Leipzig,3.30102,0.23928
+2024-11-02,Bayern Munich,Union Berlin,2.76181,0.4664
+2024-11-02,Eintracht Frankfurt,Bochum,3.83028,2.08714
+2024-11-02,Hoffenheim,St. Pauli,0.746379,1.1155
+2024-11-02,Wolfsburg,Augsburg,1.11324,0.499473
+2024-11-02,Holstein Kiel,FC Heidenheim,2.13316,1.27585
+2024-11-03,Borussia M.Gladbach,Werder Bremen,2.95668,1.30211
+2024-11-03,Freiburg,Mainz 05,0.463898,0.903716
+2024-11-08,Union Berlin,Freiburg,0.801684,2.66619
+2024-11-09,Werder Bremen,Holstein Kiel,2.26129,0.884231
+2024-11-09,Mainz 05,Borussia Dortmund,3.18749,0.845107
+2024-11-09,Bochum,Bayer Leverkusen,0.777554,1.40554
+2024-11-09,St. Pauli,Bayern Munich,0.0751538,1.67296
+2024-11-09,RasenBallsport Leipzig,Borussia M.Gladbach,0.849803,1.31521
+2024-11-10,Augsburg,Hoffenheim,0.970329,0.415649
+2024-11-10,VfB Stuttgart,Eintracht Frankfurt,2.81862,1.93894
+2024-11-10,FC Heidenheim,Wolfsburg,2.62448,1.55233
+2024-11-22,Bayern Munich,Augsburg,4.02659,0.149096
+2024-11-23,Eintracht Frankfurt,Werder Bremen,1.47057,0.632819
+2024-11-23,Wolfsburg,Union Berlin,0.742754,0.63337
+2024-11-23,Hoffenheim,RasenBallsport Leipzig,2.60143,1.72976
+2024-11-23,Bayer Leverkusen,FC Heidenheim,2.02581,1.03141
+2024-11-23,VfB Stuttgart,Bochum,2.05767,0.652259
+2024-11-23,Borussia Dortmund,Freiburg,1.49974,1.1957
+2024-11-24,Holstein Kiel,Mainz 05,0.346026,2.13631
+2024-11-24,Borussia M.Gladbach,St. Pauli,2.99128,1.15234
+2024-11-30,St. Pauli,Holstein Kiel,1.96179,1.1506
+2024-11-30,Borussia Dortmund,Bayern Munich,0.55981,1.83117
+2024-11-30,Union Berlin,Bayer Leverkusen,1.11328,0.906684
+2024-11-30,Werder Bremen,VfB Stuttgart,2.14949,1.6651
+2024-11-30,Freiburg,Borussia M.Gladbach,2.15426,1.27811
+2024-11-30,RasenBallsport Leipzig,Wolfsburg,1.4486,2.69881
+2024-11-30,Augsburg,Bochum,2.15529,0.250706
+2024-12-01,FC Heidenheim,Eintracht Frankfurt,0.861094,3.19019
+2024-12-01,Mainz 05,Hoffenheim,2.62793,0.814599
+2024-12-06,VfB Stuttgart,Union Berlin,1.81349,1.86301
+2024-12-07,Borussia M.Gladbach,Borussia Dortmund,1.10194,1.58856
+2024-12-07,Eintracht Frankfurt,Augsburg,1.53465,1.17089
+2024-12-07,Bayern Munich,FC Heidenheim,3.08538,1.16879
+2024-12-07,Holstein Kiel,RasenBallsport Leipzig,1.14963,1.72704
+2024-12-07,Bayer Leverkusen,St. Pauli,0.729523,2.18395
+2024-12-07,Bochum,Werder Bremen,1.16256,1.20754
+2024-12-08,Wolfsburg,Mainz 05,1.48692,3.02237
+2024-12-08,Hoffenheim,Freiburg,1.49449,1.53138
+2024-12-13,Freiburg,Wolfsburg,2.96777,1.85123
+2024-12-14,St. Pauli,Werder Bremen,0.515437,0.986101
+2024-12-14,Union Berlin,Bochum,3.0131,1.23723
+2024-12-14,Borussia M.Gladbach,Holstein Kiel,2.33425,0.323948
+2024-12-14,Mainz 05,Bayern Munich,1.64219,0.992002
+2024-12-14,Augsburg,Bayer Leverkusen,0.43671,1.02095
+2024-12-15,FC Heidenheim,VfB Stuttgart,0.808275,3.46171
+2024-12-15,Borussia Dortmund,Hoffenheim,0.433347,1.31436
+2024-12-15,RasenBallsport Leipzig,Eintracht Frankfurt,2.4958,0.839379
+2024-12-20,Bayern Munich,RasenBallsport Leipzig,4.35715,0.552564
+2024-12-21,Bayer Leverkusen,Freiburg,3.25968,1.34161
+2024-12-21,Holstein Kiel,Augsburg,2.48595,1.13064
+2024-12-21,Werder Bremen,Union Berlin,2.73356,1.64107
+2024-12-21,Hoffenheim,Borussia M.Gladbach,3.7229,0.490494
+2024-12-21,Eintracht Frankfurt,Mainz 05,2.58915,0.753285
+2024-12-21,VfB Stuttgart,St. Pauli,2.41593,2.57781
+2024-12-22,Bochum,FC Heidenheim,1.68369,0.512353
+2024-12-22,Wolfsburg,Borussia Dortmund,1.95337,2.4116
+2025-01-10,Borussia Dortmund,Bayer Leverkusen,1.48663,1.8834
+2025-01-11,Borussia M.Gladbach,Bayern Munich,0.326195,4.47736
+2025-01-11,Mainz 05,Bochum,1.7238,0.697735
+2025-01-11,St. Pauli,Eintracht Frankfurt,2.5542,2.23689
+2025-01-11,FC Heidenheim,Union Berlin,1.75563,1.03435
+2025-01-11,Hoffenheim,Wolfsburg,1.18042,1.49127
+2025-01-11,Freiburg,Holstein Kiel,0.750017,1.66855
+2025-01-12,RasenBallsport Leipzig,Werder Bremen,2.65039,1.32687
+2025-01-12,Augsburg,VfB Stuttgart,0.339144,2.61617
+2025-01-14,Holstein Kiel,Borussia Dortmund,1.95929,1.16391
+2025-01-14,Bayer Leverkusen,Mainz 05,1.99412,0.603471
+2025-01-14,Eintracht Frankfurt,Freiburg,2.82238,0.587762
+2025-01-14,Wolfsburg,Borussia M.Gladbach,3.72762,0.856948
+2025-01-15,Union Berlin,Augsburg,0.549286,1.41902
+2025-01-15,Werder Bremen,FC Heidenheim,1.87497,1.91878
+2025-01-15,VfB Stuttgart,RasenBallsport Leipzig,2.42754,0.710278
+2025-01-15,Bochum,St. Pauli,1.8213,1.15308
+2025-01-15,Bayern Munich,Hoffenheim,3.80458,0.222965
+2025-01-17,Eintracht Frankfurt,Borussia Dortmund,2.05106,0.57641
+2025-01-18,Holstein Kiel,Hoffenheim,0.908525,0.905544
+2025-01-18,VfB Stuttgart,Freiburg,2.26605,0.187694
+2025-01-18,Bayern Munich,Wolfsburg,3.23282,0.702414
+2025-01-18,FC Heidenheim,St. Pauli,0.923964,2.23242
+2025-01-18,Bochum,RasenBallsport Leipzig,2.75969,2.38567
+2025-01-18,Bayer Leverkusen,Borussia M.Gladbach,2.08382,0.473935
+2025-01-19,Werder Bremen,Augsburg,1.15183,1.31644
+2025-01-19,Union Berlin,Mainz 05,2.44953,1.40424
+2025-01-24,Wolfsburg,Holstein Kiel,2.52045,0.265769
+2025-01-25,RasenBallsport Leipzig,Bayer Leverkusen,0.708246,2.57674
+2025-01-25,Borussia Dortmund,Werder Bremen,1.49423,1.11662
+2025-01-25,Mainz 05,VfB Stuttgart,2.22883,0.917385
+2025-01-25,Augsburg,FC Heidenheim,1.63821,0.94738
+2025-01-25,Freiburg,Bayern Munich,0.271308,0.787581
+2025-01-25,Borussia M.Gladbach,Bochum,2.93153,0.759449
+2025-01-26,St. Pauli,Union Berlin,1.40358,0.986402
+2025-01-26,Hoffenheim,Eintracht Frankfurt,2.32141,2.30325
+2025-01-31,Werder Bremen,Mainz 05,2.58542,1.01597
+2025-02-01,Bochum,Freiburg,0.843049,3.33243
+2025-02-01,St. Pauli,Augsburg,0.849878,0.194891
+2025-02-01,VfB Stuttgart,Borussia M.Gladbach,0.950734,1.96971
+2025-02-01,Bayern Munich,Holstein Kiel,4.93236,2.05752
+2025-02-01,FC Heidenheim,Borussia Dortmund,0.525888,2.68284
+2025-02-01,Union Berlin,RasenBallsport Leipzig,1.74847,0.237923
+2025-02-02,Eintracht Frankfurt,Wolfsburg,1.69604,1.46292
+2025-02-02,Bayer Leverkusen,Hoffenheim,1.35418,1.94944
+2025-02-07,Bayern Munich,Werder Bremen,4.47713,0.151051
+2025-02-08,Borussia Dortmund,VfB Stuttgart,1.07063,0.452825
+2025-02-08,Hoffenheim,Union Berlin,0.881646,3.86589
+2025-02-08,Freiburg,FC Heidenheim,1.33195,0.434356
+2025-02-08,Wolfsburg,Bayer Leverkusen,0.895017,1.66317
+2025-02-08,Mainz 05,Augsburg,1.99994,0.260742
+2025-02-08,Borussia M.Gladbach,Eintracht Frankfurt,0.656491,2.5487
+2025-02-09,Holstein Kiel,Bochum,2.0,2.0
+2025-02-09,RasenBallsport Leipzig,St. Pauli,1.89601,0.72321
+2025-02-14,Augsburg,RasenBallsport Leipzig,1.05445,1.6452
+2025-02-15,Bayer Leverkusen,Bayern Munich,2.55729,0.0720406
+2025-02-15,St. Pauli,Freiburg,0.19059,1.25072
+2025-02-15,VfB Stuttgart,Wolfsburg,1.22466,1.75731
+2025-02-15,Union Berlin,Borussia M.Gladbach,1.66824,2.22036
+2025-02-15,Bochum,Borussia Dortmund,3.3688,2.70519
+2025-02-16,Werder Bremen,Hoffenheim,0.85665,1.91874
+2025-02-16,Eintracht Frankfurt,Holstein Kiel,3.02527,1.26559
+2025-02-16,FC Heidenheim,Mainz 05,0.545205,1.94932
+2025-02-21,Freiburg,Werder Bremen,2.66243,1.25462
+2025-02-22,Borussia Dortmund,Union Berlin,5.44112,0.365382
+2025-02-22,Holstein Kiel,Bayer Leverkusen,0.494995,2.55557
+2025-02-22,Mainz 05,St. Pauli,1.35603,0.90068
+2025-02-22,Wolfsburg,Bochum,2.16138,1.46609
+2025-02-22,Borussia M.Gladbach,Augsburg,0.800003,1.73915
+2025-02-23,RasenBallsport Leipzig,FC Heidenheim,1.6451,0.834882
+2025-02-23,Bayern Munich,Eintracht Frankfurt,4.48699,0.49278
+2025-02-23,Hoffenheim,VfB Stuttgart,0.705815,3.67099
+2025-02-28,VfB Stuttgart,Bayern Munich,0.653703,2.29942
+2025-03-01,Werder Bremen,Wolfsburg,2.10317,1.11674
+2025-03-01,RasenBallsport Leipzig,Mainz 05,1.78404,1.64735
+2025-03-01,FC Heidenheim,Borussia M.Gladbach,1.87707,1.7158
+2025-03-01,St. Pauli,Borussia Dortmund,0.293506,2.23846
+2025-03-01,Bochum,Hoffenheim,1.4452,0.525952
+2025-03-01,Eintracht Frankfurt,Bayer Leverkusen,1.00046,2.37018
+2025-03-02,Union Berlin,Holstein Kiel,0.886081,0.692509
+2025-03-02,Augsburg,Freiburg,2.222,0.799243
+2025-03-07,Borussia M.Gladbach,Mainz 05,1.25544,1.98889
+2025-03-08,Holstein Kiel,VfB Stuttgart,1.97246,1.0726
+2025-03-08,Freiburg,RasenBallsport Leipzig,0.510953,2.02806
+2025-03-08,Wolfsburg,St. Pauli,1.96602,1.23696
+2025-03-08,Borussia Dortmund,Augsburg,1.11055,0.250168
+2025-03-08,Bayern Munich,Bochum,2.72891,1.36274
+2025-03-08,Bayer Leverkusen,Werder Bremen,1.36325,1.67701
+2025-03-09,Eintracht Frankfurt,Union Berlin,2.00811,0.725817
+2025-03-09,Hoffenheim,FC Heidenheim,1.78028,2.31324
+2025-03-14,St. Pauli,Hoffenheim,1.43518,0.196271
+2025-03-15,Werder Bremen,Borussia M.Gladbach,2.98283,2.32056
+2025-03-15,Augsburg,Wolfsburg,0.598968,0.763636
+2025-03-15,Mainz 05,Freiburg,1.33307,2.93264
+2025-03-15,Union Berlin,Bayern Munich,0.8044,1.83549
+2025-03-15,RasenBallsport Leipzig,Borussia Dortmund,2.55875,4.09542
+2025-03-16,Bochum,Eintracht Frankfurt,1.88062,3.29403
+2025-03-16,FC Heidenheim,Holstein Kiel,1.6572,1.14988
+2025-03-16,VfB Stuttgart,Bayer Leverkusen,2.85024,2.07439
+2025-03-28,Bayer Leverkusen,Bochum,2.08076,0.702152
+2025-03-29,Hoffenheim,Augsburg,1.94509,0.688621
+2025-03-29,Wolfsburg,FC Heidenheim,1.23886,1.31407
+2025-03-29,Holstein Kiel,Werder Bremen,0.56476,1.48157
+2025-03-29,Bayern Munich,St. Pauli,4.00213,0.841269
+2025-03-29,Borussia M.Gladbach,RasenBallsport Leipzig,1.79539,0.929047
+2025-03-29,Eintracht Frankfurt,VfB Stuttgart,3.69196,0.863163
+2025-03-30,Borussia Dortmund,Mainz 05,2.69722,0.654443
+2025-03-30,Freiburg,Union Berlin,1.01023,1.38632
+2025-04-04,Augsburg,Bayern Munich,0.567653,1.91653
+2025-04-05,RasenBallsport Leipzig,Hoffenheim,1.40121,1.18624
+2025-04-05,FC Heidenheim,Bayer Leverkusen,1.30234,0.367393
+2025-04-05,Freiburg,Borussia Dortmund,2.02793,3.55487
+2025-04-05,Mainz 05,Holstein Kiel,1.65205,1.66267
+2025-04-05,Bochum,VfB Stuttgart,0.815791,2.64663
+2025-04-05,Werder Bremen,Eintracht Frankfurt,1.22711,0.515073
+2025-04-06,St. Pauli,Borussia M.Gladbach,2.19443,0.646648
+2025-04-06,Union Berlin,Wolfsburg,1.55071,1.79618
+2025-04-11,Wolfsburg,RasenBallsport Leipzig,1.84361,1.60065
+2025-04-12,Bayer Leverkusen,Union Berlin,0.495489,0.513825
+2025-04-12,Hoffenheim,Mainz 05,1.42393,0.969601
+2025-04-12,Borussia M.Gladbach,Freiburg,0.524784,2.31704
+2025-04-12,Bochum,Augsburg,1.86097,1.02536
+2025-04-12,Holstein Kiel,St. Pauli,0.692664,1.06614
+2025-04-12,Bayern Munich,Borussia Dortmund,2.94706,1.71681
+2025-04-13,VfB Stuttgart,Werder Bremen,1.75437,1.65438
+2025-04-13,Eintracht Frankfurt,FC Heidenheim,3.64515,1.28841
+2025-04-19,Union Berlin,VfB Stuttgart,2.16124,1.19
+2025-04-19,Mainz 05,Wolfsburg,2.68235,1.80796
+2025-04-19,Freiburg,Hoffenheim,1.54968,1.94701
+2025-04-19,RasenBallsport Leipzig,Holstein Kiel,2.16761,1.017
+2025-04-19,FC Heidenheim,Bayern Munich,0.529774,3.54191
+2025-04-19,Werder Bremen,Bochum,2.70919,0.4947
+2025-04-20,Augsburg,Eintracht Frankfurt,1.14215,1.39546
+2025-04-20,Borussia Dortmund,Borussia M.Gladbach,1.18456,1.2185
+2025-04-20,St. Pauli,Bayer Leverkusen,2.3164,1.13491
+2025-04-25,VfB Stuttgart,FC Heidenheim,1.91698,0.522621
+2025-04-26,Eintracht Frankfurt,RasenBallsport Leipzig,2.23942,0.316263
+2025-04-26,Holstein Kiel,Borussia M.Gladbach,3.0385,2.55098
+2025-04-26,Wolfsburg,Freiburg,0.288019,1.95821
+2025-04-26,Hoffenheim,Borussia Dortmund,1.19025,2.41526
+2025-04-26,Bayer Leverkusen,Augsburg,1.03782,0.640893
+2025-04-26,Bayern Munich,Mainz 05,1.70143,0.923874
+2025-04-27,Bochum,Union Berlin,1.5178,0.498974
+2025-04-27,Werder Bremen,St. Pauli,1.55064,0.830832
+2025-05-02,FC Heidenheim,Bochum,0.463987,1.81311
+2025-05-03,St. Pauli,VfB Stuttgart,0.213208,3.56335
+2025-05-03,Borussia Dortmund,Wolfsburg,2.54996,1.3634
+2025-05-03,Borussia M.Gladbach,Hoffenheim,1.91833,1.91093
+2025-05-03,RasenBallsport Leipzig,Bayern Munich,1.74905,1.97214
+2025-05-03,Union Berlin,Werder Bremen,1.35336,1.35783
+2025-05-04,Augsburg,Holstein Kiel,3.93001,2.10407
+2025-05-04,Freiburg,Bayer Leverkusen,0.904468,0.227838
+2025-05-04,Mainz 05,Eintracht Frankfurt,1.64254,1.3876
+2025-05-09,Wolfsburg,Hoffenheim,1.36763,1.10881
+2025-05-10,Bayern Munich,Borussia M.Gladbach,2.78307,1.35544
+2025-05-10,Holstein Kiel,Freiburg,0.974297,2.01558
+2025-05-10,Bochum,Mainz 05,0.734972,2.48765
+2025-05-10,Werder Bremen,RasenBallsport Leipzig,3.20616,1.39403
+2025-05-10,Union Berlin,FC Heidenheim,0.528885,1.86184
+2025-05-11,Bayer Leverkusen,Borussia Dortmund,1.90473,1.39477
+2025-05-11,Eintracht Frankfurt,St. Pauli,1.82027,0.666882
+2025-05-11,VfB Stuttgart,Augsburg,4.97233,0.381838
+2025-05-17,St. Pauli,Bochum,0.802748,1.34252
+2025-05-17,Borussia M.Gladbach,Wolfsburg,0.744546,1.5757
+2025-05-17,Mainz 05,Bayer Leverkusen,2.89903,1.33572
+2025-05-17,Augsburg,Union Berlin,1.57932,1.14135
+2025-05-17,Hoffenheim,Bayern Munich,0.661398,2.21427
+2025-05-17,FC Heidenheim,Werder Bremen,1.75706,2.20606
+2025-05-17,Borussia Dortmund,Holstein Kiel,2.56073,0.574499
+2025-05-17,RasenBallsport Leipzig,VfB Stuttgart,1.42373,3.34624
+2025-05-17,Freiburg,Eintracht Frankfurt,1.14001,2.61814
+2025-08-22,Bayern Munich,RasenBallsport Leipzig,3.29885,0.52226
+2025-08-23,FC Heidenheim,Wolfsburg,0.783156,2.57718
+2025-08-23,Bayer Leverkusen,Hoffenheim,1.05253,0.505193
+2025-08-23,Union Berlin,VfB Stuttgart,0.529421,1.80147
+2025-08-23,Eintracht Frankfurt,Werder Bremen,3.10684,0.587822
+2025-08-23,Freiburg,Augsburg,2.27247,1.30191
+2025-08-23,St. Pauli,Borussia Dortmund,1.46772,2.10289
+2025-08-24,Mainz 05,FC Cologne,1.31655,1.64676
+2025-08-24,Borussia M.Gladbach,Hamburger SV,1.01717,0.285593
+2025-08-29,Hamburger SV,St. Pauli,0.74111,1.85404
+2025-08-30,Werder Bremen,Bayer Leverkusen,2.32676,2.03733
+2025-08-30,VfB Stuttgart,Borussia M.Gladbach,0.925105,1.60717
+2025-08-30,Hoffenheim,Eintracht Frankfurt,1.28178,1.82087
+2025-08-30,RasenBallsport Leipzig,FC Heidenheim,3.29717,0.969982
+2025-08-30,Augsburg,Bayern Munich,0.506028,3.37523
+2025-08-31,Borussia Dortmund,Union Berlin,1.82606,0.971167
+2025-08-31,Wolfsburg,Mainz 05,0.616661,1.81482
+2025-08-31,FC Cologne,Freiburg,1.84068,0.933072

@@ -1,0 +1,501 @@
+date,home_team,away_team,home_shots,away_shots,home_sot,away_sot
+2015-08-22,Verona,Roma,12,20,6,7
+2015-08-22,Lazio,Bologna,21,8,9,4
+2015-08-23,Juventus,Udinese,21,6,5,2
+2015-08-23,Palermo,Genoa,19,11,6,3
+2015-08-23,Sampdoria,Carpi,10,25,7,8
+2015-08-23,Sassuolo,Napoli,15,14,6,3
+2015-08-23,Inter,Atalanta,21,5,7,0
+2015-08-23,Empoli,Chievo,14,12,4,3
+2015-08-23,Fiorentina,AC Milan,13,9,7,0
+2015-08-23,Frosinone,Torino,13,26,3,6
+2015-08-29,Bologna,Sassuolo,6,9,2,2
+2015-08-29,AC Milan,Empoli,6,18,4,3
+2015-08-30,Atalanta,Frosinone,25,14,11,4
+2015-08-30,Genoa,Verona,20,12,6,2
+2015-08-30,Carpi,Inter,10,12,5,5
+2015-08-30,Chievo,Lazio,9,13,5,2
+2015-08-30,Udinese,Palermo,25,5,6,1
+2015-08-30,Torino,Fiorentina,10,8,6,5
+2015-08-30,Roma,Juventus,18,10,7,2
+2015-08-30,Napoli,Sampdoria,27,9,7,4
+2015-09-12,Fiorentina,Genoa,11,12,3,1
+2015-09-12,Frosinone,Roma,18,20,5,3
+2015-09-12,Juventus,Chievo,26,6,6,3
+2015-09-13,Inter,AC Milan,16,19,4,3
+2015-09-13,Lazio,Udinese,14,11,8,5
+2015-09-13,Empoli,Napoli,16,17,2,4
+2015-09-13,Sassuolo,Atalanta,9,9,8,4
+2015-09-13,Verona,Torino,12,10,3,5
+2015-09-13,Palermo,Carpi,14,9,6,2
+2015-09-14,Sampdoria,Bologna,12,9,4,2
+2015-09-19,Udinese,Empoli,7,12,2,6
+2015-09-19,AC Milan,Palermo,18,13,8,3
+2015-09-20,Bologna,Frosinone,12,20,2,5
+2015-09-20,Napoli,Lazio,19,9,10,1
+2015-09-20,Carpi,Fiorentina,12,8,3,2
+2015-09-20,Atalanta,Verona,15,9,3,3
+2015-09-20,Chievo,Inter,15,14,2,3
+2015-09-20,Roma,Sassuolo,21,12,7,4
+2015-09-20,Genoa,Juventus,8,13,0,4
+2015-09-20,Torino,Sampdoria,19,13,8,5
+2015-09-22,Udinese,AC Milan,11,9,3,3
+2015-09-23,Lazio,Genoa,10,10,3,3
+2015-09-23,Palermo,Sassuolo,9,13,2,4
+2015-09-23,Sampdoria,Roma,6,25,3,8
+2015-09-23,Carpi,Napoli,11,22,1,4
+2015-09-23,Chievo,Torino,10,4,5,1
+2015-09-23,Fiorentina,Bologna,18,3,4,1
+2015-09-23,Inter,Verona,17,7,4,1
+2015-09-23,Juventus,Frosinone,36,9,7,1
+2015-09-24,Empoli,Atalanta,10,13,1,3
+2015-09-26,Napoli,Juventus,13,12,5,3
+2015-09-26,Roma,Carpi,17,13,10,6
+2015-09-27,Genoa,AC Milan,11,12,2,3
+2015-09-27,Verona,Lazio,6,13,1,2
+2015-09-27,Sassuolo,Chievo,13,12,5,2
+2015-09-27,Torino,Palermo,10,12,3,3
+2015-09-27,Bologna,Udinese,12,11,3,3
+2015-09-27,Inter,Fiorentina,5,12,2,8
+2015-09-28,Frosinone,Empoli,10,13,4,5
+2015-09-28,Atalanta,Sampdoria,18,9,5,4
+2015-10-03,Carpi,Torino,7,14,3,3
+2015-10-03,Chievo,Verona,17,10,7,3
+2015-10-04,Lazio,Frosinone,29,12,10,6
+2015-10-04,Fiorentina,Atalanta,29,5,9,1
+2015-10-04,AC Milan,Napoli,13,11,2,4
+2015-10-04,Juventus,Bologna,19,2,8,1
+2015-10-04,Empoli,Sassuolo,18,7,4,1
+2015-10-04,Sampdoria,Inter,15,17,6,7
+2015-10-04,Palermo,Roma,14,13,5,8
+2015-10-04,Udinese,Genoa,9,19,3,7
+2015-10-17,Roma,Empoli,9,13,5,6
+2015-10-17,Torino,AC Milan,6,8,2,2
+2015-10-18,Bologna,Palermo,17,9,6,2
+2015-10-18,Frosinone,Sampdoria,14,19,4,2
+2015-10-18,Genoa,Chievo,12,21,6,3
+2015-10-18,Verona,Udinese,8,15,2,5
+2015-10-18,Sassuolo,Lazio,16,12,4,3
+2015-10-18,Atalanta,Carpi,15,13,7,5
+2015-10-18,Napoli,Fiorentina,13,10,6,3
+2015-10-18,Inter,Juventus,8,15,2,4
+2015-10-24,Palermo,Inter,10,19,2,7
+2015-10-24,Empoli,Genoa,15,14,5,3
+2015-10-24,Carpi,Bologna,8,14,2,4
+2015-10-25,Sampdoria,Verona,10,11,6,1
+2015-10-25,Udinese,Frosinone,19,12,7,2
+2015-10-25,AC Milan,Sassuolo,21,4,3,2
+2015-10-25,Juventus,Atalanta,19,5,10,0
+2015-10-25,Lazio,Torino,10,8,3,3
+2015-10-25,Fiorentina,Roma,21,6,4,3
+2015-10-25,Chievo,Napoli,7,18,1,4
+2015-10-27,Bologna,Inter,7,11,3,5
+2015-10-28,Torino,Genoa,17,10,7,4
+2015-10-28,Sassuolo,Juventus,7,14,3,3
+2015-10-28,Roma,Udinese,19,6,8,2
+2015-10-28,Atalanta,Lazio,8,7,3,3
+2015-10-28,AC Milan,Chievo,24,4,4,3
+2015-10-28,Verona,Fiorentina,3,9,0,2
+2015-10-28,Frosinone,Carpi,8,13,3,3
+2015-10-28,Napoli,Palermo,23,8,8,0
+2015-10-29,Sampdoria,Empoli,14,17,3,5
+2015-10-31,Juventus,Torino,17,10,6,5
+2015-10-31,Inter,Roma,10,19,3,9
+2015-11-01,Fiorentina,Frosinone,31,6,9,1
+2015-11-01,Genoa,Napoli,9,18,1,8
+2015-11-01,Bologna,Atalanta,10,8,5,2
+2015-11-01,Carpi,Verona,11,11,6,3
+2015-11-01,Udinese,Sassuolo,14,6,2,2
+2015-11-01,Lazio,AC Milan,10,9,4,3
+2015-11-02,Chievo,Sampdoria,15,10,2,3
+2015-11-03,Palermo,Empoli,15,14,4,5
+2015-11-07,AC Milan,Atalanta,8,15,2,4
+2015-11-07,Verona,Bologna,11,10,2,4
+2015-11-08,Torino,Inter,16,7,8,2
+2015-11-08,Sassuolo,Carpi,9,7,4,2
+2015-11-08,Palermo,Chievo,14,13,3,3
+2015-11-08,Roma,Lazio,14,7,2,1
+2015-11-08,Empoli,Juventus,12,11,4,4
+2015-11-08,Frosinone,Genoa,18,10,5,3
+2015-11-08,Napoli,Udinese,15,8,5,2
+2015-11-08,Sampdoria,Fiorentina,3,20,2,7
+2015-11-21,Bologna,Roma,9,14,3,5
+2015-11-21,Juventus,AC Milan,16,9,5,2
+2015-11-22,Inter,Frosinone,22,11,9,4
+2015-11-22,Atalanta,Torino,15,14,1,2
+2015-11-22,Genoa,Sassuolo,14,9,3,4
+2015-11-22,Fiorentina,Empoli,18,15,5,5
+2015-11-22,Lazio,Palermo,18,13,3,8
+2015-11-22,Udinese,Sampdoria,9,10,4,0
+2015-11-22,Verona,Napoli,3,22,3,10
+2015-11-22,Carpi,Chievo,19,10,3,3
+2015-11-28,Torino,Bologna,13,3,6,0
+2015-11-28,AC Milan,Sampdoria,22,10,9,2
+2015-11-29,Roma,Atalanta,17,4,3,3
+2015-11-29,Frosinone,Verona,16,16,6,8
+2015-11-29,Genoa,Carpi,9,15,3,5
+2015-11-29,Chievo,Udinese,13,14,6,5
+2015-11-29,Empoli,Lazio,5,16,1,5
+2015-11-29,Palermo,Juventus,11,16,0,4
+2015-11-30,Sassuolo,Fiorentina,16,17,2,4
+2015-12-01,Napoli,Inter,12,11,4,2
+2015-12-04,Lazio,Juventus,12,7,3,1
+2015-12-05,Torino,Roma,11,5,5,3
+2015-12-05,Inter,Genoa,14,4,5,2
+2015-12-06,Bologna,Napoli,11,16,4,7
+2015-12-06,Atalanta,Palermo,12,17,4,4
+2015-12-06,Fiorentina,Udinese,14,8,5,0
+2015-12-06,Frosinone,Chievo,14,10,3,3
+2015-12-06,Verona,Empoli,18,11,4,5
+2015-12-06,Sampdoria,Sassuolo,8,17,2,10
+2015-12-06,Carpi,AC Milan,11,20,3,7
+2015-12-12,Genoa,Bologna,19,10,4,2
+2015-12-12,Palermo,Frosinone,20,15,6,3
+2015-12-12,Udinese,Inter,22,13,7,7
+2015-12-13,Juventus,Fiorentina,16,6,6,1
+2015-12-13,Napoli,Roma,12,4,4,0
+2015-12-13,Empoli,Carpi,13,14,4,4
+2015-12-13,AC Milan,Verona,17,11,6,2
+2015-12-13,Chievo,Atalanta,15,6,3,2
+2015-12-14,Lazio,Sampdoria,14,11,2,5
+2015-12-19,Bologna,Empoli,13,17,4,7
+2015-12-20,Inter,Lazio,7,7,1,3
+2015-12-20,Frosinone,AC Milan,15,22,6,10
+2015-12-20,Torino,Udinese,10,12,1,6
+2015-12-20,Sampdoria,Palermo,17,11,7,5
+2015-12-20,Roma,Genoa,7,12,2,4
+2015-12-20,Verona,Sassuolo,10,16,6,4
+2015-12-20,Atalanta,Napoli,16,15,5,5
+2015-12-20,Fiorentina,Chievo,14,7,8,0
+2015-12-20,Carpi,Juventus,11,11,3,6
+2016-01-05,Genoa,Sampdoria,18,11,10,5
+2016-01-06,Napoli,Torino,17,9,8,4
+2016-01-06,Empoli,Inter,16,14,4,3
+2016-01-06,AC Milan,Bologna,17,7,4,3
+2016-01-06,Lazio,Carpi,15,5,0,2
+2016-01-06,Udinese,Atalanta,18,20,6,6
+2016-01-06,Sassuolo,Frosinone,30,6,3,2
+2016-01-06,Palermo,Fiorentina,11,11,3,5
+2016-01-06,Chievo,Roma,12,14,6,5
+2016-01-06,Juventus,Verona,15,7,6,1
+2016-01-09,Carpi,Udinese,13,10,6,5
+2016-01-09,Fiorentina,Lazio,17,10,6,5
+2016-01-09,Roma,AC Milan,12,17,5,6
+2016-01-10,Sampdoria,Juventus,9,13,2,5
+2016-01-10,Verona,Palermo,31,9,7,2
+2016-01-10,Torino,Empoli,19,11,6,4
+2016-01-10,Frosinone,Napoli,9,24,3,9
+2016-01-10,Atalanta,Genoa,14,13,0,2
+2016-01-10,Bologna,Chievo,16,8,2,2
+2016-01-10,Inter,Sassuolo,21,15,6,6
+2016-01-16,Atalanta,Inter,18,14,5,2
+2016-01-16,Torino,Frosinone,22,18,9,5
+2016-01-16,Napoli,Sassuolo,20,9,6,3
+2016-01-17,Genoa,Palermo,18,11,10,3
+2016-01-17,Bologna,Lazio,8,10,3,3
+2016-01-17,Udinese,Juventus,8,13,3,8
+2016-01-17,Roma,Verona,16,10,4,3
+2016-01-17,Chievo,Empoli,15,14,5,5
+2016-01-17,Carpi,Sampdoria,9,12,5,4
+2016-01-17,AC Milan,Fiorentina,4,14,3,1
+2016-01-20,Sassuolo,Torino,13,8,3,5
+2016-01-23,Empoli,AC Milan,16,10,6,5
+2016-01-23,Frosinone,Atalanta,11,16,1,3
+2016-01-24,Fiorentina,Torino,13,9,2,2
+2016-01-24,Sampdoria,Napoli,8,23,4,9
+2016-01-24,Inter,Carpi,18,12,6,4
+2016-01-24,Sassuolo,Bologna,14,16,2,7
+2016-01-24,Verona,Genoa,18,10,9,2
+2016-01-24,Lazio,Chievo,24,7,7,5
+2016-01-24,Palermo,Udinese,16,20,8,9
+2016-01-24,Juventus,Roma,15,5,7,1
+2016-01-30,Carpi,Palermo,13,5,1,1
+2016-01-30,Atalanta,Sassuolo,6,9,5,1
+2016-01-30,Roma,Frosinone,22,13,6,3
+2016-01-31,Bologna,Sampdoria,7,14,5,6
+2016-01-31,Genoa,Fiorentina,11,11,2,2
+2016-01-31,AC Milan,Inter,14,12,5,3
+2016-01-31,Napoli,Empoli,20,8,6,2
+2016-01-31,Udinese,Lazio,11,17,1,1
+2016-01-31,Chievo,Juventus,6,30,2,10
+2016-01-31,Torino,Verona,16,10,6,3
+2016-02-02,Sassuolo,Roma,17,13,6,5
+2016-02-03,Frosinone,Bologna,20,15,7,3
+2016-02-03,Fiorentina,Carpi,11,7,5,2
+2016-02-03,Inter,Chievo,24,7,8,0
+2016-02-03,Juventus,Genoa,11,8,2,2
+2016-02-03,Palermo,AC Milan,12,16,2,8
+2016-02-03,Lazio,Napoli,8,11,0,5
+2016-02-03,Sampdoria,Torino,9,14,4,6
+2016-02-03,Empoli,Udinese,19,5,4,2
+2016-02-03,Verona,Atalanta,13,18,4,4
+2016-02-06,Genoa,Lazio,5,10,1,2
+2016-02-06,Bologna,Fiorentina,12,12,6,2
+2016-02-07,Verona,Inter,10,15,4,7
+2016-02-07,Frosinone,Juventus,5,25,0,9
+2016-02-07,Sassuolo,Palermo,23,7,6,2
+2016-02-07,Napoli,Carpi,22,3,7,0
+2016-02-07,Torino,Chievo,13,8,4,3
+2016-02-07,AC Milan,Udinese,22,9,5,5
+2016-02-07,Atalanta,Empoli,11,9,2,3
+2016-02-07,Roma,Sampdoria,14,10,4,4
+2016-02-11,Lazio,Verona,18,8,7,4
+2016-02-12,Carpi,Roma,7,19,2,6
+2016-02-13,Empoli,Frosinone,29,10,6,2
+2016-02-13,Chievo,Sassuolo,11,16,4,2
+2016-02-13,Juventus,Napoli,13,7,4,1
+2016-02-14,Udinese,Bologna,10,11,2,2
+2016-02-14,Sampdoria,Atalanta,10,9,2,2
+2016-02-14,Fiorentina,Inter,13,6,7,1
+2016-02-14,AC Milan,Genoa,14,6,6,2
+2016-02-14,Palermo,Torino,19,20,5,7
+2016-02-19,Bologna,Juventus,8,10,1,0
+2016-02-20,Verona,Chievo,20,14,8,2
+2016-02-20,Inter,Sampdoria,6,19,3,3
+2016-02-21,Genoa,Udinese,21,13,8,6
+2016-02-21,Sassuolo,Empoli,13,10,7,4
+2016-02-21,Atalanta,Fiorentina,13,14,5,8
+2016-02-21,Torino,Carpi,11,5,4,0
+2016-02-21,Frosinone,Lazio,9,18,1,2
+2016-02-21,Roma,Palermo,25,5,5,2
+2016-02-23,Napoli,AC Milan,19,7,4,2
+2016-02-27,AC Milan,Torino,19,11,3,4
+2016-02-27,Empoli,Roma,8,16,3,6
+2016-02-28,Palermo,Bologna,7,17,4,5
+2016-02-28,Sampdoria,Frosinone,25,15,6,1
+2016-02-28,Chievo,Genoa,16,11,6,4
+2016-02-28,Udinese,Verona,13,10,4,2
+2016-02-28,Carpi,Atalanta,10,12,4,5
+2016-02-28,Juventus,Inter,9,8,5,3
+2016-02-29,Lazio,Sassuolo,15,8,3,6
+2016-03-01,Fiorentina,Napoli,12,6,1,5
+2016-03-04,Roma,Fiorentina,14,11,7,1
+2016-03-05,Verona,Sampdoria,11,14,4,8
+2016-03-05,Napoli,Chievo,25,8,10,2
+2016-03-06,Bologna,Carpi,17,6,3,2
+2016-03-06,Inter,Palermo,10,9,5,4
+2016-03-06,Genoa,Empoli,15,10,5,1
+2016-03-06,Frosinone,Udinese,23,6,4,2
+2016-03-06,Sassuolo,AC Milan,16,13,4,5
+2016-03-06,Atalanta,Juventus,13,9,3,4
+2016-03-06,Torino,Lazio,13,12,4,5
+2016-03-11,Juventus,Sassuolo,16,7,7,2
+2016-03-12,Empoli,Sampdoria,15,13,5,5
+2016-03-12,Inter,Bologna,17,6,3,1
+2016-03-13,Palermo,Napoli,5,18,1,7
+2016-03-13,Lazio,Atalanta,5,11,2,1
+2016-03-13,Genoa,Torino,13,9,6,5
+2016-03-13,Fiorentina,Verona,10,12,4,4
+2016-03-13,Carpi,Frosinone,12,13,3,4
+2016-03-13,Udinese,Roma,10,15,3,7
+2016-03-13,Chievo,AC Milan,20,10,5,1
+2016-03-19,Empoli,Palermo,12,13,3,2
+2016-03-19,Roma,Inter,16,6,6,2
+2016-03-20,AC Milan,Lazio,20,9,5,2
+2016-03-20,Napoli,Genoa,22,9,11,2
+2016-03-20,Sassuolo,Udinese,13,8,1,3
+2016-03-20,Torino,Juventus,10,14,6,7
+2016-03-20,Atalanta,Bologna,14,9,7,2
+2016-03-20,Sampdoria,Chievo,16,12,6,6
+2016-03-20,Verona,Carpi,8,11,3,5
+2016-03-20,Frosinone,Fiorentina,14,25,5,6
+2016-04-02,Carpi,Sassuolo,11,9,1,7
+2016-04-02,Juventus,Empoli,19,9,9,3
+2016-04-03,Atalanta,AC Milan,10,12,4,3
+2016-04-03,Udinese,Napoli,11,11,6,2
+2016-04-03,Chievo,Palermo,9,14,4,4
+2016-04-03,Lazio,Roma,18,17,3,6
+2016-04-03,Fiorentina,Sampdoria,20,8,8,4
+2016-04-03,Genoa,Frosinone,21,9,9,2
+2016-04-03,Inter,Torino,10,12,2,3
+2016-04-04,Bologna,Verona,9,4,1,1
+2016-04-09,Frosinone,Inter,15,20,2,3
+2016-04-09,Sassuolo,Genoa,17,9,5,4
+2016-04-09,Chievo,Carpi,17,13,3,3
+2016-04-09,AC Milan,Juventus,11,9,5,4
+2016-04-10,Empoli,Fiorentina,7,22,4,5
+2016-04-10,Napoli,Verona,19,8,6,1
+2016-04-10,Torino,Atalanta,5,16,3,7
+2016-04-10,Sampdoria,Udinese,15,17,5,2
+2016-04-10,Palermo,Lazio,7,19,2,7
+2016-04-11,Roma,Bologna,14,7,5,2
+2016-04-16,Bologna,Torino,8,6,1,3
+2016-04-16,Carpi,Genoa,15,16,10,3
+2016-04-16,Inter,Napoli,11,10,3,2
+2016-04-17,Sampdoria,AC Milan,10,14,3,3
+2016-04-17,Lazio,Empoli,20,6,7,1
+2016-04-17,Verona,Frosinone,15,13,5,2
+2016-04-17,Fiorentina,Sassuolo,13,10,5,1
+2016-04-17,Juventus,Palermo,16,10,6,3
+2016-04-17,Atalanta,Roma,13,17,4,7
+2016-04-17,Udinese,Chievo,15,5,3,2
+2016-04-19,Napoli,Bologna,20,5,14,0
+2016-04-20,Juventus,Lazio,19,7,12,1
+2016-04-20,Sassuolo,Sampdoria,23,4,8,2
+2016-04-20,Roma,Torino,20,13,6,5
+2016-04-20,Palermo,Atalanta,14,11,3,4
+2016-04-20,Udinese,Fiorentina,10,9,3,3
+2016-04-20,Chievo,Frosinone,22,9,8,2
+2016-04-20,Empoli,Verona,12,21,7,6
+2016-04-20,Genoa,Inter,16,17,5,3
+2016-04-21,AC Milan,Carpi,19,6,3,2
+2016-04-23,Inter,Udinese,25,12,9,5
+2016-04-24,Frosinone,Palermo,16,7,4,2
+2016-04-24,Torino,Sassuolo,15,12,3,4
+2016-04-24,Sampdoria,Lazio,13,20,7,4
+2016-04-24,Bologna,Genoa,11,5,5,3
+2016-04-24,Atalanta,Chievo,11,10,5,2
+2016-04-24,Fiorentina,Juventus,21,6,7,2
+2016-04-25,Roma,Napoli,9,9,3,4
+2016-04-25,Verona,AC Milan,28,11,12,5
+2016-04-25,Carpi,Empoli,16,8,3,3
+2016-04-30,Udinese,Torino,13,15,4,6
+2016-04-30,Chievo,Fiorentina,8,20,4,5
+2016-05-01,Lazio,Inter,9,15,4,4
+2016-05-01,Sassuolo,Verona,6,16,1,2
+2016-05-01,AC Milan,Frosinone,24,9,11,4
+2016-05-01,Palermo,Sampdoria,10,9,4,3
+2016-05-01,Juventus,Carpi,19,11,3,1
+2016-05-01,Empoli,Bologna,5,16,1,5
+2016-05-02,Genoa,Roma,14,20,5,9
+2016-05-02,Napoli,Atalanta,18,4,10,2
+2016-05-07,Inter,Empoli,13,14,5,2
+2016-05-07,Bologna,AC Milan,8,15,1,5
+2016-05-08,Verona,Juventus,12,16,4,5
+2016-05-08,Roma,Chievo,23,11,11,4
+2016-05-08,Sampdoria,Genoa,12,18,3,7
+2016-05-08,Fiorentina,Palermo,21,4,4,0
+2016-05-08,Frosinone,Sassuolo,18,21,4,5
+2016-05-08,Atalanta,Udinese,8,4,2,2
+2016-05-08,Carpi,Lazio,26,16,9,5
+2016-05-08,Torino,Napoli,7,15,2,6
+2016-05-14,AC Milan,Roma,14,16,6,9
+2016-05-14,Napoli,Frosinone,33,9,12,2
+2016-05-14,Juventus,Sampdoria,24,7,12,1
+2016-05-14,Sassuolo,Inter,9,11,3,6
+2016-05-15,Empoli,Torino,10,18,3,5
+2016-05-15,Genoa,Atalanta,11,13,2,3
+2016-05-15,Chievo,Bologna,5,16,0,4
+2016-05-15,Udinese,Carpi,15,10,5,5
+2016-05-15,Lazio,Fiorentina,16,16,6,5
+2016-05-15,Palermo,Verona,5,14,3,4
+2016-08-20,Roma,Udinese,25,11,9,1
+2016-08-20,Juventus,Fiorentina,19,4,4,1
+2016-08-21,Genoa,Cagliari,22,4,6,3
+2016-08-21,Chievo,Inter,12,13,4,3
+2016-08-21,Bologna,Crotone,20,5,6,0
+2016-08-21,Empoli,Sampdoria,8,16,3,5
+2016-08-21,Pescara,Napoli,9,22,3,4
+2016-08-21,Palermo,Sassuolo,7,22,2,8
+2016-08-21,AC Milan,Torino,11,21,5,4
+2016-08-21,Atalanta,Lazio,18,11,5,6
+2016-08-27,Lazio,Juventus,6,13,1,5
+2016-08-27,Napoli,AC Milan,17,12,8,3
+2016-08-28,Fiorentina,Chievo,13,9,3,2
+2016-08-28,Crotone,Genoa,11,18,3,8
+2016-08-28,Cagliari,Roma,18,21,5,7
+2016-08-28,Udinese,Empoli,11,13,3,4
+2016-08-28,Torino,Bologna,20,10,11,2
+2016-08-28,Sampdoria,Atalanta,8,7,4,1
+2016-08-28,Inter,Palermo,22,7,4,3
+2016-08-28,Sassuolo,Pescara,13,15,3,5
+2016-09-10,Juventus,Sassuolo,23,9,10,3
+2016-09-10,Palermo,Napoli,5,17,1,7
+2016-09-11,Atalanta,Torino,22,14,3,7
+2016-09-11,Pescara,Inter,10,22,5,7
+2016-09-11,Roma,Sampdoria,24,12,8,7
+2016-09-11,Bologna,Cagliari,17,11,10,5
+2016-09-11,Chievo,Lazio,7,11,4,3
+2016-09-11,AC Milan,Udinese,14,10,2,2
+2016-09-12,Empoli,Crotone,13,6,4,2
+2016-09-16,Sampdoria,AC Milan,12,10,3,3
+2016-09-17,Lazio,Pescara,23,10,11,3
+2016-09-17,Napoli,Bologna,21,8,10,3
+2016-09-18,Udinese,Chievo,8,20,4,6
+2016-09-18,Sassuolo,Genoa,12,17,6,5
+2016-09-18,Torino,Empoli,14,5,5,2
+2016-09-18,Cagliari,Atalanta,13,7,9,2
+2016-09-18,Crotone,Palermo,12,12,1,5
+2016-09-18,Inter,Juventus,16,9,3,2
+2016-09-18,Fiorentina,Roma,8,14,4,3
+2016-09-20,AC Milan,Lazio,16,20,7,5
+2016-09-21,Bologna,Sampdoria,11,10,4,3
+2016-09-21,Chievo,Sassuolo,5,7,3,2
+2016-09-21,Empoli,Inter,9,13,3,4
+2016-09-21,Genoa,Napoli,12,14,5,3
+2016-09-21,Juventus,Cagliari,28,3,13,0
+2016-09-21,Pescara,Torino,19,11,4,3
+2016-09-21,Roma,Crotone,20,11,7,3
+2016-09-21,Udinese,Fiorentina,14,7,5,3
+2016-09-21,Atalanta,Palermo,16,7,5,2
+2016-09-24,Palermo,Juventus,5,14,2,6
+2016-09-24,Napoli,Chievo,13,7,5,2
+2016-09-25,Fiorentina,AC Milan,20,12,5,1
+2016-09-25,Inter,Bologna,22,8,6,3
+2016-09-25,Lazio,Empoli,12,9,3,3
+2016-09-25,Sassuolo,Udinese,12,12,5,3
+2016-09-25,Torino,Roma,18,22,8,6
+2016-09-25,Genoa,Pescara,8,11,3,4
+2016-09-26,Crotone,Atalanta,12,12,3,7
+2016-09-26,Cagliari,Sampdoria,9,18,3,2
+2016-10-01,Pescara,Chievo,11,15,2,4
+2016-10-01,Udinese,Lazio,15,15,3,5
+2016-10-02,AC Milan,Sassuolo,15,7,6,5
+2016-10-02,Torino,Fiorentina,19,13,5,5
+2016-10-02,Cagliari,Crotone,15,23,9,8
+2016-10-02,Roma,Inter,19,19,7,5
+2016-10-02,Atalanta,Napoli,10,13,4,3
+2016-10-02,Sampdoria,Palermo,23,4,7,2
+2016-10-02,Empoli,Juventus,6,26,3,10
+2016-10-02,Bologna,Genoa,6,13,3,4
+2016-10-15,Napoli,Roma,21,14,5,6
+2016-10-15,Pescara,Sampdoria,11,22,7,8
+2016-10-15,Juventus,Udinese,15,8,5,4
+2016-10-16,Chievo,AC Milan,9,16,5,5
+2016-10-16,Sassuolo,Crotone,22,8,9,1
+2016-10-16,Lazio,Bologna,27,10,8,4
+2016-10-16,Inter,Cagliari,18,11,4,6
+2016-10-16,Fiorentina,Atalanta,17,13,5,3
+2016-10-16,Genoa,Empoli,8,2,3,1
+2016-10-17,Palermo,Torino,16,15,3,7
+2016-10-22,Sampdoria,Genoa,14,11,7,5
+2016-10-22,AC Milan,Juventus,8,22,2,3
+2016-10-23,Roma,Palermo,18,8,7,3
+2016-10-23,Bologna,Sassuolo,14,8,4,3
+2016-10-23,Empoli,Chievo,8,13,3,2
+2016-10-23,Atalanta,Inter,11,7,8,4
+2016-10-23,Cagliari,Fiorentina,10,19,5,8
+2016-10-23,Torino,Lazio,16,14,4,6
+2016-10-23,Udinese,Pescara,9,16,4,3
+2016-10-23,Crotone,Napoli,12,13,4,7
+2016-10-25,Genoa,AC Milan,8,14,3,3
+2016-10-26,Sassuolo,Roma,16,16,3,4
+2016-10-26,Pescara,Atalanta,5,13,0,3
+2016-10-26,Fiorentina,Crotone,26,4,11,2
+2016-10-26,Chievo,Bologna,10,9,3,4
+2016-10-26,Lazio,Cagliari,20,15,12,5
+2016-10-26,Juventus,Sampdoria,13,8,7,3
+2016-10-26,Inter,Torino,21,7,5,2
+2016-10-26,Napoli,Empoli,36,8,10,2
+2016-10-27,Palermo,Udinese,11,11,2,7
+2016-10-29,Bologna,Fiorentina,5,12,2,5
+2016-10-29,Juventus,Napoli,10,12,2,2
+2016-10-30,Sampdoria,Inter,9,14,3,3
+2016-10-30,Empoli,Roma,8,23,3,5
+2016-10-30,Crotone,Chievo,9,17,7,3
+2016-10-30,Lazio,Sassuolo,14,14,6,5
+2016-10-30,Atalanta,Genoa,15,10,9,2
+2016-10-30,AC Milan,Pescara,19,15,9,6
+2016-10-31,Udinese,Torino,16,13,5,3
+2016-11-01,Cagliari,Palermo,8,12,4,3
+2016-11-05,Torino,Cagliari,23,9,9,6
+2016-11-05,Napoli,Lazio,18,7,8,3
+2016-11-06,Roma,Bologna,22,13,8,5
+2016-11-06,Pescara,Empoli,23,9,6,6
+2016-11-06,Palermo,AC Milan,15,12,7,6
+2016-11-06,Chievo,Juventus,9,17,2,6
+2016-11-06,Genoa,Udinese,17,10,4,3
+2016-11-06,Sassuolo,Atalanta,15,15,3,8
+2016-11-06,Inter,Crotone,25,4,9,0
+2016-11-06,Fiorentina,Sampdoria,21,17,5,6
+2016-11-19,Chievo,Cagliari,12,10,2,2

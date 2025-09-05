@@ -1,0 +1,38 @@
+FootballChamp Proprietary License
+Versione 1.0 — (c) Copyright FootballChamp, Tutti i diritti riservati.
+
+1. Concessione di licenza
+Il Licenziante concede al Licenziatario una licenza limitata, non esclusiva, non trasferibile e revocabile per installare e utilizzare il software “FootballChamp” (il “Software”) esclusivamente per scopi interni e non commerciali verso terzi, in conformità a questo Contratto.
+
+2. Restrizioni
+È vietato, senza autorizzazione scritta del Licenziante:
+- Copiare, distribuire, vendere, affittare, mettere a disposizione o sublicenziare il Software, in tutto o in parte.
+- Modificare, tradurre, creare opere derivate.
+- Eseguire reverse engineering, decompilazione o disassemblaggio, salvo ove espressamente consentito dalla legge applicabile in misura non derogabile.
+- Rimuovere o alterare avvisi di copyright, marchi o altri avvisi di proprietà.
+
+3. Proprietà intellettuale
+Il Software è di esclusiva proprietà del Licenziante e protetto da leggi e trattati su diritto d’autore, marchi e segreti industriali. Il presente Contratto non trasferisce alcun diritto di proprietà intellettuale.
+
+4. Componenti di terze parti
+Il Software può includere componenti open‑source o di terzi soggetti a proprie licenze. Il Licenziatario si impegna a rispettare tali licenze, indicate nella documentazione e/o nei file di progetto (es. pyproject.toml).
+
+5. Supporto e aggiornamenti
+Salvo diverso accordo scritto, il Licenziante non è obbligato a fornire supporto, manutenzione o aggiornamenti.
+
+6. Garanzie e limitazione di responsabilità
+Il Software è fornito “AS IS” e “AS AVAILABLE”, senza garanzia di alcun tipo, espressa o implicita (inclusa idoneità ad un particolare scopo e non violazione). In nessun caso il Licenziante sarà responsabile per danni indiretti, incidentali, speciali, consequenziali o punitivi, né per perdita di profitti, ricavi, dati o avviamento, derivanti dall’uso o impossibilità d’uso del Software, anche se informato di tale possibilità. La responsabilità complessiva del Licenziante non supererà, in ogni caso, gli importi eventualmente corrisposti dal Licenziatario per la licenza del Software nei dodici (12) mesi precedenti il fatto generatore.
+
+7. Durata e risoluzione
+La licenza decorre dall’installazione/uso del Software e rimane valida fino a risoluzione. Il Licenziante potrà risolvere il Contratto in caso di violazione dei termini. Alla risoluzione, il Licenziatario dovrà cessare l’uso e distruggere tutte le copie del Software.
+
+8. Legge applicabile e foro
+Questo Contratto è regolato dalla legge italiana. Per ogni controversia sarà competente in via esclusiva il foro del Licenziante, salvo diversa inderogabile previsione di legge.
+
+9. Esportazione e conformità
+Il Licenziatario garantisce la conformità a norme di esportazione/importazione e alle leggi applicabili all’uso del Software.
+
+10. Integrità del Contratto
+Il presente Contratto costituisce l’intero accordo tra le parti e sostituisce ogni precedente intesa di pari oggetto. Eventuali modifiche devono risultare da atto scritto sottoscritto da entrambe le parti.
+
+Accettando, installando, copiando o utilizzando il Software, il Licenziatario dichiara di aver letto, compreso e accettato tutti i termini del presente Contratto.

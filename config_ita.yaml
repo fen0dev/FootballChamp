@@ -1,0 +1,79 @@
+data:
+  paths:
+    - fchamp/data/serie_a_2015_2025.csv
+  shots_path: artifacts/shots_ita.csv
+  delimiter: ","
+  use_market: true
+  xg_path: artifacts/xg_ita.csv
+
+elo:
+  start: 1500
+  k: 20
+  hfa: 60
+  mov_factor: 0.1
+  season_regression: 0.2
+  time_decay_days: 150.0
+  adaptive_k: true
+  home_away_split: true
+
+features:
+  rolling_n: 6
+  ewm_alpha: 0.5
+  max_goals: 8
+  add_features: true
+  safe_fill: true
+  use_advanced_stats: true
+  use_h2h: true
+  use_xg_proxy: true
+  use_xg_real: true
+  use_shots_real: true
+  h2h_matches: 8
+
+model:
+  alpha: 0.8
+  use_dixon_coles: true
+  dc_rho: 0.06
+  use_ensemble: true
+  ensemble_weight: 0.7
+  robust_sanitization: true
+  adaptive_clipping: true
+  draw_weight: 2.1
+
+  calibration:
+    enabled: true
+    method: isotonic
+
+  gbm:
+    enabled: true
+    blend_weight: 0.7
+
+  market_blend_weight: 0.50
+
+  draw_booster:
+    enabled: true
+    elo_abs_diff_max: 13.0
+    goals_ewm_sum_max: 2.15
+    market_draw_min: 0.205
+    weight: 0.58
+    max_boost: 0.05
+    promote_near_tie: true
+    tie_margin: 0.15
+
+  market_guardrails:
+    enabled: true
+    max_abs_diff_home: 0.15
+    max_abs_diff_draw: 0.16
+    max_abs_diff_away: 0.20
+    blend_weight: 0.45
+
+  draw_meta:
+    enabled: true
+    blend_weight: 0.66
+
+backtest:
+  n_splits: 5
+  gap: 1
+  tune: false
+  tune_trials: 60
+
+artifacts_dir: artifacts/models_ita

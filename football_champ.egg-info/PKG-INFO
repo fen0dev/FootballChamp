@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: football-champ
+Version: 0.1.0
+Summary: Serie A match outcome prediction with robust ML pipeline
+Requires-Python: >=3.10
+Requires-Dist: pandas>=2.0
+Requires-Dist: numpy>=1.24
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: scipy>=1.10
+Requires-Dist: pydantic>=2.4
+Requires-Dist: typer[all]>=0.9
+Requires-Dist: joblib>=1.3
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: rich>=13.7
+Requires-Dist: optuna>=3.5
+Requires-Dist: fastapi>=0.110
+Requires-Dist: uvicorn[standard]>=0.23
+Requires-Dist: jinja2>=3.1
