@@ -1,4 +1,5 @@
 from ast import alias
+from math import isfinite
 import pandas as pd
 import numpy as np
 from pathlib import Path
@@ -30,7 +31,7 @@ def _validate_fixtures(fixtures: pd.DataFrame) -> pd.DataFrame:
     
     # Validazione date
     fixtures = fixtures.copy()
-    fixtures['date'] = pd.to_datetime(fixtures['date'], dayfirst=True, errors='coerce', format='mixed')
+    fixtures["date"] = pd.to_datetime(fixtures['date'], dayfirst=True, errors='coerce', format='mixed')
     invalid_dates = fixtures['date'].isna()
     
     if invalid_dates.any():
@@ -55,21 +56,34 @@ def _validate_fixtures(fixtures: pd.DataFrame) -> pd.DataFrame:
     logger.info(f"Validated {len(fixtures)} fixtures successfully")
     return fixtures
 
-def _extract_team_stats(hist: pd.DataFrame, teams: List[str]) -> Dict[str, Dict[str, float]]:
+def _extract_team_stats(hist: pd.DataFrame, teams: List[str], asof_date: pd.Timestamp | None = None) -> Dict[str, Dict[str, float]]:
     """🚀 ENHANCED team stats extraction con fallback robusti"""
     team_stats = {}
-    
-    
-        # Normalizza nomi + alias per allineare fixtures e storico
+
+    hist = hist.copy()
+    hist["date"] = pd.to_datetime(hist["date"], errors="coerce")
+
+    if asof_date is not None:
+        asof_date = pd.to_datetime(asof_date).normalize()
+        hist = hist.loc[hist["date"] < asof_date]
+
+    # se esiste ancora storico prima di asof_date, fallback 'vuoto'
+    if hist.empty:
+        return { t: {} for t in teams }
+
+    # Normalizza nomi + alias per allineare fixtures e storico
     def _norm_name(name: str) -> str:
         if not isinstance(name, str):
             return ""
+
         s = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode()
         s = s.lower().replace('.', ' ').replace('-', ' ').replace("'", ' ')
         for suf in [' fc',' afc',' cf',' bk',' if',' fk',' sk',' sc',' u23',' u21']:
             if s.endswith(suf):
                 s = s[:-len(suf)]
+
         return ' '.join(s.split())
+
     # Alias comuni per allineare nomi UI a storico
     alias_map = {
         # EPL
@@ -111,6 +125,9 @@ def _extract_team_stats(hist: pd.DataFrame, teams: List[str]) -> Dict[str, Dict[
         'home_rest_days', 'away_rest_days', 'home_games_14d', 'away_games_14d',
         'home_shots_roll','home_shots_on_target_roll',
         'away_shots_roll','away_shots_on_target_roll',
+        "home_xg_roll", "away_xg_roll", "home_xg_ewm", "away_xg_ewm",
+        # raw denominations
+        "home_xg", "away_xg",
         # proxy/derivate avanzate che il modello potrebbe usare
         'home_shot_efficiency','away_shot_efficiency',
         'home_shot_accuracy','away_shot_accuracy',
@@ -308,13 +325,17 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
 
     # 4. 🚀 EFFICIENT TEAM STATS EXTRACTION
     all_teams = set(fixtures['home_team'].unique()) | set(fixtures['away_team'].unique())
-    missing_teams = all_teams - set(hist['home_team'].unique()) - set(hist['away_team'].unique())
-    
-    if missing_teams:
-        logger.warning(f"Teams not found in historical data: {missing_teams}")
-        logger.warning("These teams will use default values")
-    
-    team_stats = _extract_team_stats(hist, list(all_teams))
+
+    # normalizing a column date to obtain clearer keys
+    fixtures = fixtures.copy()
+    fixtures["date_norm"] = pd.to_datetime(fixtures["date"], errors="coerce").dt.normalize()
+
+    # cache: for each date in fixtures, storico < specific date
+    unique_dates = [d for d in sorted(fixtures["date_norm"].dropna().unique())]
+
+    stats_cache = {}
+    for d in unique_dates:
+        stats_cache[d] = _extract_team_stats(hist, list(all_teams), asof_date=d)
 
     # Helper: normalizzazione nomi e lookup robusto
     def _norm_name(name: str) -> str:
@@ -339,13 +360,13 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
     def _canon(key: str) -> str:
         return alias_map.get(key, key)
 
-    
-    norm_map = { _canon(_norm_name(t)): stats for t, stats in team_stats.items() }
-    norm_keys = list(norm_map.keys())
-
-    def _get_stats(team: str) -> dict:
+    def _get_stats(team: str, team_stats_for_date: dict) -> dict:
+        # normalized mapping --> original name in team_stats_for_date
+        norm_map = { _canon(_norm_name(t)): t for t in team_stats_for_date.keys() }
+        norm_keys = list(norm_map.keys())
+        
         # exact
-        st = team_stats.get(team)
+        st = team_stats_for_date.get(team)
         if st is not None:
             return st
         # normalized
@@ -353,13 +374,15 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
         tname = norm_map.get(key)
         
         if tname is not None:
-            return team_stats.get(tname, {})
+            return team_stats_for_date.get(tname, {})
         
         # fuzzy fallback
         if key:
             match = difflib.get_close_matches(key, norm_keys, n=1, cutoff=0.82)
             if match:
-                return team_stats.get(norm_map.get(match[0], ""), {})
+                tname = norm_map.get(match[0])
+                if tname is not None:
+                    return team_stats_for_date.get(tname, {})
         
         return {}
 
@@ -369,11 +392,13 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
     est_bph, est_bpd, est_bpa = [], [], []
     est_used: list[bool] = []
     for r in fixtures.itertuples(index=False):
+        d = getattr(r, "date_norm", None)
+        team_stats_for_date = stats_cache.get(d, stats_cache.get(unique_dates[-1], {}))   # fallback to last available date
+
         h, a = r.home_team, r.away_team
-        
         # Get team stats con fallback sicuri
-        h_stats = _get_stats(h)
-        a_stats = _get_stats(a)
+        h_stats = _get_stats(h, team_stats_for_date)
+        a_stats = _get_stats(a, team_stats_for_date)
         
         # Build feature row
         row = {
@@ -388,7 +413,7 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
             "away_gf_ewm": a_stats.get('away_gf_ewm', 1.1),
         }
         
-        # 🚀 ADVANCED FEATURES (se il modello le supporta)
+        # 🚀 ADVANCED FEATURES
         model_features = set(gm.feature_cols) if hasattr(gm, 'feature_cols') and gm.feature_cols else set()
         
         # Venue-specific features
@@ -420,10 +445,10 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
         
         # xG total roll (se richiesto dal modello)
         if 'xg_total_roll' in model_features:
-            hxg = float(hist.loc[hist['home_team'] == h, 'home_xg_roll'].dropna().iloc[-1]) if 'home_xg_roll' in hist.columns else np.nan
-            axg = float(hist.loc[hist['away_team'] == a, 'away_xg_roll'].dropna().iloc[-1]) if 'away_xg_roll' in hist.columns else np.nan
+            hxg = h_stats.get("home_xg_roll", np.nan)
+            axg = a_stats.get("away_xg_roll", np.nan)
             if np.isfinite(hxg) and np.isfinite(axg):
-                row['xg_total_roll'] = hxg + axg
+                row['xg_total_roll'] = float(hxg) + float(axg)
 
         # Shots features (se richieste dal modello)
         for fname, val in [
@@ -572,7 +597,7 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
                 except Exception:
                     pass
                 if mk is not None and not (league == 'epl' and mk_estimated_all):
-                    parts.append(mk)
+                    parts.append(np.log(np.clip(mk, 1e-9, 1.0)))
                 X_stack = np.column_stack(parts)
                 P = stacker.predict_proba(X_stack)
 
@@ -741,6 +766,33 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
 
     # Process historical data (stesso del run_predict)
     hist = load_matches(cfg.data.paths, delimiter=cfg.data.delimiter)
+
+    # --- merge real xG (ITA only) ---
+    try:
+        if getattr(cfg.data, "xg_path", None):
+            xg_df = pd.read_csv(cfg.data.xg_path)
+            xg_df.columns = [c.lower() for c in xg_df.columns]
+
+            if all(c in xg_df.columns for c in ["date", "home_team", "away_team", "home_xg", "away_xg"]):
+                hist = merge_xg_into_history(hist, xg_df)
+
+                if bool(getattr(cfg.features, "use_xg_real", True)):
+                    hist = add_xg_real_features(hist)
+    except Exception as _e:
+        logger.warning(f"[-] xG merge in predict_df skipped: {_e}")
+
+    # --- merge real shots (ITA only) ---
+    try:
+        if getattr(cfg.data, "shots_path", None):
+            sh_df = pd.read_csv(cfg.data.shots_path)
+            sh_df.columns = [c.lower() for c in sh_df.columns]
+            hist = merge_shots_into_history(hist, sh_df)
+
+            if bool(getattr(cfg.features, "use_shots_real", True)):
+                hist = add_shots_real_features(hist)
+    except Exception as _e:
+        logger.warning(f"[-] shots merge in predict_df skipped: {_e}")
+
     elo_config = meta.get('elo', cfg.elo.__dict__)
     hist = add_elo(hist, 
                   start=elo_config.get('start', cfg.elo.start),
@@ -764,13 +816,23 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
     fixtures = attach_market_to_fixtures(fixtures)
     fixtures = fixtures[["date","home_team","away_team"] + [c for c in fixtures.columns if c.startswith("book_")]]
 
-    # Extract team stats
+    # Extract team stats (AS-OF date cache)
     all_teams = set(fixtures['home_team'].unique()) | set(fixtures['away_team'].unique())
-    team_stats = _extract_team_stats(hist, list(all_teams))
+    
+    fixtures = fixtures.copy()
+    fixtures["date"] = pd.to_datetime(fixtures["date"], errors="coerce")
+    fixtures["date_norm"] = fixtures["date"].dt.normalize()
+
+    unique_dates = [d for d in sorted(fixtures["date_norm"].dropna().unique())]
+
+    stats_cache = {}
+    for d in unique_dates:
+        stats_cache[d] = _extract_team_stats(hist, list(all_teams), asof_date=d)
 
     # League priors per fallback per squadre nuove/ignote
     def _safe_med(col: str, default: float) -> float:
         return float(pd.to_numeric(hist.get(col, pd.Series([default])), errors='coerce').dropna().median()) if col in hist.columns else float(default)
+
     fallback_stats = {
         'elo_home': _safe_med('elo_home_pre', 1500.0),
         'elo_away': _safe_med('elo_away_pre', 1500.0),
@@ -814,26 +876,27 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
     def _canon(key: str) -> str:
         return alias_map.get(key, key)
 
-    # mappa normalizzata -> nome originale presente nello storico
-    norm_map = { _canon(_norm_name(t)): t for t in team_stats.keys() }
-    norm_keys = list(norm_map.keys())
-
-    def _get_stats(team: str) -> dict:
+    def _get_stats(team: str, team_stats_for_date: dict) -> dict:
+        # mappa normalizzata -> nome originale presente nello storico
+        norm_map = { _canon(_norm_name(t)): t for t in team_stats_for_date.keys() }
+        norm_keys = list(norm_map.keys())
         # exact
-        st = team_stats.get(team)
+        st = team_stats_for_date.get(team)
         if st is not None:
             return st
         # normalized
         key = _canon(_norm_name(team))
         tname = norm_map.get(key)
         if tname is not None:
-            return team_stats.get(tname, {})
+            return team_stats_for_date.get(tname, {})
         # fuzzy fallback (cutoff basso per alias strani tipo "Nott'm Forest")
         if key:
             import difflib as _difflib
             match = _difflib.get_close_matches(key, norm_keys, n=1, cutoff=0.80)
             if match:
-                return team_stats.get(norm_map.get(match[0], ""), {})
+                tname = norm_map.get(match[0])
+                if tname is not None:
+                    return team_stats_for_date.get(tname, {})
         # league prior fallback
         return fallback_stats.copy()
 
@@ -842,9 +905,12 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
     est_bph, est_bpd, est_bpa = [], [], []
     est_used: list[bool] = []
     for r in fixtures.itertuples(index=False):
+        d = getattr(r, "date_norm", None)
+        team_stats_for_date = stats_cache.get(d, stats_cache.get(unique_dates[-1], {})) if unique_dates else {}
+
         h, a = r.home_team, r.away_team
-        h_stats = _get_stats(h)
-        a_stats = _get_stats(a)
+        h_stats = _get_stats(h, team_stats_for_date)
+        a_stats = _get_stats(a, team_stats_for_date)
         
         row = {
             "elo_home_pre": h_stats.get('elo_home', 1500.0),
@@ -859,6 +925,14 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
         }
 
         model_features = set(gm.feature_cols) if hasattr(gm, 'feature_cols') and gm.feature_cols else set()
+
+        # xG total roll (as-of) if required by model
+        if "xg_total_roll" in model_features:
+            hxg = h_stats.get("home_xg_roll", np.nan)
+            axg = a_stats.get("away_xg_roll", np.nan)
+
+            if np.isfinite(hxg) and np.isfinite(axg):
+                row["xg_total_roll"] = float(hxg) + float(axg)
 
         # Venue-specific features
         if 'home_gf_venue' in model_features:
@@ -1066,7 +1140,8 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
                 mk_estimated_all = False
 
             if mk is not None and not (league == 'epl' and mk_estimated_all):
-                parts.append(mk)
+                parts.append(np.log(np.clip(mk, 1e-9, 1.0)))
+
             X_stack = np.column_stack(parts)
             P = stacker.predict_proba(X_stack)
             # allinea le colonne all’ordine canonico [0,1,2]
@@ -1092,18 +1167,22 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
             # fallback: Poisson -> (cal) -> GBM blend -> market blend
             if cal is not None and P.size:
                 P = cal.transform(P)
+
             gbm_weight = float(meta.get("gbm", {}).get(
                 "blend_weight",
                 getattr(getattr(getattr(cfg, "model", None), "gbm", None), "blend_weight", 0.0)
             ))
+
             gbm_weight = min(max(gbm_weight, 0.0), 1.0)
             if P_gbm is not None and gbm_weight > 0:
                 P = (1.0 - gbm_weight) * P + gbm_weight * P_gbm
                 P = np.clip(P, 1e-9, 1.0)
                 P = P / P.sum(axis=1, keepdims=True)
+
             w = float(getattr(cfg.model, "market_blend_weight", 0.0) or 0.0)
             w = min(max(w, 0.0), 1.0)
             league = (meta.get('league') or '').lower()
+            
             # disattiva blend se il “mercato” è interamente stimato in EPL
             if league == 'epl' and mk is not None and mk_estimated_all:
                 w = 0.0

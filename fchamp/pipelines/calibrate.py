@@ -3,15 +3,23 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from joblib import load as joblib_load
-
-from fchamp.data.loader import load_matches
-from fchamp.features.engineering import add_elo, add_rolling_form, build_features
+from fchamp.data.loader import load_matches, merge_xg_into_history, merge_shots_into_history
+from fchamp.features.engineering import (
+    add_elo, add_rolling_form, build_features,
+    add_xg_real_features, add_shots_real_features,
+    create_composite_features
+)
+from fchamp.features.advanced_stats import (
+    add_shots_and_corners_features,
+    add_head_to_head_stats,
+    add_xg_proxy_features,
+    add_advanced_proxy_features
+)
 from fchamp.features.market import add_market_features
 from fchamp.models.registry import ModelRegistry
 from fchamp.models.calibration import OneVsRestIsotonic, MultinomialLogisticCalibrator
 from fchamp.evaluation.metrics import expected_calibration_error, multi_log_loss, brier_score
 from sklearn.model_selection import TimeSeriesSplit
-
 # riuso helpers dal training
 from fchamp.pipelines.train import _oof_probs, _oof_gbm
 
@@ -32,6 +40,56 @@ def run_calibration(cfg, model_id: str | None = None, ece_target: float = 0.08) 
 
     # 1) Dati e feature come in train
     df = load_matches(cfg.data.paths, delimiter=cfg.data.delimiter)
+
+    # --- merge real xG (coherent with train) ---
+    try:
+        if getattr(cfg.data, "xg_path", None):
+            xg_df = pd.read_csv(cfg.data.xg_path)
+            xg_df.columns = [c.lower() for c in xg_df.columns]
+
+            if all(c in xg_df.columns for c in ["date", "home_team", "away_team", "home_xg", "away_xg"]):
+                df = merge_xg_into_history(df, xg_df)
+
+                if bool(getattr(cfg.features, "use_xg_real", True)):
+                    df = add_xg_real_features(df)
+    except Exception:
+        pass
+
+    # --- merge real shots (coherent with train) ---
+    try:
+        if getattr(cfg.data, "shots_path", None):
+            sh_df = pd.read_csv(cfg.data.shots_path)
+            sh_df.columns = [c.lower() for c in sh_df.columns]
+            df = merge_shots_into_history(df, sh_df)
+
+            if bool(getattr(cfg.features, "use_shots_real", True)):
+                df = add_shots_real_features(df)
+    except Exception:
+        pass
+
+    # --- advanced stats + h2h + composite (coherent with train) ---
+    try:
+        use_adv = bool(getattr(cfg.features, "use_advanced_stats", True))
+        use_xg = bool(getattr(cfg.features, "use_xg_proxy", True))
+
+        if use_adv and any(col in df.columns for col in ["HS", "AS", "HST", "AST"]):
+            df = add_shots_and_corners_features(df)
+
+            if use_xg:
+                df = add_xg_proxy_features(df)
+            
+            df = add_advanced_proxy_features(df)
+
+            try:
+                df = create_composite_features(df)
+            except Exception:
+                pass
+
+        if bool(getattr(cfg.features, "use_h2h", True)):
+            df = add_head_to_head_stats(df, n_matches=int(getattr(cfg.features, "h2h_matches", 5)))
+    except Exception:
+        pass
+
     if getattr(cfg.data, "use_market", False):
         df = add_market_features(df, cfg.data.paths, delimiter=cfg.data.delimiter)
 
@@ -48,7 +106,12 @@ def run_calibration(cfg, model_id: str | None = None, ece_target: float = 0.08) 
     if hasattr(cfg.features, 'add_features'): form_params['add_features'] = cfg.features.add_features
     df = add_rolling_form(df, **form_params)
 
-    X, y_out, yh, ya = build_features(df, safe_fill=getattr(cfg.features, 'safe_fill', True), include_advanced=getattr(cfg.features, 'include_advanced', True))
+    include_adv = getattr(cfg.features, "include_advanced", getattr(cfg.features, "add_features", False))
+    X, y_out, yh, ya = build_features(
+        df,
+        safe_fill=getattr(cfg.features, "safe_fill", True),
+        include_advanced=bool(include_adv)
+    )
 
     # 2) OOF probabilities coerenti al modello
     alpha = float(meta.get('alpha', cfg.model.alpha))
@@ -83,9 +146,22 @@ def run_calibration(cfg, model_id: str | None = None, ece_target: float = 0.08) 
             parts = [np.log(np.clip(P_poiss_oof, 1e-9, 1.0))]
             if P_gbm_oof is not None:
                 parts.append(np.log(np.clip(P_gbm_oof, 1e-9, 1.0)))
-            parts.append(MK_oof)
+
+            parts.append(np.log(np.clip(MK_oof, 1e-9, 1.0)))
             X_stack_oof = np.column_stack(parts)
             pre_P = stacker.predict_proba(X_stack_oof)
+
+            try:
+                classes = list(stacker.classes_)
+                P_ord = np.zeros_like(pre_P)
+
+                for j, cls in enumerate(classes):
+                    P_ord[:, int(cls)] = pre_P[:, j]
+                
+                pre_P = P_ord
+            except Exception:
+                pass
+        
         except Exception:
             pre_P = None
 

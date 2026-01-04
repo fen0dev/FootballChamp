@@ -47,7 +47,7 @@ model:
     enabled: true
     blend_weight: 0.7
 
-  market_blend_weight: 0.50
+  market_blend_weight: 0.25
 
   draw_booster:
     enabled: true

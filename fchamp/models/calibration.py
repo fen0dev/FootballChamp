@@ -40,7 +40,7 @@ class OneVsRestIsotonic:
 
 class MultinomialLogisticCalibrator:
     def __init__(self, class_weight: dict | None = None):
-        self.model = LogisticRegression(max_iter=300, multi_class="multinomial", class_weight=class_weight)
+        self.model = LogisticRegression(max_iter=300, solver="lbfgs", class_weight=class_weight)
         self.class_weight = class_weight
 
     def fit(self, P: np.ndarray, y: np.ndarray):

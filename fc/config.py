@@ -25,7 +25,7 @@ class FeaturesConfig(BaseModel):
     use_h2h: bool = True
     use_xg_proxy: bool = True
     use_xg_real: bool = True
-    uae_shots_real: bool = True
+    use_shots_real: bool = True
     h2h_matches: int = 5
 
 class CalibrationConfig(BaseModel):

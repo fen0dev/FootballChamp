@@ -299,7 +299,7 @@ def run_train(cfg) -> str:
             max_iter=200,
             learning_rate=0.1,
             max_depth=6,
-            class_weight=class_weight
+            # class_weight=class_weight
         )
         # Oversample la classe 1 in fit
         try:
@@ -350,12 +350,12 @@ def run_train(cfg) -> str:
         if P_gbm_oof is not None:
             parts.append(np.log(np.clip(P_gbm_oof, 1e-9, 1.0)))
         if MK_oof is not None:
-            parts.append(MK_oof)
+            parts.append(np.log(np.clip(MK_oof, 1e-9, 1.0)))
 
         X_stack_oof = np.column_stack(parts)
         # class_weight per enfatizzare il draw nello stacker
         cw = {0: 1.0, 1: float(getattr(cfg.model, 'draw_weight', 1.0)), 2: 1.0}
-        stacker = LogisticRegression(max_iter=300, multi_class="multinomial", class_weight=cw)
+        stacker = LogisticRegression(max_iter=300, solver="lbfgs", class_weight=cw)
         stacker.fit(X_stack_oof, Y_oof)
         stacker_meta = {"enabled": True, "inputs": ["poisson", "gbm" if P_gbm_oof is not None else None, "market"]}
         logger.info("🚀 Stacker trained")
