@@ -78,6 +78,7 @@ model:
     enabled: true
     l2: 1.0
     use_gbm: true
+    standardize: true
 
   learned_post:
     enabled: false

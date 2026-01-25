@@ -369,19 +369,29 @@ def run_backtest(cfg) -> dict:
             try:
                 Z_tr_parts = [np.log(np.clip(P_poiss_tr, 1e-9, 1.0))]
                 Z_te_parts = [np.log(np.clip(P_poiss_te, 1e-9, 1.0))]
+
                 if P_gbm_tr is not None and P_gbm_te is not None and bool(getattr(getattr(cfg.model, "market_prior", None), "use_gbm", True)):
                     Z_tr_parts.append(np.log(np.clip(P_gbm_tr, 1e-9, 1.0)))
                     Z_te_parts.append(np.log(np.clip(P_gbm_te, 1e-9, 1.0)))
+
                 Z_tr = np.column_stack(Z_tr_parts)
                 Z_te = np.column_stack(Z_te_parts)
-                prior = MarketPriorCorrector(l2=float(getattr(getattr(cfg.model, "market_prior", None), "l2", 1.0)))
+
+                prior = MarketPriorCorrector(
+                    l2=float(getattr(getattr(cfg.model, "market_prior", None), "l2", 1.0)),
+                    standardize=bool(getattr(getattr(cfg.model, "market_prior", None), "standardize", False))
+                )
+
                 prior.fit(Z_tr, MK_tr, y_out.iloc[tr].values)
                 P_tr_stack = prior.predict_proba(Z_tr, MK_tr)
+
                 P = prior.predict_proba(Z_te, MK_te)
                 P_tr_stack = np.clip(P_tr_stack, 1e-9, 1.0)
                 P_tr_stack = P_tr_stack / P_tr_stack.sum(axis=1, keepdims=True)
+
                 P = np.clip(P, 1e-9, 1.0)
                 P = P / P.sum(axis=1, keepdims=True)
+                
                 use_stacker = False
             except Exception as _e:
                 logger.warning(f"Market prior fold-wise failed, fallback to stacker: {_e}")

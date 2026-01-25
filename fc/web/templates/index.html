@@ -8,123 +8,187 @@
 </head>
 <body>
   <div class="container">
-    <h1>Football Champ</h1>
-    <p>Inserisci una partita (data, casa, trasferta) e aggiungila alla lista. Poi clicca Predici.</p>
+    <header class="header">
+      <div>
+        <h1>FootballChamp</h1>
+        <p class="subtle">Predizioni Serie A con modelli probabilistici + mercato</p>
+      </div>
+      <div class="status-card">
+        <div class="status-title">Modello attivo</div>
+        <div id="modelInfo" class="status-body">Caricamento...</div>
+      </div>
+    </header>
 
-    <div class="card">
-      <div class="form-row">
-        <label>Data</label>
-        <input type="date" id="date" />
-      </div>
-      <div class="form-row">
-        <label>Casa</label>
-        <input type="text" id="home_team" placeholder="Inter" />
-      </div>
-      <div class="form-row">
-        <label>Trasferta</label>
-        <input type="text" id="away_team" placeholder="Milan" />
-      </div>
-
-      <details class="details">
-        <summary>Quote opzionali (PSCH/PSCD/PSCA)</summary>
-        <div class="grid-3">
-          <input type="number" step="0.01" id="psch" placeholder="PSCH (es. 1.85)" />
-          <input type="number" step="0.01" id="pscd" placeholder="PSCD (es. 3.50)" />
-          <input type="number" step="0.01" id="psca" placeholder="PSCA (es. 4.20)" />
+    <div class="grid-2">
+      <div class="card">
+        <h2>1) Inserisci partita</h2>
+        <div class="form-row">
+          <label>Data</label>
+          <input type="date" id="date" />
         </div>
-      </details>
+        <div class="form-row">
+          <label>Casa</label>
+          <input type="text" id="home_team" placeholder="Inter" />
+        </div>
+        <div class="form-row">
+          <label>Trasferta</label>
+          <input type="text" id="away_team" placeholder="Milan" />
+        </div>
 
-      <div class="actions">
-        <button id="addBtn">Aggiungi partita</button>
-        <button id="predictBtn" class="primary">Predici</button>
-        <button id="recalcBtn">Ricalcola</button>
+        <details class="details">
+          <summary>Quote opzionali (PSCH/PSCD/PSCA)</summary>
+          <div class="grid-3">
+            <input type="number" step="0.01" id="psch" placeholder="PSCH (es. 1.85)" />
+            <input type="number" step="0.01" id="pscd" placeholder="PSCD (es. 3.50)" />
+            <input type="number" step="0.01" id="psca" placeholder="PSCA (es. 4.20)" />
+          </div>
+        </details>
+
+        <div class="actions">
+          <button id="addBtn" class="primary">Aggiungi</button>
+          <button id="exampleBtn">Esempio</button>
+          <button id="clearBtn" class="danger">Pulisci lista</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>2) Opzioni</h2>
+        <div class="form-row">
+          <label>Modello</label>
+          <select id="modelSelect">
+            <option value="">Auto (consigliato)</option>
+          </select>
+        </div>
+        <div class="help">
+          In modalità Auto, il backend seleziona il modello più adatto in base alle squadre.
+        </div>
+        <div class="actions">
+          <button id="predictBtn" class="primary">Predici</button>
+          <button id="recalcBtn">Ricalcola</button>
+        </div>
+        <div id="predictHint" class="muted"></div>
       </div>
     </div>
 
     <div class="card">
-      <h2>Partite</h2>
-      <table id="fixturesTable">
-        <thead>
-          <tr>
-            <th>
-              Data
-            </th>
-            <th>
-              Casa
-            </th>
-            <th>
-              Trasferta
-            </th>
-            <th>
-              Azioni
-            </th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div class="card-head">
+        <h2>Partite</h2>
+        <span id="fixturesCount" class="pill">0</span>
+      </div>
+      <div class="table-wrap">
+        <table id="fixturesTable">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Casa</th>
+              <th>Trasferta</th>
+              <th>Azioni</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
 
     <div class="card">
-      <h2>Predizioni</h2>
-      <table id="predsTable">
-        <thead>
-          <tr>
-            <th>Data</th><th>Casa</th><th>Trasferta</th>
-            <th>Prob. 1X2</th>
-            <th>λ</th>
-            <th>Doppia chance</th>
-            <th>Over/BTTS</th>
-            <th>Note</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div class="card-head">
+        <h2>Predizioni</h2>
+        <div id="predsMeta" class="muted"></div>
+      </div>
+      <div class="table-wrap">
+        <table id="predsTable">
+          <thead>
+            <tr>
+              <th>Data</th><th>Casa</th><th>Trasferta</th>
+              <th>Prob. 1X2</th>
+              <th>λ</th>
+              <th>Doppia chance</th>
+              <th>Over/BTTS</th>
+              <th>Modello</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
   </div>
+
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
 
   <script>
     const fixtures = [];
     const tbody = document.querySelector("#fixturesTable tbody");
     const predsTbody = document.querySelector("#predsTable tbody");
-
+  
+    const modelInfo = document.getElementById("modelInfo");
+    const modelSelect = document.getElementById("modelSelect");
+    const fixturesCount = document.getElementById("fixturesCount");
+    const predsMeta = document.getElementById("predsMeta");
+  
+    const predictBtn = document.getElementById("predictBtn");
+    const recalcBtn = document.getElementById("recalcBtn");
+    const addBtn = document.getElementById("addBtn");
+  
+    function showToast(message, type = "info", ttl = 3500) {
+      const c = document.getElementById("toastContainer");
+      const t = document.createElement("div");
+      t.className = `toast ${type}`;
+      t.innerHTML = `<div class="toast-title">${type === "error" ? "Errore" : "Info"}</div><div>${message}</div>`;
+      c.appendChild(t);
+      setTimeout(() => t.classList.add("hide"), ttl - 200);
+      setTimeout(() => t.remove(), ttl);
+    }
+  
+    function setLoading(isLoading) {
+      predictBtn.disabled = isLoading;
+      recalcBtn.disabled = isLoading;
+      addBtn.disabled = isLoading;
+      predictBtn.textContent = isLoading ? "Calcolando..." : "Predici";
+    }
+  
     function pct(x) {
       if (x === null || isNaN(x)) return "-";
-
-      return Math.round(x * 100) + '%';
+      return Math.round(x * 100) + "%";
     }
-
-    function fair(x) {
-      if (!x || x <= 0) return "-";
-
-      return (1 / x).toFixed(2);
-    }
-
+  
     function tone(p) {
       if (p >= 0.65) return "hi";
       if (p >= 0.55) return "mid";
-
       return "lo";
     }
-
+  
     function chip(label, p) {
-      return `<span class="badge ${tone(p)}"><strong>${label}</strong>${pct(p)}</span>`;
+      return `
+        <span class="chip ${tone(p)}">
+          <span class="chip-label">${label}</span>
+          <span class="chip-value">${pct(p)}</span>
+        </span>
+      `;
     }
-
+  
     function lambdasChip(lh, la) {
-      return `<span class="badge"><strong>λ H</strong>${lh.toFixed(2)}</span>
-              <span class="badge"><strong>λ A</strong>${la.toFixed(2)}</span>`;
+      return `
+        <span class="chip neutral">
+          <span class="chip-label">λ H</span>
+          <span class="chip-value">${lh.toFixed(2)}</span>
+        </span>
+        <span class="chip neutral">
+          <span class="chip-label">λ A</span>
+          <span class="chip-value">${la.toFixed(2)}</span>
+        </span>
+      `;
     }
-
+  
     function bar1x2(p1, px, p2) {
       const w1 = Math.round(p1 * 100);
       const wx = Math.round(px * 100);
       const w2 = Math.round(p2 * 100);
-
       const minWidth = 2;
       const adjustedW1 = w1 > 0 ? Math.max(w1, minWidth) : 0;
       const adjustedWx = wx > 0 ? Math.max(wx, minWidth) : 0;
       const adjustedW2 = w2 > 0 ? Math.max(w2, minWidth) : 0;
-
+  
       return `
         <div class="bar">
           <span class="seg home" style="width: ${adjustedW1}%"></span>
@@ -132,16 +196,23 @@
           <span class="seg away" style="width: ${adjustedW2}%"></span>
         </div>
         <div class="bar-legend">
-          <span>1 ${pct(p1)}</span> <span>X ${pct(px)}</span> <span>2 ${pct(p2)}</span>
+          <span>1 ${pct(p1)}</span>
+          <span>X ${pct(px)}</span>
+          <span>2 ${pct(p2)}</span>
         </div>
       `;
     }
-
+  
     function renderFixtures() {
+      if (!fixtures.length) {
+        tbody.innerHTML = `<tr><td colspan="4" class="empty">Nessuna partita aggiunta</td></tr>`;
+        fixturesCount.textContent = "0";
+        return;
+      }
+  
       tbody.innerHTML = "";
       fixtures.forEach((f, i) => {
         const tr = document.createElement("tr");
-
         tr.innerHTML = `
           <td>${f.date || ""}</td>
           <td>${f.home_team || ""}</td>
@@ -150,7 +221,9 @@
         `;
         tbody.appendChild(tr);
       });
-
+  
+      fixturesCount.textContent = String(fixtures.length);
+  
       tbody.querySelectorAll("button.remove").forEach(btn => {
         btn.onclick = () => {
           fixtures.splice(parseInt(btn.dataset.i), 1);
@@ -158,68 +231,152 @@
         };
       });
     }
-
-    document.getElementById("addBtn").onclick = () => {
+  
+    function addFixture() {
       const date = document.getElementById("date").value;
       const home_team = document.getElementById("home_team").value.trim();
       const away_team = document.getElementById("away_team").value.trim();
       const psch = document.getElementById("psch").value;
       const pscd = document.getElementById("pscd").value;
       const psca = document.getElementById("psca").value;
-      if (!date || !home_team || !away_team) return alert("Compila data, casa e trasferta.");
-
+  
+      if (!date || !home_team || !away_team) {
+        showToast("Compila data, casa e trasferta.", "error");
+        return;
+      }
+      if (home_team.toLowerCase() === away_team.toLowerCase()) {
+        showToast("Casa e trasferta non possono coincidere.", "error");
+        return;
+      }
+  
+      const already = fixtures.some(f => f.date === date && f.home_team === home_team && f.away_team === away_team);
+      if (already) {
+        showToast("Partita già presente nella lista.", "error");
+        return;
+      }
+  
       const rec = { date, home_team, away_team };
       if (psch) rec.psch = parseFloat(psch);
       if (pscd) rec.pscd = parseFloat(pscd);
       if (psca) rec.psca = parseFloat(psca);
-
+  
       fixtures.push(rec);
       renderFixtures();
-    };
-
+  
+      document.getElementById("home_team").value = "";
+      document.getElementById("away_team").value = "";
+      document.getElementById("psch").value = "";
+      document.getElementById("pscd").value = "";
+      document.getElementById("psca").value = "";
+      document.getElementById("home_team").focus();
+    }
+  
+    async function loadModels() {
+      try {
+        const res = await fetch("/api/models");
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || "Impossibile caricare i modelli");
+        }
+        const data = await res.json();
+        modelInfo.textContent = `Config: ${data.config || "n/d"} • Modelli: ${data.models.length}`;
+  
+        modelSelect.innerHTML = `<option value="">Auto (consigliato)</option>`;
+        data.models.forEach(m => {
+          const opt = document.createElement("option");
+          opt.value = m.model_id;
+          opt.textContent = `${m.model_id} - ${m.league} (${m.teams} squadre)`;
+          modelSelect.appendChild(opt);
+        });
+      } catch (e) {
+        modelInfo.textContent = "Modelli non disponibili";
+        showToast(e.message || "Errore nel caricamento modelli", "error");
+      }
+    }
+  
     async function predictCurrent() {
       if (!fixtures.length) {
-        alert("Aggiungi almeno una partita.");
+        showToast("Aggiungi almeno una partita", "error");
         return;
       }
-      predsTbody.innerHTML = "<tr><td colspan='7'>Calcolo...</td></tr>";
-      const res = await fetch("/api/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fixtures })
-      });
-      if (!res.ok) {
-        predsTbody.innerHTML = "<tr><td colspan='7'>Errore nella predizione</td></tr>";
-        return;
+      setLoading(true);
+      predsTbody.innerHTML = "<tr><td colspan='9'>Calcolando...</td></tr>";
+  
+      const payload = { fixtures };
+      if (modelSelect.value) payload.model_id = modelSelect.value;
+  
+      try {
+        const res = await fetch("/api/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+  
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || "Errore nella predizione");
+        }
+  
+        const data = await res.json();
+        predsTbody.innerHTML = "";
+  
+        data.forEach(r => {
+          const tr = document.createElement("tr");
+          const dc = `${chip("1X", r.p_1x)} ${chip("12", r.p_12)} ${chip("X2", r.p_x2)}`;
+          const over = `${chip("Over 1.5", r.p_over_1_5)} ${chip("Over 2.5", r.p_over_2_5)}
+                        ${chip("BTTS", r.p_btts_yes)} ${chip("H ≥ 1", r.p_home_scores)} ${chip("A ≥ 1", r.p_away_scores)}`;
+  
+          const notes = [];
+          if (r.explain_market_estimated) notes.push('<span class="badge lo">quote stimate</span>');
+          if (r.explain_draw_boosted) notes.push('<span class="badge mid">draw boost</span>');
+          if (r.explain_near_tie_promoted) notes.push('<span class="badge mid">near-tie</span>');
+          if (r.explain_guardrails_applied) notes.push('<span class="badge lo">guardrails</span>');
+  
+          tr.innerHTML = `
+            <td>${(r.date || "").split("T")[0]}</td>
+            <td>${r.home_team}</td>
+            <td>${r.away_team}</td>
+            <td>${bar1x2(r.p_home, r.p_draw, r.p_away)}</td>
+            <td class="badges">${lambdasChip(r.lambda_home, r.lambda_away)}</td>
+            <td class="badges">${dc}</td>
+            <td class="badges">${over}</td>
+            <td class="muted">${r.model_id || "-"}</td>
+            <td class="badges">${notes.join(" ")}</td>
+          `;
+          predsTbody.appendChild(tr);
+        });
+  
+        predsMeta.textContent = `Ultimo calcolo: ${new Date().toLocaleTimeString()} • ${data.length} partite`;
+        showToast("Predizione completata", "success");
+      } catch (e) {
+        predsTbody.innerHTML = "<tr><td colspan='9'>Errore nella predizione</td></tr>";
+        showToast(e.message || "Errore nella predizione", "error");
+      } finally {
+        setLoading(false);
       }
-      const data = await res.json();
-      predsTbody.innerHTML = "";
-      data.forEach(r => {
-        const tr = document.createElement("tr");
-        const dc = `${chip("1X", r.p_1x)} ${chip("12", r.p_12)} ${chip("X2", r.p_x2)}`;
-        const over = `${chip("Over 1.5", r.p_over_1_5)} ${chip("Over 2.5", r.p_over_2_5)}
-                      ${chip("BTTS", r.p_btts_yes)} ${chip("H ≥ 1", r.p_home_scores)} ${chip("A ≥ 1", r.p_away_scores)}`;
-        const notes = [];
-        if (r.explain_market_estimated) notes.push('<span class="badge lo">quote stimate</span>');
-        if (r.explain_draw_boosted) notes.push('<span class="badge mid">draw boost</span>');
-        if (r.explain_near_tie_promoted) notes.push('<span class="badge mid">near-tie</span>');
-        if (r.explain_guardrails_applied) notes.push('<span class="badge lo">guardrails</span>');
-        tr.innerHTML = `
-          <td>${(r.date || "").split("T")[0]}</td>
-          <td>${r.home_team}</td>
-          <td>${r.away_team}</td>
-          <td>${bar1x2(r.p_home, r.p_draw, r.p_away)}</td>
-          <td class="badges">${lambdasChip(r.lambda_home, r.lambda_away)}</td>
-          <td class="badges">${dc}</td>
-          <td class="badges">${over}</td>
-          <td class="badges">${notes.join(' ')}</td>
-        `;
-        predsTbody.appendChild(tr);
-      });
     }
-
+  
+    document.getElementById("addBtn").onclick = addFixture;
     document.getElementById("predictBtn").onclick = predictCurrent;
     document.getElementById("recalcBtn").onclick = predictCurrent;
+  
+    document.getElementById("clearBtn").onclick = () => {
+      fixtures.length = 0;
+      renderFixtures();
+      showToast("Lista partite pulita", "info");
+    };
+  
+    document.getElementById("exampleBtn").onclick = () => {
+      document.getElementById("date").value = new Date().toISOString().slice(0,10);
+      document.getElementById("home_team").value = "Inter";
+      document.getElementById("away_team").value = "Milan";
+      document.getElementById("psch").value = "1.85";
+      document.getElementById("pscd").value = "3.50";
+      document.getElementById("psca").value = "4.20";
+    };
+  
+    loadModels();
+    renderFixtures();
   </script>
 </body>
 </html>

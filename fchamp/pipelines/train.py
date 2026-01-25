@@ -1,5 +1,7 @@
+import os
 import numpy as np
 import pandas as pd
+import hashlib
 from joblib import dump
 from fchamp.data.loader import load_matches, merge_xg_into_history, merge_shots_into_history
 from fchamp.features.engineering import add_elo, add_rolling_form, add_xg_real_features, add_shots_real_features, build_features
@@ -17,6 +19,21 @@ from fchamp.models.learned_post_corrector import LearnedPostCorrector
 import logging
 
 logger = logging.getLogger(__name__)
+
+def _data_fingerprint(paths: list[str]) -> dict:
+    items = []
+
+    for p in paths:
+        if not p:
+            continue
+        try:
+            st = os.stat(p)
+            items.append(f"{p}|{st.st_size}|{int(st.st_mtime)}")
+        except Exception:
+            items.append(f"{p}|missing")
+
+    h = hashlib.sha256("\n".join(items).encode("utf-8")).hexdigest()
+    return {"hash": h, "inputs": items}
 
 def _make_goal_model(kind: str, alpha: float, use_dc: bool, dc_rho: float, max_sigma: float, model_params: dict):
     kind = (kind or "poisson").lower()
@@ -364,7 +381,7 @@ def run_train(cfg) -> str:
     stacker = None
     stacker_meta = {}
     P_base_oof = None
-    
+
     try:
         logger.info("🚀 Training OOF stacking (multinomial LR)")
         # OOF Poisson
@@ -409,8 +426,15 @@ def run_train(cfg) -> str:
                     Z_parts.append(np.log(np.clip(P_gbm_oof, 1e-12, 1.0)))
                 
                 Z = np.column_stack(Z_parts)
-                prior = MarketPriorCorrector(l2=float(getattr(mp_cfg, "l2", 1.0))).fit(Z, MK_oof, Y_oof)
-                prior_meta = {"enabled": True, "l2": float(getattr(mp_cfg, "l2", 1.0)) }
+                prior = MarketPriorCorrector(
+                    l2=float(getattr(mp_cfg, "l2", 1.0)),
+                    standardize=bool(getattr(mp_cfg, "standardize", False))
+                ).fit(Z, MK_oof, Y_oof)
+                prior_meta = {
+                    "enabled": True,
+                    "l2": float(getattr(mp_cfg, "l2", 1.0)),
+                    "standardize": bool(getattr(mp_cfg, "standardize", False))
+                }
         except Exception as e:
             prior = None
             prior_meta = { "enabled": False, "err": str(e) }
@@ -720,6 +744,12 @@ def run_train(cfg) -> str:
     
     league = _guess_league(cfg.data.paths)
 
+    data_paths = list(cfg.data.paths or [])
+    if getattr(cfg.data, "xg_path", None):
+        data_paths.append(cfg.data.xg_path)
+    if getattr(cfg.data, "shots_path", None):
+        data_paths.append(cfg.data.shots_path)
+
     # 🚀 ENHANCED METADATA
     meta = {
         "alpha": alpha, "use_dixon_coles": use_dc, "dc_rho": dc_rho,
@@ -728,7 +758,7 @@ def run_train(cfg) -> str:
         "data_files": cfg.data.paths,
         "league": league,
         "teams": teams,
-        
+        "data_fingerprint": _data_fingerprint(data_paths),
         # 🚀 ENHANCED METADATA
         "training_samples": len(X),
         "feature_count": len(X.columns),

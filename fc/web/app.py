@@ -23,17 +23,22 @@ app = FastAPI(title="FootballChamp Web")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 app.mount("/assets", StaticFiles(directory=str(ASSETS_DIR)), name="assets")
 
-def get_cfg() -> AppConfig:
+def _detect_cfg_path() -> str | None:
     p = os.environ.get("FCHAMP_CONFIG", "config.yaml")
-
     if p and Path(p).exists():
-        return load_config(p)
+        return str(Path(p))
 
     for cand in ("config_ita.yaml", "config_epl.yaml", "config_dsl.yaml"):
         if Path(cand).exists():
-            return load_config(cand)
+            return str(Path(cand))
 
-    raise RuntimeError("Nessun file YAML di configurazione trovate. Imposta FCHAMP_CONFIG o rivedi i file di configurazione YAML.")
+    return None
+
+def get_cfg() -> AppConfig:
+    p = _detect_cfg_path()
+    if p:
+        return load_config(p)
+    raise RuntimeError("Nessun file YAML di configurazione trovato. Imposta FCHAMP_CONFIG o rivedi i file YAML.")
 
 class FixtureIn(BaseModel):
     date: str
@@ -112,6 +117,32 @@ def _pick_model_for_fixture(models, home, away):
 def index(request: Request):
     return TEMPLATES.TemplateResponse("index.html", {"request": request})
 
+@app.get("/api/models")
+def api_models():
+    cfg_path = _detect_cfg_path()
+    cfg = load_config(cfg_path) if cfg_path else None
+
+    base = "artifacts"
+    if cfg and getattr(cfg, "artifacts_dir", None):
+        base = str(Path(cfg.artifacts_dir).parent)
+
+    models = _scan_models(base)
+    payload = {
+        "config": cfg_path,
+        "default_model": models[0]["model_id"] if models else None,
+        "models": [
+            {
+                "model_id": m["model_id"],
+                "league": m.get("league", "unknown"),
+                "teams": len(m.get("teams", [])),
+                "mtime": m.get("mtime")
+            }
+            for m in models
+        ],
+    }
+
+    return JSONResponse(payload)
+
 @app.post("/api/predict")
 def api_predict(payload: PredictRequest):
     if not payload.fixtures:
@@ -170,7 +201,16 @@ def api_predict(payload: PredictRequest):
                 if data_files:
                     local_cfg.data.paths = data_files
 
-            parts.append(run_predict_df(local_cfg, fixtures_df=part_df, model_id=mid))
+            try:
+                pred = run_predict_df(local_cfg, fixtures_df=part_df, model_id=mid)
+            except Exception as e:
+                raise HTTPException(500, f"Errore in predizione: {e}")
+
+            if "model_id" not in pred.columns:
+                pred["model_id"] = mid or payload.model_id
+
+            parts.append(pred)
+
         out = pd.concat(parts, axis=0, ignore_index=True) if parts else pd.DataFrame()
     
     cols = ["date","home_team","away_team","p_home","p_draw","p_away","lambda_home","lambda_away",

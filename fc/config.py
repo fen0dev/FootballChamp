@@ -50,6 +50,7 @@ class MarketPriorConfig(BaseModel):
     enabled: bool = False
     l2: float = 1.0
     use_gbm: bool = True
+    standardize: bool = False
 
 class LearnedPostConfig(BaseModel):
     enabled: bool = False
