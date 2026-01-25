@@ -24,10 +24,21 @@ from fchamp.features.advanced_stats import (
 )
 
 from fchamp.models.goals_poisson import GoalsPoissonModel
+from fchamp.models.goals_advanced import GoalsBivariatePoissonModel, GoalsNegBinModel
+from fchamp.models.market_prior_corrector import MarketPriorCorrector
+from fchamp.models.learned_post_corrector import LearnedPostCorrector
 from fchamp.models.calibration import OneVsRestIsotonic, MultinomialLogisticCalibrator
 from fchamp.evaluation.metrics import multi_log_loss, brier_score
 
 logger = logging.getLogger(__name__)
+
+def _make_goal_model(kind: str, alpha: float, use_dc: bool, dc_rho: float, max_sigma: float):
+    kind = (kind or "poisson").lower()
+    if kind == "bivariate":
+        return GoalsBivariatePoissonModel(alpha=alpha, use_dixon_coles=False, dc_rho=dc_rho, max_sigma=max_sigma)
+    if kind == "negbin":
+        return GoalsNegBinModel(alpha=alpha, use_dixon_coles=use_dc, dc_rho=dc_rho)
+    return GoalsPoissonModel(alpha=alpha, use_dixon_coles=use_dc, dc_rho=dc_rho)
 
 def _calculate_betting_metrics(y_true: np.ndarray, y_prob: np.ndarray, market_probs: np.ndarray = None) -> Dict[str, float]:
     """🚀 ENHANCED betting metrics per valutazione realistica"""
@@ -297,7 +308,9 @@ def run_backtest(cfg) -> dict:
         logger.info(f"🚀 Processing fold {fold_idx + 1}/{cfg.backtest.n_splits}")
         
         # Train model
-        gm = GoalsPoissonModel(alpha=cfg.model.alpha, use_dixon_coles=cfg.model.use_dixon_coles, dc_rho=cfg.model.dc_rho)
+        kind = str(getattr(getattr(cfg.model, "goal_model", None), "kind", "poisson")).lower()
+        max_sigma = float(getattr(getattr(cfg.model, "goal_model", None), "max_sigma", 0.30))
+        gm = _make_goal_model(kind, cfg.model.alpha, cfg.model.use_dixon_coles, cfg.model.dc_rho, max_sigma)
         gm.fit(X.iloc[tr], yh.iloc[tr], ya.iloc[tr])
         
         # Predictions
@@ -349,180 +362,233 @@ def run_backtest(cfg) -> dict:
             P_gbm_tr = _to_012(proba_tr, gbm.classes_)
             P_gbm_te = _to_012(proba_te, gbm.classes_)
 
-        # --- STACKER fold-wise (log-space, as in predict) ---
+        # --- MARKET PRIOR (se attivo, sostituisce lo stacker) ---
         use_stacker = True
-
-        try:
-            parts_tr = [np.log(np.clip(P_poiss_tr, 1e-9, 1.0))]
-            parts_te = [np.log(np.clip(P_poiss_te, 1e-9, 1.0))]
-
-            if P_gbm_tr is not None and P_gbm_te is not None:
-                parts_tr.append(np.log(np.clip(P_gbm_tr, 1e-9, 1.0)))
-                parts_te.append(np.log(np.clip(P_gbm_te, 1e-9, 1.0)))
-
-            parts_tr.append(np.log(np.clip(MK_tr, 1e-9, 1.0)))
-            parts_te.append(np.log(np.clip(MK_te, 1e-9, 1.0)))
-
-            X_stack_tr = np.column_stack(parts_tr)
-            X_stack_te = np.column_stack(parts_te)
-
-            cw = {0: 1.0, 1: float(getattr(cfg.model, "draw_weight", 1.0)), 2: 1.0}
-            stacker = LogisticRegression(max_iter=300, solver="lbfgs", class_weight=cw)
-            stacker.fit(X_stack_tr, y_out.iloc[tr].values)
-
-            P_stack_te = stacker.predict_proba(X_stack_te)
-
-            # allign columns to [0,1,2]
+        use_prior = bool(getattr(getattr(cfg.model, "market_prior", None), "enabled", False))
+        if use_prior:
             try:
-                classes = list(stacker.classes_)
-                P_ord = np.zeros_like(P_stack_te)
+                Z_tr_parts = [np.log(np.clip(P_poiss_tr, 1e-9, 1.0))]
+                Z_te_parts = [np.log(np.clip(P_poiss_te, 1e-9, 1.0))]
+                if P_gbm_tr is not None and P_gbm_te is not None and bool(getattr(getattr(cfg.model, "market_prior", None), "use_gbm", True)):
+                    Z_tr_parts.append(np.log(np.clip(P_gbm_tr, 1e-9, 1.0)))
+                    Z_te_parts.append(np.log(np.clip(P_gbm_te, 1e-9, 1.0)))
+                Z_tr = np.column_stack(Z_tr_parts)
+                Z_te = np.column_stack(Z_te_parts)
+                prior = MarketPriorCorrector(l2=float(getattr(getattr(cfg.model, "market_prior", None), "l2", 1.0)))
+                prior.fit(Z_tr, MK_tr, y_out.iloc[tr].values)
+                P_tr_stack = prior.predict_proba(Z_tr, MK_tr)
+                P = prior.predict_proba(Z_te, MK_te)
+                P_tr_stack = np.clip(P_tr_stack, 1e-9, 1.0)
+                P_tr_stack = P_tr_stack / P_tr_stack.sum(axis=1, keepdims=True)
+                P = np.clip(P, 1e-9, 1.0)
+                P = P / P.sum(axis=1, keepdims=True)
+                use_stacker = False
+            except Exception as _e:
+                logger.warning(f"Market prior fold-wise failed, fallback to stacker: {_e}")
+                use_stacker = True
 
-                for j, cls in enumerate(classes):
-                    P_ord[:, int(cls)] = P_stack_te[:, j]
-
-                P_stack_te = P_ord
-            except Exception:
-                pass
-
-            # --- stacker probs on TRAIN fold (needed for final calibration) ---
-            P_stack_tr = stacker.predict_proba(X_stack_tr)
-
+        if use_stacker:
             try:
-                classes = list(stacker.classes_)
-                P_ord_tr = np.zeros_like(P_stack_tr)
+                parts_tr = [np.log(np.clip(P_poiss_tr, 1e-9, 1.0))]
+                parts_te = [np.log(np.clip(P_poiss_te, 1e-9, 1.0))]
 
-                for j, cls in enumerate(classes):
-                    P_ord_tr[:, int(cls)] = P_stack_tr[:, j]
-                
-                P_stack_tr = P_ord_tr
-            except Exception:
-                pass
+                if P_gbm_tr is not None and P_gbm_te is not None:
+                    parts_tr.append(np.log(np.clip(P_gbm_tr, 1e-9, 1.0)))
+                    parts_te.append(np.log(np.clip(P_gbm_te, 1e-9, 1.0)))
 
-            P_tr_stack = np.clip(P_stack_tr, 1e-9, 1.0)
-            P_tr_stack = P_tr_stack / P_tr_stack.sum(axis=1, keepdims=True)
+                parts_tr.append(np.log(np.clip(MK_tr, 1e-9, 1.0)))
+                parts_te.append(np.log(np.clip(MK_te, 1e-9, 1.0)))
 
-            P = np.clip(P_stack_te, 1e-9, 1.0)      # P = test fold
-            P = P / P.sum(axis=1, keepdims=True)
-        except Exception as _e:
-            use_stacker = False
-            logger.warning(f"Stacker fold-wise failed, fallback to Poisson: {_e}")
-            P = P_poiss_te
-            P_tr_stack = np.clip(P_poiss_tr, 1e-9, 1.0)
-            P_tr_stack = P_tr_stack / P_tr_stack.sum(axis=1, keepdims=True)
+                X_stack_tr = np.column_stack(parts_tr)
+                X_stack_te = np.column_stack(parts_te)
 
-        # NOTE: nessuna calibrazione qui.
-        # La calibrazione va fatta SOLO come FINAL CALIBRATION dopo draw_meta/booster/guardrails,
-        # altrimenti le euristiche successive rompono la calibrazione (ECE).
+                cw = {0: 1.0, 1: float(getattr(cfg.model, "draw_weight", 1.0)), 2: 1.0}
+                stacker = LogisticRegression(max_iter=300, solver="lbfgs", class_weight=cw)
+                stacker.fit(X_stack_tr, y_out.iloc[tr].values)
+
+                P_stack_te = stacker.predict_proba(X_stack_te)
+
+                # allign columns to [0,1,2]
+                try:
+                    classes = list(stacker.classes_)
+                    P_ord = np.zeros_like(P_stack_te)
+
+                    for j, cls in enumerate(classes):
+                        P_ord[:, int(cls)] = P_stack_te[:, j]
+
+                    P_stack_te = P_ord
+                except Exception:
+                    pass
+
+                # --- stacker probs on TRAIN fold (needed for final calibration) ---
+                P_stack_tr = stacker.predict_proba(X_stack_tr)
+
+                try:
+                    classes = list(stacker.classes_)
+                    P_ord_tr = np.zeros_like(P_stack_tr)
+
+                    for j, cls in enumerate(classes):
+                        P_ord_tr[:, int(cls)] = P_stack_tr[:, j]
+                    
+                    P_stack_tr = P_ord_tr
+                except Exception:
+                    pass
+
+                P_tr_stack = np.clip(P_stack_tr, 1e-9, 1.0)
+                P_tr_stack = P_tr_stack / P_tr_stack.sum(axis=1, keepdims=True)
+
+                P = np.clip(P_stack_te, 1e-9, 1.0)      # P = test fold
+                P = P / P.sum(axis=1, keepdims=True)
+            except Exception as _e:
+                use_stacker = False
+                logger.warning(f"Stacker fold-wise failed, fallback to Poisson: {_e}")
+                P = P_poiss_te
+                P_tr_stack = np.clip(P_poiss_tr, 1e-9, 1.0)
+                P_tr_stack = P_tr_stack / P_tr_stack.sum(axis=1, keepdims=True)
+
+        # --- Learned post-corrector (se attivo, sostituisce heuristics) ---
+        use_learned_post = bool(getattr(getattr(cfg.model, "learned_post", None), "enabled", False))
+        if use_learned_post:
+            try:
+                lp_l2 = float(getattr(getattr(cfg.model, "learned_post", None), "l2", 1.0))
+                post = LearnedPostCorrector(l2=lp_l2)
+
+                P_tr_base = np.clip(P_tr_stack, 1e-12, 1.0)
+                P_tr_base = P_tr_base / P_tr_base.sum(axis=1, keepdims=True)
+                P_te_base = np.clip(P, 1e-12, 1.0)
+                P_te_base = P_te_base / P_te_base.sum(axis=1, keepdims=True)
+
+                elo_tr = np.abs(X.iloc[tr]['elo_diff'].values)[:, None]
+                gsum_tr = (X.iloc[tr]['home_gf_ewm'].values + X.iloc[tr]['away_gf_ewm'].values)[:, None]
+                ent_tr = (-np.sum(P_tr_base * np.log(P_tr_base + 1e-12), axis=1, keepdims=True))
+                F_tr = np.column_stack([np.log(P_tr_base), np.log(MK_tr), elo_tr, gsum_tr, ent_tr])
+
+                elo_te = np.abs(X.iloc[te]['elo_diff'].values)[:, None]
+                gsum_te = (X.iloc[te]['home_gf_ewm'].values + X.iloc[te]['away_gf_ewm'].values)[:, None]
+                ent_te = (-np.sum(P_te_base * np.log(P_te_base + 1e-12), axis=1, keepdims=True))
+                F_te = np.column_stack([np.log(P_te_base), np.log(MK_te), elo_te, gsum_te, ent_te])
+
+                post.fit(F_tr, y_out.iloc[tr].values)
+                P_tr_stack = post.predict_proba(F_tr)
+                P = post.predict_proba(F_te)
+            except Exception as _e:
+                logger.warning(f"Learned post-corrector failed, using base probs: {_e}")
+                use_learned_post = False
+
+        # NOTE: no calibration here.
+        # calibration has to be done ONLY as FINAL CALIBRATION after draw_meta/booster/guardrails,
+        # otherwise next heuristicsc break calibration (ECE).
 
         # Calibratore per-fold: fit su train fold, apply su test fold
-        try:
-            # -- OLD CODE ---
-            # Now the choice of best model, e probs_tr
-            # are handled above at line 425
-            # 
-            # Uncomment these lines below if needed
-            # ------------------------------------------------------------------------
-            #y_tr = y_out.iloc[tr].values
-            #lh_tr, la_tr = gm.predict_lambdas(X.iloc[tr])
-            #probs_tr = np.array([
-            #    list(gm.outcome_probs(lhi, lai, cfg.features.max_goals))
-            #    for lhi, lai in zip(lh_tr, la_tr)
-            #])
-            #
-            
-            # --- OLD CODE ---
-            # Function at line 439-445: "_fit_best_cal(P_tr,  y_tr)"
-            # could also be deleted as not in use any longer
-            # but I leave it as it's dead code whatsoever :-)
-            #def _fit_best_cal(P_tr: np.ndarray, y_tr: np.ndarray):
-            #    cal1 = OneVsRestIsotonic().fit(P_tr, y_tr)
-            #    e1 = _calculate_calibration_metrics(y_tr, cal1.transform(P_tr))['expected_calibration_error']
-            #    cal2 = MultinomialLogisticCalibrator(class_weight='balanced').fit(P_tr, y_tr)
-            #    e2 = _calculate_calibration_metrics(y_tr, cal2.transform(P_tr))['expected_calibration_error']
-            #
-            #    return cal1 if e1 <= e2 else cal2
+        if not use_learned_post:
+            try:
+                # -- OLD CODE ---
+                # NOTE: Now the choice of best model, e probs_tr
+                # are handled above at line 425
+                # 
+                # Uncomment these lines below if needed
+                # ------------------------------------------------------------------------
+                #y_tr = y_out.iloc[tr].values
+                #lh_tr, la_tr = gm.predict_lambdas(X.iloc[tr])
+                #probs_tr = np.array([
+                #    list(gm.outcome_probs(lhi, lai, cfg.features.max_goals))
+                #    for lhi, lai in zip(lh_tr, la_tr)
+                #])
+                #
+                
+                # --- OLD CODE ---
+                # NOTE: Function at line 439-445: "_fit_best_cal(P_tr,  y_tr)"
+                # could also be deleted as not in use any longer
+                # but I leave it as it's dead code whatsoever :-)
+                #def _fit_best_cal(P_tr: np.ndarray, y_tr: np.ndarray):
+                #    cal1 = OneVsRestIsotonic().fit(P_tr, y_tr)
+                #    e1 = _calculate_calibration_metrics(y_tr, cal1.transform(P_tr))['expected_calibration_error']
+                #    cal2 = MultinomialLogisticCalibrator(class_weight='balanced').fit(P_tr, y_tr)
+                #    e2 = _calculate_calibration_metrics(y_tr, cal2.transform(P_tr))['expected_calibration_error']
+                #
+                #    return cal1 if e1 <= e2 else cal2
 
-            # -- OLD CODE ---
-            # Now the choice of best model, e probs_tr
-            # are handled above at line 425
-            # 
-            # Uncomment these lines below if needed 
-            # to go back to before. However,
-            # above code is better for decision on 
-            # best model calibrator.
-            #
-            # -----------------------------------------
-            # cal = _fit_best_cal(probs_tr, y_tr)
-            # P = cal.transform(P)
-            # -----------------------------------------
-            
-            y_tr = y_out.iloc[tr].values
-            # usa Poisson già calcolato (evita doppio predict_lambdas)
-            P_tr = np.array(P_poiss_tr, dtype=float)
+                # -- OLD CODE ---
+                # NOTE: Now the choice of best model, e probs_tr
+                # are handled above at line 425
+                # 
+                # Uncomment these lines below if needed 
+                # to go back to before. However,
+                # above code is better for decision on 
+                # best model calibrator.
+                #
+                # -----------------------------------------
+                # cal = _fit_best_cal(probs_tr, y_tr)
+                # P = cal.transform(P)
+                # -----------------------------------------
+                
+                y_tr = y_out.iloc[tr].values
+                # usa Poisson già calcolato (evita doppio predict_lambdas)
+                P_tr = np.array(P_poiss_tr, dtype=float)
 
-            # --- OLD CODE ---
-            # NOTE: MK_tr and MK_te are already calculated and normalized once above
-            # within "market probs" block.
-            # Here, would be stupid recalculating them as they can be redundant
-            #
-            #if all(c in df.columns for c in ['book_p_home','book_p_draw','book_p_away']):
-            #    MK_tr = df.iloc[tr][['book_p_home','book_p_draw','book_p_away']].astype(float).values
-            #else:
-            #    MK_tr = np.full((len(tr), 3), 1/3, dtype=float)
-
-            elo_tr = np.abs(X.iloc[tr]['elo_diff'].values)[:, None]
-            gsum_tr = (X.iloc[tr]['home_gf_ewm'].values + X.iloc[tr]['away_gf_ewm'].values)[:, None]
-            X_draw_tr = np.column_stack([np.log(np.clip(P_tr, 1e-9, 1.0)), MK_tr, elo_tr, gsum_tr])
-            y_draw_tr = (y_tr == 1).astype(int)
-
-            dm = LogisticRegression(max_iter=300, class_weight={0:1.0, 1: float(getattr(cfg.model, 'draw_weight', 1.0))})
-            dm.fit(X_draw_tr, y_draw_tr)
-
-            # test fold (usa Poisson già calcolato)
-            P_te_raw = np.array(P_poiss_te, dtype=float)
-            # --- OLD CODE ---
-            # NOTE: MK_te is already available above together with MK_tr.
-            # Useless recalculating them again - Avoiding another fetch/branch 
-            # Same reason as above at line 479 basically :-)
-            #
-            #if all(c in df.columns for c in ['book_p_home','book_p_draw','book_p_away']):
-            #    MK_te = df.iloc[te][['book_p_home','book_p_draw','book_p_away']].astype(float).values
-            #else:
-            #    MK_te = np.full((len(te), 3), 1/3, dtype=float)
-
-            elo_te = np.abs(X.iloc[te]['elo_diff'].values)[:, None]
-            gsum_te = (X.iloc[te]['home_gf_ewm'].values + X.iloc[te]['away_gf_ewm'].values)[:, None]
-
-            X_draw_te = np.column_stack([np.log(np.clip(P_te_raw, 1e-9, 1.0)), MK_te, elo_te, gsum_te])
-            p_draw_hat = dm.predict_proba(X_draw_te)[:, 1]
-
-            # NO TUNING SU TEST FOLD (leakage). Usa solo peso da config.
-            bw = float(getattr(getattr(cfg.model, "draw_meta", None), "blend_weight", 0.4))
-            for i in range(P.shape[0]):
-                ph, px, pa = float(P[i,0]), float(P[i,1]), float(P[i,2])
-                r_h = ph / max(ph + pa, 1e-9)
-                px_new = (1.0 - bw) * px + bw * float(p_draw_hat[i])
-                ph_new = (1.0 - px_new) * r_h
-                pa_new = 1.0 - px_new - ph_new
-                P[i,0], P[i,1], P[i,2] = ph_new, px_new, pa_new
-
-            # apply draw_met on TRAIN (P_tr_stack)
-            # p_draw_hat_tr: estimated draw prob on train fold with
-            # same feature from test
-            p_draw_hat_tr = dm.predict_proba(X_draw_tr)[:, 1]
-            for i in range(P_tr_stack.shape[0]):
-                ph, px, pa = float(P_tr_stack[i,0]), float(P_tr_stack[i,1]), float(P_tr_stack[i,2])
-                r_h = ph / max(ph + pa, 1e-9)
-                px_new = (1.0 - bw) * px + bw * float(p_draw_hat_tr[i])
-                ph_new = (1.0 - px_new) * r_h
-                pa_new = 1.0 - px_new - ph_new
-                P_tr_stack[i,0], P_tr_stack[i,1], P_tr_stack[i,2] = ph_new, px_new, pa_new
-        except Exception:
-            pass
+                # --- OLD CODE ---
+                # NOTE: MK_tr and MK_te are already calculated and normalized once above
+                # within "market probs" block.
+                # Here, would be stupid recalculating them as they can be redundant
+                #
+                #if all(c in df.columns for c in ['book_p_home','book_p_draw','book_p_away']):
+                #    MK_tr = df.iloc[tr][['book_p_home','book_p_draw','book_p_away']].astype(float).values
+                #else:
+                #    MK_tr = np.full((len(tr), 3), 1/3, dtype=float)
+ 
+                elo_tr = np.abs(X.iloc[tr]['elo_diff'].values)[:, None]
+                gsum_tr = (X.iloc[tr]['home_gf_ewm'].values + X.iloc[tr]['away_gf_ewm'].values)[:, None]
+                X_draw_tr = np.column_stack([np.log(np.clip(P_tr, 1e-9, 1.0)), MK_tr, elo_tr, gsum_tr])
+                y_draw_tr = (y_tr == 1).astype(int)
+ 
+                dm = LogisticRegression(max_iter=300, class_weight={0:1.0, 1: float(getattr(cfg.model, 'draw_weight', 1.0))})
+                dm.fit(X_draw_tr, y_draw_tr)
+ 
+                # test fold (usa Poisson già calcolato)
+                P_te_raw = np.array(P_poiss_te, dtype=float)
+                # --- OLD CODE ---
+                # NOTE: MK_te is already available above together with MK_tr.
+                # Useless recalculating them again - Avoiding another fetch/branch 
+                # Same reason as above at line 479 basically :-)
+                #
+                #if all(c in df.columns for c in ['book_p_home','book_p_draw','book_p_away']):
+                #    MK_te = df.iloc[te][['book_p_home','book_p_draw','book_p_away']].astype(float).values
+                #else:
+                #    MK_te = np.full((len(te), 3), 1/3, dtype=float)
+ 
+                elo_te = np.abs(X.iloc[te]['elo_diff'].values)[:, None]
+                gsum_te = (X.iloc[te]['home_gf_ewm'].values + X.iloc[te]['away_gf_ewm'].values)[:, None]
+ 
+                X_draw_te = np.column_stack([np.log(np.clip(P_te_raw, 1e-9, 1.0)), MK_te, elo_te, gsum_te])
+                p_draw_hat = dm.predict_proba(X_draw_te)[:, 1]
+ 
+                # NO TUNING SU TEST FOLD (leakage). Usa solo peso da config.
+                bw = float(getattr(getattr(cfg.model, "draw_meta", None), "blend_weight", 0.4))
+                for i in range(P.shape[0]):
+                    ph, px, pa = float(P[i,0]), float(P[i,1]), float(P[i,2])
+                    r_h = ph / max(ph + pa, 1e-9)
+                    px_new = (1.0 - bw) * px + bw * float(p_draw_hat[i])
+                    ph_new = (1.0 - px_new) * r_h
+                    pa_new = 1.0 - px_new - ph_new
+                    P[i,0], P[i,1], P[i,2] = ph_new, px_new, pa_new
+ 
+                # apply draw_met on TRAIN (P_tr_stack)
+                # p_draw_hat_tr: estimated draw prob on train fold with
+                # same feature from test
+                p_draw_hat_tr = dm.predict_proba(X_draw_tr)[:, 1]
+                for i in range(P_tr_stack.shape[0]):
+                    ph, px, pa = float(P_tr_stack[i,0]), float(P_tr_stack[i,1]), float(P_tr_stack[i,2])
+                    r_h = ph / max(ph + pa, 1e-9)
+                    px_new = (1.0 - bw) * px + bw * float(p_draw_hat_tr[i])
+                    ph_new = (1.0 - px_new) * r_h
+                    pa_new = 1.0 - px_new - ph_new
+                    P_tr_stack[i,0], P_tr_stack[i,1], P_tr_stack[i,2] = ph_new, px_new, pa_new
+            except Exception:
+                pass
 
         # 🔧 Optional draw booster (coherent with interference)
         booster = getattr(getattr(cfg, "model", None), "draw_booster", None)
-        apply_booster = bool(getattr(booster, "enabled", False))
+        apply_booster = bool(getattr(booster, "enabled", False)) and not use_learned_post
         if apply_booster and P.size:
             X_test = X.iloc[te]
             
@@ -669,7 +735,7 @@ def run_backtest(cfg) -> dict:
 
         # Market guardrails (coerenti con predict)
         mg = getattr(getattr(cfg, 'model', None), 'market_guardrails', None)
-        if mg and bool(getattr(mg, 'enabled', False)) and all(c in df.columns for c in ['book_p_home','book_p_draw','book_p_away']):
+        if (not use_learned_post) and mg and bool(getattr(mg, 'enabled', False)) and all(c in df.columns for c in ['book_p_home','book_p_draw','book_p_away']):
             try:
                 mk = df.iloc[te][['book_p_home','book_p_draw','book_p_away']].astype(float).values
                 mk_tr = df.iloc[tr][['book_p_home','book_p_draw','book_p_away']].astype(float).values

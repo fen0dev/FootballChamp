@@ -32,9 +32,28 @@ class CalibrationConfig(BaseModel):
     enabled: bool = True
     method: str = "isotonic"
 
+class FinalCalibrationConfig(BaseModel):
+    enabled: bool = False
+    # "multinomial" (default) o "isotonic"
+    method: str = "multinomial"
+
 class GBMConfig(BaseModel):
     enabled: bool = True
     blend_weight: float = 0.7   # 0..1, quanto pesare GBM rispetto al Poisson
+
+class GoalModelConfig(BaseModel):
+    # "poisson" | "bivariate" | "negbin"
+    kind: str = "poisson"
+    max_sigma: float = 0.30
+
+class MarketPriorConfig(BaseModel):
+    enabled: bool = False
+    l2: float = 1.0
+    use_gbm: bool = True
+
+class LearnedPostConfig(BaseModel):
+    enabled: bool = False
+    l2: float = 1.0
 
 class DrawMetaConfig(BaseModel):
     enabled: bool = True
@@ -73,7 +92,11 @@ class ModelConfig(BaseModel):
     robust_sanitization: bool = True
     adaptive_clipping: bool = True
     calibration: CalibrationConfig = CalibrationConfig()
+    final_calibration: FinalCalibrationConfig = FinalCalibrationConfig()
     gbm: GBMConfig = GBMConfig()
+    goal_model: GoalModelConfig = GoalModelConfig()
+    market_prior: MarketPriorConfig = MarketPriorConfig()
+    learned_post: LearnedPostConfig = LearnedPostConfig()
     market_blend_weight: float = 0.25
     draw_weight: float = 1.9        # peso per rinforzare la classe pareggio nelle fasi discriminative
     draw_booster: DrawBoosterConfig = DrawBoosterConfig()

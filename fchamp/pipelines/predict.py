@@ -9,8 +9,11 @@ from fchamp.data.loader import load_matches, merge_xg_into_history, merge_shots_
 from fchamp.features.engineering import add_elo, add_rolling_form, add_shots_real_features, add_xg_real_features
 from fchamp.features.market import attach_market_to_fixtures
 from fchamp.models.goals_poisson import GoalsPoissonModel
+from fchamp.models.goals_advanced import GoalsBivariatePoissonModel, GoalsNegBinModel
 from fchamp.models.registry import ModelRegistry
 from fchamp.models.calibration import OneVsRestIsotonic, MultinomialLogisticCalibrator
+from fchamp.models.market_prior_corrector import MarketPriorCorrector
+from fchamp.models.learned_post_corrector import LearnedPostCorrector
 import json
 import logging
 from typing import Dict, List
@@ -183,6 +186,15 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
     """🚀 ENHANCED prediction pipeline con error handling e performance ottimizzate"""
     logger.info(f"🚀 Starting enhanced prediction pipeline")
     
+    # NOTE: Manteniamo una sola implementazione "vera" (run_predict_df) per evitare divergenze
+    # tra CLI e UI/API (stacker inputs, draw_meta/booster/guardrails, final calibration, as-of cache).
+    try:
+        fixtures_df = pd.read_csv(fixtures_path)
+    except Exception as e:
+        raise RuntimeError(f"Failed to read fixtures CSV: {fixtures_path} ({e})")
+    
+    return run_predict_df(cfg, fixtures_df, model_id=model_id)
+    
     # 1. MODEL LOADING con validation
     reg = ModelRegistry(cfg.artifacts_dir)
     model_id = _latest_or(model_id, reg)
@@ -198,7 +210,13 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
     
     try:
         meta = json.loads((model_dir / "meta.json").read_text())
-        gm = GoalsPoissonModel.load(str(model_file))
+        goal_kind = (meta.get("goal_model") or "poisson").lower()
+        if goal_kind == "bivariate":
+            gm = GoalsBivariatePoissonModel.load(str(model_file))
+        elif goal_kind == "negbin":
+            gm = GoalsNegBinModel.load(str(model_file))
+        else:
+            gm = GoalsPoissonModel.load(str(model_file))
         logger.info(f"🚀 Loaded model {model_id} with {len(meta.get('features', []))} features")
     except Exception as e:
         raise RuntimeError(f"Failed to load model {model_id}: {e}")
@@ -207,6 +225,9 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
     cal_path = model_dir / "calibrator.joblib"
     if cal_path.exists():
         logger.info("🚀 Calibrator artifact found")
+    
+    # Final calibrator (post-processing)
+    final_cal_path = model_dir / "final_calibrator.joblib"
 
     # GBM ensemble
     gbm = None
@@ -575,45 +596,38 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
         # Market matrix (se disponibile)
         mk = None
         if all(c in fixtures.columns for c in ["book_p_home","book_p_draw","book_p_away"]):
-            mk = fixtures[["book_p_home","book_p_draw","book_p_away"]].astype(float).values
-            mk = np.clip(mk, 1e-9, 1.0)
-            mk = mk / mk.sum(axis=1, keepdims=True)
+            try:
+                mk = fixtures[["book_p_home","book_p_draw","book_p_away"]].astype(float).values
+                mk = np.clip(mk, 1e-9, 1.0)
+                mk = mk / mk.sum(axis=1, keepdims=True)
+            except Exception:
+                mk = None
 
-        # STACKING se presente
+        # STACKING / MARKET PRIOR
         P = P_poiss
+        used_prior = False
         try:
-            stacker = None
-            stacker_path = model_dir / "stacker.joblib"
-            if stacker_path.exists():
-                stacker = joblib_load(str(stacker_path))
-                parts = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
-                if P_gbm is not None:
-                    parts.append(np.log(np.clip(P_gbm, 1e-9, 1.0)))
-                # NON usare MK nello stacker se è tutto stimato in EPL
-                league = (meta.get('league') or '').lower()
-                mk_estimated_all = False
-                try:
-                    mk_estimated_all = isinstance(est_used, list) and (len(est_used) == len(fixtures)) and all(bool(v) for v in est_used)
-                except Exception:
-                    pass
-                if mk is not None and not (league == 'epl' and mk_estimated_all):
-                    parts.append(np.log(np.clip(mk, 1e-9, 1.0)))
-                X_stack = np.column_stack(parts)
-                P = stacker.predict_proba(X_stack)
+            use_prior = bool(getattr(getattr(cfg.model, "market_prior", None), "enabled", False)) and prior is not None
+            league = (meta.get('league') or '').lower()
+            mk_estimated_all = False
+            try:
+                mk_estimated_all = isinstance(est_used, list) and (len(est_used) == len(fixtures)) and all(bool(v) for v in est_used)
+            except Exception:
+                pass
 
-                # allinea le colonne all’ordine canonico [0,1,2]
-                try:
-                    classes = list(stacker.classes_)
-                    P_ord = np.zeros_like(P)
+            if use_prior:
+                if mk is None or (league == 'epl' and mk_estimated_all):
+                    mk_for_prior = np.full((P_poiss.shape[0], 3), 1/3, dtype=float)
+                else:
+                    mk_for_prior = mk
 
-                    for j, cls in enumerate(classes):
-                        P_ord[:, int(cls)] = P[:, j]
-                    
-                    P = P_ord
-                except Exception:
-                    pass
+                Z_parts = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
+                if P_gbm is not None and bool(getattr(getattr(cfg.model, "market_prior", None), "use_gbm", True)):
+                    Z_parts.append(np.log(np.clip(P_gbm, 1e-9, 1.0)))
+                Z = np.column_stack(Z_parts)
+                P = prior.predict_proba(Z, mk_for_prior)
+                used_prior = True
 
-                # Calibrazione post-stacking
                 if cal_path.exists():
                     try:
                         try:
@@ -623,21 +637,62 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
                         P = cal.transform(P)
                     except Exception as e:
                         logger.warning(f"Calibration transform failed: {e}")
-            else:
-                # Fallback: Poisson -> (cal) -> GBM -> market blend
-                if cal_path.exists():
+
+            if not used_prior:
+                stacker = None
+                stacker_path = model_dir / "stacker.joblib"
+                if stacker_path.exists():
+                    stacker = joblib_load(str(stacker_path))
+                    parts = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
+                    if P_gbm is not None:
+                        parts.append(np.log(np.clip(P_gbm, 1e-9, 1.0)))
+                    # NON usare MK nello stacker se è tutto stimato in EPL
+                    # Se manca market (es. fixtures senza quote), usa prior uniforme per rispettare le dimensioni dello stacker
+                    if mk is None:
+                        mk = np.full((P_poiss.shape[0], 3), 1/3, dtype=float)
+
+                    if mk is not None and not (league == 'epl' and mk_estimated_all):
+                        parts.append(np.log(np.clip(mk, 1e-9, 1.0)))
+                    X_stack = np.column_stack(parts)
+                    P = stacker.predict_proba(X_stack)
+
+                    # allinea le colonne all’ordine canonico [0,1,2]
                     try:
+                        classes = list(stacker.classes_)
+                        P_ord = np.zeros_like(P)
+
+                        for j, cls in enumerate(classes):
+                            P_ord[:, int(cls)] = P[:, j]
+                        
+                        P = P_ord
+                    except Exception:
+                        pass
+
+                    # Calibrazione post-stacking
+                    if cal_path.exists():
                         try:
-                            cal = MultinomialLogisticCalibrator.load(str(cal_path))
-                        except Exception:
-                            cal = OneVsRestIsotonic.load(str(cal_path))
-                        P = cal.transform(P)
-                    except Exception as e:
-                        logger.warning(f"Calibration transform failed: {e}")
-                gbm_weight = 0.0
-                gbm_meta = meta.get("gbm", {})
-                if P_gbm is not None and gbm_meta.get("enabled", False):
-                    default_weight = getattr(getattr(getattr(cfg, "model", None), "gbm", None), "blend_weight", 0.0)
+                            try:
+                                cal = MultinomialLogisticCalibrator.load(str(cal_path))
+                            except Exception:
+                                cal = OneVsRestIsotonic.load(str(cal_path))
+                            P = cal.transform(P)
+                        except Exception as e:
+                            logger.warning(f"Calibration transform failed: {e}")
+                else:
+                    # Fallback: Poisson -> (cal) -> GBM -> market blend
+                    if cal_path.exists():
+                        try:
+                            try:
+                                cal = MultinomialLogisticCalibrator.load(str(cal_path))
+                            except Exception:
+                                cal = OneVsRestIsotonic.load(str(cal_path))
+                            P = cal.transform(P)
+                        except Exception as e:
+                            logger.warning(f"Calibration transform failed: {e}")
+                    gbm_weight = 0.0
+                    gbm_meta = meta.get("gbm", {})
+                    if P_gbm is not None and gbm_meta.get("enabled", False):
+                        default_weight = getattr(getattr(getattr(cfg, "model", None), "gbm", None), "blend_weight", 0.0)
                     gbm_weight = float(gbm_meta.get("blend_weight", default_weight))
                     gbm_weight = min(max(gbm_weight, 0.0), 1.0)
                     if gbm_weight > 0:
@@ -674,6 +729,7 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
         apply_booster = bool(getattr(booster, "enabled", False))
 
         # Write back final probs and confidence
+        P_post = np.zeros_like(P, dtype=float)
         for i, r in enumerate(probs):
             ph, px, pa = float(P[i,0]), float(P[i,1]), float(P[i,2])
 
@@ -703,6 +759,22 @@ def run_predict(cfg, fixtures_path: Path, model_id: str | None = None) -> pd.Dat
                     s = ph + px + pa
                     ph, px, pa = ph/s, px/s, pa/s
 
+            P_post[i, 0], P_post[i, 1], P_post[i, 2] = ph, px, pa
+
+        # --- FINAL CALIBRATION (ultima trasformazione) ---
+        if final_cal_path.exists() and bool(getattr(getattr(cfg.model, "final_calibration", None), "enabled", False)):
+            try:
+                try:
+                    fcal = MultinomialLogisticCalibrator.load(str(final_cal_path))
+                except Exception:
+                    fcal = OneVsRestIsotonic.load(str(final_cal_path))
+                P_post = fcal.transform(P_post)
+            except Exception as e:
+                logger.warning(f"Final calibration transform failed: {e}")
+
+        # write into output rows + recompute summary stats
+        for i, r in enumerate(probs):
+            ph, px, pa = float(P_post[i, 0]), float(P_post[i, 1]), float(P_post[i, 2])
             r["p_home"], r["p_draw"], r["p_away"] = ph, px, pa
             r["prediction_confidence"] = max(ph, px, pa)
             r["prediction_entropy"] = -sum(p * np.log(p + 1e-10) for p in [ph, px, pa])
@@ -745,9 +817,16 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
     model_dir = reg.model_dir(model_id)
     model_file = model_dir / "model.joblib"
     meta = json.loads((model_dir / "meta.json").read_text())
-    gm = GoalsPoissonModel.load(str(model_file))
+    goal_kind = (meta.get("goal_model") or "poisson").lower()
+    if goal_kind == "bivariate":
+        gm = GoalsBivariatePoissonModel.load(str(model_file))
+    elif goal_kind == "negbin":
+        gm = GoalsNegBinModel.load(str(model_file))
+    else:
+        gm = GoalsPoissonModel.load(str(model_file))
     cal = None
     cal_path = model_dir / "calibrator.joblib"
+    final_cal_path = model_dir / "final_calibrator.joblib"
     if cal_path.exists():
         try:
             try:
@@ -762,6 +841,22 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
     if gbm_path.exists(): gbm = joblib_load(str(gbm_path))
     gbm_cal_path = model_dir / "gbm_cal.joblib"
     if gbm_cal_path.exists(): gbm_cal = OneVsRestIsotonic.load(str(gbm_cal_path))
+
+    prior = None
+    prior_path = model_dir / "prior_corrector.joblib"
+    if prior_path.exists():
+        try:
+            prior = joblib_load(str(prior_path))
+        except Exception as e:
+            logger.warning(f"Failed to load market prior corrector: {e}")
+
+    post = None
+    post_path = model_dir / "learned_post.joblib"
+    if post_path.exists():
+        try:
+            post = joblib_load(str(post_path))
+        except Exception as e:
+            logger.warning(f"Failed to load learned post-corrector: {e}")
 
 
     # Process historical data (stesso del run_predict)
@@ -1121,39 +1216,30 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
         mk = np.clip(mk, 1e-9, 1.0)
         mk = mk / mk.sum(axis=1, keepdims=True)
 
-    # Try stacking if available
+    # STACKING / MARKET PRIOR
     P = P_poiss
+    mk_estimated_all = False
     try:
-        stacker = None
-        stacker_path = model_dir / "stacker.joblib"
-        if stacker_path.exists():
-            stacker = joblib_load(str(stacker_path))
-            parts = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
-            if P_gbm is not None:
-                parts.append(np.log(np.clip(P_gbm, 1e-9, 1.0)))
-            # NON usare MK nello stacker se è tutto stimato in EPL
-            league = (meta.get('league') or '').lower()
-            mk_estimated_all = False
-            try:
-                mk_estimated_all = isinstance(est_used, list) and (len(est_used) == len(fixtures)) and all(bool(v) for v in est_used)
-            except Exception:
-                mk_estimated_all = False
+        mk_estimated_all = isinstance(est_used, list) and (len(est_used) == len(fixtures)) and all(bool(v) for v in est_used)
+    except Exception:
+        mk_estimated_all = False
 
-            if mk is not None and not (league == 'epl' and mk_estimated_all):
-                parts.append(np.log(np.clip(mk, 1e-9, 1.0)))
+    try:
+        use_prior = bool(getattr(getattr(cfg.model, "market_prior", None), "enabled", False)) and prior is not None
+        league = (meta.get('league') or '').lower()
 
-            X_stack = np.column_stack(parts)
-            P = stacker.predict_proba(X_stack)
-            # allinea le colonne all’ordine canonico [0,1,2]
-            try:
-                classes = list(stacker.classes_)
-                P_ord = np.zeros_like(P)
-                for j, cls in enumerate(classes):
-                    P_ord[:, int(cls)] = P[:, j]
-                P = P_ord
-            except Exception:
-                pass
-            # calibration post-stacking
+        if use_prior:
+            if mk is None or (league == 'epl' and mk_estimated_all):
+                mk_for_prior = np.full((P_poiss.shape[0], 3), 1/3, dtype=float)
+            else:
+                mk_for_prior = mk
+
+            Z_parts = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
+            if P_gbm is not None and bool(getattr(getattr(cfg.model, "market_prior", None), "use_gbm", True)):
+                Z_parts.append(np.log(np.clip(P_gbm, 1e-9, 1.0)))
+            Z = np.column_stack(Z_parts)
+            P = prior.predict_proba(Z, mk_for_prior)
+
             if cal_path.exists():
                 try:
                     try:
@@ -1164,32 +1250,64 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
                 except Exception:
                     pass
         else:
-            # fallback: Poisson -> (cal) -> GBM blend -> market blend
-            if cal is not None and P.size:
-                P = cal.transform(P)
+            stacker = None
+            stacker_path = model_dir / "stacker.joblib"
+            if stacker_path.exists():
+                stacker = joblib_load(str(stacker_path))
+                parts = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
+                if P_gbm is not None:
+                    parts.append(np.log(np.clip(P_gbm, 1e-9, 1.0)))
+                # NON usare MK nello stacker se è tutto stimato in EPL
+                if mk is not None and not (league == 'epl' and mk_estimated_all):
+                    parts.append(np.log(np.clip(mk, 1e-9, 1.0)))
 
-            gbm_weight = float(meta.get("gbm", {}).get(
-                "blend_weight",
-                getattr(getattr(getattr(cfg, "model", None), "gbm", None), "blend_weight", 0.0)
-            ))
+                X_stack = np.column_stack(parts)
+                P = stacker.predict_proba(X_stack)
+                # allinea le colonne all’ordine canonico [0,1,2]
+                try:
+                    classes = list(stacker.classes_)
+                    P_ord = np.zeros_like(P)
+                    for j, cls in enumerate(classes):
+                        P_ord[:, int(cls)] = P[:, j]
+                    P = P_ord
+                except Exception:
+                    pass
+                # calibration post-stacking
+                if cal_path.exists():
+                    try:
+                        try:
+                            cal = MultinomialLogisticCalibrator.load(str(cal_path))
+                        except Exception:
+                            cal = OneVsRestIsotonic.load(str(cal_path))
+                        P = cal.transform(P)
+                    except Exception:
+                        pass
+            else:
+                # fallback: Poisson -> (cal) -> GBM blend -> market blend
+                if cal is not None and P.size:
+                    P = cal.transform(P)
 
-            gbm_weight = min(max(gbm_weight, 0.0), 1.0)
-            if P_gbm is not None and gbm_weight > 0:
-                P = (1.0 - gbm_weight) * P + gbm_weight * P_gbm
-                P = np.clip(P, 1e-9, 1.0)
-                P = P / P.sum(axis=1, keepdims=True)
+                gbm_weight = float(meta.get("gbm", {}).get(
+                    "blend_weight",
+                    getattr(getattr(getattr(cfg, "model", None), "gbm", None), "blend_weight", 0.0)
+                ))
 
-            w = float(getattr(cfg.model, "market_blend_weight", 0.0) or 0.0)
-            w = min(max(w, 0.0), 1.0)
-            league = (meta.get('league') or '').lower()
-            
-            # disattiva blend se il “mercato” è interamente stimato in EPL
-            if league == 'epl' and mk is not None and mk_estimated_all:
-                w = 0.0
-            if w > 0 and mk is not None:
-                P = (1.0 - w) * P + w * mk
-                P = np.clip(P, 1e-9, 1.0)
-                P = P / P.sum(axis=1, keepdims=True)
+                gbm_weight = min(max(gbm_weight, 0.0), 1.0)
+                if P_gbm is not None and gbm_weight > 0:
+                    P = (1.0 - gbm_weight) * P + gbm_weight * P_gbm
+                    P = np.clip(P, 1e-9, 1.0)
+                    P = P / P.sum(axis=1, keepdims=True)
+
+                w = float(getattr(cfg.model, "market_blend_weight", 0.0) or 0.0)
+                w = min(max(w, 0.0), 1.0)
+                
+                # disattiva blend se il “mercato” è interamente stimato in EPL
+                if league == 'epl' and mk is not None and mk_estimated_all:
+                    w = 0.0
+                if w > 0 and mk is not None:
+                    P = (1.0 - w) * P + w * mk
+                    P = np.clip(P, 1e-9, 1.0)
+                    P = P / P.sum(axis=1, keepdims=True)
     except Exception:
         P = P_poiss
         if cal is not None and P.size:
@@ -1198,37 +1316,54 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
             except Exception:
                 pass
 
+    use_learned_post = bool(getattr(getattr(cfg.model, "learned_post", None), "enabled", False)) and post is not None
+    if use_learned_post:
+        if mk is None:
+            mk_lp = np.full((len(P), 3), 1/3, dtype=float)
+        else:
+            mk_lp = mk
+        P_base = np.clip(P, 1e-12, 1.0)
+        P_base = P_base / P_base.sum(axis=1, keepdims=True)
+        elo_abs = np.abs(Xf['elo_diff'].values)[:, None] if 'elo_diff' in Xf.columns else np.zeros((len(Xf),1))
+        gsum = ((Xf.get('home_gf_ewm', pd.Series(np.ones(len(Xf))*1.3)).values +
+                 Xf.get('away_gf_ewm', pd.Series(np.ones(len(Xf))*1.1)).values)[:, None])
+        ent = (-np.sum(P_base * np.log(P_base + 1e-12), axis=1, keepdims=True))
+        F = np.column_stack([np.log(P_base), np.log(np.clip(mk_lp, 1e-12, 1.0)), elo_abs, gsum, ent])
+        P = post.predict_proba(F)
+
     # ---- Draw vs No-Draw meta blend (binario) con feature extra ----
-    try:
-        dm_path = model_dir / "draw_meta.joblib"
-        if dm_path.exists() and getattr(getattr(cfg.model, 'draw_meta', None), 'enabled', True):
-            from joblib import load as _load
-            draw_meta = _load(str(dm_path))
-            parts_draw = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
-            if mk is not None:
-                parts_draw.append(mk)
-            elo_abs = np.abs(Xf['elo_diff'].values)[:, None] if 'elo_diff' in Xf.columns else np.zeros((len(Xf),1))
-            gsum = ((Xf.get('home_gf_ewm', pd.Series(np.ones(len(Xf))*1.3)).values +
-                     Xf.get('away_gf_ewm', pd.Series(np.ones(len(Xf))*1.1)).values)[:, None])
-            parts_draw += [elo_abs, gsum]
-            X_draw = np.column_stack(parts_draw)
-            p_draw_hat = draw_meta.predict_proba(X_draw)[:, 1]
-            bw = float(getattr(cfg.model.draw_meta, 'blend_weight', 0.4))
-            for i in range(P.shape[0]):
-                ph, px, pa = float(P[i,0]), float(P[i,1]), float(P[i,2])
-                r_h = ph / max(ph + pa, 1e-9)
-                px_new = (1.0 - bw) * px + bw * float(p_draw_hat[i])
-                ph_new = (1.0 - px_new) * r_h
-                pa_new = 1.0 - px_new - ph_new
-                P[i,0], P[i,1], P[i,2] = ph_new, px_new, pa_new
-    except Exception:
-        pass
+    if not use_learned_post:
+        try:
+            dm_path = model_dir / "draw_meta.joblib"
+            if dm_path.exists() and getattr(getattr(cfg.model, 'draw_meta', None), 'enabled', True):
+                from joblib import load as _load
+                draw_meta = _load(str(dm_path))
+                parts_draw = [np.log(np.clip(P_poiss, 1e-9, 1.0))]
+                if mk is not None:
+                    parts_draw.append(mk)
+                elo_abs = np.abs(Xf['elo_diff'].values)[:, None] if 'elo_diff' in Xf.columns else np.zeros((len(Xf),1))
+                gsum = ((Xf.get('home_gf_ewm', pd.Series(np.ones(len(Xf))*1.3)).values +
+                         Xf.get('away_gf_ewm', pd.Series(np.ones(len(Xf))*1.1)).values)[:, None])
+                parts_draw += [elo_abs, gsum]
+                X_draw = np.column_stack(parts_draw)
+                p_draw_hat = draw_meta.predict_proba(X_draw)[:, 1]
+                bw = float(getattr(cfg.model.draw_meta, 'blend_weight', 0.4))
+                for i in range(P.shape[0]):
+                    ph, px, pa = float(P[i,0]), float(P[i,1]), float(P[i,2])
+                    r_h = ph / max(ph + pa, 1e-9)
+                    px_new = (1.0 - bw) * px + bw * float(p_draw_hat[i])
+                    ph_new = (1.0 - px_new) * r_h
+                    pa_new = 1.0 - px_new - ph_new
+                    P[i,0], P[i,1], P[i,2] = ph_new, px_new, pa_new
+        except Exception:
+            pass
 
     # Optional draw booster (parametrico, no retrain)
     booster = getattr(getattr(cfg, "model", None), "draw_booster", None)
-    apply_booster = bool(getattr(booster, "enabled", False))
+    apply_booster = bool(getattr(booster, "enabled", False)) and not use_learned_post
 
     # write back final probs
+    P_post = np.zeros((len(probs), 3), dtype=float)
     for i, r in enumerate(probs):
         ph, px, pa = float(P[i,0]), float(P[i,1]), float(P[i,2])
 
@@ -1321,7 +1456,7 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
         # Market guardrails: limita scostamento e blend verso mercato
         mg = getattr(getattr(cfg, "model", None), "market_guardrails", None)
 
-        if mg and bool(getattr(mg, "enabled", False)):
+        if (not use_learned_post) and mg and bool(getattr(mg, "enabled", False)):
             mh, mx, ma = _get_market_probs_row(i)
             flat = abs(mh - 1/3) + abs(mx - 1/3) + abs(ma - 1/3) < 1e-6
 
@@ -1358,7 +1493,7 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
                     ph, px, pa = ph/s, px/s, pa/s
                 guardrails_applied = True
 
-        r["p_home"], r["p_draw"], r["p_away"] = ph, px, pa
+        P_post[i, 0], P_post[i, 1], P_post[i, 2] = ph, px, pa
         r["explain_draw_boosted"] = bool(draw_boosted)
         r["explain_near_tie_promoted"] = bool(near_tie_promoted)
         r["explain_guardrails_applied"] = bool(guardrails_applied)
@@ -1369,6 +1504,24 @@ def run_predict_df(cfg, fixtures_df: pd.DataFrame, model_id: str | None = None) 
             r["explain_market_estimated"] = bool(est_used[i]) if i < len(est_used) else False
         except Exception:
             r["explain_market_estimated"] = False
+
+    # --- FINAL CALIBRATION (ultima trasformazione) ---
+    if final_cal_path.exists() and bool(getattr(getattr(cfg.model, "final_calibration", None), "enabled", False)):
+        try:
+            try:
+                fcal = MultinomialLogisticCalibrator.load(str(final_cal_path))
+            except Exception:
+                fcal = OneVsRestIsotonic.load(str(final_cal_path))
+            P_post = fcal.transform(P_post)
+        except Exception as e:
+            logger.warning(f"Final calibration transform failed: {e}")
+
+    # overwrite final probabilities + recompute confidence/entropy
+    for i, r in enumerate(probs):
+        ph, px, pa = float(P_post[i, 0]), float(P_post[i, 1]), float(P_post[i, 2])
+        r["p_home"], r["p_draw"], r["p_away"] = ph, px, pa
+        r["prediction_confidence"] = max(ph, px, pa)
+        r["prediction_entropy"] = -sum(p * np.log(p + 1e-10) for p in [ph, px, pa])
     
     result = pd.concat([fixtures.reset_index(drop=True), pd.DataFrame(probs)], axis=1)
     result['model_id'] = model_id
